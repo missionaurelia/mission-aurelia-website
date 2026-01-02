@@ -1,0 +1,163 @@
+import { Link } from 'wouter';
+import { ArrowRight, Play } from 'lucide-react';
+import { motion } from 'framer-motion';
+
+export default function Home() {
+  return (
+    <div>
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background - Julie will add her own image */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-background)] via-[var(--color-background)]/90 to-[var(--color-background)]">
+          <div className="absolute inset-0 bg-[url('/placeholder-hero-bg.jpg')] bg-cover bg-center opacity-20" />
+        </div>
+
+        {/* Content */}
+        <div className="container relative z-10 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            {/* Tagline */}
+            <p className="text-[var(--color-secondary)] text-lg md:text-xl mb-6 font-semibold">
+              [Tagline - e.g., "An Experiment in the Future of Storytelling"]
+            </p>
+
+            {/* Main Title */}
+            <h1 className="text-gradient-orange mb-8">
+              Mission: Aurelia
+            </h1>
+
+            {/* Logline */}
+            <p className="text-xl md:text-2xl lg:text-3xl max-w-4xl mx-auto mb-12 leading-relaxed">
+              [Logline - Julie's powerful description of the series]
+            </p>
+
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <Link href="/universe">
+                <a className="btn-primary inline-flex items-center gap-2">
+                  Explore the Universe
+                  <ArrowRight size={20} />
+                </a>
+              </Link>
+              
+              <Link href="/about">
+                <a className="btn-secondary inline-flex items-center gap-2">
+                  <Play size={20} />
+                  Learn More
+                </a>
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <motion.div
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+        >
+          <div className="w-6 h-10 border-2 border-[var(--color-primary)] rounded-full flex justify-center pt-2">
+            <div className="w-1 h-3 bg-[var(--color-primary)] rounded-full" />
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Quick Intro Section */}
+      <section className="section-padding bg-white/5">
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-gradient-blue mb-8">
+              [Section Title]
+            </h2>
+            <p className="text-lg md:text-xl leading-relaxed mb-8">
+              [Brief introduction paragraph - Julie's text about what makes Mission: Aurelia unique]
+            </p>
+            <Link href="/vision">
+              <a className="btn-tertiary text-lg">
+                Discover Our Vision →
+              </a>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Content Teaser */}
+      <section className="section-padding">
+        <div className="container">
+          <h2 className="text-center text-gradient-orange mb-16">
+            [Featured Section Title]
+          </h2>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <div className="card">
+              <div className="aspect-video bg-white/10 rounded-lg mb-6">
+                {/* Placeholder for image */}
+                <div className="w-full h-full flex items-center justify-center text-[var(--color-text)]/50">
+                  [Image 1]
+                </div>
+              </div>
+              <h3 className="text-2xl mb-4">[Card 1 Title]</h3>
+              <p className="text-[var(--color-text)]/80 mb-4">
+                [Card 1 description]
+              </p>
+              <Link href="/universe">
+                <a className="btn-tertiary">Learn More →</a>
+              </Link>
+            </div>
+
+            {/* Card 2 */}
+            <div className="card">
+              <div className="aspect-video bg-white/10 rounded-lg mb-6">
+                <div className="w-full h-full flex items-center justify-center text-[var(--color-text)]/50">
+                  [Image 2]
+                </div>
+              </div>
+              <h3 className="text-2xl mb-4">[Card 2 Title]</h3>
+              <p className="text-[var(--color-text)]/80 mb-4">
+                [Card 2 description]
+              </p>
+              <Link href="/characters">
+                <a className="btn-tertiary">Meet the Characters →</a>
+              </Link>
+            </div>
+
+            {/* Card 3 */}
+            <div className="card">
+              <div className="aspect-video bg-white/10 rounded-lg mb-6">
+                <div className="w-full h-full flex items-center justify-center text-[var(--color-text)]/50">
+                  [Image 3]
+                </div>
+              </div>
+              <h3 className="text-2xl mb-4">[Card 3 Title]</h3>
+              <p className="text-[var(--color-text)]/80 mb-4">
+                [Card 3 description]
+              </p>
+              <Link href="/vision">
+                <a className="btn-tertiary">Explore the Vision →</a>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="section-padding bg-gradient-to-r from-[var(--color-primary)]/20 to-[var(--color-secondary)]/20">
+        <div className="container text-center">
+          <h2 className="mb-8">[CTA Section Title]</h2>
+          <p className="text-xl max-w-2xl mx-auto mb-12">
+            [CTA description - encourage visitors to take action]
+          </p>
+          <Link href="/contact">
+            <a className="btn-primary">
+              Get in Touch
+            </a>
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
+}

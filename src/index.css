@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+@theme {
+  /* Mission: Aurelia Color Palette */
+  --color-aurelia-orange: #ff6b35;
+  --color-hologram-blue: #00d9ff;
+  --color-deep-black: #0a0a0a;
+  --color-soft-white: #f5f5f5;
+  
+  /* Constellation Colors */
+  --color-orion: #1a1a1a;
+  --color-elara: #9b59b6;
+  --color-kael: #3498db;
+  --color-manus: #34495e;
+  --color-julie: #e74c3c;
+  
+  /* Semantic Colors */
+  --color-primary: var(--color-aurelia-orange);
+  --color-secondary: var(--color-hologram-blue);
+  --color-background: var(--color-deep-black);
+  --color-text: var(--color-soft-white);
+  
+  /* Typography */
+  --font-family-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-family-display: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  
+  /* Spacing */
+  --spacing-section: 6rem;
+  --spacing-container: 2rem;
+}
+
+@layer base {
+
+  body {
+    @apply bg-[var(--color-background)] text-[var(--color-text)] font-[family-name:var(--font-family-sans)] antialiased;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-[family-name:var(--font-family-display)] font-bold;
+  }
+
+  h1 {
+    @apply text-5xl md:text-6xl lg:text-7xl;
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  p {
+    @apply text-base md:text-lg leading-relaxed;
+  }
+
+  a {
+    @apply transition-colors duration-300;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply mx-auto px-4 md:px-6 lg:px-8 max-w-7xl;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .text-gradient-orange {
+    @apply bg-gradient-to-r from-[var(--color-aurelia-orange)] to-orange-400 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-blue {
+    @apply bg-gradient-to-r from-[var(--color-hologram-blue)] to-blue-400 bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply bg-[var(--color-primary)] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-orange-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-[var(--color-secondary)] text-[var(--color-secondary)] px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[var(--color-secondary)] hover:text-[var(--color-background)] transition-all duration-300;
+  }
+
+  .btn-tertiary {
+    @apply text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors duration-300 underline underline-offset-4;
+  }
+
+  .card {
+    @apply bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300;
+  }
+
+  .nav-link {
+    @apply text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors duration-300 font-medium;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-deep-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-aurelia-orange);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff8c5a;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-aurelia-orange);
+  color: var(--color-deep-black);
+}
