@@ -1,0 +1,232 @@
+import { motion } from 'framer-motion';
+import { Mail, FileText, ExternalLink } from 'lucide-react';
+
+export default function Contact() {
+  const resources = [
+    {
+      title: "Creator's Book",
+      description: '[Description of the Creator\'s Book]',
+      link: '#',
+      icon: FileText,
+    },
+    {
+      title: '[Resource 2]',
+      description: '[Description]',
+      link: '#',
+      icon: FileText,
+    },
+    {
+      title: '[Resource 3]',
+      description: '[Description]',
+      link: '#',
+      icon: FileText,
+    },
+  ];
+
+  const socialLinks = [
+    { platform: '[Social Platform 1]', url: '#', handle: '[@handle]' },
+    { platform: '[Social Platform 2]', url: '#', handle: '[@handle]' },
+    { platform: '[Social Platform 3]', url: '#', handle: '[@handle]' },
+  ];
+
+  return (
+    <div>
+      {/* Hero Section */}
+      <section className="section-padding">
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="max-w-4xl mx-auto text-center"
+          >
+            <h1 className="text-gradient-orange mb-8">Get in Touch</h1>
+            <p className="text-xl md:text-2xl leading-relaxed">
+              [Introduction - invite people to connect, follow the journey, or collaborate]
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Contact Methods */}
+      <section className="section-padding bg-white/5">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-gradient-blue mb-12 text-center">Connect With Us</h2>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Email */}
+              <div className="card group hover:scale-105">
+                <Mail size={48} className="text-[var(--color-primary)] mb-6 group-hover:text-[var(--color-secondary)] transition-colors" />
+                <h3 className="text-2xl mb-4">Email</h3>
+                <p className="text-[var(--color-text)]/80 mb-6">
+                  For inquiries, collaborations, or just to say hello.
+                </p>
+                <a 
+                  href="mailto:[email@example.com]" 
+                  className="text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors font-semibold"
+                >
+                  [email@example.com]
+                </a>
+              </div>
+
+              {/* Social Media */}
+              <div className="card group hover:scale-105">
+                <ExternalLink size={48} className="text-[var(--color-primary)] mb-6 group-hover:text-[var(--color-secondary)] transition-colors" />
+                <h3 className="text-2xl mb-4">Follow the Journey</h3>
+                <p className="text-[var(--color-text)]/80 mb-6">
+                  Stay updated on the latest developments and behind-the-scenes insights.
+                </p>
+                <div className="space-y-3">
+                  {socialLinks.map((link, index) => (
+                    <div key={index}>
+                      <a 
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors font-semibold"
+                      >
+                        {link.platform}: {link.handle}
+                      </a>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Resources */}
+      <section className="section-padding">
+        <div className="container">
+          <h2 className="text-gradient-orange mb-16 text-center">Resources & Downloads</h2>
+          
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {resources.map((resource, index) => {
+              const Icon = resource.icon;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="card group hover:scale-105"
+                >
+                  <Icon 
+                    size={48} 
+                    className="text-[var(--color-primary)] mb-6 group-hover:text-[var(--color-secondary)] transition-colors" 
+                  />
+                  <h3 className="text-2xl mb-4">{resource.title}</h3>
+                  <p className="text-[var(--color-text)]/80 mb-6">
+                    {resource.description}
+                  </p>
+                  <a 
+                    href={resource.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-tertiary inline-flex items-center gap-2"
+                  >
+                    Download <ExternalLink size={16} />
+                  </a>
+                </motion.div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Newsletter/Updates */}
+      <section className="section-padding bg-gradient-to-r from-[var(--color-primary)]/10 to-[var(--color-secondary)]/10">
+        <div className="container">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-gradient-blue mb-8">Stay Updated</h2>
+            <p className="text-xl mb-12">
+              [Description - invite people to follow for updates, announcements, etc.]
+            </p>
+            
+            {/* Newsletter Form Placeholder */}
+            <div className="card max-w-md mx-auto">
+              <p className="text-[var(--color-text)]/70 mb-4">
+                [Newsletter signup form - Julie can add her own service]
+              </p>
+              <div className="flex gap-4">
+                <input 
+                  type="email" 
+                  placeholder="your@email.com"
+                  className="flex-1 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-[var(--color-text)] placeholder:text-[var(--color-text)]/50 focus:outline-none focus:border-[var(--color-primary)]"
+                />
+                <button className="btn-primary px-6">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Collaboration */}
+      <section className="section-padding">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-gradient-orange mb-8 text-center">Interested in Collaborating?</h2>
+            <div className="card">
+              <p className="text-lg text-[var(--color-text)]/80 leading-relaxed mb-8">
+                [Description of collaboration opportunities - producers, studios, writers, artists, etc.]
+              </p>
+              <div className="text-center">
+                <a href="mailto:[email@example.com]" className="btn-primary">
+                  Get in Touch
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section-padding bg-white/5">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-gradient-blue mb-12 text-center">Frequently Asked Questions</h2>
+            
+            <div className="space-y-6">
+              {/* FAQ 1 */}
+              <div className="card">
+                <h3 className="text-xl mb-3">[Question 1]</h3>
+                <p className="text-[var(--color-text)]/80">
+                  [Answer 1]
+                </p>
+              </div>
+
+              {/* FAQ 2 */}
+              <div className="card">
+                <h3 className="text-xl mb-3">[Question 2]</h3>
+                <p className="text-[var(--color-text)]/80">
+                  [Answer 2]
+                </p>
+              </div>
+
+              {/* FAQ 3 */}
+              <div className="card">
+                <h3 className="text-xl mb-3">[Question 3]</h3>
+                <p className="text-[var(--color-text)]/80">
+                  [Answer 3]
+                </p>
+              </div>
+
+              {/* FAQ 4 */}
+              <div className="card">
+                <h3 className="text-xl mb-3">[Question 4]</h3>
+                <p className="text-[var(--color-text)]/80">
+                  [Answer 4]
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
