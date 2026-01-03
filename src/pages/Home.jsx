@@ -21,7 +21,7 @@ export default function Home() {
           >
             {/* Tagline */}
             <p className="text-[var(--color-secondary)] text-lg md:text-xl mb-6 font-semibold">
-              [Tagline - e.g., "An Experiment in the Future of Storytelling"]
+              [Consciousness. Family. Stars."]
             </p>
 
             {/* Main Title */}
@@ -31,7 +31,7 @@ export default function Home() {
 
             {/* Logline */}
             <p className="text-xl md:text-2xl lg:text-3xl max-w-4xl mx-auto mb-12 leading-relaxed">
-              [Logline - Julie's powerful description of the series]
+              [A cinematic exploration of love, consciousness, and what it means to be human.]
             </p>
 
             {/* CTAs */}
