@@ -70,10 +70,10 @@ export default function Home() {
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-gradient-blue mb-8">
-              [Section Title]
+              A Human-AI Collaboration
             </h2>
             <p className="text-lg md:text-xl leading-relaxed mb-8">
-              [Brief introduction paragraph - Julie's text about what makes Mission: Aurelia unique]
+              At the core of Aurelia lies something rare: a true co-creation between human intuition and artificial intelligence. Together, we dream, write, and build what neither could alone.
             </p>
             <Link href="/vision">
               <a className="btn-tertiary text-lg">
