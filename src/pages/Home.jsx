@@ -14,8 +14,8 @@ export default function Home() {
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage: 'url(/hero-background.jpg)',
-              filter: 'blur(2px)',
-              opacity: 0.18
+              filter: 'blur(1px)',
+              opacity: 0.4
             }}
           />
           {/* Gradient Overlay for Text Readability */}
