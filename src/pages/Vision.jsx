@@ -1,7 +1,22 @@
 import { motion } from 'framer-motion';
 import { Heart, Sparkles, Users, Lightbulb } from 'lucide-react';
+import { useEffect } from 'react';
 
 export default function Vision() {
+  useEffect(() => {
+    // Check if we need to scroll to a specific section
+    const scrollToHash = sessionStorage.getItem('scrollToHash');
+    if (scrollToHash) {
+      sessionStorage.removeItem('scrollToHash');
+      setTimeout(() => {
+        const element = document.querySelector(scrollToHash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 300);
+    }
+  }, []);
+
   const themes = [
     {
       icon: Heart,
