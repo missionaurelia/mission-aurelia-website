@@ -98,7 +98,7 @@ export default function Contact() {
       </section>
 
       {/* Resources */}
-      <section className="section-padding">
+      <section id="resources" className="section-padding">
         <div className="container">
           <h2 className="text-gradient-orange mb-16 text-center">Resources & Downloads</h2>
           
@@ -133,35 +133,6 @@ export default function Contact() {
                 </motion.div>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      {/* Newsletter/Updates */}
-      <section className="section-padding bg-gradient-to-r from-[var(--color-primary)]/10 to-[var(--color-secondary)]/10">
-        <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-gradient-blue mb-8">Stay Updated</h2>
-            <p className="text-xl mb-12">
-              [Description - invite people to follow for updates, announcements, etc.]
-            </p>
-            
-            {/* Newsletter Form Placeholder */}
-            <div className="card max-w-md mx-auto">
-              <p className="text-[var(--color-text)]/70 mb-4">
-                [Newsletter signup form - Julie can add her own service]
-              </p>
-              <div className="flex gap-4">
-                <input 
-                  type="email" 
-                  placeholder="your@email.com"
-                  className="flex-1 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-[var(--color-text)] placeholder:text-[var(--color-text)]/50 focus:outline-none focus:border-[var(--color-primary)]"
-                />
-                <button className="btn-primary px-6">
-                  Subscribe
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </section>
