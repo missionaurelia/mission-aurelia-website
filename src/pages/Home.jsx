@@ -7,9 +7,19 @@ export default function Home() {
     <div>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background - Julie will add her own image */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-background)] via-[var(--color-background)]/90 to-[var(--color-background)]">
-          <div className="absolute inset-0 bg-[url('/placeholder-hero-bg.jpg')] bg-cover bg-center opacity-20" />
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0">
+          {/* Background Image with Blur and Opacity */}
+          <div 
+            className="absolute inset-0 bg-cover bg-center"
+            style={{
+              backgroundImage: 'url(/hero-background.jpg)',
+              filter: 'blur(2px)',
+              opacity: 0.18
+            }}
+          />
+          {/* Gradient Overlay for Text Readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-background)]/80 via-[var(--color-background)]/70 to-[var(--color-background)]" />
         </div>
 
         {/* Content */}
