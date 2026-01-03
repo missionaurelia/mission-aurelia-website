@@ -1,8 +1,22 @@
-import { Link } from 'wouter';
+import { Link, useLocation } from 'wouter';
 import { ArrowRight, Play } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(() => {
+    // Handle hash navigation after page load
+    const hash = window.location.hash;
+    if (hash) {
+      setTimeout(() => {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, []);
+
   return (
     <div>
       {/* Hero Section */}
@@ -85,9 +99,17 @@ export default function Home() {
             <p className="text-lg md:text-xl leading-relaxed mb-8">
               At the core of Aurelia lies something rare: a true co-creation between human intuition and artificial intelligence. Together, we dream, write, and build what neither could alone.
             </p>
-            <a href="/vision#meta-level" className="btn-tertiary text-lg">
-              How It Works →
-            </a>
+            <Link href="/vision">
+              <a 
+                className="btn-tertiary text-lg"
+                onClick={(e) => {
+                  // Store the hash for the Vision page to handle
+                  sessionStorage.setItem('scrollToHash', '#meta-level');
+                }}
+              >
+                How It Works →
+              </a>
+            </Link>
           </div>
         </div>
       </section>
