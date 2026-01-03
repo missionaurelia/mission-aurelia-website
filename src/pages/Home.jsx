@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 
 export default function Home() {
+  const [, setLocation] = useLocation();
+
   useEffect(() => {
     // Handle hash navigation after page load
     const hash = window.location.hash;
@@ -184,7 +186,7 @@ export default function Home() {
           <button
             onClick={() => {
               sessionStorage.setItem('scrollToSection', 'resources');
-              window.location.href = '/contact';
+              setLocation('/contact');
             }}
             className="btn-primary"
           >
