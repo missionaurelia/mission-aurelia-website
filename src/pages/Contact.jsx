@@ -137,25 +137,6 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Collaboration */}
-      <section className="section-padding">
-        <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-gradient-orange mb-8 text-center">Interested in Collaborating?</h2>
-            <div className="card">
-              <p className="text-lg text-[var(--color-text)]/80 leading-relaxed mb-8">
-                [Description of collaboration opportunities - producers, studios, writers, artists, etc.]
-              </p>
-              <div className="text-center">
-                <a href="mailto:[email@example.com]" className="btn-primary">
-                  Get in Touch
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ */}
       <section className="section-padding bg-white/5">
         <div className="container">
