@@ -157,13 +157,13 @@ export default function Home() {
       {/* CTA Section */}
       <section className="section-padding bg-gradient-to-r from-[var(--color-primary)]/20 to-[var(--color-secondary)]/20">
         <div className="container text-center">
-          <h2 className="mb-8">[CTA Section Title]</h2>
+          <h2 className="mb-8">Dive Deeper</h2>
           <p className="text-xl max-w-2xl mx-auto mb-12">
-            [CTA description - encourage visitors to take action]
+            Access exclusive resources, character profiles, and world-building materials.
           </p>
-          <Link href="/contact">
+          <Link href="/contact#resources">
             <a className="btn-primary">
-              Get in Touch
+              Explore Resources
             </a>
           </Link>
         </div>
