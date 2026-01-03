@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Mail, FileText, ExternalLink } from 'lucide-react';
+import { useEffect } from 'react';
 
 export default function Contact() {
   const resources = [
@@ -28,6 +29,19 @@ export default function Contact() {
     { platform: '[Social Platform 2]', url: '#', handle: '[@handle]' },
     { platform: '[Social Platform 3]', url: '#', handle: '[@handle]' },
   ];
+
+  useEffect(() => {
+    const scrollToSection = sessionStorage.getItem('scrollToSection');
+    if (scrollToSection) {
+      sessionStorage.removeItem('scrollToSection');
+      setTimeout(() => {
+        const element = document.getElementById(scrollToSection);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, []);
 
   return (
     <div>
