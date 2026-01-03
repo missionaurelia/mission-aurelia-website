@@ -181,11 +181,15 @@ export default function Home() {
           <p className="text-xl max-w-2xl mx-auto mb-12">
             Access exclusive resources, character profiles, and world-building materials.
           </p>
-          <Link href="/contact#resources">
-            <a className="btn-primary">
-              Explore Resources
-            </a>
-          </Link>
+          <button
+            onClick={() => {
+              sessionStorage.setItem('scrollToSection', 'resources');
+              window.location.href = '/contact';
+            }}
+            className="btn-primary"
+          >
+            Explore Resources
+          </button>
         </div>
       </section>
     </div>
