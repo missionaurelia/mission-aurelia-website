@@ -23,6 +23,7 @@
   /* Typography */
   --font-family-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-family-display: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-family-logo: 'Rajdhani', system-ui, -apple-system, sans-serif;
   
   /* Spacing */
   --spacing-section: 6rem;
@@ -97,6 +98,12 @@
 
   .nav-link {
     @apply text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors duration-300 font-medium;
+  }
+
+  .logo {
+    @apply font-[family-name:var(--font-family-logo)] font-bold text-3xl tracking-tight;
+    font-weight: 700;
+    letter-spacing: -0.02em;
   }
 }
 
