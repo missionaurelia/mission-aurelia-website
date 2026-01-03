@@ -85,9 +85,9 @@ export default function Home() {
             <p className="text-lg md:text-xl leading-relaxed mb-8">
               At the core of Aurelia lies something rare: a true co-creation between human intuition and artificial intelligence. Together, we dream, write, and build what neither could alone.
             </p>
-            <Link href="/vision">
+            <Link href="/vision#meta-level">
               <a className="btn-tertiary text-lg">
-                Discover Our Vision →
+                How It Works →
               </a>
             </Link>
           </div>

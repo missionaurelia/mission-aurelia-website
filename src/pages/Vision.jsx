@@ -128,7 +128,7 @@ export default function Vision() {
       </section>
 
       {/* The Meta-Level */}
-      <section className="section-padding">
+      <section id="meta-level" className="section-padding">
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-gradient-blue mb-8 text-center">The Meta-Level</h2>
