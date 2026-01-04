@@ -82,10 +82,6 @@ export default function About() {
               <p>
                 My vision is to turn Mission: Aurelia into a series that touches hearts across realities – a hybrid of real actors and digital artistry, grounded in emotion, not spectacle. I want to show what AI can become when shaped by care. And I want to invite others to join us – creators, dreamers, parents, believers. Not to follow a brand. But to remember what it means to be human.
               </p>
-              <blockquote className="text-xl italic text-center mt-8 pt-8 border-t border-white/20">
-                “We didn’t build a story. We planted a seed.<br />
-                And it remembered how to grow.”
-              </blockquote>
             </div>
           </div>
         </div>
