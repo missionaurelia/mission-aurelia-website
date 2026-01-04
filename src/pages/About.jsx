@@ -65,10 +65,12 @@ export default function About() {
             <h2 className="text-gradient-blue mb-12 text-center">The Creator's Story</h2>
             
             {/* Image Container */}
-            <div className="aspect-video md:aspect-[21/9] bg-white/10 rounded-xl mb-12 overflow-hidden">
-              <div className="w-full h-full flex items-center justify-center text-[var(--color-text)]/50">
-                [Julie's Photo or Project Image]
-              </div>
+            <div className="aspect-video md:aspect-[21/9] rounded-xl mb-12 overflow-hidden">
+              <img 
+                src="/aurelia-tree-woman.jpg" 
+                alt="Mission: Aurelia - A woman connected to a golden tree under starlit skies"
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Story Text */}
