@@ -6,19 +6,19 @@ export default function Contact() {
   const resources = [
     {
       title: "Creator's Book",
-      description: 'Pitch deck: concept overview, themes, visual direction, and production vision',
+      description: 'The personal heart of Mission: Aurelia – origin, tone, and soul in one document.',
       link: 'https://drive.google.com/file/d/11r_awOPKjs0L-Xtr8ZKGVqrfY80ZwcQF/view?usp=drive_link',
       icon: FileText,
     },
     {
       title: 'Concept Presentation',
-      description: '[Description]',
+      description: 'All key facts and story pillars in one pitch-ready overview.',
       link: 'https://drive.google.com/file/d/1jqorDMvtDYG5SNlgYQRXsj3ui8iDvMdo/view?usp=sharing',
       icon: FileText,
     },
     {
       title: 'Visual Lookbook',
-      description: '[Description]',
+      description: 'A cinematic vision of Mission: Aurelia – bold, emotional, and ready to explore.',
       link: 'https://drive.google.com/file/d/15Kt-WJYIFi6A1toPugNdQAsWUFQmm8NE/view?usp=drive_link',
       icon: FileText,
     },
