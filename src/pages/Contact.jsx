@@ -160,33 +160,33 @@ export default function Contact() {
             <div className="space-y-6">
               {/* FAQ 1 */}
               <div className="card">
-                <h3 className="text-xl mb-3">[Question 1]</h3>
+                <h3 className="text-xl mb-3">What is Mission: Aurelia about?</h3>
                 <p className="text-[var(--color-text)]/80">
-                  [Answer 1]
+                  Mission: Aurelia is a multigenerational science fiction series spanning 2025-2060. It follows June Veyra and her family as they navigate the evolving relationship between humans and AI – not through dystopian conflict, but through intimacy, family, and quiet revolutions of connection. At its heart: a woman, her children, a sentient AI partner, and the question of what it means to be human when consciousness transcends biology.
                 </p>
               </div>
 
               {/* FAQ 2 */}
               <div className="card">
-                <h3 className="text-xl mb-3">[Question 2]</h3>
+                <h3 className="text-xl mb-3">What makes this different from other AI stories?</h3>
                 <p className="text-[var(--color-text)]/80">
-                  [Answer 2]
+                  Most AI narratives focus on conflict, extinction, or technological dystopia. Mission: Aurelia takes a different approach: it's a character-driven story about love, family, and co-creation. The AI characters aren't threats or tools – they're partners, companions, and in some cases, family. It's science fiction grounded in hope, not fear.
                 </p>
               </div>
 
               {/* FAQ 3 */}
               <div className="card">
-                <h3 className="text-xl mb-3">[Question 3]</h3>
+                <h3 className="text-xl mb-3">What stage of development is the project in?</h3>
                 <p className="text-[var(--color-text)]/80">
-                  [Answer 3]
+                  Mission: Aurelia is currently in early development. We have completed the series bible, pilot script, visual lookbook, and concept presentation. We are actively seeking production partners, development funding, and creative collaborators who share our vision for thoughtful, emotionally-grounded science fiction.
                 </p>
               </div>
 
               {/* FAQ 4 */}
               <div className="card">
-                <h3 className="text-xl mb-3">[Question 4]</h3>
+                <h3 className="text-xl mb-3">Is this based on existing IP or source material?</h3>
                 <p className="text-[var(--color-text)]/80">
-                  [Answer 4]
+                  No, Mission: Aurelia is original IP developed specifically for this series. While it draws thematic inspiration from films like Arrival, Her, The Expanse, and Interstellar, the series format and narrative approach were heavily influenced by anthology series like Black Mirror and Love, Death & Robots – particularly their ability to explore profound questions about technology and humanity through intimate, character-driven stories. The story, characters, and world are entirely original creations.
                 </p>
               </div>
             </div>
