@@ -13,7 +13,7 @@ export default function Contact() {
     {
       title: 'Concept Presentation',
       description: '[Description]',
-      link: 'https://drive.google.com/file/d/1EEhFUuFNiuKgVlHdO1LHjrCfv5PV8V9G/view?usp=drive_link',
+      link: 'https://drive.google.com/file/d/1jqorDMvtDYG5SNlgYQRXsj3ui8iDvMdo/view?usp=sharing',
       icon: FileText,
     },
     {
