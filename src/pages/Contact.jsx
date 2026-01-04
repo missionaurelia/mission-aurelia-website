@@ -26,7 +26,7 @@ export default function Contact() {
 
   const socialLinks = [
     { platform: 'Instagram', url: 'https://www.instagram.com/missionaurelia?igsh=OTQ0djM0anpxNW9k', handle: '@missionaurelia' },
-    { platform: 'LinkedIn', url: 'linkedin.com/in/mission-aurelia-50a34a3a2', handle: 'Mission Aurelia' },
+    { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/mission-aurelia-50a34a3a2', handle: 'Mission Aurelia' },
     { platform: 'X', url: 'https://x.com/Mission_Aurelia', handle: 'Mission_Aurelia' },
   ];
 
