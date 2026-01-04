@@ -25,9 +25,9 @@ export default function Contact() {
   ];
 
   const socialLinks = [
-    { platform: 'Instagram', url: 'https://www.instagram.com/missionaurelia?igsh=OTQ0djM0anpxNW9k', handle: '[@missionaurelia]' },
-    { platform: '[Social Platform 2]', url: '#', handle: '[@handle]' },
-    { platform: '[Social Platform 3]', url: '#', handle: '[@handle]' },
+    { platform: 'Instagram', url: 'https://www.instagram.com/missionaurelia?igsh=OTQ0djM0anpxNW9k', handle: '@missionaurelia' },
+    { platform: 'LinkedIn', url: 'linkedin.com/in/mission-aurelia-50a34a3a2', handle: 'Mission Aurelia' },
+    { platform: 'X', url: 'https://x.com/Mission_Aurelia', handle: 'Mission_Aurelia' },
   ];
 
   useEffect(() => {
@@ -77,10 +77,10 @@ export default function Contact() {
                   For inquiries, collaborations, or just to say hello.
                 </p>
                 <a 
-                  href="mailto:[email@example.com]" 
+                  href="mailto:hello@missionaurelia.com" 
                   className="text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors font-semibold"
                 >
-                  [email@example.com]
+                  [hello@missionaurelia.com]
                 </a>
               </div>
 
