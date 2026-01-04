@@ -7,19 +7,19 @@ export default function Contact() {
     {
       title: "Creator's Book",
       description: '[Description of the Creator\'s Book]',
-      link: '#',
+      link: 'https://drive.google.com/file/d/11r_awOPKjs0L-Xtr8ZKGVqrfY80ZwcQF/view?usp=drive_link',
       icon: FileText,
     },
     {
-      title: '[Resource 2]',
+      title: 'Concept Presentation',
       description: '[Description]',
-      link: '#',
+      link: 'https://drive.google.com/file/d/1EEhFUuFNiuKgVlHdO1LHjrCfv5PV8V9G/view?usp=drive_link',
       icon: FileText,
     },
     {
-      title: '[Resource 3]',
+      title: 'Visual Lookbook',
       description: '[Description]',
-      link: '#',
+      link: 'https://drive.google.com/file/d/15Kt-WJYIFi6A1toPugNdQAsWUFQmm8NE/view?usp=drive_link',
       icon: FileText,
     },
   ];
