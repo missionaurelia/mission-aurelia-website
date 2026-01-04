@@ -80,7 +80,7 @@ export default function Contact() {
                   href="mailto:hello@missionaurelia.com" 
                   className="text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors font-semibold"
                 >
-                  [hello@missionaurelia.com]
+                  hello@missionaurelia.com
                 </a>
               </div>
 
