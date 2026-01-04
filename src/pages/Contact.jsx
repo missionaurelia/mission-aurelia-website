@@ -6,7 +6,7 @@ export default function Contact() {
   const resources = [
     {
       title: "Creator's Book",
-      description: '[Description of the Creator\'s Book]',
+      description: 'An insight into the creative origins, core themes, and narrative structure of Mission: Aurelia – written by the creator to guide collaborators and producers through the project's heart.',
       link: 'https://drive.google.com/file/d/11r_awOPKjs0L-Xtr8ZKGVqrfY80ZwcQF/view?usp=drive_link',
       icon: FileText,
     },
