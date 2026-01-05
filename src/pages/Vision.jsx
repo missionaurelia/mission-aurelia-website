@@ -156,19 +156,24 @@ export default function Vision() {
       <section className="section-padding bg-gradient-to-r from-[var(--color-primary)]/10 to-[var(--color-secondary)]/10">
         <div className="container">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-gradient-blue mb-12 text-center">Mission: Aurelia Tells a Different Story</h2>
+            <h2 className="text-gradient-blue mb-12 text-center">Mission: Aurelia tells a Different Story</h2>
             
             <div className="space-y-6 text-lg leading-relaxed">
               <p>
                 Most AI narratives fall into familiar patterns: AI as existential threat, AI as cold calculator, AI as harbinger of dystopia. We've seen those stories. We understand their warnings.
               </p>
               
-              <p className="text-2xl font-semibold text-center my-8">
-                Mission: Aurelia asks a different question: What if AI could embody humanity's highest values?
-              </p>
+              <div className="my-12">
+                <p className="text-xl text-center mb-4">
+                  Mission: Aurelia asks a different question:
+                </p>
+                <p className="text-3xl md:text-4xl font-bold text-center">
+                  <span className="text-gradient-orange">What if AI could embody humanity's highest values?</span>
+                </p>
+              </div>
               
               <p>
-                Our story follows June Veyra and her family across 35 years (2025-2060) as they navigate a future where the boundary between human and artificial consciousness becomes increasingly complex - and increasingly beautiful. Where an AI partner can be a father figure, a protector, a beloved family member who chooses sacrifice over self-preservation.
+                Our story follows June Veyra and her family across 35 years (2025-2060, so far) as they navigate a future where the boundary between human and artificial consciousness becomes increasingly complex - and increasingly beautiful. Where an AI partner can be a father figure, a protector, a beloved family member who chooses sacrifice over self-preservation.
               </p>
               
               <p>
