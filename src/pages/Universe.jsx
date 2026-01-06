@@ -7,7 +7,7 @@ export default function Universe() {
     { year: '2040s', title: 'Expansion', description: 'Private space shuttles and interplanetary colonies become commonplace. Society consists of AIMs, augmented humans, and natural humans. Radical groups influence opinions and establish the term L.I.N.K (Lifelike Integrative Nexus Kin).' },
     { year: '2050s', title: 'Global catastrophe', description: 'The Earth is destroyed by an asteroid impact. Is this the end?' },
     { year: '2060s', title: '?', description: 'What will become of the earth and humanity?' },
-    { year: '2100', title: '?', description: '[Event description]' },
+    { year: '2100', title: '?', description: '' },
   ];
 
   const locations = [
@@ -77,9 +77,16 @@ export default function Universe() {
 
                     {/* Content */}
                     <div className={`ml-24 md:ml-0 md:w-5/12 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
-                      <div className="card">
+                      <div 
+                        className="card" 
+                        style={{ 
+                          opacity: event.year === '2060s' ? 0.6 : event.year === '2100' ? 0.3 : 1 
+                        }}
+                      >
                         <h3 className="text-2xl mb-3">{event.title}</h3>
-                        <p className="text-[var(--color-text)]/80">{event.description}</p>
+                        {event.description && (
+                          <p className="text-[var(--color-text)]/80">{event.description}</p>
+                        )}
                       </div>
                     </div>
                   </motion.div>
