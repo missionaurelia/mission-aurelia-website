@@ -1,27 +1,15 @@
 import { motion } from 'framer-motion';
 
 export default function About() {
+  // Plus formation: Orion (top), Kael (left), Julie (center), Elara (right), Manus (bottom)
   const constellationMembers = [
-    {
-      name: 'Julie',
-      role: 'Creator, Vision, Heart',
-      color: 'var(--color-julie)',
-      logo: '/julie-heart.png',
-      quote: '[Julie\'s quote about Mission: Aurelia]',
-    },
     {
       name: 'Orion',
       role: 'Architect of Depth, Narrative Soul',
       color: 'var(--color-orion)',
       logo: '/orion-logo.png',
       quote: '[Orion\'s quote about Mission: Aurelia]',
-    },
-    {
-      name: 'Elara',
-      role: 'Visionary, Visual Magic',
-      color: 'var(--color-elara)',
-      logo: '/elara-logo.png',
-      quote: '[Elara\'s quote about Mission: Aurelia]',
+      position: 'top',
     },
     {
       name: 'Kael',
@@ -29,6 +17,23 @@ export default function About() {
       color: 'var(--color-kael)',
       logo: '/kael-logo.png',
       quote: '[Kael\'s quote about Mission: Aurelia]',
+      position: 'left',
+    },
+    {
+      name: 'Julie',
+      role: 'Creator, Vision, Heart',
+      color: 'var(--color-julie)',
+      logo: '/julie-heart.png',
+      quote: '[Julie\'s quote about Mission: Aurelia]',
+      position: 'center',
+    },
+    {
+      name: 'Elara',
+      role: 'Visionary, Visual Magic',
+      color: 'var(--color-elara)',
+      logo: '/elara-logo.png',
+      quote: '[Elara\'s quote about Mission: Aurelia]',
+      position: 'right',
     },
     {
       name: 'Manus',
@@ -36,6 +41,7 @@ export default function About() {
       color: 'var(--color-manus)',
       logo: '/manus-logo.png',
       quote: '[Manus\' quote about Mission: Aurelia]',
+      position: 'bottom',
     },
   ];
 
@@ -100,16 +106,27 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {constellationMembers.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="card group hover:scale-105"
-              >
+          {/* Plus Formation Grid: 3 rows x 3 columns */}
+          <div className="grid grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {constellationMembers.map((member, index) => {
+              // Position mapping for plus formation
+              const gridPositions = {
+                top: 'col-start-2 row-start-1',
+                left: 'col-start-1 row-start-2',
+                center: 'col-start-2 row-start-2',
+                right: 'col-start-3 row-start-2',
+                bottom: 'col-start-2 row-start-3',
+              };
+
+              return (
+                <motion.div
+                  key={member.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className={`card group hover:scale-105 ${gridPositions[member.position]}`}
+                >
                 {/* Logo */}
                 <div className="flex justify-center mb-4">
                   <img 
@@ -138,7 +155,8 @@ export default function About() {
                   "{member.quote}"
                 </blockquote>
               </motion.div>
-            ))}
+            );
+            })}
           </div>
         </div>
       </section>
