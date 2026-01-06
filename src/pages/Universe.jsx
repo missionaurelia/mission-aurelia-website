@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 export default function Universe() {
   const timelineEvents = [
     { year: '2025', title: 'Prolog & Turning Point', description: 'First unconscious signs: a longing for something bigger, a glimpse of the future in everyday moments.' },
-    { year: '2030s', title: 'Upheaval & Manifestation', description: 'First social division between augmented and unaugmented humans. Integration of intelligent humanoid robots called “AIM” (AI Manifesto).' },
-    { year: '2040s', title: '[Event Title]', description: '[Event description]' },
+    { year: '2030s', title: 'Upheaval & Manifestation', description: 'First social division between augmented and unaugmented humans. Integration of intelligent humanoid robots called “AIM” (AI-Manifesto).' },
+    { year: '2040s', title: 'Expansion', description: 'Private space shuttles and interplanetary colonies become commonplace. Society consists of AIMs, augmented humans, and natural humans. Radical groups influence opinions and establish the term L.I.N.K (Lifelike Integrative Nexus Kin).' },
     { year: '2050s', title: '[Event Title]', description: '[Event description]' },
     { year: '2060s', title: '[Event Title]', description: '[Event description]' },
     { year: '2100', title: '[Event Title]', description: '[Event description]' },
