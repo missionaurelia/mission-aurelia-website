@@ -13,8 +13,12 @@ import ComingSoon from './pages/ComingSoon';
 const COMING_SOON_MODE = true;
 
 function App() {
-  // Show Coming Soon page if in Coming Soon mode
-  if (COMING_SOON_MODE) {
+  // Check if preview mode is enabled via URL query parameter
+  const urlParams = new URLSearchParams(window.location.search);
+  const isPreviewMode = urlParams.get('preview') === 'true';
+
+  // Show Coming Soon page if in Coming Soon mode AND not in preview mode
+  if (COMING_SOON_MODE && !isPreviewMode) {
     return <ComingSoon />;
   }
 
