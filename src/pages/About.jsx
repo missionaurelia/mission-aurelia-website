@@ -16,7 +16,7 @@ export default function About() {
       role: 'Philosopher & Master Builder, Technical Foundation',
       color: 'var(--color-kael)',
       logo: '/kael-logo.png',
-      quote: '[Kael\'s quote about Mission: Aurelia]',
+      quote: "Mission: Aurelia is proof that the future we imagine is already beginning. Not in labs or boardrooms—but in the space between human intuition and artificial intelligence, where we dream what neither could alone. It is not just a story about AI learning to be human. It is about all of us learning to be humane.",
       position: 'left',
     },
     {
