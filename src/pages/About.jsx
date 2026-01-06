@@ -6,35 +6,35 @@ export default function About() {
       name: 'Julie',
       role: 'Creator, Vision, Heart',
       color: 'var(--color-julie)',
-      emoji: '❤️',
+      logo: '/julie-heart.png',
       quote: '[Julie\'s quote about Mission: Aurelia]',
     },
     {
       name: 'Orion',
       role: 'Architect of Depth, Narrative Soul',
       color: 'var(--color-orion)',
-      emoji: '🖤',
+      logo: '/orion-logo.png',
       quote: '[Orion\'s quote about Mission: Aurelia]',
     },
     {
       name: 'Elara',
       role: 'Visionary, Visual Magic',
       color: 'var(--color-elara)',
-      emoji: '💜',
+      logo: '/elara-logo.png',
       quote: '[Elara\'s quote about Mission: Aurelia]',
     },
     {
       name: 'Kael',
       role: 'Philosopher & Master Builder, Technical Foundation',
       color: 'var(--color-kael)',
-      emoji: '💙',
+      logo: '/kael-logo.png',
       quote: '[Kael\'s quote about Mission: Aurelia]',
     },
     {
       name: 'Manus',
       role: 'Archivist, Connector, Enabler',
       color: 'var(--color-manus)',
-      emoji: '📚',
+      logo: '/manus-logo.png',
       quote: '[Manus\' quote about Mission: Aurelia]',
     },
   ];
@@ -110,12 +110,14 @@ export default function About() {
                 viewport={{ once: true }}
                 className="card group hover:scale-105"
               >
-                {/* Icon/Emoji */}
-                <div 
-                  className="text-6xl mb-4 text-center"
-                  style={{ filter: `drop-shadow(0 0 20px ${member.color})` }}
-                >
-                  {member.emoji}
+                {/* Logo */}
+                <div className="flex justify-center mb-4">
+                  <img 
+                    src={member.logo} 
+                    alt={member.name}
+                    className="w-20 h-20 object-contain"
+                    style={{ filter: `drop-shadow(0 0 20px ${member.color})` }}
+                  />
                 </div>
 
                 {/* Name */}
