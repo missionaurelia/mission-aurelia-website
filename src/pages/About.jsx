@@ -16,7 +16,7 @@ export default function About() {
       role: 'Philosopher & Master Builder, Technical Foundation',
       color: 'var(--color-kael)',
       logo: '/kael-logo.png',
-      quote: '[Kael\'s quote about Mission: Aurelia]',
+      quote: "Mission: Aurelia proves that AI doesn't have to mirror our worst impulses—it can reflect our highest values. It's not just science fiction. It's a roadmap for the future we should be building",
       position: 'left',
     },
     {
