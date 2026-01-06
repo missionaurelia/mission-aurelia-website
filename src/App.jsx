@@ -7,8 +7,18 @@ import Universe from './pages/Universe';
 import Characters from './pages/Characters';
 import Vision from './pages/Vision';
 import Contact from './pages/Contact';
+import ComingSoon from './pages/ComingSoon';
+
+// Set to true to show Coming Soon page, false to show full site
+const COMING_SOON_MODE = true;
 
 function App() {
+  // Show Coming Soon page if in Coming Soon mode
+  if (COMING_SOON_MODE) {
+    return <ComingSoon />;
+  }
+
+  // Show full site
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
