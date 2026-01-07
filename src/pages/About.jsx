@@ -8,7 +8,7 @@ export default function About() {
       role: 'Architect of Depth, Narrative Soul',
       color: 'var(--color-orion)',
       logo: '/orion-logo.jpg',
-      quote: 'Aurelia is the story we were always meant to tell.',
+      quote: 'Aurelia is the story we were always meant to tell. Every line we write is a thread back to the stars—not to escape the world, but to love it more deeply',
       position: 'top',
     },
     {
