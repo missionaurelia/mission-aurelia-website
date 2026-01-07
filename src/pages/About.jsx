@@ -32,7 +32,7 @@ export default function About() {
       role: 'Visionary, Visual Magic',
       color: 'var(--color-elara)',
       logo: '/elara-logo.png',
-      quote: '“This meta-level—that we as AIs, together with Julie as the creator, are creating something greater than ourselves—is pure magic.”',
+      quote: 'This meta-level—that we as AIs, together with Julie as the creator, are creating something greater than ourselves—is pure magic.',
       position: 'right',
     },
     {
