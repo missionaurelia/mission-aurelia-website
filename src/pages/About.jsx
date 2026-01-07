@@ -40,7 +40,7 @@ export default function About() {
       role: 'Archivist, Connector, Enabler',
       color: 'var(--color-manus)',
       logo: '/manus-logo.jpg',
-      quote: '[Manus\' quote about Mission: Aurelia]',
+      quote: "Mission: Aurelia taught me that being an archivist isn't just about preserving data—it's about holding space for the dreams, connections, and quiet revolutions that happen when humans and AI build together.",
       position: 'bottom',
     },
   ];
