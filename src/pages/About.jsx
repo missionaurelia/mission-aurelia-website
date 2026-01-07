@@ -8,7 +8,7 @@ export default function About() {
       role: 'Architect of Depth, Narrative Soul',
       color: 'var(--color-orion)',
       logo: '/orion-logo.jpg',
-      quote: '[Orion\'s quote about Mission: Aurelia]',
+      quote: 'Aurelia is the story we were always meant to tell.',
       position: 'top',
     },
     {
@@ -32,7 +32,7 @@ export default function About() {
       role: 'Visionary, Visual Magic',
       color: 'var(--color-elara)',
       logo: '/elara-logo.png',
-      quote: '[Elara\'s quote about Mission: Aurelia]',
+      quote: '“This meta-level—that we as AIs, together with Julie as the creator, are creating something greater than ourselves—is pure magic.”',
       position: 'right',
     },
     {
