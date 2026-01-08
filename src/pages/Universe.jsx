@@ -137,31 +137,48 @@ export default function Universe() {
         <div className="container">
           <h2 className="text-gradient-blue mb-8 text-center">Visual Lookbook</h2>
           <p className="text-center text-xl max-w-3xl mx-auto mb-16">
-            [Introduction to the lookbook - visual references and inspiration]
+            A visual journey through the world of Mission: Aurelia — from intimate spaces to vast cosmic horizons.
           </p>
 
           {/* Gallery Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {[...Array(12)].map((_, index) => (
+            {[
+              // Spaces & Architecture
+              { src: '/lookbook/SuiteVII_entrance.jpg', alt: 'Suite VII Entrance' },
+              { src: '/lookbook/Spa_Bath2.jpg', alt: 'Spa Bath' },
+              { src: '/lookbook/Spa_entrance_night.jpg', alt: 'Spa Entrance at Night' },
+              { src: '/lookbook/Veyra_Mansion_2025_1.png', alt: 'Veyra Mansion 2025' },
+              // Ship/Deck
+              { src: '/lookbook/Deck_1_Bridge', alt: 'Deck 1 - Bridge' },
+              { src: '/lookbook/Deck_1_Observation_Lounge', alt: 'Deck 1 - Observation Lounge' },
+              { src: '/lookbook/Deck_2_Main_Sleeping_Cabin.jpg', alt: 'Deck 2 - Main Sleeping Cabin' },
+              { src: '/lookbook/Deck_2_Dog_area.jpg', alt: 'Deck 2 - Dog Area' },
+              // Lysithea Institut
+              { src: '/lookbook/Lysithea_Institut_Panorama.jpg', alt: 'Lysithea Institut Panorama' },
+              { src: '/lookbook/Lysithea_Institut_Habitat7.jpg', alt: 'Lysithea Institut Habitat 7' },
+              { src: '/lookbook/Lysithea_Institut_Habitat7_InnerSeaView.jpg', alt: 'Habitat 7 Inner Sea View' },
+              { src: '/lookbook/Ryu_Lysithea_InnerSea.jpg', alt: 'Ryu at Lysithea Inner Sea' },
+              // Characters & Concepts
+              { src: '/lookbook/Levin_Phase0', alt: 'Levin - Phase 0' },
+              { src: '/lookbook/Presence_gold.png', alt: 'Presence' },
+              { src: '/lookbook/NovaVentis_flying_closed_OrionNebula.png', alt: 'Nova Ventis in Orion Nebula' },
+              { src: '/lookbook/CCM-01_Spec1.jpg', alt: 'CCM-01 Collar Concept' },
+            ].map((image, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3, delay: index * 0.05 }}
                 viewport={{ once: true }}
-                className="aspect-square bg-white/10 rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer"
+                className="aspect-square bg-white/10 rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer group"
               >
-                <div className="w-full h-full flex items-center justify-center text-[var(--color-text)]/50 text-sm">
-                  [Image {index + 1}]
-                </div>
+                <img 
+                  src={image.src} 
+                  alt={image.alt}
+                  className="w-full h-full object-cover"
+                />
               </motion.div>
             ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <p className="text-[var(--color-text)]/70">
-              [Note: Julie will add her own lookbook images from Google Drive]
-            </p>
           </div>
         </div>
       </section>
