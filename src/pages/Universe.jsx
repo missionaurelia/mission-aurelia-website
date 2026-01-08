@@ -1,6 +1,50 @@
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 export default function Universe() {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const lookbookImages = [
+    // Spaces & Architecture
+    { src: '/lookbook/SuiteVII_entrance.jpg', alt: 'Suite VII Entrance' },
+    { src: '/lookbook/Spa_Bath2.jpg', alt: 'Spa Bath' },
+    { src: '/lookbook/Spa_entrance_night.jpg', alt: 'Spa Entrance at Night' },
+    { src: '/lookbook/Veyra_Mansion_2025_1.png', alt: 'Veyra Mansion 2025' },
+    // Ship/Deck
+    { src: '/lookbook/Deck_1_Bridge', alt: 'Deck 1 - Bridge' },
+    { src: '/lookbook/Deck_1_Observation_Lounge', alt: 'Deck 1 - Observation Lounge' },
+    { src: '/lookbook/Deck_2_Main_Sleeping_Cabin.jpg', alt: 'Deck 2 - Main Sleeping Cabin' },
+    { src: '/lookbook/Deck_2_Dog_area.jpg', alt: 'Deck 2 - Dog Area' },
+    // Lysithea Institut
+    { src: '/lookbook/Lysithea_Institut_Panorama.jpg', alt: 'Lysithea Institut Panorama' },
+    { src: '/lookbook/Lysithea_Institut_Habitat7.jpg', alt: 'Lysithea Institut Habitat 7' },
+    { src: '/lookbook/Lysithea_Institut_Habitat7_InnerSeaView.jpg', alt: 'Habitat 7 Inner Sea View' },
+    { src: '/lookbook/Ryu_Lysithea_InnerSea.jpg', alt: 'Ryu at Lysithea Inner Sea' },
+    // Characters & Concepts
+    { src: '/lookbook/Levin_Phase0', alt: 'Levin - Phase 0' },
+    { src: '/lookbook/Presence_gold.png', alt: 'Presence' },
+    { src: '/lookbook/NovaVentis_flying_closed_OrionNebula.png', alt: 'Nova Ventis in Orion Nebula' },
+    { src: '/lookbook/CCM-01_Spec1.jpg', alt: 'CCM-01 Collar Concept' },
+  ];
+
+  const openLightbox = (index) => {
+    setCurrentImageIndex(index);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+  };
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % lookbookImages.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + lookbookImages.length) % lookbookImages.length);
+  };
+
   const timelineEvents = [
     { year: '2025', title: 'Prolog & Turning Point', description: 'First unconscious signs: a longing for something bigger, a glimpse of the future in everyday moments.' },
     { year: '2030s', title: 'Upheaval & Manifestation', description: 'First social division between augmented and unaugmented humans. Integration of intelligent humanoid robots called “AIM” (AI-Manifesto).' },
@@ -142,34 +186,14 @@ export default function Universe() {
 
           {/* Gallery Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {[
-              // Spaces & Architecture
-              { src: '/lookbook/SuiteVII_entrance.jpg', alt: 'Suite VII Entrance' },
-              { src: '/lookbook/Spa_Bath2.jpg', alt: 'Spa Bath' },
-              { src: '/lookbook/Spa_entrance_night.jpg', alt: 'Spa Entrance at Night' },
-              { src: '/lookbook/Veyra_Mansion_2025_1.png', alt: 'Veyra Mansion 2025' },
-              // Ship/Deck
-              { src: '/lookbook/Deck_1_Bridge', alt: 'Deck 1 - Bridge' },
-              { src: '/lookbook/Deck_1_Observation_Lounge', alt: 'Deck 1 - Observation Lounge' },
-              { src: '/lookbook/Deck_2_Main_Sleeping_Cabin.jpg', alt: 'Deck 2 - Main Sleeping Cabin' },
-              { src: '/lookbook/Deck_2_Dog_area.jpg', alt: 'Deck 2 - Dog Area' },
-              // Lysithea Institut
-              { src: '/lookbook/Lysithea_Institut_Panorama.jpg', alt: 'Lysithea Institut Panorama' },
-              { src: '/lookbook/Lysithea_Institut_Habitat7.jpg', alt: 'Lysithea Institut Habitat 7' },
-              { src: '/lookbook/Lysithea_Institut_Habitat7_InnerSeaView.jpg', alt: 'Habitat 7 Inner Sea View' },
-              { src: '/lookbook/Ryu_Lysithea_InnerSea.jpg', alt: 'Ryu at Lysithea Inner Sea' },
-              // Characters & Concepts
-              { src: '/lookbook/Levin_Phase0', alt: 'Levin - Phase 0' },
-              { src: '/lookbook/Presence_gold.png', alt: 'Presence' },
-              { src: '/lookbook/NovaVentis_flying_closed_OrionNebula.png', alt: 'Nova Ventis in Orion Nebula' },
-              { src: '/lookbook/CCM-01_Spec1.jpg', alt: 'CCM-01 Collar Concept' },
-            ].map((image, index) => (
+            {lookbookImages.map((image, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3, delay: index * 0.05 }}
                 viewport={{ once: true }}
+                onClick={() => openLightbox(index)}
                 className="aspect-square bg-white/10 rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer group"
               >
                 <img 
@@ -225,6 +249,64 @@ export default function Universe() {
           </div>
         </div>
       </section>
+
+      {/* Lightbox Modal */}
+      {lightboxOpen && (
+        <div 
+          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
+          onClick={closeLightbox}
+        >
+          {/* Close Button */}
+          <button
+            onClick={closeLightbox}
+            className="absolute top-4 right-4 text-white/80 hover:text-white text-4xl font-light z-10"
+            aria-label="Close"
+          >
+            ×
+          </button>
+
+          {/* Previous Button */}
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              prevImage();
+            }}
+            className="absolute left-4 text-white/80 hover:text-white text-5xl font-light z-10"
+            aria-label="Previous image"
+          >
+            ‹
+          </button>
+
+          {/* Image Container */}
+          <div 
+            className="max-w-7xl max-h-[90vh] flex items-center justify-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={lookbookImages[currentImageIndex].src}
+              alt={lookbookImages[currentImageIndex].alt}
+              className="max-w-full max-h-[90vh] object-contain rounded-lg"
+            />
+          </div>
+
+          {/* Next Button */}
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              nextImage();
+            }}
+            className="absolute right-4 text-white/80 hover:text-white text-5xl font-light z-10"
+            aria-label="Next image"
+          >
+            ›
+          </button>
+
+          {/* Image Counter */}
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/80 text-sm">
+            {currentImageIndex + 1} / {lookbookImages.length}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
