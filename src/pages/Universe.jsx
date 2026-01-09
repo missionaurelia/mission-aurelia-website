@@ -194,13 +194,17 @@ export default function Universe() {
                 transition={{ duration: 0.3, delay: index * 0.05 }}
                 viewport={{ once: true }}
                 onClick={() => openLightbox(index)}
-                className="aspect-square bg-white/10 rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer group"
+                className="aspect-square bg-white/10 rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer group relative"
               >
                 <img 
                   src={image.src} 
                   alt={image.alt}
                   className="w-full h-full object-cover"
                 />
+                {/* Watermark */}
+                <div className="absolute bottom-2 right-2 text-white/60 text-xs font-light pointer-events-none">
+                  © 2026 Mission: Aurelia
+                </div>
               </motion.div>
             ))}
           </div>
@@ -279,7 +283,7 @@ export default function Universe() {
 
           {/* Image Container */}
           <div 
-            className="max-w-7xl max-h-[90vh] flex items-center justify-center"
+            className="max-w-7xl max-h-[90vh] flex items-center justify-center relative"
             onClick={(e) => e.stopPropagation()}
           >
             <img
@@ -287,6 +291,10 @@ export default function Universe() {
               alt={lookbookImages[currentImageIndex].alt}
               className="max-w-full max-h-[90vh] object-contain rounded-lg"
             />
+            {/* Watermark */}
+            <div className="absolute bottom-4 right-4 text-white/70 text-sm font-light pointer-events-none">
+              © 2026 Mission: Aurelia
+            </div>
           </div>
 
           {/* Next Button */}
