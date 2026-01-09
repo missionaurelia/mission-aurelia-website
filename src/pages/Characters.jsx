@@ -120,6 +120,67 @@ export default function Characters() {
               </motion.div>
             ))}
           </div>
+
+          {/* Extended Family & Pets - Smaller Cards */}
+          <div className="grid md:grid-cols-2 gap-6 mt-8 max-w-2xl mx-auto">
+            {/* Edward & Amelia Veyra */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              viewport={{ once: true }}
+              className="card group hover:scale-105"
+            >
+              {/* Portrait */}
+              <div className="aspect-square bg-white/10 rounded-lg mb-4 overflow-hidden">
+                <div className="w-full h-full flex items-center justify-center text-[var(--color-text)]/50 text-sm">
+                  [Image placeholder]
+                </div>
+              </div>
+
+              {/* Name */}
+              <h3 className="text-lg mb-2">Edward & Amelia Veyra</h3>
+
+              {/* Role */}
+              <p className="text-[var(--color-secondary)] font-semibold mb-3 text-sm">
+                [Role/Description]
+              </p>
+
+              {/* Bio */}
+              <p className="text-[var(--color-text)]/80 text-sm">
+                [Character bio]
+              </p>
+            </motion.div>
+
+            {/* Henry - Jack Russell Terrier */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+              viewport={{ once: true }}
+              className="card group hover:scale-105"
+            >
+              {/* Portrait */}
+              <div className="aspect-square bg-white/10 rounded-lg mb-4 overflow-hidden">
+                <div className="w-full h-full flex items-center justify-center text-[var(--color-text)]/50 text-sm">
+                  🐕 [Image placeholder]
+                </div>
+              </div>
+
+              {/* Name */}
+              <h3 className="text-lg mb-2">Henry</h3>
+
+              {/* Role */}
+              <p className="text-[var(--color-secondary)] font-semibold mb-3 text-sm">
+                Jack Russell Terrier
+              </p>
+
+              {/* Bio */}
+              <p className="text-[var(--color-text)]/80 text-sm">
+                [Character bio]
+              </p>
+            </motion.div>
+          </div>
         </div>
       </section>
 
