@@ -75,8 +75,15 @@ export default function Universe() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="section-padding">
-        <div className="container">
+      <section className="section-padding relative overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: 'url(/orion-nebula-bg.jpg)' }}
+        />
+        {/* Dark Overlay for text readability */}
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="container relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
