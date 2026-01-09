@@ -85,7 +85,7 @@ export default function Universe() {
           >
             <h1 className="text-gradient-orange mb-8">The Universe</h1>
             <p className="text-xl md:text-2xl leading-relaxed">
-              [Introduction to the Mission: Aurelia universe - spanning from 2025 to 2100]
+              
             </p>
           </motion.div>
         </div>
