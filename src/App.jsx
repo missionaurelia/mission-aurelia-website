@@ -1,4 +1,5 @@
-import { Route, Switch } from 'wouter';
+import { Route, Switch, useLocation } from 'wouter';
+import { useEffect } from 'react';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -13,6 +14,13 @@ import ComingSoon from './pages/ComingSoon';
 const COMING_SOON_MODE = true;
 
 function App() {
+  const [location] = useLocation();
+  
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   // Check if preview mode is enabled via URL query parameter
   const urlParams = new URLSearchParams(window.location.search);
   const isPreviewMode = urlParams.get('preview') === 'true';
