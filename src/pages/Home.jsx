@@ -132,9 +132,9 @@ export default function Home() {
                   [Image 1]
                 </div>
               </div>
-              <h3 className="text-2xl mb-4">[Card 1 Title]</h3>
+              <h3 className="text-2xl mb-4">Key Locations</h3>
               <p className="text-[var(--color-text)]/80 mb-4">
-                [Card 1 description]
+                Where does Mission: Aurelia take place?
               </p>
               <Link href="/universe">
                 <a className="btn-tertiary">Learn More →</a>
@@ -148,12 +148,12 @@ export default function Home() {
                   [Image 2]
                 </div>
               </div>
-              <h3 className="text-2xl mb-4">[Card 2 Title]</h3>
+              <h3 className="text-2xl mb-4">Characters</h3>
               <p className="text-[var(--color-text)]/80 mb-4">
-                [Card 2 description]
+                Who are the main characters?
               </p>
               <Link href="/characters">
-                <a className="btn-tertiary">Meet the Characters →</a>
+                <a className="btn-tertiary">Meet them →</a>
               </Link>
             </div>
 
@@ -164,9 +164,9 @@ export default function Home() {
                   [Image 3]
                 </div>
               </div>
-              <h3 className="text-2xl mb-4">[Card 3 Title]</h3>
+              <h3 className="text-2xl mb-4">Our Vision</h3>
               <p className="text-[var(--color-text)]/80 mb-4">
-                [Card 3 description]
+                What motivates us?
               </p>
               <Link href="/vision">
                 <a className="btn-tertiary">Explore the Vision →</a>
