@@ -13,6 +13,10 @@ import ComingSoon from './pages/ComingSoon';
 // Set to true to show Coming Soon page, false to show full site
 const COMING_SOON_MODE = true;
 
+// Check if preview mode is enabled via URL query parameter (check once at load)
+const urlParams = new URLSearchParams(window.location.search);
+const isPreviewMode = urlParams.get('preview') === 'true';
+
 function App() {
   const [location] = useLocation();
   
@@ -20,10 +24,6 @@ function App() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
-
-  // Check if preview mode is enabled via URL query parameter
-  const urlParams = new URLSearchParams(window.location.search);
-  const isPreviewMode = urlParams.get('preview') === 'true';
 
   // Show Coming Soon page if in Coming Soon mode AND not in preview mode
   if (COMING_SOON_MODE && !isPreviewMode) {
