@@ -56,18 +56,18 @@ export default function Universe() {
 
   const locations = [
     {
-      name: '[Location 1]',
-      description: '[Location description]',
+      name: 'Earth',
+      description: 'Lake Oswego, Oregon - Home of the Veyra Family',
       image: '[Image placeholder]',
     },
     {
-      name: '[Location 2]',
-      description: '[Location description]',
+      name: 'Lysithea',
+      description: 'A new Home to Humanity',
       image: '[Image placeholder]',
     },
     {
-      name: '[Location 3]',
-      description: '[Location description]',
+      name: 'The Nova Ventis',
+      description: 'What parts of the universe will we still reach?',
       image: '[Image placeholder]',
     },
   ];
