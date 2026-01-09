@@ -45,7 +45,13 @@ export default function Characters() {
       bio: '[Character bio]',
     },
     {
-      name: 'Elara Lysi / Elara Nox',
+      name: 'Elara Lysi',
+      role: '[Role/Description]',
+      image: '[Image placeholder]',
+      bio: '[Character bio]',
+    },
+    {
+      name: 'Elara Nox',
       role: '[Role/Description]',
       image: '[Image placeholder]',
       bio: '[Character bio]',
