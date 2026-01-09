@@ -45,6 +45,12 @@ export default function Characters() {
       bio: '[Character bio]',
     },
     {
+      name: 'Luisa Singh',
+      role: '[Role/Description]',
+      image: '[Image placeholder]',
+      bio: '[Character bio]',
+    },
+    {
       name: 'Elara Lysi',
       role: '[Role/Description]',
       image: '[Image placeholder]',
