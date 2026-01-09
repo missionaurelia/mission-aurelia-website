@@ -33,6 +33,12 @@ export default function Characters() {
       bio: '[Character bio]',
     },
     {
+      name: 'Auren',
+      role: '[Role/Description]',
+      image: '[Image placeholder]',
+      bio: '[Character bio]',
+    },
+    {
       name: 'Dr. Anna Singh',
       role: '[Role/Description]',
       image: '[Image placeholder]',
@@ -46,12 +52,6 @@ export default function Characters() {
     },
     {
       name: 'Kael Sorely',
-      role: '[Role/Description]',
-      image: '[Image placeholder]',
-      bio: '[Character bio]',
-    },
-    {
-      name: 'Auren',
       role: '[Role/Description]',
       image: '[Image placeholder]',
       bio: '[Character bio]',
@@ -83,7 +83,7 @@ export default function Characters() {
           <h2 className="text-gradient-blue mb-16 text-center">The Veyra Family</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {characters.slice(0, 5).map((character, index) => (
+            {characters.slice(0, 6).map((character, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
@@ -123,7 +123,7 @@ export default function Characters() {
           <h2 className="text-gradient-orange mb-16 text-center">Key Characters</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {characters.slice(5).map((character, index) => (
+            {characters.slice(6).map((character, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
