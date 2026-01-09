@@ -58,17 +58,17 @@ export default function Universe() {
     {
       name: 'Earth',
       description: 'Lake Oswego, Oregon - Home of the Veyra Family',
-      image: '[Image placeholder]',
+      image: '/locations/Veyra_Mansion_2035_ext.jpg',
     },
     {
       name: 'Lysithea',
       description: 'A new Home to Humanity',
-      image: '[Image placeholder]',
+      image: '/locations/Lysithea_Aurelion.png',
     },
     {
       name: 'The Nova Ventis',
       description: 'What parts of the universe will we still reach?',
-      image: '[Image placeholder]',
+      image: '/locations/NovaVentis_OuterShell_closed1.png',
     },
   ];
 
@@ -165,9 +165,11 @@ export default function Universe() {
               >
                 {/* Image */}
                 <div className="aspect-video bg-white/10 rounded-lg mb-6 overflow-hidden">
-                  <div className="w-full h-full flex items-center justify-center text-[var(--color-text)]/50">
-                    {location.image}
-                  </div>
+                  <img 
+                    src={location.image} 
+                    alt={location.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 {/* Name */}
