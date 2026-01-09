@@ -160,26 +160,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
-      {/* Philosophy Section */}
-      <section className="section-padding bg-gradient-to-r from-[var(--color-primary)]/10 to-[var(--color-secondary)]/10">
-        <div className="container">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-gradient-blue mb-8">Our Philosophy</h2>
-            <div className="space-y-6 text-lg leading-relaxed">
-              <p>
-                [Philosophy paragraph 1 - About human-AI collaboration]
-              </p>
-              <p>
-                [Philosophy paragraph 2 - About the future of storytelling]
-              </p>
-              <p>
-                [Philosophy paragraph 3 - About hope and transformation]
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
