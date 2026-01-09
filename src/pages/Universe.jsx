@@ -57,17 +57,17 @@ export default function Universe() {
   const locations = [
     {
       name: 'Earth',
-      description: 'Lake Oswego, Oregon - Home of the Veyra Family',
+      description: 'Lake Oswego, Oregon...?',
       image: '/locations/Veyra_Mansion_2035_ext.jpg',
     },
     {
       name: 'Lysithea',
-      description: 'A new Home to Humanity',
+      description: '?',
       image: '/locations/Lysithea_Aurelion.png',
     },
     {
       name: 'The Nova Ventis',
-      description: 'What parts of the universe will we still reach?',
+      description: 'Wh?',
       image: '/locations/NovaVentis_OuterShell_closed1.png',
     },
   ];
