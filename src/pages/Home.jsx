@@ -120,7 +120,7 @@ export default function Home() {
       <section className="section-padding">
         <div className="container">
           <h2 className="text-center text-gradient-orange mb-16">
-            [Featured Section Title]
+            Featured Sections
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8">
