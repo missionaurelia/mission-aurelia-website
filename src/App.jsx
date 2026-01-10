@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Universe from './pages/Universe';
 import Characters from './pages/Characters';
+import Science from './pages/Science';
 import Vision from './pages/Vision';
 import Contact from './pages/Contact';
 import ComingSoon from './pages/ComingSoon';
@@ -40,6 +41,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/universe" component={Universe} />
           <Route path="/characters" component={Characters} />
+          <Route path="/science" component={Science} />
           <Route path="/vision" component={Vision} />
           <Route path="/contact" component={Contact} />
           <Route>

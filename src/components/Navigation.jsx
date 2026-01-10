@@ -11,6 +11,7 @@ export default function Navigation() {
     { path: '/about', label: 'About' },
     { path: '/universe', label: 'Universe' },
     { path: '/characters', label: 'Characters' },
+    { path: '/science', label: 'Science' },
     { path: '/vision', label: 'Vision' },
     { path: '/contact', label: 'Contact' },
   ];
