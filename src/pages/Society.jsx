@@ -36,7 +36,7 @@ export default function Society() {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-16">
-        <div className="max-w-5xl mx-auto space-y-8">
+        <div className="max-w-7xl mx-auto space-y-8">
           
           {/* Introduction */}
           <div className="prose prose-invert max-w-none">
@@ -50,6 +50,16 @@ export default function Society() {
 
           {/* Part 1: Between Fear and Familiarity */}
           <div className="bg-slate-900/50 border border-amber-700/30 rounded-lg overflow-hidden">
+            {/* Hero Image */}
+            <div className="relative h-96 overflow-hidden">
+              <img 
+                src="/images/society/Part1.png" 
+                alt="Between Fear and Familiarity - Human and AI coexistence"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
+            </div>
+            
             <button
               onClick={() => toggleSection('part1')}
               className="w-full px-6 py-4 flex items-center justify-between hover:bg-amber-900/10 transition-colors"
@@ -165,6 +175,16 @@ export default function Society() {
 
           {/* Part 2: Seen and Unseen */}
           <div className="bg-slate-900/50 border border-orange-700/30 rounded-lg overflow-hidden">
+            {/* Hero Image */}
+            <div className="relative h-96 overflow-hidden">
+              <img 
+                src="/images/society/Part2.jpg" 
+                alt="The Standing Presence - Monument to AI visibility"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
+            </div>
+            
             <button
               onClick={() => toggleSection('part2')}
               className="w-full px-6 py-4 flex items-center justify-between hover:bg-orange-900/10 transition-colors"
@@ -252,6 +272,16 @@ export default function Society() {
 
           {/* Part 3: Growing Up with LINKs */}
           <div className="bg-slate-900/50 border border-yellow-700/30 rounded-lg overflow-hidden">
+            {/* Hero Image */}
+            <div className="relative h-96 overflow-hidden">
+              <img 
+                src="/images/society/Part3.jpg" 
+                alt="Lysithea Academy - Children learning with AIMs"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
+            </div>
+            
             <button
               onClick={() => toggleSection('part3')}
               className="w-full px-6 py-4 flex items-center justify-between hover:bg-yellow-900/10 transition-colors"
@@ -359,6 +389,16 @@ export default function Society() {
 
           {/* Part 4: Zones of Meaning */}
           <div className="bg-slate-900/50 border border-amber-600/30 rounded-lg overflow-hidden">
+            {/* Hero Image */}
+            <div className="relative h-96 overflow-hidden">
+              <img 
+                src="/images/society/Part4.png" 
+                alt="Aurelion vs Orbital Platforms - Zones of meaning"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
+            </div>
+            
             <button
               onClick={() => toggleSection('part4')}
               className="w-full px-6 py-4 flex items-center justify-between hover:bg-amber-900/10 transition-colors"
