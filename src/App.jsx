@@ -7,6 +7,9 @@ import About from './pages/About';
 import Universe from './pages/Universe';
 import Characters from './pages/Characters';
 import Science from './pages/Science';
+import Technology from './pages/Technology';
+import Society from './pages/Society';
+import Philosophy from './pages/Philosophy';
 import Vision from './pages/Vision';
 import Contact from './pages/Contact';
 import ComingSoon from './pages/ComingSoon';
@@ -42,6 +45,9 @@ function App() {
           <Route path="/universe" component={Universe} />
           <Route path="/characters" component={Characters} />
           <Route path="/science" component={Science} />
+          <Route path="/technology" component={Technology} />
+          <Route path="/society" component={Society} />
+          <Route path="/philosophy" component={Philosophy} />
           <Route path="/vision" component={Vision} />
           <Route path="/contact" component={Contact} />
           <Route>

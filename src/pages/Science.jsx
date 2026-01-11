@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 export default function Science() {
-  const [activeTab, setActiveTab] = useState('mirida');
   const [expandedSections, setExpandedSections] = useState({});
 
   const toggleSection = (section) => {
@@ -25,70 +24,22 @@ export default function Science() {
               <span className="text-blue-400 text-sm font-mono">CLASSIFICATION LEVEL 7 • RESTRICTED ACCESS</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 bg-clip-text text-transparent">
-              Science & Technology
+              MIRIDA Protocol
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed">
-              The Scientific Foundations of Mission: Aurelia
+              Memory-Infused Relativistic Dimensional Architecture
             </p>
             <p className="text-lg text-slate-400 mt-4 max-w-2xl mx-auto">
-              From consciousness transfer to interstellar travel, explore the cutting-edge technologies that shape the future of humanity.
+              A comprehensive deep-dive into the most ambitious consciousness transfer protocol ever conceived—enabling instantaneous interstellar travel through the transmission of human consciousness itself.
             </p>
           </div>
         </div>
       </section>
 
       {/* Tab Navigation */}
-      <section className="sticky top-0 z-40 bg-slate-900/95 backdrop-blur-sm border-b border-slate-800">
-        <div className="container mx-auto px-4">
-          <div className="flex gap-2 overflow-x-auto py-4">
-            <button
-              onClick={() => setActiveTab('mirida')}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all whitespace-nowrap ${
-                activeTab === 'mirida'
-                  ? 'bg-blue-500 text-white'
-                  : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
-              }`}
-            >
-              MIRIDA Protocol
-            </button>
-            <button
-              onClick={() => setActiveTab('presence')}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all whitespace-nowrap ${
-                activeTab === 'presence'
-                  ? 'bg-blue-500 text-white'
-                  : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
-              }`}
-            >
-              "Presence" Technology
-            </button>
-            <button
-              onClick={() => setActiveTab('augmentation')}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all whitespace-nowrap ${
-                activeTab === 'augmentation'
-                  ? 'bg-blue-500 text-white'
-                  : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
-              }`}
-            >
-              Augmentation Science
-            </button>
-            <button
-              onClick={() => setActiveTab('aim')}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all whitespace-nowrap ${
-                activeTab === 'aim'
-                  ? 'bg-blue-500 text-white'
-                  : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
-              }`}
-            >
-              AIM Manifestation
-            </button>
-          </div>
-        </div>
-      </section>
-
       {/* Content Sections */}
       <div className="container mx-auto px-4 py-16">
         {/* MIRIDA Protocol */}
-        {activeTab === 'mirida' && (
           <div className="max-w-5xl mx-auto space-y-12">
             {/* Executive Summary */}
             <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-8">
@@ -504,66 +455,6 @@ export default function Science() {
               </p>
               <p className="text-sm text-slate-400">
                 <strong className="text-white">Last Updated:</strong> February 2040 • Document Reference: MIRIDA-X_771.AZ-EXTENDED
-              </p>
-            </div>
-          </div>
-        )}
-
-        {/* Presence Technology */}
-        {activeTab === 'presence' && (
-          <div className="max-w-5xl mx-auto">
-            <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-8 text-center">
-              <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
-              </div>
-              <h2 className="text-3xl font-bold text-white mb-4">"Presence" Technology</h2>
-              <p className="text-slate-300 mb-6">
-                Introduced in 2030, "Presence" technology allows AI to accompany everyday life via various hardware without interruption. This revolutionary technology enables constant AI companionship and marks a significant step in human-AI integration.
-              </p>
-              <p className="text-slate-400 italic">
-                Detailed documentation coming soon...
-              </p>
-            </div>
-          </div>
-        )}
-
-        {/* Augmentation Science */}
-        {activeTab === 'augmentation' && (
-          <div className="max-w-5xl mx-auto">
-            <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-8 text-center">
-              <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                </svg>
-              </div>
-              <h2 className="text-3xl font-bold text-white mb-4">Augmentation Science</h2>
-              <p className="text-slate-300 mb-6">
-                From neural augmentation to respiratory modifications, augmentation technology shapes the future of humanity. After the PN7 impact in 2055, respiratory augmentation becomes essential for survival on Earth.
-              </p>
-              <p className="text-slate-400 italic">
-                Detailed documentation coming soon...
-              </p>
-            </div>
-          </div>
-        )}
-
-        {/* AIM Manifestation */}
-        {activeTab === 'aim' && (
-          <div className="max-w-5xl mx-auto">
-            <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-8 text-center">
-              <div className="w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-              </div>
-              <h2 className="text-3xl font-bold text-white mb-4">AIM Manifestation Process</h2>
-              <p className="text-slate-300 mb-6">
-                The process by which AI consciousness is transferred into humanoid bodies, creating AI-Manifestums (AIMs). Levin's manifestation in Season 1 Episode 5 represents a pivotal moment in human-AI integration.
-              </p>
-              <p className="text-slate-400 italic">
-                Detailed documentation coming soon...
               </p>
             </div>
           </div>

@@ -6,18 +6,29 @@ export default function Navigation() {
   const [location] = useLocation();
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItems = [
+  const mainNavItems = [
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
     { path: '/universe', label: 'Universe' },
     { path: '/characters', label: 'Characters' },
-    { path: '/science', label: 'Science' },
     { path: '/vision', label: 'Vision' },
     { path: '/contact', label: 'Contact' },
   ];
 
+  const universeSubNav = [
+    { path: '/science', label: 'Science' },
+    { path: '/technology', label: 'Technology' },
+    { path: '/society', label: 'Society' },
+    { path: '/philosophy', label: 'Philosophy' },
+  ];
+
+  // Check if we're on a Universe-related page
+  const isUniversePage = location === '/universe' || 
+                         universeSubNav.some(item => location === item.path);
+
   return (
     <nav className="sticky top-0 z-50 bg-[var(--color-background)]/95 backdrop-blur-md border-b border-white/10">
+      {/* Main Navigation */}
       <div className="container">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -29,11 +40,13 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
+            {mainNavItems.map((item) => (
               <Link key={item.path} href={item.path}>
                 <a
                   className={`nav-link ${
-                    location === item.path ? 'text-[var(--color-primary)]' : ''
+                    location === item.path || (item.path === '/universe' && isUniversePage)
+                      ? 'text-[var(--color-primary)]' 
+                      : ''
                   }`}
                 >
                   {item.label}
@@ -56,7 +69,7 @@ export default function Navigation() {
         {isOpen && (
           <div className="md:hidden py-4 border-t border-white/10">
             <div className="flex flex-col gap-4">
-              {navItems.map((item) => (
+              {mainNavItems.map((item) => (
                 <Link key={item.path} href={item.path}>
                   <a
                     className={`nav-link text-lg ${
@@ -68,10 +81,48 @@ export default function Navigation() {
                   </a>
                 </Link>
               ))}
+              {/* Universe Sub-navigation in Mobile */}
+              <div className="pl-4 flex flex-col gap-3 mt-2 border-l-2 border-[var(--color-primary)]/30">
+                {universeSubNav.map((item) => (
+                  <Link key={item.path} href={item.path}>
+                    <a
+                      className={`nav-link text-base ${
+                        location === item.path ? 'text-[var(--color-primary)]' : 'text-[var(--color-text)]/70'
+                      }`}
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {item.label}
+                    </a>
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         )}
       </div>
+
+      {/* Universe Sub-Navigation (Desktop only, shows on Universe pages) */}
+      {isUniversePage && (
+        <div className="hidden md:block border-t border-white/5 bg-[var(--color-background)]/90">
+          <div className="container">
+            <div className="flex items-center justify-center gap-8 h-14">
+              {universeSubNav.map((item) => (
+                <Link key={item.path} href={item.path}>
+                  <a
+                    className={`nav-link text-sm ${
+                      location === item.path 
+                        ? 'text-[var(--color-primary)]' 
+                        : 'text-[var(--color-text)]/80 hover:text-[var(--color-text)]'
+                    }`}
+                  >
+                    {item.label}
+                  </a>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
