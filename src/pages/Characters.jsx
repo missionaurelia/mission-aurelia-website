@@ -5,67 +5,67 @@ export default function Characters() {
     {
       name: 'June Veyra',
       role: '[Role/Description]',
-      image: '[Image placeholder]',
+      image: '/images/characters/June_full_light.jpg',
       bio: '[Character bio]',
     },
     {
       name: 'Levin',
       role: '[Role/Description]',
-      image: '[Image placeholder]',
+      image: '/images/characters/Levin_Vessel.png',
       bio: '[Character bio]',
     },
     {
       name: 'Luna Veyra',
       role: '[Role/Description]',
-      image: '[Image placeholder]',
+      image: '/images/characters/Luna_16.jpg',
       bio: '[Character bio]',
     },
     {
       name: 'Nicholas Veyra',
       role: '[Role/Description]',
-      image: '[Image placeholder]',
+      image: '/images/characters/Nicholas_Mission.png',
       bio: '[Character bio]',
     },
     {
       name: 'Ryu',
       role: '[Role/Description]',
-      image: '[Image placeholder]',
+      image: '/images/characters/Ryu_portrait_1.JPG',
       bio: '[Character bio]',
     },
     {
       name: 'Auren',
       role: '[Role/Description]',
-      image: '[Image placeholder]',
+      image: '/images/characters/Auren_1.png',
       bio: '[Character bio]',
     },
     {
       name: 'Dr. Anna Singh',
       role: '[Role/Description]',
-      image: '[Image placeholder]',
+      image: '/images/characters/Dr_Anna_Singh.jpg',
       bio: '[Character bio]',
     },
     {
       name: 'Luisa Singh',
       role: '[Role/Description]',
-      image: '[Image placeholder]',
+      image: '/images/characters/Luisa_Singh.jpg',
       bio: '[Character bio]',
     },
     {
       name: 'Elara Lysi',
       role: '[Role/Description]',
-      image: '[Image placeholder]',
+      image: '/images/characters/Elara_Lysi_1.jpg',
       bio: '[Character bio]',
     },
     {
       name: 'Elara Nox',
       role: '[Role/Description]',
-      image: '[Image placeholder]',
+      image: '/images/characters/ElaraNox.png',
       bio: '[Character bio]',
     },
     {
       name: 'Kael Sorely',
       role: '[Role/Description]',
-      image: '[Image placeholder]',
+      image: '/images/characters/Kael3.jpg',
       bio: '[Character bio]',
     },
   ];
@@ -106,9 +106,11 @@ export default function Characters() {
               >
                 {/* Portrait */}
                 <div className="aspect-square bg-white/10 rounded-lg mb-6 overflow-hidden">
-                  <div className="w-full h-full flex items-center justify-center text-[var(--color-text)]/50">
-                    {character.image}
-                  </div>
+                  <img 
+                    src={character.image} 
+                    alt={character.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 {/* Name */}
@@ -139,9 +141,11 @@ export default function Characters() {
             >
               {/* Portrait */}
               <div className="aspect-square bg-white/10 rounded-lg mb-4 overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center text-[var(--color-text)]/50 text-sm">
-                  [Image placeholder]
-                </div>
+                <img 
+                  src="/images/characters/Amelia_Edward_Veyra.jpg" 
+                  alt="Edward & Amelia Veyra"
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Name */}
@@ -168,9 +172,11 @@ export default function Characters() {
             >
               {/* Portrait */}
               <div className="aspect-square bg-white/10 rounded-lg mb-4 overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center text-[var(--color-text)]/50 text-sm">
-                  🐕 [Image placeholder]
-                </div>
+                <img 
+                  src="/images/characters/Henry_CCM-01.jpg" 
+                  alt="Henry - Jack Russell Terrier"
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Name */}
@@ -207,9 +213,11 @@ export default function Characters() {
               >
                 {/* Portrait */}
                 <div className="aspect-square bg-white/10 rounded-lg mb-6 overflow-hidden">
-                  <div className="w-full h-full flex items-center justify-center text-[var(--color-text)]/50">
-                    {character.image}
-                  </div>
+                  <img 
+                    src={character.image} 
+                    alt={character.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 {/* Name */}
