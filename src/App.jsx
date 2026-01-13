@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Universe from './pages/Universe';
 import Characters from './pages/Characters';
+import CharactersSelector from './pages/CharactersSelector';
+import CharactersOrbital from './pages/CharactersOrbital';
 import Science from './pages/Science';
 import Technology from './pages/Technology';
 import Society from './pages/Society';
@@ -43,7 +45,8 @@ function App() {
           <Route path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/universe" component={Universe} />
-          <Route path="/characters" component={Characters} />
+          <Route path="/characters" component={CharactersOrbital} />
+          <Route path="/characters/old" component={Characters} />
           <Route path="/science" component={Science} />
           <Route path="/technology" component={Technology} />
           <Route path="/society" component={Society} />
