@@ -10,7 +10,6 @@ export default function Navigation() {
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
     { path: '/universe', label: 'Universe' },
-    { path: '/characters', label: 'Characters' },
     { path: '/vision', label: 'Vision' },
     { path: '/contact', label: 'Contact' },
   ];
@@ -20,6 +19,7 @@ export default function Navigation() {
     { path: '/technology', label: 'Technology' },
     { path: '/society', label: 'Society' },
     { path: '/philosophy', label: 'Philosophy' },
+    { path: '/characters', label: 'Characters' },
   ];
 
   // Check if we're on a Universe-related page
