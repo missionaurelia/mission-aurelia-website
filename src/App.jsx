@@ -17,7 +17,7 @@ import Contact from './pages/Contact';
 import ComingSoon from './pages/ComingSoon';
 
 // Set to true to show Coming Soon page, false to show full site
-const COMING_SOON_MODE = true;
+const COMING_SOON_MODE = false;
 
 // Check if preview mode is enabled via URL query parameter (check once at load)
 const urlParams = new URLSearchParams(window.location.search);

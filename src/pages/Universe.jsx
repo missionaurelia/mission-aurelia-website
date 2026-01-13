@@ -269,6 +269,14 @@ export default function Universe() {
                   [Description of philosophical themes - identity, consciousness, humanity]
                 </p>
               </a>
+
+              {/* Characters */}
+              <a href="/characters" className="card hover:scale-105 transition-transform block">
+                <h3 className="text-2xl mb-4">Characters</h3>
+                <p className="text-[var(--color-text)]/80">
+                  Who lives here? The souls who inhabit the Aurelia universe — human, artificial, and everything in between.
+                </p>
+              </a>
             </div>
           </div>
         </div>
