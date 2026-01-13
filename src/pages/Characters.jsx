@@ -109,7 +109,11 @@ export default function Characters() {
                   <img 
                     src={character.image} 
                     alt={character.name}
-                    className="w-full h-full object-cover"
+                    className={`w-full h-full ${
+                      ['June Veyra', 'Luna Veyra', 'Auren'].includes(character.name)
+                        ? 'object-contain'
+                        : 'object-cover'
+                    }`}
                   />
                 </div>
 
@@ -216,7 +220,11 @@ export default function Characters() {
                   <img 
                     src={character.image} 
                     alt={character.name}
-                    className="w-full h-full object-cover"
+                    className={`w-full h-full ${
+                      character.name === 'Elara Nox'
+                        ? 'object-contain'
+                        : 'object-cover'
+                    }`}
                   />
                 </div>
 
