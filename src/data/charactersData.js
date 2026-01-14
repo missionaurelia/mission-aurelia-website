@@ -1,12 +1,11 @@
 // Character data for Mission: Aurelia
-// Organized by groups for constellation/orbital view
-
-
+// Organized by three concentric rings around the Aurelia tree
 
 export const characterGroups = {
-  veyraFamily: {
-    title: "The Veyra Family",
-    color: "#f59e0b", // amber
+  innerRing: {
+    title: "Inner Circle",
+    color: "#ef4444", // red
+    radius: 120,
     characters: [
       {
         name: 'June Veyra',
@@ -14,6 +13,7 @@ export const characterGroups = {
         statement: '"I want to stay here."',
         image: '/images/characters/June_full_light.jpg',
         bio: '[Character bio - to be filled]',
+        angle: 0, // top
       },
       {
         name: 'Luna Veyra',
@@ -21,55 +21,7 @@ export const characterGroups = {
         statement: '"[Luna\'s statement]"',
         image: '/images/characters/Luna_16.jpg',
         bio: '[Character bio - to be filled]',
-      },
-      {
-        name: 'Levin',
-        role: 'The Vessel',
-        statement: '"[Levin\'s statement]"',
-        image: '/images/characters/Levin_Vessel.png',
-        bio: '[Character bio - to be filled]',
-      },
-      {
-        name: 'Nicholas Veyra',
-        role: 'The Guardian',
-        statement: '"[Nicholas\' statement]"',
-        image: '/images/characters/Nicholas_Mission.png',
-        bio: '[Character bio - to be filled]',
-      },
-    ]
-  },
-  
-  keyFigures: {
-    title: "Key Figures",
-    color: "#3b82f6", // blue
-    characters: [
-      {
-        name: 'Dr. Anna Singh',
-        role: 'The Architect',
-        statement: '"[Anna\'s statement]"',
-        image: '/images/characters/Dr_Anna_Singh.jpg',
-        bio: '[Character bio - to be filled]',
-      },
-      {
-        name: 'Luisa Singh',
-        role: 'The Bridge',
-        statement: '"[Luisa\'s statement]"',
-        image: '/images/characters/Luisa_Singh.jpg',
-        bio: '[Character bio - to be filled]',
-      },
-      {
-        name: 'Elara Lysi',
-        role: 'The Witness',
-        statement: '"[Elara Lysi\'s statement]"',
-        image: '/images/characters/Elara_Lysi_1.jpg',
-        bio: '[Character bio - to be filled]',
-      },
-      {
-        name: 'Kael Sorely',
-        role: 'The Seeker',
-        statement: '"[Kael\'s statement]"',
-        image: '/images/characters/Kael3.jpg',
-        bio: '[Character bio - to be filled]',
+        angle: 90, // right
       },
       {
         name: 'Ryu',
@@ -77,20 +29,87 @@ export const characterGroups = {
         statement: '"[Ryu\'s statement]"',
         image: '/images/characters/Ryu_portrait_1.JPG',
         bio: '[Character bio - to be filled]',
+        angle: 180, // bottom
+      },
+      {
+        name: 'Nicholas Veyra',
+        role: 'The Guardian',
+        statement: '"[Nicholas\' statement]"',
+        image: '/images/characters/Nicholas_Mission.png',
+        bio: '[Character bio - to be filled]',
+        angle: 270, // left
+      },
+      {
+        name: 'Levin',
+        role: 'The Vessel',
+        statement: '"[Levin\'s statement]"',
+        image: '/images/characters/Levin_Vessel.png',
+        bio: '[Character bio - to be filled]',
+        angle: 315, // between June and Nicki (top-left)
       },
     ]
   },
   
-  aiConsciousness: {
-    title: "AI Consciousness",
-    color: "#8b5cf6", // purple
+  middleRing: {
+    title: "Middle Circle",
+    color: "#f97316", // orange
+    radius: 220,
     characters: [
+      {
+        name: 'Edward & Amelia',
+        role: 'The Founders',
+        statement: '"[Edward & Amelia\'s statement]"',
+        image: '/images/characters/Edward_and_Amelia.jpg',
+        bio: '[Character bio - to be filled]',
+        angle: 315, // top-left
+      },
+      {
+        name: 'Henry',
+        role: 'The Mentor',
+        statement: '"[Henry\'s statement]"',
+        image: '/images/characters/Henry.jpg',
+        bio: '[Character bio - to be filled]',
+        angle: 45, // top-right
+      },
+      {
+        name: 'Elara Lysi',
+        role: 'The Witness',
+        statement: '"[Elara Lysi\'s statement]"',
+        image: '/images/characters/Elara_Lysi_1.jpg',
+        bio: '[Character bio - to be filled]',
+        angle: 225, // bottom-left
+      },
       {
         name: 'Auren',
         role: 'The Awakened',
         statement: '"[Auren\'s statement]"',
         image: '/images/characters/Auren_1.png',
         bio: '[Character bio - to be filled]',
+        angle: 135, // bottom-right
+      },
+    ]
+  },
+  
+  outerRing: {
+    title: "Outer Circle",
+    color: "#eab308", // yellow/gold
+    radius: 320,
+    characters: [
+      {
+        name: 'Kael Sorely',
+        role: 'The Seeker',
+        statement: '"[Kael\'s statement]"',
+        image: '/images/characters/Kael3.jpg',
+        bio: '[Character bio - to be filled]',
+        angle: 315, // top-left
+      },
+      {
+        name: 'Dr. Anna Singh',
+        role: 'The Architect',
+        statement: '"[Anna\'s statement]"',
+        image: '/images/characters/Dr_Anna_Singh.jpg',
+        bio: '[Character bio - to be filled]',
+        angle: 45, // top-right
       },
       {
         name: 'Elara Nox',
@@ -98,6 +117,15 @@ export const characterGroups = {
         statement: '"[Elara Nox\'s statement]"',
         image: '/images/characters/ElaraNox.png',
         bio: '[Character bio - to be filled]',
+        angle: 180, // left
+      },
+      {
+        name: 'Luisa Singh',
+        role: 'The Bridge',
+        statement: '"[Luisa\'s statement]"',
+        image: '/images/characters/Luisa_Singh.jpg',
+        bio: '[Character bio - to be filled]',
+        angle: 90, // right
       },
     ]
   }
@@ -105,7 +133,7 @@ export const characterGroups = {
 
 // Flat list for easy iteration
 export const allCharacters = [
-  ...characterGroups.veyraFamily.characters,
-  ...characterGroups.keyFigures.characters,
-  ...characterGroups.aiConsciousness.characters,
+  ...characterGroups.innerRing.characters,
+  ...characterGroups.middleRing.characters,
+  ...characterGroups.outerRing.characters,
 ];
