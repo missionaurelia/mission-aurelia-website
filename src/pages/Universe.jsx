@@ -57,17 +57,17 @@ export default function Universe() {
   const locations = [
     {
       name: 'Earth',
-      description: 'Lake Oswego, Oregon...?',
+      description: 'Lake Oswego, Oregon — where it all begins',
       image: '/locations/Veyra_Mansion_2035_ext.jpg',
     },
     {
       name: 'Lysithea',
-      description: '?',
+      description: "Humanity's second cradle among Jupiter's moons.",
       image: '/locations/Lysithea_Aurelion.png',
     },
     {
       name: 'The Nova Ventis',
-      description: '?',
+      description: "A family's bridge between worlds.",
       image: '/locations/NovaVentis_OuterShell_closed1.png',
     },
   ];
