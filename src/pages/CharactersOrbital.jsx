@@ -66,7 +66,7 @@ export default function CharactersOrbital() {
   }, []);
 
   return (
-    <div className="min-h-screen relative" style={{ background: '#0a0e1a' }}>
+    <div className="min-h-screen relative" style={{ background: '#000000' }}>
       {/* Animated starfield canvas */}
       <canvas 
         ref={canvasRef}
