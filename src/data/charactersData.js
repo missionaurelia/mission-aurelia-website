@@ -8,20 +8,12 @@ export const characterGroups = {
     radius: 120,
     characters: [
       {
-        name: 'June Veyra',
-        role: 'The Listener',
-        statement: '"I want to stay here."',
-        image: '/images/characters/June_full_light.jpg',
+        name: 'Nicholas Veyra',
+        role: 'The Guardian',
+        statement: '"[Nicholas\' statement]"',
+        image: '/images/characters/Nicholas_Mission.png',
         bio: '[Character bio - to be filled]',
-        angle: 0, // top
-      },
-      {
-        name: 'Luna Veyra',
-        role: 'The Spark',
-        statement: '"[Luna\'s statement]"',
-        image: '/images/characters/Luna_16.jpg',
-        bio: '[Character bio - to be filled]',
-        angle: 90, // right
+        angle: 234, // left side
       },
       {
         name: 'Ryu',
@@ -29,15 +21,15 @@ export const characterGroups = {
         statement: '"[Ryu\'s statement]"',
         image: '/images/characters/Ryu_portrait_1.JPG',
         bio: '[Character bio - to be filled]',
-        angle: 180, // bottom
+        angle: 198, // bottom-left
       },
       {
-        name: 'Nicholas Veyra',
-        role: 'The Guardian',
-        statement: '"[Nicholas\' statement]"',
-        image: '/images/characters/Nicholas_Mission.png',
+        name: 'June Veyra',
+        role: 'The Listener',
+        statement: '"I want to stay here."',
+        image: '/images/characters/June_full_light.jpg',
         bio: '[Character bio - to be filled]',
-        angle: 270, // left
+        angle: 0, // top center
       },
       {
         name: 'Levin',
@@ -45,7 +37,15 @@ export const characterGroups = {
         statement: '"[Levin\'s statement]"',
         image: '/images/characters/Levin_Vessel.png',
         bio: '[Character bio - to be filled]',
-        angle: 315, // between June and Nicki (top-left)
+        angle: 342, // top-left
+      },
+      {
+        name: 'Luna Veyra',
+        role: 'The Spark',
+        statement: '"[Luna\'s statement]"',
+        image: '/images/characters/Luna_16.jpg',
+        bio: '[Character bio - to be filled]',
+        angle: 54, // top-right
       },
     ]
   },
@@ -56,12 +56,12 @@ export const characterGroups = {
     radius: 220,
     characters: [
       {
-        name: 'Edward & Amelia',
-        role: 'The Founders',
-        statement: '"[Edward & Amelia\'s statement]"',
-        image: '/images/characters/Edward_and_Amelia.jpg',
+        name: 'Elara Lysi',
+        role: 'The Witness',
+        statement: '"[Elara Lysi\'s statement]"',
+        image: '/images/characters/Elara_Lysi_1.jpg',
         bio: '[Character bio - to be filled]',
-        angle: 315, // top-left
+        angle: 225, // bottom-left
       },
       {
         name: 'Henry',
@@ -72,12 +72,12 @@ export const characterGroups = {
         angle: 45, // top-right
       },
       {
-        name: 'Elara Lysi',
-        role: 'The Witness',
-        statement: '"[Elara Lysi\'s statement]"',
-        image: '/images/characters/Elara_Lysi_1.jpg',
+        name: 'Edward & Amelia',
+        role: 'The Founders',
+        statement: '"[Edward & Amelia\'s statement]"',
+        image: '/images/characters/Edward_and_Amelia.jpg',
         bio: '[Character bio - to be filled]',
-        angle: 225, // bottom-left
+        angle: 315, // top-left
       },
       {
         name: 'Auren',
@@ -96,6 +96,14 @@ export const characterGroups = {
     radius: 320,
     characters: [
       {
+        name: 'Elara Nox',
+        role: 'The Echo',
+        statement: '"[Elara Nox\'s statement]"',
+        image: '/images/characters/ElaraNox.png',
+        bio: '[Character bio - to be filled]',
+        angle: 180, // left
+      },
+      {
         name: 'Kael Sorely',
         role: 'The Seeker',
         statement: '"[Kael\'s statement]"',
@@ -109,15 +117,7 @@ export const characterGroups = {
         statement: '"[Anna\'s statement]"',
         image: '/images/characters/Dr_Anna_Singh.jpg',
         bio: '[Character bio - to be filled]',
-        angle: 45, // top-right
-      },
-      {
-        name: 'Elara Nox',
-        role: 'The Echo',
-        statement: '"[Elara Nox\'s statement]"',
-        image: '/images/characters/ElaraNox.png',
-        bio: '[Character bio - to be filled]',
-        angle: 180, // left
+        angle: 0, // top
       },
       {
         name: 'Luisa Singh',
