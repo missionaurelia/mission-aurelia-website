@@ -14,13 +14,13 @@ export default function Footer() {
           <div className="flex gap-6">
             {/* Placeholder for social media links - Julie will add her own */}
             <a href="#" className="text-[var(--color-text)]/70 hover:text-[var(--color-primary)] transition-colors text-sm">
-              [Social Link 1]
+              Instagram
             </a>
             <a href="#" className="text-[var(--color-text)]/70 hover:text-[var(--color-primary)] transition-colors text-sm">
-              [Social Link 2]
+              Linkedin
             </a>
             <a href="#" className="text-[var(--color-text)]/70 hover:text-[var(--color-primary)] transition-colors text-sm">
-              [Social Link 3]
+              X
             </a>
           </div>
         </div>
