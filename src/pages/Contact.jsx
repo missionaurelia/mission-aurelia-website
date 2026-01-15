@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, FileText, ExternalLink } from 'lucide-react';
+import { Mail, FileText, ExternalLink, Instagram, Linkedin, Twitter } from 'lucide-react';
 import { useEffect } from 'react';
 
 export default function Contact() {
@@ -25,9 +25,9 @@ export default function Contact() {
   ];
 
   const socialLinks = [
-    { platform: 'Instagram', url: 'https://www.instagram.com/missionaurelia?igsh=OTQ0djM0anpxNW9k', handle: '@missionaurelia' },
-    { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/mission-aurelia-50a34a3a2', handle: 'Mission Aurelia' },
-    { platform: 'X', url: 'https://x.com/Mission_Aurelia', handle: 'Mission_Aurelia' },
+    { platform: 'Instagram', url: 'https://www.instagram.com/missionaurelia?igsh=OTQ0djM0anpxNW9k', handle: '@missionaurelia', icon: Instagram },
+    { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/mission-aurelia-50a34a3a2', handle: 'Mission Aurelia', icon: Linkedin },
+    { platform: 'X', url: 'https://x.com/Mission_Aurelia', handle: 'Mission_Aurelia', icon: Twitter },
   ];
 
   useEffect(() => {
@@ -92,18 +92,22 @@ export default function Contact() {
                   Stay updated on the latest developments and behind-the-scenes insights.
                 </p>
                 <div className="space-y-3">
-                  {socialLinks.map((link, index) => (
-                    <div key={index}>
-                      <a 
-                        href={link.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors font-semibold"
-                      >
-                        {link.platform}: {link.handle}
-                      </a>
-                    </div>
-                  ))}
+                  {socialLinks.map((link, index) => {
+                    const Icon = link.icon;
+                    return (
+                      <div key={index}>
+                        <a 
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors font-semibold inline-flex items-center gap-3"
+                        >
+                          <Icon size={20} />
+                          <span>{link.platform}: {link.handle}</span>
+                        </a>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>

@@ -1,5 +1,14 @@
+import { Instagram, Linkedin, Twitter } from 'lucide-react';
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+
+  // Social media links - Julie can update these URLs
+  const socialLinks = [
+    { icon: Instagram, url: '#', label: 'Instagram' },
+    { icon: Linkedin, url: '#', label: 'LinkedIn' },
+    { icon: Twitter, url: '#', label: 'X (Twitter)' },
+  ];
 
   return (
     <footer className="border-t border-white/10 bg-[var(--color-background)]">
@@ -12,16 +21,21 @@ export default function Footer() {
           </div>
           
           <div className="flex gap-6">
-            {/* Placeholder for social media links - Julie will add her own */}
-            <a href="#" className="text-[var(--color-text)]/70 hover:text-[var(--color-primary)] transition-colors text-sm">
-              Instagram
-            </a>
-            <a href="#" className="text-[var(--color-text)]/70 hover:text-[var(--color-primary)] transition-colors text-sm">
-              Linkedin
-            </a>
-            <a href="#" className="text-[var(--color-text)]/70 hover:text-[var(--color-primary)] transition-colors text-sm">
-              X
-            </a>
+            {socialLinks.map((social, index) => {
+              const Icon = social.icon;
+              return (
+                <a
+                  key={index}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                  className="text-[var(--color-text)]/70 hover:text-[var(--color-primary)] transition-colors"
+                >
+                  <Icon size={20} />
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>
