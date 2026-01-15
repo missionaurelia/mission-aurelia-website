@@ -9,6 +9,12 @@ import Characters from './pages/Characters';
 import CharactersSelector from './pages/CharactersSelector';
 import CharactersOrbital from './pages/CharactersOrbital';
 import Science from './pages/Science';
+import ScienceMirida from './pages/ScienceMirida';
+import SciencePN7 from './pages/SciencePN7';
+import ScienceLysithea from './pages/ScienceLysithea';
+import PhilosophyIdentity from './pages/PhilosophyIdentity';
+import PhilosophyConsciousness from './pages/PhilosophyConsciousness';
+import PhilosophyAIFeelings from './pages/PhilosophyAIFeelings';
 import Technology from './pages/Technology';
 import Society from './pages/Society';
 import Philosophy from './pages/Philosophy';
@@ -48,9 +54,15 @@ function App() {
           <Route path="/characters" component={CharactersOrbital} />
           <Route path="/characters/old" component={Characters} />
           <Route path="/science" component={Science} />
+          <Route path="/science/mirida" component={ScienceMirida} />
+          <Route path="/science/pn7" component={SciencePN7} />
+          <Route path="/science/lysithea" component={ScienceLysithea} />
           <Route path="/technology" component={Technology} />
           <Route path="/society" component={Society} />
           <Route path="/philosophy" component={Philosophy} />
+          <Route path="/philosophy/identity" component={PhilosophyIdentity} />
+          <Route path="/philosophy/consciousness" component={PhilosophyConsciousness} />
+          <Route path="/philosophy/ai-feelings" component={PhilosophyAIFeelings} />
           <Route path="/vision" component={Vision} />
           <Route path="/contact" component={Contact} />
           <Route>
