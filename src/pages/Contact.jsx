@@ -56,7 +56,7 @@ export default function Contact() {
           >
             <h1 className="text-gradient-orange mb-8">Get in Touch</h1>
             <p className="text-xl md:text-2xl leading-relaxed">
-              [Introduction - invite people to connect, follow the journey, or collaborate]
+              
             </p>
           </motion.div>
         </div>
