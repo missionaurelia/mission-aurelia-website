@@ -5,9 +5,9 @@ export default function Footer() {
 
   // Social media links - Julie can update these URLs
   const socialLinks = [
-    { icon: Instagram, url: '#', label: 'Instagram' },
-    { icon: Linkedin, url: '#', label: 'LinkedIn' },
-    { icon: Twitter, url: '#', label: 'X (Twitter)' },
+    { icon: Instagram, url: 'https://www.instagram.com/missionaurelia', label: 'Instagram' },
+    { icon: Linkedin, url: 'https://www.linkedin.com/in/mission-aurelia-50a34a3a2', label: 'LinkedIn' },
+    { icon: Twitter, url: 'https://x.com/Mission_Aurelia', handle: 'Mission_Aurelia', label: 'X (Twitter)' },
   ];
 
   return (
