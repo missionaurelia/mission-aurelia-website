@@ -67,7 +67,7 @@ export default function Universe() {
     },
     {
       name: 'The Nova Ventis',
-      description: 'Wh?',
+      description: '?',
       image: '/locations/NovaVentis_OuterShell_closed1.png',
     },
   ];
