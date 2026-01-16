@@ -99,28 +99,39 @@ export default function Philosophy() {
             {/* File Body - Shows descriptions */}
             <div className="bg-slate-800/50 border-4 border-slate-700 rounded-b-2xl rounded-tr-2xl p-12 shadow-2xl">
               <div className="grid md:grid-cols-3 gap-8">
-                {philosophyTopics.map((topic) => (
-                  <Link
-                    key={topic.id}
-                    href={topic.link}
-                    className="group"
-                  >
-                    <div className="p-6 bg-slate-900/50 border border-slate-700 rounded-xl hover:border-slate-600 transition-all hover:scale-105">
-                      <h4 className={`text-xl font-bold mb-3 bg-gradient-to-r ${topic.color} bg-clip-text text-transparent`}>
-                        {topic.title} {topic.subtitle}
-                      </h4>
-                      <p className="text-slate-400 text-sm leading-relaxed">
-                        {topic.description}
-                      </p>
-                      <div className="mt-4 flex items-center text-sm text-slate-500 group-hover:text-slate-400 transition-colors">
-                        <span>Explore</span>
-                        <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
+                {/* Identity & Aging Card */}
+                <Link href="/philosophy/identity" className="group">
+                  <div className="p-6 bg-slate-900/50 border border-slate-700 rounded-xl hover:border-slate-600 transition-all hover:scale-105 flex items-center justify-center min-h-[300px]">
+                    <img 
+                      src="/images/identity-aging.png" 
+                      alt="Identity & Aging - Time and Transformation" 
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                </Link>
+
+                {/* Consciousness Emergent Card */}
+                <Link href="/philosophy/consciousness" className="group">
+                  <div className="p-6 bg-slate-900/50 border border-slate-700 rounded-xl hover:border-slate-600 transition-all hover:scale-105 flex items-center justify-center min-h-[300px]">
+                    <img 
+                      src="/images/consciousness-emergent.png" 
+                      alt="Consciousness Emergent - Neural Networks" 
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                </Link>
+
+                {/* AI & Feelings Love Card */}
+                <Link href="/philosophy/ai-feelings" className="group">
+                  <div className="p-6 bg-slate-900/50 border border-slate-700 rounded-xl hover:border-slate-600 transition-all hover:scale-105 flex items-center justify-center min-h-[300px]">
+                    <img 
+                      src="/images/ai-feelings-love.png" 
+                      alt="AI & Feelings Love - Human vs Digital Emotion" 
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                </Link>
+
               </div>
             </div>
           </div>
