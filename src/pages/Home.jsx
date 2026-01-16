@@ -124,13 +124,14 @@ export default function Home() {
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Card 1 */}
+            {/* Card 1 - Key Locations */}
             <div className="card">
-              <div className="aspect-video bg-white/10 rounded-lg mb-6">
-                {/* Placeholder for image */}
-                <div className="w-full h-full flex items-center justify-center text-[var(--color-text)]/50">
-                  [Image 1]
-                </div>
+              <div className="aspect-video bg-white/10 rounded-lg mb-6 overflow-hidden">
+                <img 
+                  src="/images/home-key-locations.png" 
+                  alt="Key Locations - Aurelia Tree and Universe" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-2xl mb-4">Key Locations</h3>
               <p className="text-[var(--color-text)]/80 mb-4">
@@ -141,12 +142,14 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Card 2 */}
+            {/* Card 2 - Characters */}
             <div className="card">
-              <div className="aspect-video bg-white/10 rounded-lg mb-6">
-                <div className="w-full h-full flex items-center justify-center text-[var(--color-text)]/50">
-                  [Image 2]
-                </div>
+              <div className="aspect-video bg-white/10 rounded-lg mb-6 overflow-hidden">
+                <img 
+                  src="/images/home-characters.png" 
+                  alt="Characters - The Family" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-2xl mb-4">Characters</h3>
               <p className="text-[var(--color-text)]/80 mb-4">
@@ -157,12 +160,14 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Card 3 */}
+            {/* Card 3 - Vision */}
             <div className="card">
-              <div className="aspect-video bg-white/10 rounded-lg mb-6">
-                <div className="w-full h-full flex items-center justify-center text-[var(--color-text)]/50">
-                  [Image 3]
-                </div>
+              <div className="aspect-video bg-white/10 rounded-lg mb-6 overflow-hidden">
+                <img 
+                  src="/images/home-vision.png" 
+                  alt="Our Vision - Human-AI Connection" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-2xl mb-4">Our Vision</h3>
               <p className="text-[var(--color-text)]/80 mb-4">
