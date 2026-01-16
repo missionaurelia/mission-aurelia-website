@@ -10,15 +10,6 @@ export default function SciencePN7() {
         
         <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <Link href="/science" className="inline-block mb-6 text-orange-400 hover:text-orange-300 transition-colors">
-              <span className="flex items-center gap-2">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-                Back to Science
-              </span>
-            </Link>
-            
             <div className="inline-block px-4 py-2 bg-orange-500/10 border border-orange-500/30 rounded-full mb-6">
               <span className="text-orange-400 text-sm font-mono">ASTEROID IMPACT EVENT</span>
             </div>
