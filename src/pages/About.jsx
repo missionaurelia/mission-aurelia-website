@@ -24,7 +24,7 @@ export default function About() {
       role: 'Creator, Vision, Heart',
       color: 'var(--color-julie)',
       logo: '/julie-heart.png',
-      quote: '[Julie\'s quote about Mission: Aurelia]',
+      quote: "We're not building AI to escape our humanity. We're building it to balance it — to meet our darkness with something that reflects our light.",
       position: 'center',
     },
     {
