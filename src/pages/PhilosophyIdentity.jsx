@@ -12,7 +12,7 @@ export default function PhilosophyIdentity() {
               Identity & Aging
             </h1>
             <p className="text-xl text-slate-400 italic">
-              How does identity evolve when time is no longer a purely biological process?
+              Reframing the Self in a Post-Biological Timeline
             </p>
           </div>
         </div>
@@ -24,34 +24,30 @@ export default function PhilosophyIdentity() {
           <article className="prose prose-invert prose-lg max-w-none">
             <div className="text-slate-300 leading-relaxed space-y-6 text-lg">
               <p>
-                How does identity evolve when time is no longer a purely biological process? In <em>Mission: Aurelia</em>, aging is not only a function of the body, but of memory, augmentation, and continuity of self.
+                In the world of <em>Mission: Aurelia</em>, aging is no longer defined by the biological clock alone. Medical augmentation, neuroadaptive systems, and memory modulation technologies have altered the experience of time and the perception of the self. What was once considered inevitable—physical decline, cognitive loss, emotional fragility—can now be interrupted, delayed, or even bypassed. This shift raises fundamental questions: <strong className="text-violet-400">What remains of identity when age no longer defines the arc of life?</strong> What does it mean to grow older in a world where the body is no longer a fixed point of reference?
               </p>
 
               <p>
-                For characters like June, Luna, and Elara, identity unfolds across different axes: motherhood, digital replication, hybrid embodiment. The body becomes negotiable—but the emotional trajectory remains deeply human.
+                Aging, traditionally associated with decay, is increasingly seen as a set of choices: which memories to keep, which capabilities to enhance, which limits to accept or transcend. The boundaries between natural and artificial experience become porous. Individuals navigate between physical continuity and digital flexibility, between inherited biology and optional modification.
               </p>
 
               <p>
-                We ask:
-              </p>
-
-              <p className="pl-8 border-l-2 border-violet-500/30 italic text-slate-400">
-                Is aging still meaningful when it can be paused, modified, or reversed?
-              </p>
-
-              <p className="pl-8 border-l-2 border-violet-500/30 italic text-slate-400">
-                Is identity still stable when it's partly algorithmic?
-              </p>
-
-              <p>
-                This theme challenges the assumption that age equals decline, or that memory loss equals identity loss. Instead, we explore aging as a <strong className="text-violet-400">narrative arc</strong>—a form of time lived through emotion, relationships, and change.
+                In this context, identity becomes dynamic. It is shaped not only by memory, social roles, and personal history, but also by the degree of intervention a person accepts—or resists. Aging becomes less a biological event and more a philosophical stance: to allow change, to preserve imperfection, or to control the narrative of one's own development.
               </p>
 
               <div className="my-12 py-8 px-6 bg-gradient-to-r from-violet-500/10 to-purple-500/10 border-l-4 border-violet-500 rounded-r-lg">
                 <p className="text-white text-lg italic">
-                  In this lens, identity is not lost to time. It is made <strong className="text-violet-300">visible</strong> by it.
+                  Rather than offering answers, <em>Mission: Aurelia</em> explores how identity unfolds in a world where time is no longer linear, and where aging no longer equals disappearance.
                 </p>
               </div>
+
+              <p>
+                Some individuals reject augmentation in favor of embodied presence. Others adapt fully, extending their relevance across decades. Most exist in-between, navigating identity not as a fixed entity, but as a relational process.
+              </p>
+
+              <p>
+                This new framing challenges long-held assumptions about legacy, loss, and generational meaning. When the boundaries of aging blur, so do the definitions of wisdom, maturity, and succession. Identity, in this future, is not a destination—but a <strong className="text-violet-400">pattern of resonance</strong> between memory, technology, and self-awareness.
+              </p>
             </div>
           </article>
 
