@@ -133,7 +133,7 @@ export default function Science() {
                 </Link>
               </div>
             </div>
-          </d    </div>
+          </div>
       </section>
     </div>
   );

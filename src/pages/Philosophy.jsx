@@ -134,7 +134,7 @@ export default function Philosophy() {
 
               </div>
             </div>
-          </di    </div>
+          </div>
       </section>
     </div>
   );
