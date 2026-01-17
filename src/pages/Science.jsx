@@ -134,6 +134,7 @@ export default function Science() {
               </div>
             </div>
           </div>
+        </div>
       </section>
     </div>
   );
