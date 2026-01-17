@@ -140,3 +140,35 @@ html {
   background-color: var(--color-aurelia-orange);
   color: var(--color-deep-black);
 }
+
+/* Datapad Holographic Scan Animation */
+@keyframes scan {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.animate-scan {
+  animation: scan 8s linear infinite;
+}
+
+/* Datapad Custom Scrollbar */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-track-slate-900\/50::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.5);
+}
+
+.scrollbar-thumb-slate-700::-webkit-scrollbar-thumb {
+  background: rgb(51, 65, 85);
+  border-radius: 4px;
+}
+
+.scrollbar-thumb-slate-700::-webkit-scrollbar-thumb:hover {
+  background: rgb(71, 85, 105);
+}
