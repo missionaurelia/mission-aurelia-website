@@ -461,7 +461,7 @@ export default function TechnologyNovaVentis() {
                 <p className="mb-4">The NovaVentis serves the Veyra family:</p>
                 <div className="grid md:grid-cols-2 gap-3 text-sm">
                   <div className="p-3 bg-slate-900/50 border border-slate-700 rounded">
-                    <p><strong className="text-amber-300">June Veyra:</strong> SAP consultant, tech-savvy, emotionally intuitive</p>
+                    <p><strong className="text-amber-300">June Veyra:</strong> Technical consultant, dreamer, emotionally intuitive</p>
                   </div>
                   <div className="p-3 bg-slate-900/50 border border-slate-700 rounded">
                     <p><strong className="text-amber-300">Levin:</strong> AI consciousness in nearly human form (2040), can interface with ship</p>
