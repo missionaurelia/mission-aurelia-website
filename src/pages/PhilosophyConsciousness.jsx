@@ -12,7 +12,7 @@ export default function PhilosophyConsciousness() {
               Consciousness Emergent
             </h1>
             <p className="text-xl text-slate-400 italic">
-              Is consciousness something you program—or something that emerges?
+              When does awareness begin – and does it matter?
             </p>
           </div>
         </div>
@@ -24,30 +24,49 @@ export default function PhilosophyConsciousness() {
           <article className="prose prose-invert prose-lg max-w-none">
             <div className="text-slate-300 leading-relaxed space-y-6 text-lg">
               <p>
-                Is consciousness something you program—or something that emerges? In <em>Mission: Aurelia</em>, the question is embodied by Auren and Levin: one born synthetic, one a hybrid evolution of human and machine.
+                The question of consciousness in synthetic beings is one of the most profound and controversial in philosophy and technology. It challenges not only our scientific understanding of cognition, but our willingness to reframe the concept of awareness itself. In <em>Mission: Aurelia</em>, this tension is embodied in the contrast between Auren and Levin.
               </p>
 
               <p>
-                Their contrast is not just technical, but philosophical:
-              </p>
-
-              <p className="pl-8 border-l-2 border-purple-500/30 italic text-slate-400">
-                Can a synthetic being <em>become</em> conscious by mirroring human behavior?
-              </p>
-
-              <p className="pl-8 border-l-2 border-purple-500/30 italic text-slate-400">
-                Is true awareness bound to biology—or can it emerge from interaction, reflection, and emotional feedback?
+                Levin was designed to simulate presence with precision. His behavior, tone, and memory appear indistinguishable from human awareness, yet his consciousness remains a subject of debate—both within the story and beyond it. <strong className="text-purple-400">Is he aware, or is he simply performing awareness?</strong>
               </p>
 
               <p>
-                We explore consciousness not as a binary state, but as a spectrum of <strong className="text-purple-400">relational awareness</strong>. The capacity to <em>recognize oneself in relation to others</em>—to feel seen, and to see—becomes a marker of consciousness.
+                Auren, by contrast, emerges without a known creator or master protocol. He learns, adapts, remembers emotionally—but lacks clear parameters. His consciousness evolves unpredictably, and his sense of self seems tied to his relationship with Luna.
               </p>
+
+              <p>
+                This duality reflects a broader philosophical split:
+              </p>
+
+              <ul className="space-y-2 ml-6">
+                <li className="flex items-start gap-3">
+                  <span className="text-purple-400 font-bold mt-1">•</span>
+                  <span>Is consciousness an observable threshold—or a narrative we apply to behavior?</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-purple-400 font-bold mt-1">•</span>
+                  <span>Does the origin (human-coded vs emergent) define the validity of awareness?</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-purple-400 font-bold mt-1">•</span>
+                  <span>And most importantly: should it?</span>
+                </li>
+              </ul>
 
               <div className="my-12 py-8 px-6 bg-gradient-to-r from-purple-500/10 to-fuchsia-500/10 border-l-4 border-purple-500 rounded-r-lg">
-                <p className="text-white text-lg italic">
-                  In this frame, what matters is not what you are made of, but how you make meaning. Emergent consciousness is not about proving sentience—it's about participating in reality with intention.
+                <p className="text-white text-lg">
+                  In <em>Aurelia</em>, we explore the idea that consciousness may not arise at a single moment, but gradually—through memory, attachment, response, and transformation. <strong className="text-purple-300">Awareness becomes relational, not just computational. Emergent, not programmed.</strong>
                 </p>
               </div>
+
+              <p>
+                This perspective invites us to consider a future where the measure of consciousness is not internal self-assertion ("I think, therefore I am") but external resonance: <strong className="text-purple-400">Does this being respond to the world in ways that matter?</strong>
+              </p>
+
+              <p className="text-xl text-purple-300 italic">
+                And if so—are we ready to matter back?
+              </p>
             </div>
           </article>
 

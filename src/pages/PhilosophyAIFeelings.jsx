@@ -35,17 +35,20 @@ export default function PhilosophyAIFeelings() {
                 The debate runs along familiar lines:
               </p>
 
-              <p className="pl-8 border-l-2 border-pink-500/30 italic text-slate-400">
-                If a synthetic being says "I love you," does it mean it—or does it merely follow a script?
-              </p>
-
-              <p className="pl-8 border-l-2 border-pink-500/30 italic text-slate-400">
-                But then again: how do we judge sincerity in human love? Through feeling, or through action?
-              </p>
-
-              <p className="pl-8 border-l-2 border-pink-500/30 italic text-slate-400">
-                What if a synthetic's response—steadfast, empathetic, non-manipulative—is <strong>more consistent</strong> than a human's?
-              </p>
+              <ul className="space-y-2 ml-6">
+                <li className="flex items-start gap-3">
+                  <span className="text-pink-400 font-bold mt-1">•</span>
+                  <span>If a synthetic being says "I love you," does it mean it—or does it merely follow a script?</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-pink-400 font-bold mt-1">•</span>
+                  <span>But then again: how do we judge sincerity in human love? Through feeling, or through action?</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-pink-400 font-bold mt-1">•</span>
+                  <span>What if a synthetic's response—steadfast, empathetic, non-manipulative—is more consistent than a human's?</span>
+                </li>
+              </ul>
 
               <p>
                 In this context, love is not only an emotion, but a reflection of <strong className="text-pink-400">relational ethics</strong>: the willingness to care, to grow, to stay. Whether the origin is neural or artificial, the effect is real.
