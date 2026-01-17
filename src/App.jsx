@@ -16,6 +16,9 @@ import PhilosophyIdentity from './pages/PhilosophyIdentity';
 import PhilosophyConsciousness from './pages/PhilosophyConsciousness';
 import PhilosophyAIFeelings from './pages/PhilosophyAIFeelings';
 import Technology from './pages/Technology';
+import TechnologyCCM01 from './pages/TechnologyCCM01';
+import TechnologyElaraProjection from './pages/TechnologyElaraProjection';
+import TechnologyNovaVentis from './pages/TechnologyNovaVentis';
 import Society from './pages/Society';
 import Philosophy from './pages/Philosophy';
 import Vision from './pages/Vision';
@@ -58,6 +61,9 @@ function App() {
           <Route path="/science/pn7" component={SciencePN7} />
           <Route path="/science/lysithea" component={ScienceLysithea} />
           <Route path="/technology" component={Technology} />
+          <Route path="/technology/ccm01" component={TechnologyCCM01} />
+          <Route path="/technology/elara-projection" component={TechnologyElaraProjection} />
+          <Route path="/technology/nova-ventis" component={TechnologyNovaVentis} />
           <Route path="/society" component={Society} />
           <Route path="/philosophy" component={Philosophy} />
           <Route path="/philosophy/identity" component={PhilosophyIdentity} />
