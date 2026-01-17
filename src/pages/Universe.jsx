@@ -240,42 +240,46 @@ export default function Universe() {
 
               {/* Technology */}
               <a href="/technology" className="card hover:scale-105 transition-transform block">
-                <h3 className="text-2xl mb-4">Technology</h3>
+                <h3 className="text-2xl mb-4 text-gradient-orange">Technology</h3>
                 <p className="text-[var(--color-text)]/80">
-                  [Description of technology in Mission: Aurelia - AIMs/LINKs, augmentation, etc.]
+                  Discover the technological innovations that shape the Mission: Aurelia universe.
                 </p>
+                <div className="mt-4 text-amber-500 font-semibold flex items-center gap-2">
+                  <span>Explore →</span>
+                </div>
               </a>
 
               {/* Society */}
               <a href="/society" className="card hover:scale-105 transition-transform block">
-                <h3 className="text-2xl mb-4">Society</h3>
+                <h3 className="text-2xl mb-4 text-gradient-orange">Society</h3>
                 <p className="text-[var(--color-text)]/80">
-                  [Description of society - how humans and AI coexist]
+                  Explore how humans and AI coexist in the Aurelia universe.
                 </p>
+                <div className="mt-4 text-amber-500 font-semibold flex items-center gap-2">
+                  <span>Explore →</span>
+                </div>
               </a>
 
               {/* Science */}
               <a href="/science" className="card hover:scale-105 transition-transform block">
-                <h3 className="text-2xl mb-4">Science</h3>
+                <h3 className="text-2xl mb-4 text-gradient-orange">Science</h3>
                 <p className="text-[var(--color-text)]/80">
-                  [Description of scientific concepts - MIRIDA, consciousness transfer, etc.]
+                  Dive into the scientific concepts that power Mission: Aurelia.
                 </p>
+                <div className="mt-4 text-amber-500 font-semibold flex items-center gap-2">
+                  <span>Explore →</span>
+                </div>
               </a>
 
               {/* Philosophy */}
               <a href="/philosophy" className="card hover:scale-105 transition-transform block">
-                <h3 className="text-2xl mb-4">Philosophy</h3>
+                <h3 className="text-2xl mb-4 text-gradient-orange">Philosophy</h3>
                 <p className="text-[var(--color-text)]/80">
-                  [Description of philosophical themes - identity, consciousness, humanity]
+                  Explore the philosophical themes of identity, consciousness, and humanity.
                 </p>
-              </a>
-
-              {/* Characters */}
-              <a href="/characters" className="card hover:scale-105 transition-transform block">
-                <h3 className="text-2xl mb-4">Characters</h3>
-                <p className="text-[var(--color-text)]/80">
-                  Who lives here? The souls who inhabit the Aurelia universe — human, artificial, and everything in between.
-                </p>
+                <div className="mt-4 text-amber-500 font-semibold flex items-center gap-2">
+                  <span>Explore →</span>
+                </div>
               </a>
             </div>
           </div>

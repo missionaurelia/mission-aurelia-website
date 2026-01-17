@@ -137,12 +137,7 @@ export default function Technology() {
             </div>
           </div>
 
-          {/* Note for future content */}
-          <div className="mt-12 text-center">
-            <p className="text-slate-500 text-sm">
-              All technology sections are ready for detailed specifications: <span className="text-emerald-400">CCM-01 Collar</span>, <span className="text-violet-400">Elara Lysi Projection</span>, and <span className="text-amber-400">Nova Ventis</span>.
-            </p>
-          </div>
+
         </div>
       </section>
     </div>

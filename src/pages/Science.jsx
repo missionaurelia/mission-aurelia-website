@@ -133,15 +133,7 @@ export default function Science() {
                 </Link>
               </div>
             </div>
-          </div>
-
-          {/* Note for Kael */}
-          <div className="mt-12 text-center">
-            <p className="text-slate-500 text-sm">
-              <span className="text-blue-400">MIRIDA</span> content is complete. <span className="text-orange-400">PN7</span> and <span className="text-purple-400">Lysithea</span> sections are ready for Kael's content.
-            </p>
-          </div>
-        </div>
+          </d    </div>
       </section>
     </div>
   );

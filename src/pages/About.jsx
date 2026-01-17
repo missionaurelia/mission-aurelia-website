@@ -106,16 +106,16 @@ export default function About() {
             </p>
           </div>
 
-          {/* Plus Formation Grid: 3 rows x 3 columns */}
-          <div className="grid grid-cols-3 gap-8 max-w-5xl mx-auto">
+          {/* Plus Formation Grid: 3 rows x 3 columns (Desktop), Single column (Mobile) */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {constellationMembers.map((member, index) => {
               // Position mapping for plus formation
               const gridPositions = {
-                top: 'col-start-2 row-start-1',
-                left: 'col-start-1 row-start-2',
-                center: 'col-start-2 row-start-2',
-                right: 'col-start-3 row-start-2',
-                bottom: 'col-start-2 row-start-3',
+                top: 'md:col-start-2 md:row-start-1',
+                left: 'md:col-start-1 md:row-start-2',
+                center: 'md:col-start-2 md:row-start-2',
+                right: 'md:col-start-3 md:row-start-2',
+                bottom: 'md:col-start-2 md:row-start-3',
               };
 
               return (
