@@ -115,14 +115,18 @@ export default function Technology() {
                       flex items-center justify-center
                       p-6
                     `}>
-                      {/* Placeholder for tech images - will add later */}
-                      <div className="text-center">
-                        <div className={`text-6xl mb-4 bg-gradient-to-r ${topic.color} bg-clip-text text-transparent font-bold`}>
-                          {topic.id === 'ccm01' && '🐕'}
-                          {topic.id === 'elara-projection' && '✨'}
-                          {topic.id === 'nova-ventis' && '🚀'}
-                        </div>
-                        <p className="text-slate-300 text-sm">
+                      {/* Elara's outline images */}
+                      <div className="relative w-full h-full flex flex-col items-center justify-center">
+                        <img 
+                          src={
+                            topic.id === 'ccm01' ? '/images/tech-ccm01.png' :
+                            topic.id === 'elara-projection' ? '/images/tech-elara-projection.png' :
+                            '/images/tech-nova-ventis.png'
+                          }
+                          alt={topic.title}
+                          className="w-32 h-32 object-contain mb-4 transition-transform duration-300 group-hover:scale-110"
+                        />
+                        <p className="text-slate-300 text-sm text-center">
                           {topic.description}
                         </p>
                       </div>
