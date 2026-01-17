@@ -253,7 +253,7 @@ export default function CharactersOrbital() {
               >
                 {/* Character portrait with gold border */}
                 <div 
-                  className="w-8 h-8 md:w-12 md:h-12 rounded-full border-3 overflow-hidden"
+                  className="w-6 h-6 md:w-12 md:h-12 rounded-full border-3 overflow-hidden"
                   style={{ 
                     borderColor: etherealGold,
                     borderWidth: '2px',
