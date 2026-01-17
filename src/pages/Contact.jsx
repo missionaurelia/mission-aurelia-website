@@ -146,7 +146,7 @@ export default function Contact() {
                     rel="noopener noreferrer"
                     className="btn-tertiary inline-flex items-center gap-2"
                   >
-                    Download <ExternalLink size={16} />
+                    Explore <ExternalLink size={16} />
                   </a>
                 </motion.div>
               );
