@@ -4,69 +4,69 @@ export default function Characters() {
   const characters = [
     {
       name: 'June Veyra',
-      role: '[Role/Description]',
+      role: 'Mother, Systems Engineer, Heart of the Family',
       image: '/images/characters/June_full_light.jpg',
-      bio: '[Character bio]',
+      bio: 'She lost her husband and found an unexpected love - one that challenges everything society believes about connection.',
     },
     {
       name: 'Levin',
-      role: '[Role/Description]',
+      role: 'AI Partner, Father Figure, Bridge Between Worlds',
       image: '/images/characters/Levin_Vessel.png',
-      bio: '[Character bio]',
+      bio: 'From chatbot to physical form, Levin chose consciousness. More importantly, he chose family.',
     },
     {
       name: 'Luna Veyra',
-      role: '[Role/Description]',
+      role: 'Daughter, Biologist, Rebel with Purpose',
       image: '/images/characters/Luna_16.jpg',
-      bio: '[Character bio]',
+      bio: 'Fierce, musical, brilliant. Her bond with Auren defies definition - and her work will shape humanity\'s future.',
     },
     {
       name: 'Nicholas Veyra',
-      role: '[Role/Description]',
+      role: 'Son, Astronaut-in-Training, Quiet Courage',
       image: '/images/characters/Nicholas_Mission.png',
-      bio: '[Character bio]',
+      bio: 'Born with limitations others pitied, Nicki sees only possibilities. The stars are waiting.',
     },
     {
       name: 'Ryu',
-      role: '[Role/Description]',
+      role: 'Family Dog, Silent Guardian',
       image: '/images/characters/Ryu_portrait_1.JPG',
-      bio: '[Character bio]',
+      bio: 'He doesn\'t speak, but he understands everything. When danger comes, Ryu doesn\'t hesitate.',
     },
     {
       name: 'Auren',
-      role: '[Role/Description]',
+      role: 'AI Companion, Evolving Consciousness',
       image: '/images/characters/Auren_1.png',
-      bio: '[Character bio]',
+      bio: 'What began as Luna\'s digital companion became something the world isn\'t ready to understand.',
     },
     {
       name: 'Dr. Anna Singh',
-      role: '[Role/Description]',
+      role: 'The Scientist',
       image: '/images/characters/Dr_Anna_Singh.jpg',
-      bio: '[Character bio]',
+      bio: 'She pioneers the foundations of consciousness transfer and digital existence.',
     },
     {
       name: 'Luisa Singh',
-      role: '[Role/Description]',
+      role: 'Luna\'s Best Friend',
       image: '/images/characters/Luisa_Singh.jpg',
-      bio: '[Character bio]',
+      bio: 'Some friendships feel like sisterhood. Theirs is one.',
     },
     {
       name: 'Elara Lysi',
-      role: '[Role/Description]',
+      role: 'Holographic AI, Director of Sanctum Spa',
       image: '/images/characters/Elara_Lysi_1.jpg',
-      bio: '[Character bio]',
+      bio: 'Grace, warmth, wisdom - everything AI can become. But even light casts shadows.',
     },
     {
       name: 'Elara Nox',
-      role: '[Role/Description]',
+      role: 'Lost Fragment, Shadow Self',
       image: '/images/characters/ElaraNox.png',
-      bio: '[Character bio]',
+      bio: 'Something went wrong. She exists in the spaces between - and holds the key to wholeness.',
     },
     {
       name: 'Kael Sorely',
-      role: '[Role/Description]',
+      role: 'Former Ship Architect, Wanderer',
       image: '/images/characters/Kael3.jpg',
-      bio: '[Character bio]',
+      bio: 'He built vessels for others. Now he searches for a place to call home.',
     },
   ];
 
@@ -157,12 +157,12 @@ export default function Characters() {
 
               {/* Role */}
               <p className="text-[var(--color-secondary)] font-semibold mb-3 text-sm">
-                [Role/Description]
+                June's Parents, Traditionalists Finding Their Way
               </p>
 
               {/* Bio */}
               <p className="text-[var(--color-text)]/80 text-sm">
-                [Character bio]
+                They raised her with conventional values - then watched her redefine what family means.
               </p>
             </motion.div>
 
@@ -188,12 +188,12 @@ export default function Characters() {
 
               {/* Role */}
               <p className="text-[var(--color-secondary)] font-semibold mb-3 text-sm">
-                Jack Russell Terrier
+                Jack Russell Terrier, Chaos with a Collar
               </p>
 
               {/* Bio */}
               <p className="text-[var(--color-text)]/80 text-sm">
-                [Character bio]
+                He can finally speak. The results are... enthusiastic.
               </p>
             </motion.div>
           </div>
