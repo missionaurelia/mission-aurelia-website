@@ -225,7 +225,7 @@ export default function TechnologyElaraProjection() {
                         <ul className="text-sm space-y-1">
                           <li>• Location: Every room, corridor, zone</li>
                           <li>• Function: Real-time rendering, sensory integration</li>
-                          <li>• Latency: <5ms</li>
+                          <li>• Latency: &lt;5ms</li>
                           <li>• Seamless handoff between zones</li>
                         </ul>
                       </div>
