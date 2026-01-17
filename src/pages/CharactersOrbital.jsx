@@ -270,6 +270,13 @@ export default function CharactersOrbital() {
               </div>
             ))}
           </div>
+          
+          {/* Disclaimer */}
+          <div className="mt-8 max-w-4xl mx-auto px-4">
+            <p className="text-xs md:text-sm text-gray-400 text-center leading-relaxed">
+              <span className="font-semibold">Disclaimer:</span> The visual content in this section includes AI-generated character concepts based on public figures. These are speculative casting visions for creative exploration only and are not affiliated with or endorsed by the individuals depicted. All rights remain with their respective holders.
+            </p>
+          </div>
         </div>
       </div>
 
