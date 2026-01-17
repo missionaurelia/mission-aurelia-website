@@ -135,7 +135,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl mb-4">Key Locations</h3>
               <p className="text-[var(--color-text)]/80 mb-4">
-                Where does Mission: Aurelia take place?
+                From Earth to the stars — the worlds of Mission: Aurelia.
               </p>
               <Link href="/universe">
                 <a className="btn-tertiary">Learn More →</a>
@@ -153,7 +153,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl mb-4">Characters</h3>
               <p className="text-[var(--color-text)]/80 mb-4">
-                Who are the main characters?
+                Meet the Veyra family — and those who change them.
               </p>
               <Link href="/characters">
                 <a className="btn-tertiary">Meet them →</a>
@@ -171,7 +171,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl mb-4">Our Vision</h3>
               <p className="text-[var(--color-text)]/80 mb-4">
-                What motivates us?
+                The future isn't human vs. machine. It's what we become together.
               </p>
               <Link href="/vision">
                 <a className="btn-tertiary">Explore the Vision →</a>
