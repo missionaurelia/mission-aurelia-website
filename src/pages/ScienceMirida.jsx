@@ -458,7 +458,6 @@ export default function ScienceMirida() {
               </p>
             </div>
           </div>
-          )}
 
           {/* Back Link */}
           <div className="text-center pt-16 pb-8">
