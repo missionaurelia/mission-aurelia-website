@@ -124,7 +124,7 @@ export default function Technology() {
                             '/images/tech-nova-ventis.png'
                           }
                           alt={topic.title}
-                          className="w-32 h-32 object-contain mb-4 transition-transform duration-300 group-hover:scale-110"
+                          className="w-full h-48 object-contain mb-4 transition-transform duration-300 group-hover:scale-110"
                         />
                         <p className="text-slate-300 text-sm text-center">
                           {topic.description}
