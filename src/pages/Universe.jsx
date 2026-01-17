@@ -149,7 +149,7 @@ export default function Universe() {
       </section>
 
       {/* Key Locations */}
-      <section className="section-padding">
+      <section id="key-locations" className="section-padding">
         <div className="container">
           <h2 className="text-gradient-orange mb-16 text-center">Key Locations</h2>
           
