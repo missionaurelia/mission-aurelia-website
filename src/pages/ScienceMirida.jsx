@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Science() {
+export default function ScienceMirida() {
   const [expandedSections, setExpandedSections] = useState({});
 
   const toggleSection = (section) => {
