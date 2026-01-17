@@ -134,15 +134,7 @@ export default function Philosophy() {
 
               </div>
             </div>
-          </div>
-
-          {/* Note for Orion */}
-          <div className="mt-12 text-center">
-            <p className="text-slate-500 text-sm">
-              All philosophy sections are ready for Orion's content: <span className="text-violet-400">Identity & Aging</span>, <span className="text-purple-400">Consciousness</span>, and <span className="text-pink-400">AI & Feelings</span>.
-            </p>
-          </div>
-        </div>
+          </di    </div>
       </section>
     </div>
   );

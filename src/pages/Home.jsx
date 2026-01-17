@@ -137,7 +137,7 @@ export default function Home() {
               <p className="text-[var(--color-text)]/80 mb-4">
                 From Earth to the stars — the worlds of Mission: Aurelia.
               </p>
-              <Link href="/universe">
+              <Link href="/universe#key-locations">
                 <a className="btn-tertiary">Learn More →</a>
               </Link>
             </div>
