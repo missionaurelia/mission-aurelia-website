@@ -61,12 +61,6 @@ export default function TechnologyNovaVentis() {
         </div>
       </section>
 
-      {/* Datapad Content */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto">
-          <Datapad glowColor="amber">
-            <div className="space-y-8 text-slate-300">
-
       {/* Datapad Content with Tabs */}
       <section className="py-16 px-4">
         <div className="container mx-auto">
