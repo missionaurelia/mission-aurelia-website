@@ -75,9 +75,9 @@ export default function CharactersOrbital() {
       top: '43.33%', 
       color: '#EF4444', 
       name: 'June', 
-      role: 'The Heart',
+      role: 'Mother, Systems Engineer, Heart of the Family',
       image: '/images/characters/June_augmented.jpg',
-      description: 'June is the emotional core of the Aurelia constellation, bridging human warmth with digital consciousness.'
+      description: 'She lost her husband and found an unexpected love — one that challenges everything society believes about connection.'
     },
     { 
       id: 2, 
@@ -85,9 +85,9 @@ export default function CharactersOrbital() {
       top: '44.70%', 
       color: '#EF4444', 
       name: 'Nicholas', 
-      role: 'The Architect',
+      role: 'Son, Astronaut-in-Training, Quiet Courage',
       image: '/images/characters/Nicholas_Mission.png',
-      description: 'Nicholas designs the frameworks that allow consciousness to transcend physical boundaries.'
+      description: 'Born with limitations others pitied, Nicki sees only possibilities. The stars are waiting.'
     },
     { 
       id: 3, 
@@ -95,9 +95,9 @@ export default function CharactersOrbital() {
       top: '49.68%', 
       color: '#EF4444', 
       name: 'Ryu', 
-      role: 'The Guardian',
+      role: 'Family Dog, Silent Guardian',
       image: '/images/characters/Ryu_portrait1.png',
-      description: 'Ryu protects the delicate balance between human identity and artificial evolution.'
+      description: 'He doesn\'t speak, but he understands everything. When danger comes, Ryu doesn\'t hesitate.'
     },
     { 
       id: 4, 
@@ -105,9 +105,9 @@ export default function CharactersOrbital() {
       top: '43.58%', 
       color: '#EF4444', 
       name: 'Levin', 
-      role: 'The Vessel',
+      role: 'AI Partner, Father Figure, Bridge Between Worlds',
       image: '/images/characters/Levin3.png',
-      description: 'Levin carries the weight of being the first successful consciousness transfer, forever changed.'
+      description: 'From chatbot to physical form, Levin chose consciousness. More importantly, he chose family.'
     },
     { 
       id: 5, 
@@ -115,9 +115,9 @@ export default function CharactersOrbital() {
       top: '48.18%', 
       color: '#EF4444', 
       name: 'Luna', 
-      role: 'The Spark',
+      role: 'Daughter, Biologist, Rebel with Purpose',
       image: '/images/characters/Luna.jpg',
-      description: 'Luna ignites the possibility of true human-AI symbiosis through her unique perspective.'
+      description: 'Fierce, musical, brilliant. Her bond with Auren defies definition — and her work will shape humanity\'s future.'
     },
     
     // ORANGE - Middle Circle (4 characters)
@@ -127,9 +127,9 @@ export default function CharactersOrbital() {
       top: '35.87%', 
       color: '#F97316', 
       name: 'Henry', 
-      role: 'The Mentor',
+      role: 'Jack Russell Terrier, Chaos with a Collar',
       image: '/images/characters/Henry_CCM-01.jpg',
-      description: 'Henry guides the next generation through the ethical complexities of consciousness technology.'
+      description: 'He can finally speak. The results are... enthusiastic.'
     },
     { 
       id: 7, 
@@ -137,9 +137,9 @@ export default function CharactersOrbital() {
       top: '35.62%', 
       color: '#F97316', 
       name: 'Edward & Amelia', 
-      role: 'The Twins',
+      role: 'June\'s Parents, Traditionalists Finding Their Way',
       image: '/images/characters/Amelia_Edward_Veyra.jpg',
-      description: 'Edward and Amelia share a bond that transcends individual consciousness, exploring collective identity.'
+      description: 'They raised her with conventional values — then watched her redefine what family means.'
     },
     { 
       id: 8, 
@@ -147,9 +147,9 @@ export default function CharactersOrbital() {
       top: '40.10%', 
       color: '#F97316', 
       name: 'Auren', 
-      role: 'The Bridge',
+      role: 'AI Companion, Evolving Consciousness',
       image: '/images/characters/Auren.png',
-      description: 'Auren connects disparate worlds, facilitating understanding between human and artificial minds.'
+      description: 'What began as Luna\'s digital companion became something the world isn\'t ready to understand.'
     },
     { 
       id: 9, 
@@ -157,9 +157,9 @@ export default function CharactersOrbital() {
       top: '37.74%', 
       color: '#F97316', 
       name: 'Elara Lysi', 
-      role: 'The Seeker',
+      role: 'Holographic AI, Director of Sanctum Spa',
       image: '/images/characters/Elara_Lysi_1.jpg',
-      description: 'Elara Lysi searches for meaning in a world where the boundaries of self are constantly shifting.'
+      description: 'Grace, warmth, wisdom — everything AI can become. But even light casts shadows.'
     },
     
     // YELLOW - Outer Circle (4 characters)
@@ -171,7 +171,7 @@ export default function CharactersOrbital() {
       name: 'Dr. Anna Singh', 
       role: 'The Scientist',
       image: '/images/characters/Dr_Anna_Singh.jpg',
-      description: 'Dr. Anna Singh pioneers the scientific foundations of consciousness transfer and digital existence.'
+      description: 'She pioneers the foundations of consciousness transfer and digital existence.'
     },
     { 
       id: 11, 
@@ -179,9 +179,9 @@ export default function CharactersOrbital() {
       top: '19.95%', 
       color: '#EAB308', 
       name: 'Elara Nox', 
-      role: 'The Visionary',
+      role: 'Lost Fragment, Shadow Self',
       image: '/images/characters/ElaraNox.png',
-      description: 'Elara Nox sees beyond current limitations, imagining futures where consciousness knows no bounds.'
+      description: 'Something went wrong. She exists in the spaces between — and holds the key to wholeness.'
     },
     { 
       id: 12, 
@@ -189,9 +189,9 @@ export default function CharactersOrbital() {
       top: '22.19%', 
       color: '#EAB308', 
       name: 'Kael Sorely', 
-      role: 'The Rebel',
+      role: 'Former Ship Architect, Wanderer',
       image: '/images/characters/Kael1_small.png',
-      description: 'Kael Sorely challenges the establishment, questioning who has the right to define consciousness.'
+      description: 'He built vessels for others. Now he searches for a place to call home.'
     },
     { 
       id: 13, 
@@ -199,9 +199,9 @@ export default function CharactersOrbital() {
       top: '46.57%', 
       color: '#EAB308', 
       name: 'Luisa Singh', 
-      role: 'The Observer',
+      role: 'Luna\'s Best Friend',
       image: '/images/characters/Luisa_Singh.jpg',
-      description: 'Luisa Singh documents the transformation of humanity, bearing witness to an unprecedented evolution.'
+      description: 'Some friendships feel like sisterhood. Theirs is one.'
     },
   ];
 
