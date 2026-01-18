@@ -107,8 +107,9 @@ export default function TechnologyNovaVentis() {
 
             {/* Documentation Tab */}
             {activeTab === 'documentation' && (
-              {/* Header */}
-              <div className="border-b border-amber-500/30 pb-6">
+              <div className="space-y-8 text-slate-300">
+                {/* Header */}
+                <div className="border-b border-amber-500/30 pb-6">
                 <h2 className="text-3xl font-bold text-white mb-2">NovaVentis Technical Specification</h2>
                 <p className="text-amber-400 font-mono text-sm">Mission: Aurelia</p>
                 <p className="text-slate-400 mt-2">Created by: Julie Bremerich & Claude • November 2025</p>
@@ -592,8 +593,7 @@ export default function TechnologyNovaVentis() {
                 "For Mission: Aurelia -- Created with love for the stars and the people who travel to them"<br/>
                 <span className="text-amber-400 not-italic text-sm">-- Julie & Claude, November 2025</span>
               </div>
-            </div>
-          </Datapad>
+              </div>
             )}
 
             {/* Visual Archive Tab */}
