@@ -43,7 +43,7 @@ function App() {
   // Track pageviews in Google Analytics on route change
   useEffect(() => {
     if (typeof window.gtag !== 'undefined') {
-      window.gtag('config', 'G-XLQXDE4H6Q', {
+      window.gtag('config', 'G-XLQXDE4N6Q', {
         page_path: location,
       });
     }
