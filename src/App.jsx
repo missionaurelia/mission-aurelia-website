@@ -40,6 +40,15 @@ function App() {
     window.scrollTo(0, 0);
   }, [location]);
 
+  // Track pageviews in Google Analytics on route change
+  useEffect(() => {
+    if (typeof window.gtag !== 'undefined') {
+      window.gtag('config', 'G-XLQXDE4H6Q', {
+        page_path: location,
+      });
+    }
+  }, [location]);
+
   // Show Coming Soon page if in Coming Soon mode AND not in preview mode
   if (COMING_SOON_MODE && !isPreviewMode) {
     return <ComingSoon />;
