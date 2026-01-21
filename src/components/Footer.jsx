@@ -12,6 +12,36 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-white/10 bg-[var(--color-background)]">
+      {/* Feedback Form Section */}
+      <div className="container py-12">
+        <div className="w-full max-w-2xl mx-auto">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-semibold text-[var(--color-text)] mb-3">
+              💬 Send Feedback
+            </h3>
+            <p className="text-[var(--color-text)]/70">
+              Share your thoughts, ideas, or any feedback you'd like to leave with us.
+            </p>
+          </div>
+          
+          {/* Tally Embedded Form */}
+          <iframe 
+            src="https://tally.so/embed/jalZv6?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            width="100%" 
+            height="500"
+            frameBorder="0" 
+            marginHeight="0" 
+            marginWidth="0" 
+            title="Send Feedback"
+            style={{ border: 'none' }}
+          />
+        </div>
+      </div>
+      
+      {/* Divider */}
+      <div className="border-t border-white/10" />
+      
+      {/* Footer Info */}
       <div className="container py-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
