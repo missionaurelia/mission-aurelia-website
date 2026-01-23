@@ -57,7 +57,7 @@ export default function CharacterSpotlight() {
         {/* Video Player Section */}
         <div className="max-w-4xl mx-auto">
           <div 
-            className="relative aspect-[9/16] md:aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl"
+            className="relative aspect-[9/16] md:aspect-[9/16] bg-black rounded-2xl overflow-hidden shadow-2xl max-w-md md:max-w-2xl mx-auto"
             onMouseEnter={() => setShowControls(true)}
             onMouseLeave={() => setShowControls(false)}
           >
@@ -68,6 +68,8 @@ export default function CharacterSpotlight() {
               src={spotlight.videoUrl}
               muted={isMuted}
               playsInline
+              controlsList="nodownload nofullscreen noremoteplayback"
+              disablePictureInPicture
               onEnded={handleVideoEnd}
               poster={spotlight.thumbnailUrl}
             />
@@ -84,25 +86,27 @@ export default function CharacterSpotlight() {
               )}
             </div>
 
-            {/* Video Controls */}
-            {showControls && (
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-                <div className="flex items-center justify-between">
-                  <button
-                    onClick={togglePlay}
-                    className="text-white hover:text-[#FF6B35] transition-colors"
-                  >
-                    {isPlaying ? <Pause className="w-6 h-6" /> : <Play className="w-6 h-6" />}
-                  </button>
-                  <button
-                    onClick={toggleMute}
-                    className="text-white hover:text-[#FF6B35] transition-colors"
-                  >
-                    {isMuted ? <VolumeX className="w-6 h-6" /> : <Volume2 className="w-6 h-6" />}
-                  </button>
-                </div>
+            {/* Video Controls - Always visible on mobile, hover on desktop */}
+            <div className={`absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 transition-opacity ${
+              showControls ? 'opacity-100' : 'opacity-0 md:opacity-0'
+            } md:hover:opacity-100`}>
+              <div className="flex items-center gap-4">
+                <button
+                  onClick={togglePlay}
+                  className="text-white hover:text-[#FF6B35] transition-colors p-2"
+                  aria-label={isPlaying ? 'Pause' : 'Play'}
+                >
+                  {isPlaying ? <Pause className="w-6 h-6" /> : <Play className="w-6 h-6" />}
+                </button>
+                <button
+                  onClick={toggleMute}
+                  className="text-white hover:text-[#FF6B35] transition-colors p-2"
+                  aria-label={isMuted ? 'Unmute' : 'Mute'}
+                >
+                  {isMuted ? <VolumeX className="w-6 h-6" /> : <Volume2 className="w-6 h-6" />}
+                </button>
               </div>
-            )}
+            </div>
           </div>
 
           {/* Video Info */}
