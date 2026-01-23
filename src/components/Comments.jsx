@@ -19,6 +19,9 @@ export default function Comments({ spotlightId }) {
   useEffect(() => {
     if (comments.length > 0) {
       localStorage.setItem(`comments_${spotlightId}`, JSON.stringify(comments));
+    } else {
+      // Remove from localStorage if no comments
+      localStorage.removeItem(`comments_${spotlightId}`);
     }
   }, [comments, spotlightId]);
 
@@ -47,7 +50,15 @@ export default function Comments({ spotlightId }) {
   };
 
   const handleDelete = (commentId) => {
-    setComments(comments.filter(c => c.id !== commentId));
+    const updatedComments = comments.filter(c => c.id !== commentId);
+    setComments(updatedComments);
+    
+    // Immediately update localStorage
+    if (updatedComments.length > 0) {
+      localStorage.setItem(`comments_${spotlightId}`, JSON.stringify(updatedComments));
+    } else {
+      localStorage.removeItem(`comments_${spotlightId}`);
+    }
   };
 
   const formatDate = (timestamp) => {
