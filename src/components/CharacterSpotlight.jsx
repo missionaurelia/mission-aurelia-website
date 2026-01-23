@@ -9,6 +9,9 @@ export default function CharacterSpotlight() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
   const [showControls, setShowControls] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
 
   const togglePlay = () => {
     if (videoRef.current) {
@@ -33,6 +36,35 @@ export default function CharacterSpotlight() {
     if (videoRef.current) {
       videoRef.current.currentTime = 0;
     }
+  };
+
+  const handleTimeUpdate = () => {
+    if (videoRef.current && !isDragging) {
+      setCurrentTime(videoRef.current.currentTime);
+    }
+  };
+
+  const handleLoadedMetadata = () => {
+    if (videoRef.current) {
+      setDuration(videoRef.current.duration);
+    }
+  };
+
+  const handleSeek = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const pos = (e.clientX - rect.left) / rect.width;
+    const time = pos * duration;
+    if (videoRef.current) {
+      videoRef.current.currentTime = time;
+      setCurrentTime(time);
+    }
+  };
+
+  const formatTime = (seconds) => {
+    if (isNaN(seconds)) return '0:00';
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${mins}:${secs.toString().padStart(2, '0')}`;
   };
 
   return (
@@ -71,6 +103,8 @@ export default function CharacterSpotlight() {
               controlsList="nodownload nofullscreen noremoteplayback"
               disablePictureInPicture
               onEnded={handleVideoEnd}
+              onTimeUpdate={handleTimeUpdate}
+              onLoadedMetadata={handleLoadedMetadata}
               poster={spotlight.thumbnailUrl}
             />
 
@@ -87,24 +121,49 @@ export default function CharacterSpotlight() {
             </div>
 
             {/* Video Controls - Always visible on mobile, hover on desktop */}
-            <div className={`absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 transition-opacity ${
+            <div className={`absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-4 transition-opacity ${
               showControls ? 'opacity-100' : 'opacity-0 md:opacity-0'
             } md:hover:opacity-100`}>
-              <div className="flex items-center gap-4">
-                <button
-                  onClick={togglePlay}
-                  className="text-white hover:text-[#FF6B35] transition-colors p-2"
-                  aria-label={isPlaying ? 'Pause' : 'Play'}
+              {/* Timeline Seekbar */}
+              <div className="mb-3">
+                <div 
+                  className="relative h-1 bg-white/20 rounded-full cursor-pointer group"
+                  onClick={handleSeek}
                 >
-                  {isPlaying ? <Pause className="w-6 h-6" /> : <Play className="w-6 h-6" />}
-                </button>
-                <button
-                  onClick={toggleMute}
-                  className="text-white hover:text-[#FF6B35] transition-colors p-2"
-                  aria-label={isMuted ? 'Unmute' : 'Mute'}
-                >
-                  {isMuted ? <VolumeX className="w-6 h-6" /> : <Volume2 className="w-6 h-6" />}
-                </button>
+                  <div 
+                    className="absolute h-full bg-[#FF6B35] rounded-full transition-all"
+                    style={{ width: `${(currentTime / duration) * 100}%` }}
+                  />
+                  <div 
+                    className="absolute w-3 h-3 bg-white rounded-full -top-1 -ml-1.5 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg"
+                    style={{ left: `${(currentTime / duration) * 100}%` }}
+                  />
+                </div>
+              </div>
+              
+              {/* Controls Row */}
+              <div className="flex items-center justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <button
+                    onClick={togglePlay}
+                    className="text-white hover:text-[#FF6B35] transition-colors p-1"
+                    aria-label={isPlaying ? 'Pause' : 'Play'}
+                  >
+                    {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />}
+                  </button>
+                  <button
+                    onClick={toggleMute}
+                    className="text-white hover:text-[#FF6B35] transition-colors p-1"
+                    aria-label={isMuted ? 'Unmute' : 'Mute'}
+                  >
+                    {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
+                  </button>
+                </div>
+                
+                {/* Time Display */}
+                <div className="text-white text-sm font-medium">
+                  {formatTime(currentTime)} / {formatTime(duration)}
+                </div>
               </div>
             </div>
           </div>
