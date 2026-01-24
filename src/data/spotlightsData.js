@@ -8,10 +8,10 @@ export const spotlights = [
     character: 'June Veyra',
     featuring: ['Henry', 'Ryu'],
     description: 'Systems Engineer, Mother of Henry and Ryu. Discover the heart of the Veyra family aboard the Aurelia.',
-    videoUrl: '/videos/spotlights/henry-ryu-june-veyra.mp4',
+    videoUrl: '/videos/spotlights/Henrys_Spotlight_June_Veyra.mp4',
     thumbnailUrl: '/images/characters/June_augmented.jpg', // June Veyra character image from Characters page
     date: '2026-01-23',
-    duration: '24 seconds',
+    duration: '32 seconds',
     tags: ['Veyra Family', 'Henry', 'Ryu', 'Love', 'Family'],
     characterBioLink: '/characters', // Links to orbital view, can be updated to specific character page
     transcript: `
