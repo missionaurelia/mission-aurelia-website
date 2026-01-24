@@ -124,7 +124,7 @@ export default function Spotlights() {
             {/* Video Player - Main Column */}
             <div className="lg:col-span-2">
               <div 
-                className="relative aspect-[9/16] md:aspect-[9/16] bg-black rounded-2xl overflow-hidden shadow-2xl mb-8 max-w-md md:max-w-2xl mx-auto lg:mx-0"
+                className="relative aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl mb-8 mx-auto lg:mx-0"
                 onMouseEnter={() => setShowControls(true)}
                 onMouseLeave={() => setShowControls(false)}
               >

@@ -89,7 +89,7 @@ export default function CharacterSpotlight() {
         {/* Video Player Section */}
         <div className="max-w-4xl mx-auto">
           <div 
-            className="relative aspect-[9/16] md:aspect-[9/16] bg-black rounded-2xl overflow-hidden shadow-2xl max-w-md md:max-w-2xl mx-auto"
+            className="relative aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl mx-auto"
             onMouseEnter={() => setShowControls(true)}
             onMouseLeave={() => setShowControls(false)}
           >
