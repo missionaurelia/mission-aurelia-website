@@ -2,6 +2,7 @@ import { Link, useLocation } from 'wouter';
 import { ArrowRight, Play } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
+import ComingSoonPopup from '../components/ComingSoonPopup';
 
 export default function Home() {
   const [, setLocation] = useLocation();
@@ -21,6 +22,8 @@ export default function Home() {
 
   return (
     <div>
+      {/* Coming Soon Popup */}
+      <ComingSoonPopup />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image with Overlay */}
