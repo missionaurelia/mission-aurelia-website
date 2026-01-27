@@ -33,3 +33,7 @@
 
 - [x] Remove "Neuigkeiten von Henry" label from page header
 - [x] Change title from "Character Spotlights" to "Henry's Character Spotlight"
+
+## Launch Date Update
+
+- [x] Update spotlight date from January 23, 2026 to January 30, 2026 in spotlightsData.js
