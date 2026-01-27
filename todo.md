@@ -53,3 +53,10 @@
 - [x] Prevent video from auto-playing when intro is clicked
 - [x] Hide video controls during intro display
 - [x] Ensure video only starts AFTER intro fade-out completes
+
+## Intro UX Bugs - Final Fixes
+
+- [x] Make intro container scrollable on mobile (overflow-y-auto)
+- [x] Hide video controls completely during intro display
+- [x] Ensure controls only appear AFTER intro is dismissed
+- [x] Fix desktop play button not working when intro is visible

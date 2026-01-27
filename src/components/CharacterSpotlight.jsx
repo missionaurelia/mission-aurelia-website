@@ -114,8 +114,8 @@ export default function CharacterSpotlight() {
 
             {/* UNAUTHORIZED BROADCAST Intro Overlay */}
             {showIntro && (
-              <div className="absolute inset-0 bg-black flex items-center justify-center z-20 animate-fade-in">
-                <div className="max-w-2xl px-6 md:px-8 text-center">
+              <div className="absolute inset-0 bg-black flex items-center justify-center z-20 animate-fade-in overflow-y-auto py-8">
+                <div className="max-w-2xl px-6 md:px-8 text-center my-auto">
                   <div className="space-y-4 md:space-y-6">
                     <h3 className="text-[#FF6B35] font-mono text-xs md:text-base tracking-wider animate-pulse">
                       [UNAUTHORIZED BROADCAST]
@@ -165,8 +165,9 @@ export default function CharacterSpotlight() {
             )}
           </div>
 
-          {/* Video Controls - Below Video, Always Visible */}
-          <div className="bg-[#0f0e0d] rounded-b-2xl p-4 shadow-2xl">
+          {/* Video Controls - Below Video, Always Visible (Hidden during intro) */}
+          {!showIntro && (
+            <div className="bg-[#0f0e0d] rounded-b-2xl p-4 shadow-2xl">
             {/* Timeline Seekbar */}
             <div className="mb-3">
               <div 
@@ -209,6 +210,7 @@ export default function CharacterSpotlight() {
               </div>
             </div>
           </div>
+          )}
 
           {/* Video Info */}
           <div className="mt-8 text-center">
