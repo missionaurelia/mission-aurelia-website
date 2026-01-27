@@ -359,25 +359,21 @@ export default function Spotlights() {
                 Get notified when Henry introduces a new character. Monthly updates delivered to your inbox.
               </p>
               
-              {/* Tally Form Embed Placeholder */}
-              <div className="bg-white/5 rounded-lg p-8 border border-white/10">
-                <p className="text-gray-400 mb-4">
-                  Subscribe to "Henry's Character Spotlight"
+              {/* Tally Form Inline Embed */}
+              <div className="max-w-2xl mx-auto">
+                <iframe 
+                  src="https://tally.so/embed/VLzaMJ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                  width="100%"
+                  height="400"
+                  frameBorder="0"
+                  marginHeight="0"
+                  marginWidth="0"
+                  title="Subscribe to Henry's Character Spotlight"
+                  className="rounded-lg"
+                />
+                <p className="text-xs text-gray-500 mt-4">
+                  We respect your privacy. Unsubscribe at any time.
                 </p>
-                {/* Tally form will be embedded here */}
-                <div className="max-w-md mx-auto">
-                  <input 
-                    type="email" 
-                    placeholder="your@email.com" 
-                    className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-500 mb-4 focus:outline-none focus:border-[#FF6B35]"
-                  />
-                  <button className="w-full px-8 py-3 bg-[#FF6B35] text-white rounded-lg hover:bg-[#FF6B35]/90 transition-colors font-medium">
-                    Subscribe
-                  </button>
-                  <p className="text-xs text-gray-500 mt-4">
-                    We respect your privacy. Unsubscribe at any time.
-                  </p>
-                </div>
               </div>
             </div>
           </div>
