@@ -28,3 +28,8 @@
 - [x] Move video controls BELOW video player (not overlaying) on /spotlights page
 - [x] Make controls always visible on mobile (no auto-hide)
 - [x] Ensure Play/Pause and Mute/Unmute buttons are visible
+
+## /spotlights Page Header Update
+
+- [x] Remove "Neuigkeiten von Henry" label from page header
+- [x] Change title from "Character Spotlights" to "Henry's Character Spotlight"

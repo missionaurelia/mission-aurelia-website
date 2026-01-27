@@ -101,13 +101,8 @@ export default function Spotlights() {
           </Link>
           
           <div className="text-center max-w-3xl mx-auto">
-            <div className="inline-block mb-4">
-              <span className="text-sm font-medium tracking-wider text-[#FF6B35] uppercase">
-                Neuigkeiten von Henry
-              </span>
-            </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              <span className="text-gradient-orange">Character Spotlights</span>
+              <span className="text-gradient-orange">Henry's Character Spotlight</span>
             </h1>
             <p className="text-xl text-gray-300">
               Join Henry and Ryu as they introduce you to the characters of Mission: Aurelia. 
