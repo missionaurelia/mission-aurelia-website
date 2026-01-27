@@ -60,3 +60,11 @@
 - [x] Hide video controls completely during intro display
 - [x] Ensure controls only appear AFTER intro is dismissed
 - [x] Fix desktop play button not working when intro is visible
+
+## Tally Form Integration - Newsletter Subscription
+
+- [x] Integrate Tally form (https://tally.so/r/VLzaMJ) into subscribe section
+- [x] Connect email input to Tally form submission
+- [x] Add success message after subscription (handled by Tally)
+- [x] Add error handling for failed submissions (handled by Tally)
+- [ ] Test subscription flow on both Homepage and /spotlights page (ready for testing)
