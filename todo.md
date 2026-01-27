@@ -21,3 +21,10 @@
 - [x] Change "Meet June Veyra" button text to "Characters"
 - [x] Remove "Behind the Scenes" section completely
 - [x] Change subscribe label from "Subscribe to 'Neuigkeiten von Henry'" to "Subscribe to 'Henry's Character Spotlight'"
+
+## Video Controls Fix - Mobile UX
+
+- [x] Move video controls BELOW video player (not overlaying) on Homepage
+- [x] Move video controls BELOW video player (not overlaying) on /spotlights page
+- [x] Make controls always visible on mobile (no auto-hide)
+- [x] Ensure Play/Pause and Mute/Unmute buttons are visible
