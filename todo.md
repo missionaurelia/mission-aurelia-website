@@ -46,3 +46,10 @@
 - [x] Fade out intro when user clicks Play button
 - [x] Use monospace/terminal-style font for intro text
 - [x] Make "[UNAUTHORIZED BROADCAST]" stand out (red/orange color)
+
+## Mobile Intro Bugs
+
+- [x] Fix intro text sizing on mobile (text too large/cut off)
+- [x] Prevent video from auto-playing when intro is clicked
+- [x] Hide video controls during intro display
+- [x] Ensure video only starts AFTER intro fade-out completes
