@@ -12,6 +12,15 @@ export default function CharacterSpotlight() {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
+  const [showIntro, setShowIntro] = useState(true);
+
+  const handleIntroPlay = () => {
+    setShowIntro(false);
+    if (videoRef.current) {
+      videoRef.current.play();
+      setIsPlaying(true);
+    }
+  };
 
   const togglePlay = () => {
     if (videoRef.current) {
@@ -100,17 +109,57 @@ export default function CharacterSpotlight() {
               poster={spotlight.thumbnailUrl}
             />
 
-            {/* Play/Pause Overlay */}
-            <div 
-              className="absolute inset-0 flex items-center justify-center cursor-pointer bg-black/20 hover:bg-black/30 transition-colors"
-              onClick={togglePlay}
-            >
-              {!isPlaying && (
-                <div className="w-20 h-20 rounded-full bg-[#FF6B35] flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
-                  <Play className="w-10 h-10 text-white ml-1" />
+            {/* UNAUTHORIZED BROADCAST Intro Overlay */}
+            {showIntro && (
+              <div className="absolute inset-0 bg-black flex items-center justify-center z-20 animate-fade-in">
+                <div className="max-w-2xl px-8 text-center">
+                  <div className="space-y-6">
+                    <h3 className="text-[#FF6B35] font-mono text-sm md:text-base tracking-wider animate-pulse">
+                      [UNAUTHORIZED BROADCAST]
+                    </h3>
+                    
+                    <div className="text-white font-mono text-xs md:text-sm leading-relaxed space-y-4">
+                      <p>This footage was not approved by the Nova Ventis crew.</p>
+                      
+                      <p>
+                        While engineering was busy with "important calibrations," two crew members 
+                        borrowed the prototype CCM-01 Collar from the workshop.
+                      </p>
+                      
+                      <p>
+                        Henry (Jack Russell, self-proclaimed journalist) and Ryu (Akita, moral support & lookout) 
+                        decided it was time to spill some secrets.
+                      </p>
+                      
+                      <p>The crew has reviewed this footage.</p>
+                      <p>They're not happy.</p>
+                      <p>But they can't say it's wrong.</p>
+                    </div>
+                    
+                    <button
+                      onClick={handleIntroPlay}
+                      className="mt-8 text-[#FF6B35] font-mono text-sm md:text-base tracking-wider animate-pulse hover:text-white transition-colors"
+                    >
+                      [PRESS PLAY]
+                    </button>
+                  </div>
                 </div>
-              )}
-            </div>
+              </div>
+            )}
+
+            {/* Play/Pause Overlay */}
+            {!showIntro && (
+              <div 
+                className="absolute inset-0 flex items-center justify-center cursor-pointer bg-black/20 hover:bg-black/30 transition-colors"
+                onClick={togglePlay}
+              >
+                {!isPlaying && (
+                  <div className="w-20 h-20 rounded-full bg-[#FF6B35] flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+                    <Play className="w-10 h-10 text-white ml-1" />
+                  </div>
+                )}
+              </div>
+            )}
           </div>
 
           {/* Video Controls - Below Video, Always Visible */}
