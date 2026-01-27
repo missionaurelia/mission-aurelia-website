@@ -16,10 +16,13 @@ export default function CharacterSpotlight() {
 
   const handleIntroPlay = () => {
     setShowIntro(false);
-    if (videoRef.current) {
-      videoRef.current.play();
-      setIsPlaying(true);
-    }
+    // Delay video start slightly to ensure smooth transition
+    setTimeout(() => {
+      if (videoRef.current) {
+        videoRef.current.play();
+        setIsPlaying(true);
+      }
+    }, 300);
   };
 
   const togglePlay = () => {
@@ -112,13 +115,13 @@ export default function CharacterSpotlight() {
             {/* UNAUTHORIZED BROADCAST Intro Overlay */}
             {showIntro && (
               <div className="absolute inset-0 bg-black flex items-center justify-center z-20 animate-fade-in">
-                <div className="max-w-2xl px-8 text-center">
-                  <div className="space-y-6">
-                    <h3 className="text-[#FF6B35] font-mono text-sm md:text-base tracking-wider animate-pulse">
+                <div className="max-w-2xl px-6 md:px-8 text-center">
+                  <div className="space-y-4 md:space-y-6">
+                    <h3 className="text-[#FF6B35] font-mono text-xs md:text-base tracking-wider animate-pulse">
                       [UNAUTHORIZED BROADCAST]
                     </h3>
                     
-                    <div className="text-white font-mono text-xs md:text-sm leading-relaxed space-y-4">
+                    <div className="text-white font-mono text-[10px] md:text-sm leading-relaxed space-y-2 md:space-y-4">
                       <p>This footage was not approved by the Nova Ventis crew.</p>
                       
                       <p>
@@ -138,7 +141,7 @@ export default function CharacterSpotlight() {
                     
                     <button
                       onClick={handleIntroPlay}
-                      className="mt-8 text-[#FF6B35] font-mono text-sm md:text-base tracking-wider animate-pulse hover:text-white transition-colors"
+                      className="mt-6 md:mt-8 text-[#FF6B35] font-mono text-xs md:text-base tracking-wider animate-pulse hover:text-white transition-colors"
                     >
                       [PRESS PLAY]
                     </button>
