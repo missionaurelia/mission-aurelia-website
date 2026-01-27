@@ -207,7 +207,7 @@ export default function Spotlights() {
               {/* Video Info */}
               <div>
                 <h2 className="text-3xl font-bold mb-3 text-white">
-                  {selectedSpotlight.title}
+                  Who is {selectedSpotlight.character}?
                 </h2>
                 
                 <div className="flex flex-wrap gap-4 mb-4 text-gray-400">
@@ -229,10 +229,6 @@ export default function Spotlights() {
                   </div>
                 </div>
 
-                <p className="text-lg text-gray-300 mb-6">
-                  {selectedSpotlight.description}
-                </p>
-
                 {/* Social Share */}
                 <div className="mb-6">
                   <SocialShare 
@@ -242,34 +238,12 @@ export default function Spotlights() {
                   />
                 </div>
 
-                {/* Tags */}
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {selectedSpotlight.tags.map((tag, index) => (
-                    <span
-                      key={index}
-                      className="px-3 py-1 text-sm bg-[#FF6B35]/10 text-[#FF6B35] rounded-full border border-[#FF6B35]/20"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-
                 {/* Action Button */}
-                <Link href={selectedSpotlight.characterBioLink}>
+                <Link href="/characters">
                   <a className="inline-block px-8 py-3 bg-[#FF6B35] text-white rounded-lg hover:bg-[#FF6B35]/90 transition-colors font-medium">
-                    Meet {selectedSpotlight.character}
+                    Characters
                   </a>
                 </Link>
-
-                {/* Behind the Scenes */}
-                {selectedSpotlight.behindTheScenes && (
-                  <div className="mt-8 p-6 bg-white/5 rounded-lg border border-white/10">
-                    <h3 className="text-lg font-semibold mb-2 text-white">Behind the Scenes</h3>
-                    <p className="text-gray-300 text-sm">
-                      {selectedSpotlight.behindTheScenes}
-                    </p>
-                  </div>
-                )}
 
                 {/* Comments Section */}
                 <Comments spotlightId={selectedSpotlight.id} />
@@ -344,7 +318,7 @@ export default function Spotlights() {
               {/* Tally Form Embed Placeholder */}
               <div className="bg-white/5 rounded-lg p-8 border border-white/10">
                 <p className="text-gray-400 mb-4">
-                  Subscribe to "Neuigkeiten von Henry"
+                  Subscribe to "Henry's Character Spotlight"
                 </p>
                 {/* Tally form will be embedded here */}
                 <div className="max-w-md mx-auto">
