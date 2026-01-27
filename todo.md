@@ -37,3 +37,12 @@
 ## Launch Date Update
 
 - [x] Update spotlight date from January 23, 2026 to January 30, 2026 in spotlightsData.js
+
+## "UNAUTHORIZED BROADCAST" Intro Feature
+
+- [x] Add black screen overlay with intro text before video on Homepage
+- [x] Add black screen overlay with intro text before video on /spotlights page
+- [x] Implement "[PRESS PLAY]" blinking animation
+- [x] Fade out intro when user clicks Play button
+- [x] Use monospace/terminal-style font for intro text
+- [x] Make "[UNAUTHORIZED BROADCAST]" stand out (red/orange color)
