@@ -171,26 +171,11 @@ export default function CharacterSpotlight() {
           {/* Video Info */}
           <div className="mt-8 text-center">
             <h3 className="text-3xl font-bold mb-3 text-white">
-              {spotlight.title}
+              Who is {spotlight.character}?
             </h3>
-            <p className="text-lg text-gray-300 mb-2">
+            <p className="text-lg text-gray-300 mb-6">
               Featuring: {spotlight.featuring.join(' & ')}
             </p>
-            <p className="text-gray-400 mb-6">
-              {spotlight.description}
-            </p>
-
-            {/* Tags */}
-            <div className="flex flex-wrap justify-center gap-2 mb-8">
-              {spotlight.tags.map((tag, index) => (
-                <span
-                  key={index}
-                  className="px-3 py-1 text-sm bg-[#FF6B35]/10 text-[#FF6B35] rounded-full border border-[#FF6B35]/20"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -199,32 +184,15 @@ export default function CharacterSpotlight() {
                   View All Spotlights
                 </a>
               </Link>
-              <Link href={spotlight.characterBioLink}>
+              <Link href="/characters">
                 <a className="px-8 py-3 bg-white/5 text-white rounded-lg hover:bg-white/10 transition-colors font-medium border border-white/10">
-                  Meet {spotlight.character}
+                  Characters
                 </a>
               </Link>
             </div>
           </div>
 
-          {/* Navigation Hint (for future spotlights) */}
-          <div className="mt-12 flex justify-center items-center gap-8 text-gray-500">
-            <button 
-              disabled 
-              className="flex items-center gap-2 opacity-30 cursor-not-allowed"
-            >
-              <ChevronLeft className="w-5 h-5" />
-              <span>Previous</span>
-            </button>
-            <span className="text-sm">1 of 1</span>
-            <button 
-              disabled 
-              className="flex items-center gap-2 opacity-30 cursor-not-allowed"
-            >
-              <span>Next</span>
-              <ChevronRight className="w-5 h-5" />
-            </button>
-          </div>
+
         </div>
 
         {/* Subscribe CTA */}
