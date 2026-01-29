@@ -56,8 +56,8 @@ export default function Science() {
         </div>
       </section>
 
-      {/* File Tabs Section */}
-      <section className="py-16 px-4">
+      {/* File Tabs Section - Desktop */}
+      <section className="py-16 px-4 hidden md:block">
         <div className="container mx-auto max-w-6xl">
           <div className="relative">
             {/* File Tabs Container */}
@@ -134,6 +134,41 @@ export default function Science() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Mobile Vertical Layout */}
+      <section className="py-16 px-4 md:hidden">
+        <div className="container mx-auto max-w-2xl space-y-12">
+          {scienceTopics.map((topic) => (
+            <div key={topic.id} className="space-y-4">
+              {/* Category Header */}
+              <h2 className={`text-3xl font-bold bg-gradient-to-r ${topic.color} bg-clip-text text-transparent text-center`}>
+                {topic.title}
+              </h2>
+              <p className="text-slate-400 text-center text-sm font-mono mb-6">
+                {topic.subtitle}
+              </p>
+              
+              {/* Card */}
+              <Link
+                href={topic.link}
+                className="block"
+              >
+                <div className="p-8 bg-slate-900/50 border-2 border-slate-700 rounded-xl hover:border-slate-600 transition-all hover:scale-105 flex items-center justify-center min-h-[300px]">
+                  <img 
+                    src={
+                      topic.id === 'mirida' ? '/images/mirida-protocol.png' :
+                      topic.id === 'pn7' ? '/images/pn7-asteroid.png' :
+                      '/images/lysithea-institute.png'
+                    }
+                    alt={topic.title}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              </Link>
+            </div>
+          ))}
         </div>
       </section>
     </div>

@@ -56,8 +56,8 @@ export default function Technology() {
         </div>
       </section>
 
-      {/* File Tabs Section */}
-      <section className="py-16 px-4">
+      {/* File Tabs Section - Desktop */}
+      <section className="py-16 px-4 hidden md:block">
         <div className="container mx-auto max-w-6xl">
           <div className="relative">
             {/* File Tabs Container */}
@@ -138,6 +138,55 @@ export default function Technology() {
           </div>
 
 
+        </div>
+      </section>
+
+      {/* Mobile Vertical Layout */}
+      <section className="py-16 px-4 md:hidden">
+        <div className="container mx-auto max-w-2xl space-y-12">
+          {technologyTopics.map((topic) => (
+            <div key={topic.id} className="space-y-4">
+              {/* Category Header */}
+              <h2 className={`text-3xl font-bold bg-gradient-to-r ${topic.color} bg-clip-text text-transparent text-center`}>
+                {topic.title}
+              </h2>
+              <p className="text-slate-400 text-center text-sm font-medium mb-6">
+                {topic.subtitle}
+              </p>
+              
+              {/* Card */}
+              <Link
+                href={topic.link}
+                className="block"
+              >
+                <div className={`
+                  relative
+                  ${topic.bgColor} 
+                  border-2 ${topic.borderColor}
+                  rounded-xl
+                  transition-all duration-300
+                  hover:scale-105
+                  overflow-hidden
+                  p-8
+                `}>
+                  <div className="flex flex-col items-center justify-center space-y-4">
+                    <img 
+                      src={
+                        topic.id === 'ccm01' ? '/images/tech-ccm01.png' :
+                        topic.id === 'elara-projection' ? '/images/tech-elara-projection.png' :
+                        '/images/tech-nova-ventis.png'
+                      }
+                      alt={topic.title}
+                      className="w-full max-w-xs h-48 object-contain"
+                    />
+                    <p className="text-slate-300 text-center">
+                      {topic.description}
+                    </p>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          ))}
         </div>
       </section>
     </div>
