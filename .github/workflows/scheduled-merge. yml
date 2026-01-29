@@ -1,4 +1,4 @@
-name: Scheduled Merge - Character Spotlight Launch
+name: Scheduled merge - Character Spotlight Launch
 
 on:
   schedule:
