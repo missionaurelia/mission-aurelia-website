@@ -68,3 +68,12 @@
 - [x] Add success message after subscription (handled by Tally)
 - [x] Add error handling for failed submissions (handled by Tally)
 - [ ] Test subscription flow on both Homepage and /spotlights page (ready for testing)
+
+## GitHub Actions Scheduled Merge - Launch Day
+
+- [x] Create GitHub Actions workflow file (.github/workflows/scheduled-merge.yml)
+- [x] Configure cron schedule for January 30, 2026 at 11:55 UTC (12:55 CET)
+- [x] Set up auto-merge from feature/character-spotlights to main
+- [x] Test workflow configuration
+- [ ] Push workflow to GitHub repository
+- [ ] Verify workflow is scheduled and ready
