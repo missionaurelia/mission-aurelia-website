@@ -2,6 +2,7 @@ import { Link, useLocation } from 'wouter';
 import { ArrowRight, Play } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
+import CharacterSpotlight from '../components/CharacterSpotlight';
 import ComingSoonPopup from '../components/ComingSoonPopup';
 
 export default function Home() {
@@ -183,6 +184,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Character Spotlights Section */}
+      <CharacterSpotlight />
 
       {/* CTA Section */}
       <section className="section-padding bg-gradient-to-r from-[var(--color-primary)]/20 to-[var(--color-secondary)]/20">
