@@ -289,8 +289,8 @@ export default function Spotlights() {
                   </a>
                 </Link>
 
-                {/* Comments Section */}
-                <Comments spotlightId={selectedSpotlight.id} />
+                {/* Comments Section - Temporarily hidden until backend is implemented */}
+                {/* <Comments spotlightId={selectedSpotlight.id} /> */}
               </div>
             </div>
 
