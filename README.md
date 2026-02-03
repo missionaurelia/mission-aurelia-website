@@ -1,7 +1,5 @@
 # Mission: Aurelia Website
 
-<!-- Test: GitHub Connector Push Test - 2026-02-03 -->
-
 A cinematic landing page for Mission: Aurelia, built with React, Tailwind CSS 4, and Framer Motion.
 
 ## 🎨 What's Built
