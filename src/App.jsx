@@ -25,6 +25,7 @@ import Vision from './pages/Vision';
 import Contact from './pages/Contact';
 import ComingSoon from './pages/ComingSoon';
 import Spotlights from './pages/Spotlights';
+import Story from './pages/Story';
 
 // Set to true to show Coming Soon page, false to show full site
 const COMING_SOON_MODE = false;
@@ -82,6 +83,7 @@ function App() {
           <Route path="/vision" component={Vision} />
           <Route path="/contact" component={Contact} />
           <Route path="/spotlights" component={Spotlights} />
+          <Route path="/story" component={Story} />
           <Route>
             <div className="container section-padding text-center">
               <h1 className="text-gradient-orange mb-4">404</h1>

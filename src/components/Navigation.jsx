@@ -9,6 +9,7 @@ export default function Navigation() {
   const mainNavItems = [
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
+    { path: '/story', label: 'Story' },
     { path: '/universe', label: 'Universe' },
     { path: '/vision', label: 'Vision' },
     { path: '/contact', label: 'Contact' },
