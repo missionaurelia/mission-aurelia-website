@@ -18,6 +18,56 @@ export default function Story() {
         </div>
       </section>
 
+      {/* Season 1 Trailer Section */}
+      <section className="py-12 px-6 mb-16">
+        <div className="max-w-5xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#FF6B35]">
+              Season 1 Trailer
+            </h2>
+            <p className="text-lg text-[#F5F5F5]/70 mb-2">
+              Manifestation
+            </p>
+            <p className="text-sm text-[#F5F5F5]/50">
+              Music: Massive Attack - Angel
+            </p>
+          </div>
+
+          {/* Video Player */}
+          <div className="relative rounded-lg overflow-hidden shadow-2xl mb-6">
+            <video
+              controls
+              poster="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272431119/eBdycfljEmgDcHtp.jpg"
+              className="w-full"
+              preload="metadata"
+            >
+              <source
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663272431119/WbXCOCAjkBmYzFTA.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          {/* CTA Button */}
+          <div className="text-center">
+            <Link href="/contact">
+              <a className="inline-block px-8 py-3 bg-[#FF6B35] hover:bg-[#FF6B35]/90 text-white font-semibold rounded-lg transition-colors duration-200">
+                Looking for Producer
+              </a>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider Text */}
+      <div className="text-center mb-12 px-6">
+        <p className="text-xl text-[#F5F5F5]/70">
+          Dive into the full story below
+        </p>
+      </div>
+
       {/* PDF Viewer Section */}
       <section className="py-12 px-6">
         <div className="max-w-5xl mx-auto">
