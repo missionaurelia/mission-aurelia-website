@@ -3,7 +3,7 @@ import { X } from 'lucide-react';
 
 const ComingSoonPopup = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const STORAGE_KEY = 'henrySpotlightPopupShown';
+  const STORAGE_KEY = 'levinSpotlightPopupShown';
 
   useEffect(() => {
     // Check if popup was already shown in this session
@@ -68,8 +68,11 @@ const ComingSoonPopup = () => {
             </h2>
             
             <div className="space-y-2 text-lg text-gray-300">
+              <p className="text-gray-300 mb-3">
+                This time Henry and Ryu tell about Levin
+              </p>
               <p className="font-semibold text-orange-400">
-                Starting January 30th
+                Starting February 27th
               </p>
               <p>
                 New spotlight every last Friday of the month
