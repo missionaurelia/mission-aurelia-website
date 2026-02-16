@@ -131,23 +131,7 @@ export default function Spotlights() {
             {/* Video Player - Main Column */}
             <div className="lg:col-span-2">
               {/* Video Container */}
-              <div className="relative aspect-video bg-black rounded-t-2xl overflow-hidden shadow-2xl mb-2 mx-auto lg:mx-0">
-                {/* Video Element */}
-                <video
-                  ref={videoRef}
-                  key={selectedSpotlight.id}
-                  className="w-full h-full object-contain"
-                  src={selectedSpotlight.videoUrl}
-                  muted={isMuted}
-                  playsInline
-                  controlsList="nodownload noremoteplayback"
-                  disablePictureInPicture
-                  onEnded={handleVideoEnd}
-                  onTimeUpdate={handleTimeUpdate}
-                  onLoadedMetadata={handleLoadedMetadata}
-                  poster={selectedSpotlight.thumbnailUrl}
-                />
-
+              <div className="relative aspect-video bg-black rounded-lg overflow-hidden shadow-2xl mb-8 mx-auto lg:mx-0">
                 {/* UNAUTHORIZED BROADCAST Intro Overlay */}
                 {showIntro && (
                   <div className="absolute inset-0 bg-black flex items-center justify-center z-20 animate-fade-in overflow-y-auto py-8">
@@ -177,67 +161,21 @@ export default function Spotlights() {
                   </div>
                 )}
 
-                {/* Play/Pause Overlay */}
+                {/* Video Element with Native Controls */}
                 {!showIntro && (
-                  <div 
-                    className="absolute inset-0 flex items-center justify-center cursor-pointer bg-black/20 hover:bg-black/30 transition-colors"
-                    onClick={togglePlay}
+                  <video
+                    ref={videoRef}
+                    key={selectedSpotlight.id}
+                    controls
+                    className="w-full"
+                    src={selectedSpotlight.videoUrl}
+                    poster={selectedSpotlight.thumbnailUrl}
+                    preload="metadata"
                   >
-                    {!isPlaying && (
-                      <div className="w-20 h-20 rounded-full bg-[#FF6B35] flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
-                        <Play className="w-10 h-10 text-white ml-1" />
-                      </div>
-                    )}
-                  </div>
+                    Your browser does not support the video tag.
+                  </video>
                 )}
               </div>
-
-              {/* Video Controls - Below Video, Always Visible (Hidden during intro) */}
-              {!showIntro && (
-                <div className="bg-[#0f0e0d] rounded-b-2xl p-4 shadow-2xl mb-8">
-                {/* Timeline Seekbar */}
-                <div className="mb-3">
-                  <div 
-                    className="relative h-1 bg-white/20 rounded-full cursor-pointer group"
-                    onClick={handleSeek}
-                  >
-                    <div 
-                      className="absolute h-full bg-[#FF6B35] rounded-full transition-all"
-                      style={{ width: `${(currentTime / duration) * 100}%` }}
-                    />
-                    <div 
-                      className="absolute w-3 h-3 bg-white rounded-full -top-1 -ml-1.5 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg"
-                      style={{ left: `${(currentTime / duration) * 100}%` }}
-                    />
-                  </div>
-                </div>
-                
-                {/* Controls Row */}
-                <div className="flex items-center justify-between gap-4">
-                  <div className="flex items-center gap-3">
-                    <button
-                      onClick={togglePlay}
-                      className="text-white hover:text-[#FF6B35] transition-colors p-1"
-                      aria-label={isPlaying ? 'Pause' : 'Play'}
-                    >
-                      {isPlaying ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />}
-                    </button>
-                    <button
-                      onClick={toggleMute}
-                      className="text-white hover:text-[#FF6B35] transition-colors p-1"
-                      aria-label={isMuted ? 'Unmute' : 'Mute'}
-                    >
-                      {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
-                    </button>
-                  </div>
-                  
-                  {/* Time Display */}
-                  <div className="text-white text-sm font-medium">
-                    {formatTime(currentTime)} / {formatTime(duration)}
-                  </div>
-                </div>
-              </div>
-              )}
               {/* Video Info - Display Board Style */}
               <div className="bg-gradient-to-br from-[#0f0e0d] to-[#1a1917] rounded-2xl p-6 md:p-8 border border-[#FF6B35]/20 shadow-2xl">
                 <h2 className="text-3xl font-bold mb-3 text-white">
