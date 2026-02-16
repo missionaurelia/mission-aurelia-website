@@ -285,9 +285,9 @@ export default function Spotlights() {
                     Characters
                   </a>
                 </Link>
-              </div>* Comments Section - Temporarily hidden until backend is implemented */}
-                {/* <Comments spotlightId={selectedSpotlight.id} /> */}
               </div>
+              {/* Comments Section - Temporarily hidden until backend is implemented */}
+              {/* <Comments spotlightId={selectedSpotlight.id} /> */}
             </div>
 
             {/* Sidebar - Archive List */}
