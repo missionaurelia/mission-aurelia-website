@@ -128,22 +128,13 @@ export default function CharacterSpotlight() {
                         While engineering was busy with "important calibrations," two crew members 
                         borrowed the prototype CCM-01 Collar from the workshop.
                       </p>
-                      
-                      <p>
-                        Henry (Jack Russell, self-proclaimed journalist) and Ryu (Akita, moral support & lookout) 
-                        decided it was time to spill some secrets.
-                      </p>
-                      
-                      <p>The crew has reviewed this footage.</p>
-                      <p>They're not happy.</p>
-                      <p>But they can't say it's wrong.</p>
                     </div>
                     
                     <button
                       onClick={handleIntroPlay}
                       className="mt-6 md:mt-8 text-[#FF6B35] font-mono text-xs md:text-base tracking-wider animate-pulse hover:text-white transition-colors"
                     >
-                      [PRESS PLAY]
+                      [Press Play]
                     </button>
                   </div>
                 </div>
@@ -212,27 +203,38 @@ export default function CharacterSpotlight() {
           </div>
           )}
 
-          {/* Video Info */}
-          <div className="mt-8 text-center">
-            <h3 className="text-3xl font-bold mb-3 text-white">
-              Who is {spotlight.character}?
-            </h3>
-            <p className="text-lg text-gray-300 mb-6">
-              Featuring: {spotlight.featuring.join(' & ')}
-            </p>
+          {/* Video Info - Display Board Style */}
+          <div className="mt-8">
+            <div className="bg-gradient-to-br from-[#0f0e0d] to-[#1a1917] rounded-2xl p-6 md:p-8 border border-[#FF6B35]/20 shadow-2xl">
+              <div className="text-center mb-6">
+                <h3 className="text-3xl font-bold mb-3 text-white">
+                  Who is {spotlight.character}?
+                </h3>
+                <p className="text-lg text-gray-300">
+                  Featuring: {spotlight.featuring.join(' & ')}
+                </p>
+              </div>
+              
+              {/* Next Spotlight Info */}
+              <div className="bg-black/30 rounded-lg p-4 mb-6 border border-[#00D9FF]/20">
+                <p className="text-[#00D9FF] font-mono text-sm text-center">
+                  Next Spotlight: <span className="text-white font-bold">27.02.2026 - Levin</span>
+                </p>
+              </div>
 
-            {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link href="/spotlights">
-                <a className="px-8 py-3 bg-[#FF6B35] text-white rounded-lg hover:bg-[#FF6B35]/90 transition-colors font-medium">
-                  View All Spotlights
-                </a>
-              </Link>
-              <Link href="/characters">
-                <a className="px-8 py-3 bg-white/5 text-white rounded-lg hover:bg-white/10 transition-colors font-medium border border-white/10">
-                  Characters
-                </a>
-              </Link>
+              {/* Action Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Link href="/spotlights">
+                  <a className="px-8 py-3 bg-[#FF6B35] text-white rounded-lg hover:bg-[#FF6B35]/90 transition-colors font-medium w-full sm:w-auto text-center">
+                    View All Spotlights
+                  </a>
+                </Link>
+                <Link href="/characters">
+                  <a className="px-8 py-3 bg-white/5 text-white rounded-lg hover:bg-white/10 transition-colors font-medium border border-white/10 w-full sm:w-auto text-center">
+                    Characters
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
 

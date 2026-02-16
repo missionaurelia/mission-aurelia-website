@@ -164,22 +164,13 @@ export default function Spotlights() {
                             While engineering was busy with "important calibrations," two crew members 
                             borrowed the prototype CCM-01 Collar from the workshop.
                           </p>
-                          
-                          <p>
-                            Henry (Jack Russell, self-proclaimed journalist) and Ryu (Akita, moral support & lookout) 
-                            decided it was time to spill some secrets.
-                          </p>
-                          
-                          <p>The crew has reviewed this footage.</p>
-                          <p>They're not happy.</p>
-                          <p>But they can't say it's wrong.</p>
                         </div>
                         
                         <button
                           onClick={handleIntroPlay}
                           className="mt-6 md:mt-8 text-[#FF6B35] font-mono text-xs md:text-base tracking-wider animate-pulse hover:text-white transition-colors"
                         >
-                          [PRESS PLAY]
+                          [Press Play]
                         </button>
                       </div>
                     </div>
@@ -247,9 +238,8 @@ export default function Spotlights() {
                 </div>
               </div>
               )}
-
-              {/* Video Info */}
-              <div>
+              {/* Video Info - Display Board Style */}
+              <div className="bg-gradient-to-br from-[#0f0e0d] to-[#1a1917] rounded-2xl p-6 md:p-8 border border-[#FF6B35]/20 shadow-2xl">
                 <h2 className="text-3xl font-bold mb-3 text-white">
                   Who is {selectedSpotlight.character}?
                 </h2>
@@ -273,6 +263,13 @@ export default function Spotlights() {
                   </div>
                 </div>
 
+                {/* Next Spotlight Info */}
+                <div className="bg-black/30 rounded-lg p-4 mb-6 border border-[#00D9FF]/20">
+                  <p className="text-[#00D9FF] font-mono text-sm">
+                    Next Spotlight: <span className="text-white font-bold">27.02.2026 - Levin</span>
+                  </p>
+                </div>
+
                 {/* Social Share */}
                 <div className="mb-6">
                   <SocialShare 
@@ -288,8 +285,7 @@ export default function Spotlights() {
                     Characters
                   </a>
                 </Link>
-
-                {/* Comments Section - Temporarily hidden until backend is implemented */}
+              </div>* Comments Section - Temporarily hidden until backend is implemented */}
                 {/* <Comments spotlightId={selectedSpotlight.id} /> */}
               </div>
             </div>
