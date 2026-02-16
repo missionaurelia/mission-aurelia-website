@@ -140,7 +140,7 @@ export default function Spotlights() {
                   src={selectedSpotlight.videoUrl}
                   muted={isMuted}
                   playsInline
-                  controlsList="nodownload nofullscreen noremoteplayback"
+                  controlsList="nodownload noremoteplayback"
                   disablePictureInPicture
                   onEnded={handleVideoEnd}
                   onTimeUpdate={handleTimeUpdate}

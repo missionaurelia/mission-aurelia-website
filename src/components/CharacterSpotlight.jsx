@@ -104,7 +104,7 @@ export default function CharacterSpotlight() {
               src={spotlight.videoUrl}
               muted={isMuted}
               playsInline
-              controlsList="nodownload nofullscreen noremoteplayback"
+              controlsList="nodownload noremoteplayback"
               disablePictureInPicture
               onEnded={handleVideoEnd}
               onTimeUpdate={handleTimeUpdate}
