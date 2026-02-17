@@ -249,7 +249,7 @@ export default function CharacterSpotlight() {
           </div>
 
           {/* Video Info - Display Board Style */}
-          <div className="mt-8">
+          <div className="mt-8 max-w-6xl mx-auto">
             <div className="bg-gradient-to-br from-[#0f0e0d] to-[#1a1917] rounded-2xl p-6 md:p-8 border border-[#FF6B35]/20 shadow-2xl">
               <div className="text-center mb-6">
                 <h3 className="text-3xl font-bold mb-3 text-white">
