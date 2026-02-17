@@ -285,26 +285,6 @@ export default function CharacterSpotlight() {
 
 
         </div>
-
-        {/* YouTube Subscribe CTA */}
-        <div className="mt-16 max-w-2xl mx-auto text-center">
-          <div className="bg-gradient-to-r from-[#FF6B35]/10 to-[#00D9FF]/10 rounded-2xl p-8 border border-[#FF6B35]/20">
-            <h3 className="text-2xl font-bold mb-3 text-white">
-              Want more?
-            </h3>
-            <p className="text-gray-300 mb-6">
-              Subscribe to our YouTube for monthly Spotlights! New character every last Friday of the month.
-            </p>
-            <a 
-              href="https://youtube.com/@missionaurelia?si=BAbcorMHfhsMvs1J" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block px-8 py-3 bg-[#FF6B35] text-white rounded-lg hover:bg-[#FF6B35]/90 transition-colors font-medium"
-            >
-              Subscribe on YouTube
-            </a>
-          </div>
-        </div>
       </div>
     </section>
   );
