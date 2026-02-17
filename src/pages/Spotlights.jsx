@@ -161,19 +161,18 @@ export default function Spotlights() {
                   </div>
                 )}
 
-                {/* Video Element with Native Controls */}
+                {/* YouTube Short Embed */}
                 {!showIntro && (
-                  <video
-                    ref={videoRef}
-                    key={selectedSpotlight.id}
-                    controls
-                    className="w-full"
-                    src={selectedSpotlight.videoUrl}
-                    poster={selectedSpotlight.thumbnailUrl}
-                    preload="metadata"
-                  >
-                    Your browser does not support the video tag.
-                  </video>
+                  <div className="relative w-full" style={{ paddingBottom: '177.78%' }}>
+                    <iframe
+                      className="absolute top-0 left-0 w-full h-full"
+                      src="https://www.youtube.com/embed/B9hK5naR7vw"
+                      title="Henry's Spotlight - June Veyra"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
                 )}
               </div>
               {/* Video Info - Display Board Style */}

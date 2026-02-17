@@ -126,18 +126,18 @@ export default function CharacterSpotlight() {
               </div>
             )}
 
-            {/* Video Element with Native Controls */}
+            {/* YouTube Short Embed */}
             {!showIntro && (
-              <video
-                ref={videoRef}
-                controls
-                className="w-full"
-                src={spotlight.videoUrl}
-                poster={spotlight.thumbnailUrl}
-                preload="metadata"
-              >
-                Your browser does not support the video tag.
-              </video>
+              <div className="relative w-full" style={{ paddingBottom: '177.78%' }}>
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/B9hK5naR7vw"
+                  title="Henry's Spotlight - June Veyra"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
             )}
           </div>
 
@@ -179,20 +179,23 @@ export default function CharacterSpotlight() {
 
         </div>
 
-        {/* Subscribe CTA */}
+        {/* YouTube Subscribe CTA */}
         <div className="mt-16 max-w-2xl mx-auto text-center">
           <div className="bg-gradient-to-r from-[#FF6B35]/10 to-[#00D9FF]/10 rounded-2xl p-8 border border-[#FF6B35]/20">
             <h3 className="text-2xl font-bold mb-3 text-white">
-              Never Miss a Spotlight
+              Want more?
             </h3>
             <p className="text-gray-300 mb-6">
-              Get notified when Henry introduces a new character. Monthly updates delivered to your inbox.
+              Subscribe to our YouTube for monthly Spotlights! New character every last Friday of the month.
             </p>
-            <Link href="/spotlights#subscribe">
-              <a className="inline-block px-8 py-3 bg-[#FF6B35] text-white rounded-lg hover:bg-[#FF6B35]/90 transition-colors font-medium">
-                Subscribe for Updates
-              </a>
-            </Link>
+            <a 
+              href="https://youtube.com/@missionaurelia?si=BAbcorMHfhsMvs1J" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-3 bg-[#FF6B35] text-white rounded-lg hover:bg-[#FF6B35]/90 transition-colors font-medium"
+            >
+              Subscribe on YouTube
+            </a>
           </div>
         </div>
       </div>
