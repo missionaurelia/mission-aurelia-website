@@ -96,7 +96,7 @@ export default function CharacterSpotlight() {
         {/* Video Player Section */}
         <div className="max-w-4xl mx-auto">
           {/* Video Container */}
-          <div className="relative aspect-video bg-black rounded-lg overflow-hidden shadow-2xl mx-auto">
+          <div className="relative bg-black rounded-lg overflow-hidden shadow-2xl mx-auto max-w-md" style={{ aspectRatio: '9/16' }}>
             {/* UNAUTHORIZED BROADCAST Intro Overlay */}
             {showIntro && (
               <div className="absolute inset-0 bg-black flex items-center justify-center z-20 animate-fade-in overflow-y-auto py-8">
@@ -128,16 +128,14 @@ export default function CharacterSpotlight() {
 
             {/* YouTube Short Embed */}
             {!showIntro && (
-              <div className="relative w-full" style={{ paddingBottom: '177.78%' }}>
-                <iframe
-                  className="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/B9hK5naR7vw"
-                  title="Henry's Spotlight - June Veyra"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
-              </div>
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/B9hK5naR7vw"
+                title="Henry's Spotlight - June Veyra"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
             )}
           </div>
 
