@@ -263,7 +263,7 @@ export default function CharacterSpotlight() {
               {/* Next Spotlight Info */}
               <div className="bg-black/30 rounded-lg p-4 mb-6 border border-[#00D9FF]/20">
                 <p className="text-[#00D9FF] font-mono text-sm text-center">
-                  Next Spotlight: <span className="text-white font-bold">28.03.2026 - Luna</span>
+                  Next Spotlight: <span className="text-white font-bold">27.03.2026 - Ryu</span>
                 </p>
               </div>
 
