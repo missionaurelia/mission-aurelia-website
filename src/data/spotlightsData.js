@@ -9,6 +9,8 @@ export const spotlights = [
     featuring: ['Henry', 'Ryu'],
     description: 'Systems Engineer, Mother of Henry and Ryu. Discover the heart of the Veyra family aboard the Aurelia.',
     videoUrl: '/videos/spotlights/Henrys_Spotlight_June_Veyra.mp4',
+    youtubeShortUrl: 'https://youtube.com/shorts/B9hK5naR7vw?si=AEEvISQfMrP3eqxe',
+    youtubeShortId: 'B9hK5naR7vw',
     thumbnailUrl: '/images/characters/June_augmented.jpg', // June Veyra character image from Characters page
     date: '2026-01-30',
     duration: '32 seconds',
@@ -29,6 +31,8 @@ export const spotlights = [
     featuring: ['Henry', 'Ryu'],
     description: 'Humanoid AI, Partner of June Veyra, Father Figure. Discover the heart of the Veyra family.',
     videoUrl: '/videos/spotlights/Henrys_Spotlight_Levin.mp4',
+    youtubeShortUrl: 'https://youtube.com/shorts/ik2kVYOhvHA?si=TSyjdOoRBOuZlI1w',
+    youtubeShortId: 'ik2kVYOhvHA',
     poster: '/images/spotlights/levin-poster.jpg',
     thumbnailUrl: '/images/characters/Levin_augmented.jpg',
     date: '2026-02-27',

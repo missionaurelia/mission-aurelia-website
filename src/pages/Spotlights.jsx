@@ -166,8 +166,8 @@ export default function Spotlights() {
                   {!showIntro && (
                     <iframe
                       className="w-full h-full"
-                      src="https://www.youtube.com/embed/B9hK5naR7vw"
-                      title="Henry's Spotlight - June Veyra"
+                      src={`https://www.youtube.com/embed/${selectedSpotlight.youtubeShortId}`}
+                      title={`Henry's Spotlight - ${selectedSpotlight.character}`}
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowFullScreen
@@ -264,7 +264,7 @@ export default function Spotlights() {
                     {/* CTAs */}
                     <div className="space-y-3 mt-auto">
                       <a 
-                        href="https://youtube.com/shorts/B9hK5naR7vw?si=AEEvISQfMrP3eqxe" 
+                        href={selectedSpotlight.youtubeShortUrl} 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="block w-full px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors font-medium text-center"
