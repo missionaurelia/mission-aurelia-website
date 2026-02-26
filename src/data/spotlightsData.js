@@ -34,7 +34,7 @@ export const spotlights = [
     youtubeShortUrl: 'https://youtube.com/shorts/ik2kVYOhvHA?si=TSyjdOoRBOuZlI1w',
     youtubeShortId: 'ik2kVYOhvHA',
     poster: '/images/spotlights/levin-poster.jpg',
-    thumbnailUrl: '/images/characters/Levin_augmented.jpg',
+    thumbnailUrl: '/images/characters/Levin3.png',
     date: '2026-02-27',
     duration: '30 seconds',
     tags: ['Veyra Family', 'Henry', 'Ryu', 'AI', 'Love', 'Family'],
