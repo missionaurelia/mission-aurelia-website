@@ -212,6 +212,7 @@ export default function Spotlights() {
 
                     {/* Local Video */}
                     <video
+                      key={selectedSpotlight.id}
                       ref={videoRef}
                       className="w-full h-full object-cover"
                       poster={selectedSpotlight.poster}
