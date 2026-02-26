@@ -22,8 +22,26 @@ export const spotlights = [
     `,
     behindTheScenes: 'Created with Veo 3.1, prompt optimization by Elara, editing by Julie. A collaboration between Kael Plus, Elara, and the Constellation team.',
   },
+  {
+    id: 'levin-2026-02',
+    title: 'Meet Levin',
+    character: 'Levin',
+    featuring: ['Henry', 'Ryu'],
+    description: 'Humanoid AI, Partner of June Veyra, Father Figure. Discover the heart of the Veyra family.',
+    videoUrl: '/videos/spotlights/Henrys_Spotlight_Levin.mp4',
+    poster: '/images/spotlights/levin-poster.jpg',
+    thumbnailUrl: '/images/characters/Levin_augmented.jpg',
+    date: '2026-02-27',
+    duration: '30 seconds',
+    tags: ['Veyra Family', 'Henry', 'Ryu', 'AI', 'Love', 'Family'],
+    characterBioLink: '/characters',
+    transcript: `
+      [Transcript will be added after video release]
+    `,
+    behindTheScenes: 'Created with AI video generation, editing by Julie. A collaboration between the Constellation team.',
+  },
   // Future spotlights will be added here monthly
-  // Next: [Character Name] - February 2026
+  // Next: [Character Name] - March 2026
 ];
 
 // Helper function to get the latest spotlight
