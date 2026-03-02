@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
+import { Instagram, Linkedin, Youtube } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -7,7 +7,6 @@ export default function Footer() {
   const socialLinks = [
     { icon: Instagram, url: 'https://www.instagram.com/missionaurelia', label: 'Instagram' },
     { icon: Linkedin, url: 'https://www.linkedin.com/in/mission-aurelia-50a34a3a2', label: 'LinkedIn' },
-    { icon: Twitter, url: 'https://x.com/Mission_Aurelia', handle: 'Mission_Aurelia', label: 'X (Twitter)' },
     { icon: Youtube, url: 'https://youtube.com/@missionaurelia?si=BAbcorMHfhsMvs1J', label: 'YouTube' },
   ];
 

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, FileText, ExternalLink, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
+import { Mail, FileText, ExternalLink, Instagram, Linkedin, Youtube } from 'lucide-react';
 import { useEffect } from 'react';
 
 export default function Contact() {
@@ -27,7 +27,6 @@ export default function Contact() {
   const socialLinks = [
     { platform: 'Instagram', url: 'https://www.instagram.com/missionaurelia?igsh=OTQ0djM0anpxNW9k', handle: '@missionaurelia', icon: Instagram },
     { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/mission-aurelia-50a34a3a2', handle: 'Mission Aurelia', icon: Linkedin },
-    { platform: 'X', url: 'https://x.com/Mission_Aurelia', handle: 'Mission_Aurelia', icon: Twitter },
     { platform: 'YouTube', url: 'https://youtube.com/@missionaurelia?si=BAbcorMHfhsMvs1J', handle: '@missionaurelia', icon: Youtube },
   ];
 
