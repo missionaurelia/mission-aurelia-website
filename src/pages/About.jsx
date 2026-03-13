@@ -24,7 +24,7 @@ const orbitTools = [
   },
   {
     name: 'Manus AI',
-    role: 'Homepage administration & Video productions',
+    role: 'Homepage admin & Video productions',
     logo: '/logo-manus.png',
     color: '#4ade80',
     angle: 270, // left
