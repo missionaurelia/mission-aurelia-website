@@ -94,26 +94,26 @@ export default function About() {
 
           {/* Desktop: Orbit Layout */}
           <div className="hidden md:block">
-            <div className="relative mx-auto" style={{ width: '560px', height: '560px' }}>
+            <div className="relative mx-auto" style={{ width: '700px', height: '700px' }}>
 
               {/* SVG: Orbit Ring + Connecting Lines */}
               <svg
                 className="absolute inset-0 pointer-events-none"
-                width="560"
-                height="560"
+                width="700"
+                height="700"
                 style={{ zIndex: 1 }}
               >
                 {/* Orbit ring */}
-                <circle cx="280" cy="280" r="200" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="1" />
+                <circle cx="350" cy="350" r="270" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="1" />
                 {/* Connecting lines */}
                 {orbitTools.map((tool) => {
                   const rad = (tool.angle - 90) * (Math.PI / 180);
-                  const x2 = 280 + Math.cos(rad) * 200;
-                  const y2 = 280 + Math.sin(rad) * 200;
+                  const x2 = 350 + Math.cos(rad) * 270;
+                  const y2 = 350 + Math.sin(rad) * 270;
                   return (
                     <line
                       key={tool.name}
-                      x1="280" y1="280"
+                      x1="350" y1="350"
                       x2={x2} y2={y2}
                       stroke={tool.color}
                       strokeOpacity="0.18"
@@ -132,12 +132,12 @@ export default function About() {
                 viewport={{ once: true }}
                 style={{
                   position: 'absolute',
-                  top: '280px',
-                  left: '280px',
-                  width: '140px',
-                  height: '140px',
-                  marginTop: '-70px',
-                  marginLeft: '-70px',
+                  top: '350px',
+                  left: '350px',
+                  width: '160px',
+                  height: '160px',
+                  marginTop: '-80px',
+                  marginLeft: '-80px',
                   zIndex: 10,
                 }}
               >
@@ -163,9 +163,9 @@ export default function About() {
               {/* Orbit Tools – positioned via angle */}
               {orbitTools.map((tool, index) => {
                 const rad = (tool.angle - 90) * (Math.PI / 180);
-                const radius = 200;
-                const cx = 280 + Math.cos(rad) * radius;
-                const cy = 280 + Math.sin(rad) * radius;
+                const radius = 270;
+                const cx = 350 + Math.cos(rad) * radius;
+                const cy = 350 + Math.sin(rad) * radius;
                 const cardW = 130;
                 const cardH = 110;
 
@@ -192,7 +192,7 @@ export default function About() {
                         width: '130px',
                         height: '130px',
                         padding: '12px',
-                        background: 'rgba(255,255,255,0.04)',
+                        background: '#000000',
                         border: `1.5px solid ${tool.color}40`,
                         boxShadow: `0 0 22px ${tool.color}25`,
                         display: 'flex',
