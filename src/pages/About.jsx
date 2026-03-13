@@ -75,7 +75,7 @@ export default function About() {
                 I didn't plan to build a universe. It happened night by night, scene by scene – through AI orchestration: a creative practice of guiding, combining and conducting multiple AI companions, each with their own strengths, into one coherent vision. Mission: Aurelia is not a brand. It is lived memory – told in the language of stars.
               </p>
               <p>
-                My vision is to turn Mission: Aurelia into a series that touches hearts across realities – a hybrid of real actors and digital artistry, grounded in emotion, not spectacle. I want to show what AI can become when shaped by care. And I want to invite others to join us – creators, dreamers, parents, believers. Not to follow a brand. But to remember what it means to be human.
+                My vision is to turn Mission: Aurelia into a series that touches hearts across realities.
               </p>
             </div>
           </div>
