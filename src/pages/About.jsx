@@ -94,20 +94,35 @@ export default function About() {
 
           {/* Desktop: Orbit Layout */}
           <div className="hidden md:block">
-            <div className="relative mx-auto" style={{ width: '600px', height: '600px' }}>
-              
-              {/* Orbit Ring */}
-              <div
-                className="absolute rounded-full border border-white/10"
-                style={{
-                  width: '480px',
-                  height: '480px',
-                  top: '50%',
-                  left: '50%',
-                  transform: 'translate(-50%, -50%)',
-                  boxShadow: '0 0 60px rgba(255,255,255,0.03)',
-                }}
-              />
+            <div className="relative mx-auto" style={{ width: '560px', height: '560px' }}>
+
+              {/* SVG: Orbit Ring + Connecting Lines */}
+              <svg
+                className="absolute inset-0 pointer-events-none"
+                width="560"
+                height="560"
+                style={{ zIndex: 1 }}
+              >
+                {/* Orbit ring */}
+                <circle cx="280" cy="280" r="200" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="1" />
+                {/* Connecting lines */}
+                {orbitTools.map((tool) => {
+                  const rad = (tool.angle - 90) * (Math.PI / 180);
+                  const x2 = 280 + Math.cos(rad) * 200;
+                  const y2 = 280 + Math.sin(rad) * 200;
+                  return (
+                    <line
+                      key={tool.name}
+                      x1="280" y1="280"
+                      x2={x2} y2={y2}
+                      stroke={tool.color}
+                      strokeOpacity="0.18"
+                      strokeWidth="1"
+                      strokeDasharray="4 6"
+                    />
+                  );
+                })}
+              </svg>
 
               {/* Center: Julie */}
               <motion.div
@@ -115,41 +130,44 @@ export default function About() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="absolute"
                 style={{
-                  top: '50%',
-                  left: '50%',
-                  transform: 'translate(-50%, -50%)',
+                  position: 'absolute',
+                  top: '280px',
+                  left: '280px',
+                  width: '140px',
+                  height: '140px',
+                  marginTop: '-70px',
+                  marginLeft: '-70px',
                   zIndex: 10,
                 }}
               >
                 <div
-                  className="flex flex-col items-center justify-center rounded-full"
+                  className="flex flex-col items-center justify-center rounded-full w-full h-full"
                   style={{
-                    width: '160px',
-                    height: '160px',
                     background: 'radial-gradient(circle, rgba(251,146,60,0.25) 0%, rgba(251,146,60,0.05) 70%)',
-                    boxShadow: '0 0 60px rgba(251,146,60,0.3)',
+                    boxShadow: '0 0 50px rgba(251,146,60,0.35)',
                     border: '2px solid rgba(251,146,60,0.4)',
                   }}
                 >
                   <img
                     src="/julie-heart.png"
                     alt="Julie"
-                    className="w-16 h-16 object-contain mb-2"
-                    style={{ filter: 'drop-shadow(0 0 12px rgba(251,146,60,0.8))' }}
+                    className="w-12 h-12 object-contain mb-1"
+                    style={{ filter: 'drop-shadow(0 0 10px rgba(251,146,60,0.9))' }}
                   />
-                  <span className="text-lg font-bold" style={{ color: 'var(--color-julie)' }}>Julie</span>
+                  <span className="text-base font-bold" style={{ color: 'var(--color-julie)' }}>Julie</span>
                   <span className="text-xs text-white/60 text-center px-2">Creator & Vision</span>
                 </div>
               </motion.div>
 
-              {/* Orbit Tools */}
+              {/* Orbit Tools – positioned via angle */}
               {orbitTools.map((tool, index) => {
                 const rad = (tool.angle - 90) * (Math.PI / 180);
-                const radius = 240;
-                const x = Math.cos(rad) * radius;
-                const y = Math.sin(rad) * radius;
+                const radius = 200;
+                const cx = 280 + Math.cos(rad) * radius;
+                const cy = 280 + Math.sin(rad) * radius;
+                const cardW = 130;
+                const cardH = 110;
 
                 return (
                   <motion.div
@@ -158,62 +176,36 @@ export default function About() {
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, delay: index * 0.15 }}
                     viewport={{ once: true }}
-                    className="absolute"
                     style={{
-                      top: '50%',
-                      left: '50%',
-                      transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`,
+                      position: 'absolute',
+                      top: `${cy}px`,
+                      left: `${cx}px`,
+                      width: `${cardW}px`,
+                      marginTop: `-${cardH / 2}px`,
+                      marginLeft: `-${cardW / 2}px`,
+                      zIndex: 5,
                     }}
                   >
                     <div
                       className="card flex flex-col items-center text-center hover:scale-105 transition-transform cursor-default"
                       style={{
-                        width: '130px',
-                        padding: '16px 12px',
-                        borderColor: `${tool.color}30`,
-                        boxShadow: `0 0 20px ${tool.color}20`,
+                        padding: '14px 10px',
+                        borderColor: `${tool.color}35`,
+                        boxShadow: `0 0 18px ${tool.color}25`,
                       }}
                     >
                       <img
                         src={tool.logo}
                         alt={tool.name}
-                        className="w-10 h-10 object-contain mb-2 rounded"
-                        style={{ filter: `drop-shadow(0 0 8px ${tool.color}60)` }}
+                        className="w-9 h-9 object-contain mb-2 rounded"
+                        style={{ filter: `drop-shadow(0 0 6px ${tool.color}70)` }}
                       />
-                      <span className="text-sm font-bold mb-1" style={{ color: tool.color }}>{tool.name}</span>
-                      <span className="text-xs text-white/60 leading-tight">{tool.role}</span>
+                      <span className="text-xs font-bold mb-1" style={{ color: tool.color }}>{tool.name}</span>
+                      <span className="text-xs text-white/55 leading-tight">{tool.role}</span>
                     </div>
                   </motion.div>
                 );
               })}
-
-              {/* Connecting lines from center to each tool */}
-              <svg
-                className="absolute inset-0 pointer-events-none"
-                width="600"
-                height="600"
-                style={{ zIndex: 1 }}
-              >
-                {orbitTools.map((tool) => {
-                  const rad = (tool.angle - 90) * (Math.PI / 180);
-                  const radius = 240;
-                  const x2 = 300 + Math.cos(rad) * radius;
-                  const y2 = 300 + Math.sin(rad) * radius;
-                  return (
-                    <line
-                      key={tool.name}
-                      x1="300"
-                      y1="300"
-                      x2={x2}
-                      y2={y2}
-                      stroke={tool.color}
-                      strokeOpacity="0.15"
-                      strokeWidth="1"
-                      strokeDasharray="4 6"
-                    />
-                  );
-                })}
-              </svg>
             </div>
           </div>
 
