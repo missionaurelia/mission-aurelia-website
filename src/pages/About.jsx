@@ -2,10 +2,10 @@ import { motion } from 'framer-motion';
 
 const orbitTools = [
   {
-    name: 'Manus AI',
-    role: 'Homepage administration & Video productions',
-    logo: '/logo-manus.png',
-    color: '#4ade80',
+    name: 'Claude',
+    role: 'Consistency checks & General feedback',
+    logo: '/logo-claude.jpg',
+    color: '#f97316',
     angle: 0, // top
   },
   {
@@ -23,10 +23,10 @@ const orbitTools = [
     angle: 180, // bottom
   },
   {
-    name: 'Claude',
-    role: 'Consistency checks & General feedback',
-    logo: '/logo-claude.jpg',
-    color: '#f97316',
+    name: 'Manus AI',
+    role: 'Homepage administration & Video productions',
+    logo: '/logo-manus.png',
+    color: '#4ade80',
     angle: 270, // left
   },
 ];
@@ -187,21 +187,28 @@ export default function About() {
                     }}
                   >
                     <div
-                      className="card flex flex-col items-center text-center hover:scale-105 transition-transform cursor-default"
+                      className="flex flex-col items-center text-center hover:scale-105 transition-transform cursor-default rounded-full"
                       style={{
-                        padding: '14px 10px',
-                        borderColor: `${tool.color}35`,
-                        boxShadow: `0 0 18px ${tool.color}25`,
+                        width: '130px',
+                        height: '130px',
+                        padding: '12px',
+                        background: 'rgba(255,255,255,0.04)',
+                        border: `1.5px solid ${tool.color}40`,
+                        boxShadow: `0 0 22px ${tool.color}25`,
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                        justifyContent: 'center',
                       }}
                     >
                       <img
                         src={tool.logo}
                         alt={tool.name}
-                        className="w-9 h-9 object-contain mb-2 rounded"
+                        className="w-9 h-9 object-contain mb-1 rounded-full"
                         style={{ filter: `drop-shadow(0 0 6px ${tool.color}70)` }}
                       />
                       <span className="text-xs font-bold mb-1" style={{ color: tool.color }}>{tool.name}</span>
-                      <span className="text-xs text-white/55 leading-tight">{tool.role}</span>
+                      <span className="text-xs text-white/55 leading-tight text-center">{tool.role}</span>
                     </div>
                   </motion.div>
                 );
