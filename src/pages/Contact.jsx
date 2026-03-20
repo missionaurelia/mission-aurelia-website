@@ -5,12 +5,6 @@ import { useEffect } from 'react';
 export default function Contact() {
   const resources = [
     {
-      title: "Creator's Book",
-      description: 'The personal heart of Mission: Aurelia – origin, tone, and soul in one document.',
-      link: 'https://drive.google.com/file/d/11r_awOPKjs0L-Xtr8ZKGVqrfY80ZwcQF/view?usp=drive_link',
-      icon: FileText,
-    },
-    {
       title: 'Concept Presentation',
       description: 'All key facts and story pillars in one pitch-ready overview.',
       link: 'https://drive.google.com/file/d/1jqorDMvtDYG5SNlgYQRXsj3ui8iDvMdo/view?usp=sharing',
