@@ -132,8 +132,8 @@ export default function CharacterSpotlight() {
                 {!showIntro && (
                   <iframe
                     className="w-full h-full"
-                    src="https://www.youtube.com/embed/ik2kVYOhvHA"
-                    title="Henry's Spotlight - Levin"
+                    src={`https://www.youtube.com/embed/${spotlight.youtubeShortId}`}
+                    title={`Henry's Spotlight - ${spotlight.character}`}
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
@@ -228,7 +228,7 @@ export default function CharacterSpotlight() {
                 {/* CTAs */}
                 <div className="space-y-3 mt-auto">
                   <a 
-                    href="https://youtube.com/shorts/ik2kVYOhvHA?si=TSyjdOoRBOuZlI1w" 
+                    href={spotlight.youtubeShortUrl} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="block w-full px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors font-medium text-center"
@@ -263,7 +263,7 @@ export default function CharacterSpotlight() {
               {/* Next Spotlight Info */}
               <div className="bg-black/30 rounded-lg p-4 mb-6 border border-[#00D9FF]/20">
                 <p className="text-[#00D9FF] font-mono text-sm text-center">
-                  Next Spotlight: <span className="text-white font-bold">27.03.2026 - Ryu</span>
+                  Next Spotlight: <span className="text-white font-bold">{spotlight.nextSpotlight || '24.04.2026 - Nicholas Veyra'}</span>
                 </p>
               </div>
 
