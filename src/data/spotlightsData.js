@@ -44,8 +44,28 @@ export const spotlights = [
     `,
     behindTheScenes: 'Created with AI video generation, editing by Julie. A collaboration between the Constellation team.',
   },
+  {
+    id: 'ryu-2026-03',
+    title: 'Meet Ryu',
+    character: 'Ryu',
+    featuring: ['Henry'],
+    description: 'Akita Inu, loyal companion and co-pilot aboard the Aurelia. Discover the soul of the Veyra family.',
+    videoUrl: '/videos/spotlights/Henrys_Spotlight3_Ryu.mp4',
+    youtubeShortUrl: 'https://youtube.com/shorts/p00_o3zLO8E',
+    youtubeShortId: 'p00_o3zLO8E',
+    thumbnailUrl: '/images/characters/Ryu.jpg',
+    date: '2026-03-27',
+    duration: '30 seconds',
+    tags: ['Veyra Family', 'Henry', 'Ryu', 'Akita', 'Companion', 'Family'],
+    characterBioLink: '/characters',
+    nextSpotlight: '24.04.2026 - Nicholas Veyra',
+    transcript: `
+      [Transcript will be added after video release]
+    `,
+    behindTheScenes: 'Created with AI video generation, editing by Julie. A collaboration between the Constellation team.',
+  },
   // Future spotlights will be added here monthly
-  // Next: [Character Name] - March 2026
+  // Next: Nicholas Veyra - April 2026
 ];
 
 // Helper function to get the latest spotlight
