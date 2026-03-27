@@ -250,15 +250,15 @@ export default function Spotlights() {
                     <div className="bg-black/30 rounded-lg p-4 mb-6 space-y-2">
                       <div className="flex items-center justify-between text-sm">
                         <span className="text-gray-400">Views:</span>
-                        <span className="text-white font-bold">1.6K</span>
+                        <span className="text-white font-bold">17.8K</span>
                       </div>
                       <div className="flex items-center justify-between text-sm">
                         <span className="text-gray-400">Likes:</span>
-                        <span className="text-white font-bold">30</span>
+                        <span className="text-white font-bold">782</span>
                       </div>
                       <div className="flex items-center justify-between text-sm">
                         <span className="text-gray-400">Shares:</span>
-                        <span className="text-white font-bold">4</span>
+                        <span className="text-white font-bold">13</span>
                       </div>
                     </div>
 
