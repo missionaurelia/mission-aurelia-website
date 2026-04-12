@@ -23,7 +23,7 @@ const orbitTools = [
     angle: 108, // unten rechts
   },
   {
-    name: 'Elara',
+    name: 'Gemini',
     role: 'Visuals & Prompt-editing',
     logo: '/images/gemini-logo-gold.png',
     color: '#d4a017',
