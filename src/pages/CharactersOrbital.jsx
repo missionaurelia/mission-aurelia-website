@@ -213,6 +213,16 @@ export default function CharactersOrbital() {
       image: '/images/characters/MacTavish_brothers.jpg',
       description: 'Rugged, loyal, and impossible to intimidate. They deal in scrap, memory, and survival — and stand at the threshold where forgotten things become useful again.'
     },
+    { 
+      id: 15, 
+      left: '30.50%', 
+      top: '27.00%', 
+      color: '#60A5FA', 
+      name: 'Cesare', 
+      role: 'AIM, Systems Mind, Controlled Perfection',
+      image: '/images/characters/Cesare.jpg',
+      description: 'Precise, elegant, and emotionally sealed. He was built for flawless execution — but his presence reveals how power can become most unsettling when it never needs to raise its voice.'
+    },
   ];
 
   const etherealGold = '#F5E6D3'; // Ethereal whitish-gold glow
@@ -234,7 +244,7 @@ export default function CharactersOrbital() {
             The Aurelia Constellation
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Fourteen souls forming the tree of consciousness - each a star in the Aurelia universe.
+            Fifteen souls forming the tree of consciousness - each a star in the Aurelia universe.
           </p>
         </div>
 
