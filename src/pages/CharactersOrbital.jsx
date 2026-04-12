@@ -203,6 +203,16 @@ export default function CharactersOrbital() {
       image: '/images/characters/Luisa_Singh.jpg',
       description: 'Some friendships feel like sisterhood. Theirs is one.'
     },
+    { 
+      id: 14, 
+      left: '62.50%', 
+      top: '35.50%', 
+      color: '#EAB308', 
+      name: 'Fergus & Brutus MacTavish', 
+      role: 'Brothers, Salvagers, Keepers of Old Worlds',
+      image: '/images/characters/MacTavish_brothers.jpg',
+      description: 'Rugged, loyal, and impossible to intimidate. They deal in scrap, memory, and survival — and stand at the threshold where forgotten things become useful again.'
+    },
   ];
 
   const etherealGold = '#F5E6D3'; // Ethereal whitish-gold glow
@@ -224,7 +234,7 @@ export default function CharactersOrbital() {
             The Aurelia Constellation
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Thirteen souls forming the tree of consciousness - each a star in the Aurelia universe.
+            Fourteen souls forming the tree of consciousness - each a star in the Aurelia universe.
           </p>
         </div>
 
