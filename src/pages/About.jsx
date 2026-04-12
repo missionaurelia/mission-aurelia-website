@@ -256,7 +256,11 @@ export default function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="card flex flex-col items-center text-center"
+                  className={`card flex flex-col items-center text-center${
+                    index === orbitTools.length - 1 && orbitTools.length % 2 !== 0
+                      ? ' col-span-2 max-w-[calc(50%-8px)] mx-auto w-full'
+                      : ''
+                  }`}
                   style={{
                     borderColor: `${tool.color}30`,
                     boxShadow: `0 0 20px ${tool.color}15`,
