@@ -3,7 +3,7 @@ import { X } from 'lucide-react';
 
 const ComingSoonPopup = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const STORAGE_KEY = 'ryuSpotlightPopupShown';
+  const STORAGE_KEY = 'nicholasSpotlightPopupShown';
 
   useEffect(() => {
     // Check if popup was already shown in this session
@@ -53,8 +53,8 @@ const ComingSoonPopup = () => {
           {/* Image */}
           <div className="relative aspect-video w-full overflow-hidden">
             <img
-              src="/images/announcements/henry-ryu-coming-soon.jpg"
-              alt="Henry and Ryu on the Nova Ventis"
+              src="/images/announcements/nicholas-veyra-coming-soon.jpg"
+              alt="Nicholas Veyra – Coming April 24th"
               className="w-full h-full object-cover"
             />
             {/* Gradient Overlay for better text readability */}
@@ -69,10 +69,10 @@ const ComingSoonPopup = () => {
             
             <div className="space-y-2 text-lg text-gray-300">
               <p className="text-gray-300 mb-3">
-                This time Henry tells us about Ryu
+                This time Henry tells us about Nicholas Veyra 🪇
               </p>
               <p className="font-semibold text-orange-400">
-                Starting March 27th
+                Starting April 24th
               </p>
               <p>
                 New spotlight every last Friday of the month

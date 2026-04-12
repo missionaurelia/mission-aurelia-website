@@ -3,6 +3,7 @@ import { ArrowRight, Play } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 import CharacterSpotlight from '../components/CharacterSpotlight';
+import ComingSoonPopup from '../components/ComingSoonPopup';
 
 export default function Home() {
   const [, setLocation] = useLocation();
@@ -203,6 +204,7 @@ export default function Home() {
           </button>
         </div>
       </section>
+      <ComingSoonPopup />
     </div>
   );
 }
