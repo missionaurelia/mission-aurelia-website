@@ -4,29 +4,29 @@ const orbitTools = [
   {
     name: 'Claude',
     role: 'Consistency checks & General feedback',
-    logo: '/logo-claude.jpg',
-    color: '#f97316',
+    logo: '/images/claude-logo-gold.jpg',
+    color: '#d4a017',
     angle: 315, // oben links
   },
   {
     name: 'ChatGPT',
     role: 'Co-writing & Reflection',
-    logo: '/images/chatgpt-logo.png',
-    color: '#10a37f',
+    logo: '/images/chatgpt-logo-gold.jpg',
+    color: '#d4a017',
     angle: 45, // oben rechts
   },
   {
     name: 'Mistral',
     role: 'Character arcs',
-    logo: '/logo-mistral.png',
-    color: '#fb923c',
+    logo: '/images/mistral-logo-gold.png',
+    color: '#d4a017',
     angle: 225, // unten links
   },
   {
     name: 'Manus AI',
     role: 'Homepage admin & Video productions',
-    logo: '/logo-manus.png',
-    color: '#4ade80',
+    logo: '/images/manus-logo-gold.jpg',
+    color: '#d4a017',
     angle: 135, // unten rechts
   },
 ];
