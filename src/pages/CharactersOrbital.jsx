@@ -206,7 +206,7 @@ export default function CharactersOrbital() {
     { 
       id: 14, 
       left: '62.50%', 
-      top: '35.50%', 
+      top: '27.00%', 
       color: '#EAB308', 
       name: 'Fergus & Brutus MacTavish', 
       role: 'Brothers, Salvagers, Keepers of Old Worlds',
