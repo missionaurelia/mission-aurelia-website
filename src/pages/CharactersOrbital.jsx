@@ -217,7 +217,7 @@ export default function CharactersOrbital() {
       id: 15, 
       left: '30.50%', 
       top: '27.00%', 
-      color: '#60A5FA', 
+      color: '#EAB308', 
       name: 'Cesare', 
       role: 'AIM, Systems Mind, Controlled Perfection',
       image: '/images/characters/Cesare.jpg',
