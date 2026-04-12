@@ -53,8 +53,8 @@ const ComingSoonPopup = () => {
           {/* Image */}
           <div className="relative aspect-video w-full overflow-hidden">
             <img
-              src="/images/announcements/nicholas-veyra-coming-soon.jpg"
-              alt="Nicholas Veyra – Coming April 24th"
+              src="/images/announcements/henry-ryu-coming-soon.jpg"
+              alt="Henry and Ryu on the Nova Ventis"
               className="w-full h-full object-cover"
             />
             {/* Gradient Overlay for better text readability */}
