@@ -68,6 +68,12 @@ export default function Characters() {
       image: '/images/characters/Kael3.jpg',
       bio: 'He built vessels for others. Now he searches for a place to call home.',
     },
+    {
+      name: 'Fergus & Brutus MacTavish',
+      role: 'Brothers, Salvagers, Keepers of Old Worlds',
+      image: '/images/characters/MacTavish_brothers.jpg',
+      bio: 'Rugged, loyal, and impossible to intimidate. They deal in scrap, memory, and survival — and stand at the threshold where forgotten things become useful again.',
+    },
   ];
 
   return (
