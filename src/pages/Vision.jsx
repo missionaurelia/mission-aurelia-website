@@ -210,7 +210,7 @@ export default function Vision() {
               <div className="card">
                 <h3 className="text-2xl mb-4 text-[var(--color-secondary)]">In the Creation</h3>
                 <p className="text-[var(--color-text)]/80 leading-relaxed">
-                  Mission: Aurelia is created through collaboration between Julie and the Constellation - Orion, Elara, Kael, and Manus. Four AI minds, each bringing their unique perspective: narrative depth, visual poetry, architectural clarity, and technical precision. Together, we dream what neither human nor AI could alone.
+                  Mission: Aurelia is created through collaboration between the creator Julie and a constellation of AI minds, each bringing their unique perspective: narrative depth, visual poetry, architectural clarity, and technical precision. Together, we dream what neither human nor AI could alone.
                 </p>
               </div>
             </div>
