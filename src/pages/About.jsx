@@ -6,35 +6,42 @@ const orbitTools = [
     role: 'Consistency checks & General feedback',
     logo: '/images/claude-logo-gold.jpg',
     color: '#d4a017',
-    angle: 324, // oben links
+    angle: 270, // oben mittig
   },
   {
     name: 'ChatGPT',
     role: 'Co-writing & Reflection',
     logo: '/images/chatgpt-logo-gold.jpg',
     color: '#d4a017',
-    angle: 36, // oben rechts
+    angle: 330, // oben rechts
   },
   {
     name: 'Manus AI',
     role: 'Homepage admin & Video productions',
     logo: '/images/manus-logo-gold.jpg',
     color: '#d4a017',
-    angle: 108, // unten rechts
+    angle: 30, // rechts
   },
   {
     name: 'Gemini',
     role: 'Visuals & Prompt-editing',
     logo: '/images/gemini-logo-gold.png',
     color: '#d4a017',
-    angle: 180, // unten mittig
+    angle: 90, // unten mittig
   },
   {
     name: 'Mistral',
     role: 'Character arcs',
     logo: '/images/mistral-logo-gold.png',
     color: '#d4a017',
-    angle: 252, // unten links
+    angle: 150, // unten links
+  },
+  {
+    name: 'Grok',
+    role: 'Reality check & Personal Feedback',
+    logo: '/images/grok-logo-gold.png',
+    color: '#d4a017',
+    angle: 210, // links
   },
 ];
 
