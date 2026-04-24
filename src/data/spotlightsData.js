@@ -64,8 +64,26 @@ export const spotlights = [
     `,
     behindTheScenes: 'Created with AI video generation, editing by Julie. A collaboration between the Constellation team.',
   },
+  {
+    id: 'nicholas-veyra-2026-04',
+    title: 'Meet Nicholas Veyra',
+    character: 'Nicholas Veyra',
+    featuring: ['Henry'],
+    description: 'Musician, Dreamer, Son of June Veyra. Discover the creative soul of the Veyra family aboard the Aurelia.',
+    videoUrl: '/videos/spotlights/Henrys_Spotlight4_Nicki.mp4',
+    youtubeShortUrl: 'https://youtube.com/shorts/9k7xzudZlHc?feature=share',
+    youtubeShortId: '9k7xzudZlHc',
+    thumbnailUrl: '/images/characters/Nicholas_Mission.png',
+    date: '2026-04-24',
+    duration: '3:13 min',
+    tags: ['Veyra Family', 'Henry', 'Nicholas', 'Music', 'Dreams', 'Family'],
+    characterBioLink: '/characters',
+    transcript: `
+      [Transcript will be added after video release]
+    `,
+    behindTheScenes: 'Created with AI video generation, editing by Julie. A collaboration between the Constellation team.',
+  },
   // Future spotlights will be added here monthly
-  // Next: Nicholas Veyra - April 2026
 ];
 
 // Helper function to get the latest spotlight
