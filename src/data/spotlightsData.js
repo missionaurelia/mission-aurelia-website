@@ -58,7 +58,7 @@ export const spotlights = [
     duration: '30 seconds',
     tags: ['Veyra Family', 'Henry', 'Ryu', 'Akita', 'Companion', 'Family'],
     characterBioLink: '/characters',
-    nextSpotlight: '24.04.2026 - Nicholas Veyra',
+    nextSpotlight: '29.05.2026 - Luna Veyra',
     transcript: `
       [Transcript will be added after video release]
     `,
@@ -78,6 +78,7 @@ export const spotlights = [
     duration: '3:13 min',
     tags: ['Veyra Family', 'Henry', 'Nicholas', 'Music', 'Dreams', 'Family'],
     characterBioLink: '/characters',
+    nextSpotlight: '29.05.2026 - Luna Veyra',
     transcript: `
       [Transcript will be added after video release]
     `,

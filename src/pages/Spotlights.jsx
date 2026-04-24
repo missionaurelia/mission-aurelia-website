@@ -312,7 +312,7 @@ export default function Spotlights() {
                 {/* Next Spotlight Info */}
                 <div className="bg-black/30 rounded-lg p-4 mb-6 border border-[#00D9FF]/20">
                   <p className="text-[#00D9FF] font-mono text-sm">
-                    Next Spotlight: <span className="text-white font-bold">27.02.2026 - Levin</span>
+                    Next Spotlight: <span className="text-white font-bold">29.05.2026 - Luna Veyra</span>
                   </p>
                 </div>
 
