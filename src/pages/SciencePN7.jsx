@@ -14,7 +14,7 @@ export default function SciencePN7() {
               <span className="text-orange-400 text-sm font-mono">ASTEROID IMPACT EVENT</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-orange-400 via-red-400 to-orange-500 bg-clip-text text-transparent">
-              PN7 — Asteroid Impact
+              PN7 - Asteroid Impact
             </h1>
           </div>
         </div>
@@ -33,7 +33,7 @@ export default function SciencePN7() {
             
             <div className="prose prose-invert prose-lg max-w-none">
               <p className="text-slate-300 leading-relaxed mb-4">
-                2025 PN7 is a near-Earth asteroid first detected on August 2, 2025 by the Pan-STARRS telescope in Hawaii. At roughly 19-30 meters wide, it belongs to the Arjuna asteroid group — space rocks with orbits remarkably similar to Earth's.
+                2025 PN7 is a near-Earth asteroid first detected on August 2, 2025 by the Pan-STARRS telescope in Hawaii. At roughly 19-30 meters wide, it belongs to the Arjuna asteroid group - space rocks with orbits remarkably similar to Earth's.
               </p>
               
               <p className="text-slate-300 leading-relaxed">
@@ -69,7 +69,7 @@ export default function SciencePN7() {
               </p>
               
               <p className="text-slate-300 leading-relaxed mb-6">
-                The impact doesn't end humanity — but it forces a question no one expected to ask.
+                The impact doesn't end humanity - but it forces a question no one expected to ask.
               </p>
               
               <div className="bg-gradient-to-r from-orange-500/10 to-red-500/10 border border-orange-500/30 rounded-xl p-8 text-center">

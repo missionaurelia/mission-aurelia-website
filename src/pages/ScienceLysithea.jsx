@@ -35,7 +35,7 @@ export default function ScienceLysithea() {
             </div>
             <div className="space-y-4 text-gray-300 leading-relaxed">
               <p>
-                Lysithea is one of Jupiter's 95 known moons — a small, irregular satellite roughly 36 kilometers in diameter, discovered in 1938. In reality, its distant orbit and harsh conditions make it an unlikely candidate for human settlement.
+                Lysithea is one of Jupiter's 95 known moons - a small, irregular satellite roughly 36 kilometers in diameter, discovered in 1938. In reality, its distant orbit and harsh conditions make it an unlikely candidate for human settlement.
               </p>
               <p className="italic text-purple-300">
                 But science fiction asks: What if we tried anyway?
@@ -58,7 +58,7 @@ export default function ScienceLysithea() {
             </div>
             <div className="space-y-6 text-gray-300 leading-relaxed">
               <p>
-                Founded in <span className="text-purple-400 font-semibold">2041</span>, the Lysithea Institute begins as a modest research outpost — humanity's first permanent foothold among Jupiter's moons.
+                Founded in <span className="text-purple-400 font-semibold">2041</span>, the Lysithea Institute begins as a modest research outpost - humanity's first permanent foothold among Jupiter's moons.
               </p>
 
               {/* Early Divisions */}
@@ -69,21 +69,21 @@ export default function ScienceLysithea() {
                     <span className="text-purple-400 mt-1">•</span>
                     <div>
                       <span className="text-purple-300 font-semibold">Astrobiology & Ecosystems</span>
-                      <span className="text-gray-400"> — understanding how life can thrive beyond Earth</span>
+                      <span className="text-gray-400"> - understanding how life can thrive beyond Earth</span>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-purple-400 mt-1">•</span>
                     <div>
                       <span className="text-purple-300 font-semibold">Space Medicine & Human Adaptation</span>
-                      <span className="text-gray-400"> — preparing bodies for the void</span>
+                      <span className="text-gray-400"> - preparing bodies for the void</span>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-purple-400 mt-1">•</span>
                     <div>
                       <span className="text-purple-300 font-semibold">Resource Engineering</span>
-                      <span className="text-gray-400"> — turning ice and rock into survival</span>
+                      <span className="text-gray-400"> - turning ice and rock into survival</span>
                     </div>
                   </li>
                 </ul>
@@ -100,21 +100,21 @@ export default function ScienceLysithea() {
                     <span className="text-violet-400 mt-1">•</span>
                     <div>
                       <span className="text-violet-300 font-semibold">MIRIDA Research</span>
-                      <span className="text-gray-400"> — pushing the boundaries of consciousness and interstellar ambition</span>
+                      <span className="text-gray-400"> - pushing the boundaries of consciousness and interstellar ambition</span>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-violet-400 mt-1">•</span>
                     <div>
                       <span className="text-violet-300 font-semibold">Interplanetary Logistics</span>
-                      <span className="text-gray-400"> — building the supply lines between worlds</span>
+                      <span className="text-gray-400"> - building the supply lines between worlds</span>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-violet-400 mt-1">•</span>
                     <div>
                       <span className="text-violet-300 font-semibold">Botanical Cultivation</span>
-                      <span className="text-gray-400"> — coaxing green life from alien soil</span>
+                      <span className="text-gray-400"> - coaxing green life from alien soil</span>
                     </div>
                   </li>
                 </ul>

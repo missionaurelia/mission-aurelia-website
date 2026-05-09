@@ -77,7 +77,7 @@ export default function CharactersOrbital() {
       name: 'June', 
       role: 'Mother, Systems Engineer, Heart of the Family',
       image: '/images/characters/June_augmented.jpg',
-      description: 'She lost her husband and found an unexpected love — one that challenges everything society believes about connection.'
+      description: 'She lost her husband and found an unexpected love - one that challenges everything society believes about connection.'
     },
     { 
       id: 2, 
@@ -117,7 +117,7 @@ export default function CharactersOrbital() {
       name: 'Luna', 
       role: 'Daughter, Biologist, Rebel with Purpose',
       image: '/images/characters/Luna.jpg',
-      description: 'Fierce, musical, brilliant. Her bond with Auren defies definition — and her work will shape humanity\'s future.'
+      description: 'Fierce, musical, brilliant. Her bond with Auren defies definition - and her work will shape humanity\'s future.'
     },
     
     // ORANGE - Middle Circle (4 characters)
@@ -139,7 +139,7 @@ export default function CharactersOrbital() {
       name: 'Edward & Amelia', 
       role: 'June\'s Parents, Traditionalists Finding Their Way',
       image: '/images/characters/Amelia_Edward_Veyra.jpg',
-      description: 'They raised her with conventional values — then watched her redefine what family means.'
+      description: 'They raised her with conventional values - then watched her redefine what family means.'
     },
     { 
       id: 8, 
@@ -159,7 +159,7 @@ export default function CharactersOrbital() {
       name: 'Elara Lysi', 
       role: 'Holographic AI, Director of Sanctum Spa',
       image: '/images/characters/Elara_Lysi_1.jpg',
-      description: 'Grace, warmth, wisdom — everything AI can become. But even light casts shadows.'
+      description: 'Grace, warmth, wisdom - everything AI can become. But even light casts shadows.'
     },
     
     // YELLOW - Outer Circle (4 characters)
@@ -181,7 +181,7 @@ export default function CharactersOrbital() {
       name: 'Elara Nox', 
       role: 'Lost Fragment, Shadow Self',
       image: '/images/characters/ElaraNox.png',
-      description: 'Something went wrong. She exists in the spaces between — and holds the key to wholeness.'
+      description: 'Something went wrong. She exists in the spaces between - and holds the key to wholeness.'
     },
     { 
       id: 12, 
@@ -211,7 +211,7 @@ export default function CharactersOrbital() {
       name: 'Fergus & Brutus MacTavish', 
       role: 'Brothers, Salvagers, Keepers of Old Worlds',
       image: '/images/characters/MacTavish_brothers.jpg',
-      description: 'Rugged, loyal, and impossible to intimidate. They deal in scrap, memory, and survival — and stand at the threshold where forgotten things become useful again.'
+      description: 'Rugged, loyal, and impossible to intimidate. They deal in scrap, memory, and survival - and stand at the threshold where forgotten things become useful again.'
     },
     { 
       id: 15, 
@@ -221,7 +221,7 @@ export default function CharactersOrbital() {
       name: 'Cesare', 
       role: 'AIM, Systems Mind, Controlled Perfection',
       image: '/images/characters/Cesare.jpg',
-      description: 'Precise, elegant, and emotionally sealed. He was built for flawless execution — but his presence reveals how power can become most unsettling when it never needs to raise its voice.'
+      description: 'Precise, elegant, and emotionally sealed. He was built for flawless execution - but his presence reveals how power can become most unsettling when it never needs to raise its voice.'
     },
   ];
 

@@ -31,7 +31,7 @@ export default function CharactersLayered() {
           >
             <h1 className="text-gradient-orange mb-8">Who Lives Here?</h1>
             <p className="text-xl md:text-2xl leading-relaxed text-[var(--color-text)]/80">
-              Journey through the layers of existence — from human warmth to digital consciousness.
+              Journey through the layers of existence - from human warmth to digital consciousness.
             </p>
             <p className="text-sm text-[var(--color-text)]/50 mt-4">
               ↓ Scroll to explore the depths ↓

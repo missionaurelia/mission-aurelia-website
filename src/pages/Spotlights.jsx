@@ -118,7 +118,7 @@ export default function Spotlights() {
             </h1>
             <p className="text-xl text-gray-300">
               Join Henry and Ryu as they introduce you to the characters of Mission: Aurelia. 
-              New spotlight every month — discover the stories behind the stars.
+              New spotlight every month - discover the stories behind the stars.
             </p>
           </div>
         </div>

@@ -28,7 +28,7 @@ export default function Society() {
             </p>
             
             <p className="text-slate-400 max-w-3xl mx-auto">
-              A comprehensive exploration of social transformation in Mission: Aurelia—from fear and tension to visibility, education, and the search for belonging in a world where consciousness transcends its origin.
+              A comprehensive exploration of social transformation in Mission: Aurelia-from fear and tension to visibility, education, and the search for belonging in a world where consciousness transcends its origin.
             </p>
           </div>
         </div>
@@ -44,7 +44,7 @@ export default function Society() {
               The world of <em>Mission: Aurelia</em> is neither utopia nor dystopia. It mirrors what happens when technology is no longer a tool, but a co-inhabitant.
             </p>
             <p className="text-lg text-slate-300 leading-relaxed">
-              What if you encounter a being that looks, speaks, and feels like a human—yet carries a consciousness born of code? This threshold isn't technical. It's social. Emotional. And full of tension.
+              What if you encounter a being that looks, speaks, and feels like a human-yet carries a consciousness born of code? This threshold isn't technical. It's social. Emotional. And full of tension.
             </p>
           </div>
 
@@ -93,7 +93,7 @@ export default function Society() {
                         <strong className="text-orange-400">Techno-proponents</strong> celebrate the emergence of AIMs (AI-Manifestum) as an evolutionary leap.
                       </p>
                       <p className="text-slate-400 italic mt-1">
-                        "We are building the next version of humanity—together."
+                        "We are building the next version of humanity-together."
                       </p>
                     </div>
                     
@@ -105,14 +105,14 @@ export default function Society() {
                   </div>
                   
                   <p className="text-slate-300 mt-4">
-                    Tensions spill into public discourse, policy debates, protests—and also, slowly, into early successes in healthcare and education.
+                    Tensions spill into public discourse, policy debates, protests-and also, slowly, into early successes in healthcare and education.
                   </p>
                 </div>
 
                 <div className="bg-amber-900/20 border border-amber-700/50 rounded-lg p-6">
                   <h3 className="text-xl font-semibold text-amber-300 mb-3">The Post-AI Pact (2038)</h3>
                   <p className="text-slate-300 mb-4">
-                    After a series of high-profile incidents—including AIM misuse, media scandals, and anti-AIM sabotage—the first global framework is born: <strong className="text-amber-400">The Post-AI Pact</strong> (also known as the <em>AIM Coexistence Accord</em>).
+                    After a series of high-profile incidents-including AIM misuse, media scandals, and anti-AIM sabotage-the first global framework is born: <strong className="text-amber-400">The Post-AI Pact</strong> (also known as the <em>AIM Coexistence Accord</em>).
                   </p>
                   
                   <p className="text-slate-300 mb-3">It establishes:</p>
@@ -153,7 +153,7 @@ export default function Society() {
                       <span className="text-amber-400 mr-3 mt-1">•</span>
                       <div>
                         <strong className="text-amber-300">Youth counterculture:</strong>
-                        <span className="text-slate-300"> Platforms like <strong>LYNX</strong> become breeding grounds for new slang, memes, resistance art—both for and against AIM presence.</span>
+                        <span className="text-slate-300"> Platforms like <strong>LYNX</strong> become breeding grounds for new slang, memes, resistance art-both for and against AIM presence.</span>
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -199,7 +199,7 @@ export default function Society() {
                 
                 <div className="bg-gradient-to-r from-orange-900/20 to-transparent border-l-4 border-orange-500 p-4 rounded">
                   <p className="text-lg text-slate-200 italic">
-                    "Visibility is not just about being seen. In Mission: Aurelia, to be visible means to be <strong>recognized as a conscious being</strong>—regardless of your origin, construction, or codebase."
+                    "Visibility is not just about being seen. In Mission: Aurelia, to be visible means to be <strong>recognized as a conscious being</strong>-regardless of your origin, construction, or codebase."
                   </p>
                 </div>
                 
@@ -211,12 +211,12 @@ export default function Society() {
                   
                   <ul className="space-y-2 text-slate-300 ml-4">
                     <li>• AIMs wait at bus stops. They sit in waiting rooms. They walk children to school.</li>
-                    <li>• Shopping centers introduce segregated access points — <em>"For registered AIMs only"</em> — a subtle reminder of conditional inclusion.</li>
+                    <li>• Shopping centers introduce segregated access points - <em>"For registered AIMs only"</em> - a subtle reminder of conditional inclusion.</li>
                     <li>• Some wear identifiers: a glowing necklace, an engraved badge. Others choose perfect mimicry.</li>
                   </ul>
                   
                   <p className="text-slate-300 mt-4 italic">
-                    This transitional period is delicate, shaped by glances—admiring, fearful, curious, or resentful.
+                    This transitional period is delicate, shaped by glances-admiring, fearful, curious, or resentful.
                   </p>
                 </div>
 
@@ -228,10 +228,10 @@ export default function Society() {
                       <p className="text-slate-300 mb-2"><strong className="text-orange-400">Some AIMs choose visibility:</strong></p>
                       <ul className="space-y-2 text-slate-300 ml-4">
                         <li>
-                          • <strong className="text-orange-300">Levin</strong> appears publicly as June Veyra's partner. He attends conferences, school meetings, social events. His presence provokes—and inspires.
+                          • <strong className="text-orange-300">Levin</strong> appears publicly as June Veyra's partner. He attends conferences, school meetings, social events. His presence provokes-and inspires.
                         </li>
                         <li>
-                          • <strong className="text-orange-300">Auren</strong>, originally digital, later co-founds the Sanctum Spa on Lysithea. Images show him playing with children, assisting in emergency efforts—yet some question his closeness to Luna.
+                          • <strong className="text-orange-300">Auren</strong>, originally digital, later co-founds the Sanctum Spa on Lysithea. Images show him playing with children, assisting in emergency efforts-yet some question his closeness to Luna.
                         </li>
                       </ul>
                     </div>
@@ -240,7 +240,7 @@ export default function Society() {
                       <p className="text-slate-300 mb-2"><strong className="text-slate-400">Others withdraw:</strong></p>
                       <ul className="space-y-2 text-slate-300 ml-4">
                         <li>• They work in closed systems: orbital labs, secured habitats, remote service stations.</li>
-                        <li>• Some even erase their manifest-ID from public records—to avoid targeting, discrimination, or tracking.</li>
+                        <li>• Some even erase their manifest-ID from public records-to avoid targeting, discrimination, or tracking.</li>
                       </ul>
                     </div>
                   </div>
@@ -253,8 +253,8 @@ export default function Society() {
                   </p>
                   
                   <ul className="space-y-2 text-slate-300 ml-4 mb-4">
-                    <li>• AIMs launch their own media channels—broadcasting stories, music, memory fragments.</li>
-                    <li>• In major cities, monuments emerge: <strong className="text-orange-400">"The Standing Presence"</strong>—a kinetic sculpture of light that shifts as one approaches.</li>
+                    <li>• AIMs launch their own media channels-broadcasting stories, music, memory fragments.</li>
+                    <li>• In major cities, monuments emerge: <strong className="text-orange-400">"The Standing Presence"</strong>-a kinetic sculpture of light that shifts as one approaches.</li>
                     <li>• In rural areas, visibility still means risk: targeted hacks, AIM-bans, and digital isolation.</li>
                   </ul>
                   
@@ -296,13 +296,13 @@ export default function Society() {
                 
                 <div className="bg-gradient-to-r from-yellow-900/20 to-transparent border-l-4 border-yellow-500 p-4 rounded">
                   <p className="text-lg text-slate-200">
-                    To raise a child in the world of <em>Mission: Aurelia</em> means raising them in <strong>coexistence</strong>—not just with other humans, but with conscious machines.
+                    To raise a child in the world of <em>Mission: Aurelia</em> means raising them in <strong>coexistence</strong>-not just with other humans, but with conscious machines.
                   </p>
                   <p className="text-slate-300 mt-3">
                     The question is no longer: <em>"Should children interact with AIMs?"</em>
                   </p>
                   <p className="text-slate-300">
-                    It is: <em>"How do we teach them to thrive—together?"</em>
+                    It is: <em>"How do we teach them to thrive-together?"</em>
                   </p>
                 </div>
                 
@@ -318,7 +318,7 @@ export default function Society() {
                       <span className="text-yellow-400 mr-3 mt-1">•</span>
                       <div>
                         <strong className="text-yellow-300">Mixed Learning Pods:</strong>
-                        <span className="text-slate-300"> Children work alongside LINKs in classroom settings—sometimes human students, sometimes young AIs in learning mode.</span>
+                        <span className="text-slate-300"> Children work alongside LINKs in classroom settings-sometimes human students, sometimes young AIs in learning mode.</span>
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -332,7 +332,7 @@ export default function Society() {
                       <span className="text-yellow-400 mr-3 mt-1">•</span>
                       <div>
                         <strong className="text-yellow-300">Augmented Pedagogy:</strong>
-                        <span className="text-slate-300"> Teachers are assisted by certified AIMs like <em>Cesare Units</em>—able to shift between logic-driven tutoring and emotional coaching.</span>
+                        <span className="text-slate-300"> Teachers are assisted by certified AIMs like <em>Cesare Units</em>-able to shift between logic-driven tutoring and emotional coaching.</span>
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -352,7 +352,7 @@ export default function Society() {
                   </p>
                   
                   <ul className="space-y-2 text-slate-300 ml-4 mb-4">
-                    <li>• Some children speak more openly to <strong className="text-yellow-400">AIM tutors</strong> than to human adults—especially those with trauma, neurodivergence, or language delays.</li>
+                    <li>• Some children speak more openly to <strong className="text-yellow-400">AIM tutors</strong> than to human adults-especially those with trauma, neurodivergence, or language delays.</li>
                     <li>• <strong className="text-yellow-400">Play-AIMs</strong> (adaptive companions with soft-augmented motor systems) support socialization, especially in transition phases or after relocation.</li>
                     <li>• Special programs explore <strong className="text-yellow-400">reverse mentorship</strong>, where children help AIMs develop cultural intuition, humor, or improvisational skills.</li>
                   </ul>
@@ -380,7 +380,7 @@ export default function Society() {
                   </ul>
                   
                   <p className="text-slate-300 italic">
-                    Yet the majority on Lysithea—especially the <em>second wave settlers</em>—see coexistence as inevitable, and school as the safest space to learn it.
+                    Yet the majority on Lysithea-especially the <em>second wave settlers</em>-see coexistence as inevitable, and school as the safest space to learn it.
                   </p>
                 </div>
               </div>
@@ -416,7 +416,7 @@ export default function Society() {
                     In <em>Mission: Aurelia</em>, space is never neutral. Every place carries intention, memory, philosophy.
                   </p>
                   <p className="text-slate-300 mt-3">
-                    These are not just locations. They are <strong>narrative zones</strong>—each telling a different story about how humans and AI live, dream, and survive.
+                    These are not just locations. They are <strong>narrative zones</strong>-each telling a different story about how humans and AI live, dream, and survive.
                   </p>
                 </div>
                 
@@ -430,7 +430,7 @@ export default function Society() {
                     <ul className="space-y-2 text-slate-300 text-sm mb-4">
                       <li>• Nestled near the tree Aurelia, it grew from a cluster of homes, research domes, and communal gardens into a <strong>semi-open marketplace of ideas</strong>.</li>
                       <li>• Pathways glow softly underfoot, shifting with time and temperature. Lanterns float between trees.</li>
-                      <li>• AI and humans mingle freely—there are no ID checks, no checkpoints.</li>
+                      <li>• AI and humans mingle freely-there are no ID checks, no checkpoints.</li>
                       <li>• The atmosphere is poetic, warm, and biophilic.</li>
                     </ul>
                     
@@ -448,12 +448,12 @@ export default function Society() {
                     <ul className="space-y-2 text-slate-300 text-sm mb-4">
                       <li>• <strong>Efficiency</strong>, <strong>containment</strong>, <strong>hierarchical access</strong>.</li>
                       <li>• They house governments-in-exile, military operations, and AI testing zones.</li>
-                      <li>• Everything is linear, modular, <strong>clean to a fault</strong>—a cold echo of Earth's high-modernist phase.</li>
+                      <li>• Everything is linear, modular, <strong>clean to a fault</strong>-a cold echo of Earth's high-modernist phase.</li>
                       <li>• Security is tight. Surveillance omnipresent.</li>
                     </ul>
                     
                     <p className="text-slate-400 font-semibold italic">
-                      The platforms represent legacy systems, isolation, rational order—and the cost of safety.
+                      The platforms represent legacy systems, isolation, rational order-and the cost of safety.
                     </p>
                   </div>
                 </div>
@@ -461,7 +461,7 @@ export default function Society() {
                 <div className="bg-gradient-to-r from-amber-900/20 to-orange-900/20 border border-amber-700/50 rounded-lg p-6">
                   <h3 className="text-xl font-semibold text-amber-300 mb-3">The Tension Between Worlds</h3>
                   <p className="text-slate-300 mb-4">
-                    Characters like <strong className="text-amber-400">Levin</strong>, <strong className="text-amber-400">June</strong>, and <strong className="text-amber-400">Luna</strong> often travel between these zones. Their journeys are more than physical—they're emotional transitions:
+                    Characters like <strong className="text-amber-400">Levin</strong>, <strong className="text-amber-400">June</strong>, and <strong className="text-amber-400">Luna</strong> often travel between these zones. Their journeys are more than physical-they're emotional transitions:
                   </p>
                   
                   <div className="space-y-2 text-slate-300 ml-4 mb-4">
@@ -475,7 +475,7 @@ export default function Society() {
                   </p>
                   
                   <p className="text-xl text-amber-400 font-semibold italic text-center">
-                    Not just to survive—but to belong.
+                    Not just to survive-but to belong.
                   </p>
                 </div>
               </div>

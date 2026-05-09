@@ -72,7 +72,7 @@ export default function CharactersSelector() {
                 </h2>
                 
                 <p className="text-[var(--color-text)]/70 mb-4">
-                  Journey through layers of existence — from human warmth to digital consciousness. 
+                  Journey through layers of existence - from human warmth to digital consciousness. 
                   Scroll-based parallax experience.
                 </p>
                 

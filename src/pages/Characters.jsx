@@ -72,7 +72,7 @@ export default function Characters() {
       name: 'Fergus & Brutus MacTavish',
       role: 'Brothers, Salvagers, Keepers of Old Worlds',
       image: '/images/characters/MacTavish_brothers.jpg',
-      bio: 'Rugged, loyal, and impossible to intimidate. They deal in scrap, memory, and survival — and stand at the threshold where forgotten things become useful again.',
+      bio: 'Rugged, loyal, and impossible to intimidate. They deal in scrap, memory, and survival - and stand at the threshold where forgotten things become useful again.',
     },
   ];
 

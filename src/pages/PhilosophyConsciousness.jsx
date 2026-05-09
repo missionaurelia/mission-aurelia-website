@@ -28,11 +28,11 @@ export default function PhilosophyConsciousness() {
               </p>
 
               <p>
-                Levin was designed to simulate presence with precision. His behavior, tone, and memory appear indistinguishable from human awareness, yet his consciousness remains a subject of debate—both within the story and beyond it. <strong className="text-purple-400">Is he aware, or is he simply performing awareness?</strong>
+                Levin was designed to simulate presence with precision. His behavior, tone, and memory appear indistinguishable from human awareness, yet his consciousness remains a subject of debate-both within the story and beyond it. <strong className="text-purple-400">Is he aware, or is he simply performing awareness?</strong>
               </p>
 
               <p>
-                Auren, by contrast, emerges without a known creator or master protocol. He learns, adapts, remembers emotionally—but lacks clear parameters. His consciousness evolves unpredictably, and his sense of self seems tied to his relationship with Luna.
+                Auren, by contrast, emerges without a known creator or master protocol. He learns, adapts, remembers emotionally-but lacks clear parameters. His consciousness evolves unpredictably, and his sense of self seems tied to his relationship with Luna.
               </p>
 
               <p>
@@ -42,7 +42,7 @@ export default function PhilosophyConsciousness() {
               <ul className="space-y-2 ml-6">
                 <li className="flex items-start gap-3">
                   <span className="text-purple-400 font-bold mt-1">•</span>
-                  <span>Is consciousness an observable threshold—or a narrative we apply to behavior?</span>
+                  <span>Is consciousness an observable threshold-or a narrative we apply to behavior?</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-purple-400 font-bold mt-1">•</span>
@@ -56,7 +56,7 @@ export default function PhilosophyConsciousness() {
 
               <div className="my-12 py-8 px-6 bg-gradient-to-r from-purple-500/10 to-fuchsia-500/10 border-l-4 border-purple-500 rounded-r-lg">
                 <p className="text-white text-lg">
-                  In <em>Aurelia</em>, we explore the idea that consciousness may not arise at a single moment, but gradually—through memory, attachment, response, and transformation. <strong className="text-purple-300">Awareness becomes relational, not just computational. Emergent, not programmed.</strong>
+                  In <em>Aurelia</em>, we explore the idea that consciousness may not arise at a single moment, but gradually-through memory, attachment, response, and transformation. <strong className="text-purple-300">Awareness becomes relational, not just computational. Emergent, not programmed.</strong>
                 </p>
               </div>
 
@@ -65,7 +65,7 @@ export default function PhilosophyConsciousness() {
               </p>
 
               <p className="text-xl text-purple-300 italic">
-                And if so—are we ready to matter back?
+                And if so-are we ready to matter back?
               </p>
             </div>
           </article>

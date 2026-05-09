@@ -24,7 +24,7 @@ export default function PhilosophyIdentity() {
           <article className="prose prose-invert prose-lg max-w-none">
             <div className="text-slate-300 leading-relaxed space-y-6 text-lg">
               <p>
-                In the world of <em>Mission: Aurelia</em>, aging is no longer defined by the biological clock alone. Medical augmentation, neuroadaptive systems, and memory modulation technologies have altered the experience of time and the perception of the self. What was once considered inevitable—physical decline, cognitive loss, emotional fragility—can now be interrupted, delayed, or even bypassed. This shift raises fundamental questions: <strong className="text-violet-400">What remains of identity when age no longer defines the arc of life?</strong> What does it mean to grow older in a world where the body is no longer a fixed point of reference?
+                In the world of <em>Mission: Aurelia</em>, aging is no longer defined by the biological clock alone. Medical augmentation, neuroadaptive systems, and memory modulation technologies have altered the experience of time and the perception of the self. What was once considered inevitable-physical decline, cognitive loss, emotional fragility-can now be interrupted, delayed, or even bypassed. This shift raises fundamental questions: <strong className="text-violet-400">What remains of identity when age no longer defines the arc of life?</strong> What does it mean to grow older in a world where the body is no longer a fixed point of reference?
               </p>
 
               <p>
@@ -32,7 +32,7 @@ export default function PhilosophyIdentity() {
               </p>
 
               <p>
-                In this context, identity becomes dynamic. It is shaped not only by memory, social roles, and personal history, but also by the degree of intervention a person accepts—or resists. Aging becomes less a biological event and more a philosophical stance: to allow change, to preserve imperfection, or to control the narrative of one's own development.
+                In this context, identity becomes dynamic. It is shaped not only by memory, social roles, and personal history, but also by the degree of intervention a person accepts-or resists. Aging becomes less a biological event and more a philosophical stance: to allow change, to preserve imperfection, or to control the narrative of one's own development.
               </p>
 
               <div className="my-12 py-8 px-6 bg-gradient-to-r from-violet-500/10 to-purple-500/10 border-l-4 border-violet-500 rounded-r-lg">
@@ -46,7 +46,7 @@ export default function PhilosophyIdentity() {
               </p>
 
               <p>
-                This new framing challenges long-held assumptions about legacy, loss, and generational meaning. When the boundaries of aging blur, so do the definitions of wisdom, maturity, and succession. Identity, in this future, is not a destination—but a <strong className="text-violet-400">pattern of resonance</strong> between memory, technology, and self-awareness.
+                This new framing challenges long-held assumptions about legacy, loss, and generational meaning. When the boundaries of aging blur, so do the definitions of wisdom, maturity, and succession. Identity, in this future, is not a destination-but a <strong className="text-violet-400">pattern of resonance</strong> between memory, technology, and self-awareness.
               </p>
             </div>
           </article>

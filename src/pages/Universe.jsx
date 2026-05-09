@@ -57,7 +57,7 @@ export default function Universe() {
   const locations = [
     {
       name: 'Earth',
-      description: 'Lake Oswego, Oregon — where it all begins',
+      description: 'Lake Oswego, Oregon - where it all begins',
       image: '/locations/Veyra_Mansion_2035_ext.jpg',
     },
     {
@@ -190,7 +190,7 @@ export default function Universe() {
         <div className="container">
           <h2 className="text-gradient-blue mb-8 text-center">Visual Lookbook</h2>
           <p className="text-center text-xl max-w-3xl mx-auto mb-16">
-            A visual journey through the world of Mission: Aurelia — from intimate spaces to vast cosmic horizons.
+            A visual journey through the world of Mission: Aurelia - from intimate spaces to vast cosmic horizons.
           </p>
 
           {/* Gallery Grid */}
@@ -231,7 +231,7 @@ export default function Universe() {
               <a href="/characters" className="card hover:scale-105 transition-transform block">
                 <h3 className="text-2xl mb-4 text-gradient-orange">Characters</h3>
                 <p className="text-[var(--color-text)]/80">
-                  Meet the souls who inhabit the Aurelia universe — human, artificial, and everything in between.
+                  Meet the souls who inhabit the Aurelia universe - human, artificial, and everything in between.
                 </p>
                 <div className="mt-4 text-amber-500 font-semibold flex items-center gap-2">
                   <span>Explore →</span>

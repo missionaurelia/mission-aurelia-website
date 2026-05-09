@@ -13,7 +13,7 @@ export default function Story() {
             The Story
           </h1>
           <p className="text-xl md:text-2xl text-[#F5F5F5]/80 max-w-3xl mx-auto leading-relaxed">
-            Dive into Season 1 of Mission: Aurelia—a journey of connection, transformation, and what it means to be human in a world where technology and consciousness intertwine.
+            Dive into Season 1 of Mission: Aurelia-a journey of connection, transformation, and what it means to be human in a world where technology and consciousness intertwine.
           </p>
         </div>
       </section>

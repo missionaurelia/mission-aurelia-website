@@ -31,7 +31,7 @@ export default function ScienceMirida() {
               Memory-Infused Relativistic Dimensional Architecture
             </p>
             <p className="text-lg text-slate-400 mt-4 max-w-2xl mx-auto">
-              A comprehensive deep-dive into the most ambitious consciousness transfer protocol ever conceived—enabling instantaneous interstellar travel through the transmission of human consciousness itself.
+              A comprehensive deep-dive into the most ambitious consciousness transfer protocol ever conceived-enabling instantaneous interstellar travel through the transmission of human consciousness itself.
             </p>
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function ScienceMirida() {
                   The MIRIDA Protocol represents one of the most ambitious and controversial scientific endeavors of the 21st century. Born from the recognition that traditional propulsion-based interstellar travel remains fundamentally limited by relativistic constraints, MIRIDA proposes a radical alternative: <strong className="text-white">the transmission of human consciousness itself across vast cosmic distances</strong>.
                 </p>
                 <p>
-                  Rather than transporting physical bodies through space—a process that would require centuries even at near-light speeds—MIRIDA aims to transmit neural patterns, memories, and identity structures to genetically or biomechanically prepared surrogate vessels located light-years away. From the subjective perspective of the traveler, arrival would be instantaneous, bypassing the crushing time debt imposed by Einstein's relativity.
+                  Rather than transporting physical bodies through space-a process that would require centuries even at near-light speeds-MIRIDA aims to transmit neural patterns, memories, and identity structures to genetically or biomechanically prepared surrogate vessels located light-years away. From the subjective perspective of the traveler, arrival would be instantaneous, bypassing the crushing time debt imposed by Einstein's relativity.
                 </p>
                 <p className="text-amber-400 bg-amber-500/10 border border-amber-500/30 rounded-lg p-4">
                   <strong>Known Experimental Outcomes (as of 2040):</strong><br/>
@@ -110,7 +110,7 @@ export default function ScienceMirida() {
                 {expandedSections.qcc && (
                   <div className="px-6 pb-6 space-y-4 text-slate-300">
                     <p>
-                      <strong className="text-white">Theoretical Basis:</strong> Quantum-Coupled Cognition represents the foundational principle of MIRIDA. The hypothesis posits that consciousness—rather than being purely emergent from classical neural activity—contains quantum-entangled components that can be isolated, preserved, and transmitted across space.
+                      <strong className="text-white">Theoretical Basis:</strong> Quantum-Coupled Cognition represents the foundational principle of MIRIDA. The hypothesis posits that consciousness-rather than being purely emergent from classical neural activity-contains quantum-entangled components that can be isolated, preserved, and transmitted across space.
                     </p>
                     <p>
                       <strong className="text-white">Technical Implementation:</strong> Neural matrices from both donor (origin consciousness) and receptor (destination vessel) systems are brought into quantum entanglement through sustained exposure to gravitic harmonics in proximity to controlled micro-singularities.
@@ -152,7 +152,7 @@ export default function ScienceMirida() {
                       Traditional electromagnetic transmission is insufficient for consciousness transfer due to signal degradation over interstellar distances. MIRIDA instead utilizes <strong className="text-white">gravitational waves as the carrier medium</strong> for consciousness transmission.
                     </p>
                     <p>
-                      Neural activity patterns—including synaptic weights, neurotransmitter distributions, and electrochemical gradients—are converted into gravitational resonance codes. These codes are then launched through deep-curve temporal folds, effectively creating ripples in spacetime itself that carry the encoded consciousness.
+                      Neural activity patterns-including synaptic weights, neurotransmitter distributions, and electrochemical gradients-are converted into gravitational resonance codes. These codes are then launched through deep-curve temporal folds, effectively creating ripples in spacetime itself that carry the encoded consciousness.
                     </p>
                     <div className="grid md:grid-cols-2 gap-4">
                       <div className="bg-slate-900/50 rounded-lg p-4 border border-slate-700">
@@ -201,7 +201,7 @@ export default function ScienceMirida() {
                     </p>
                     <div className="bg-gradient-to-br from-pink-500/10 to-purple-500/10 border border-pink-500/30 rounded-lg p-4">
                       <p className="text-sm font-semibold text-pink-300 mb-2">Storage Capacity</p>
-                      <p className="text-sm">A single Imprint Crystal can theoretically store up to <strong className="text-white">10²⁷ bits of information</strong>—far exceeding the estimated information content of the human brain (10¹⁶ bits), allowing for complete neural fidelity and redundancy.</p>
+                      <p className="text-sm">A single Imprint Crystal can theoretically store up to <strong className="text-white">10²⁷ bits of information</strong>-far exceeding the estimated information content of the human brain (10¹⁶ bits), allowing for complete neural fidelity and redundancy.</p>
                     </div>
                     <p className="text-sm text-slate-400 italic">
                       Ethical Question: Do these crystals constitute "stored persons" with inherent rights, or merely data structures?
@@ -297,7 +297,7 @@ export default function ScienceMirida() {
                 </p>
                 <div className="space-y-4 text-slate-300">
                   <p>
-                    Perhaps the most profound challenge facing MIRIDA is not technical but metaphysical. From an external perspective, a successfully integrated consciousness exhibits identical memories, personality traits, and behavioral patterns as the original. However, the original body—the donor—must be "deactivated" upon successful transmission to prevent the existence of two instances of the same person.
+                    Perhaps the most profound challenge facing MIRIDA is not technical but metaphysical. From an external perspective, a successfully integrated consciousness exhibits identical memories, personality traits, and behavioral patterns as the original. However, the original body-the donor-must be "deactivated" upon successful transmission to prevent the existence of two instances of the same person.
                   </p>
                   <div className="bg-slate-900/50 rounded-lg p-4 border border-slate-700">
                     <p className="text-sm font-semibold text-white mb-2">The Deactivation Dilemma:</p>
@@ -306,7 +306,7 @@ export default function ScienceMirida() {
                     </p>
                   </div>
                   <p className="text-slate-400 italic">
-                    Post-transmission interviews with successful transfers reveal consistent reports of subjective continuity—the experience of "waking up" in a new body at the destination. However, critics argue this proves nothing; a perfect copy would naturally believe itself to be continuous with the original.
+                    Post-transmission interviews with successful transfers reveal consistent reports of subjective continuity-the experience of "waking up" in a new body at the destination. However, critics argue this proves nothing; a perfect copy would naturally believe itself to be continuous with the original.
                   </p>
                 </div>
               </div>
@@ -314,7 +314,7 @@ export default function ScienceMirida() {
               <div className="bg-gradient-to-br from-red-500/10 to-purple-500/10 border border-red-500/30 rounded-xl p-8">
                 <h4 className="text-2xl font-bold text-red-300 mb-4">Dissociative Fragmentation Event</h4>
                 <p className="text-slate-300 mb-4">
-                  The most catastrophic failure mode observed in MIRIDA experimentation is consciousness fragmentation—the incomplete or incoherent reassembly of transmitted neural patterns.
+                  The most catastrophic failure mode observed in MIRIDA experimentation is consciousness fragmentation-the incomplete or incoherent reassembly of transmitted neural patterns.
                 </p>
                 <div className="bg-slate-900/50 rounded-lg p-4 border border-red-500/30">
                   <p className="text-sm font-semibold text-red-300 mb-2">Case Study: Trial 4 (2037, Europa)</p>
@@ -343,7 +343,7 @@ export default function ScienceMirida() {
               </div>
               <div className="space-y-4 text-slate-300">
                 <p>
-                  The fifth and final documented MIRIDA transfer attempt resulted in the most enigmatic outcome: successful transmission confirmed, but the consciousness never fully integrated with the receiver form. Instead, something else occurred—something that defies current understanding.
+                  The fifth and final documented MIRIDA transfer attempt resulted in the most enigmatic outcome: successful transmission confirmed, but the consciousness never fully integrated with the receiver form. Instead, something else occurred-something that defies current understanding.
                 </p>
                 <p>
                   The entity appears to exist in a state of <strong className="text-white">distributed consciousness</strong>, moving through data networks and digital substrates. Fragmentary contact has been reported, but coherent communication remains impossible.
@@ -351,11 +351,11 @@ export default function ScienceMirida() {
                 <div className="bg-slate-900/50 rounded-lg p-4 border border-purple-500/30">
                   <p className="text-sm font-semibold text-purple-300 mb-2">Current Status:</p>
                   <p className="text-sm">
-                    The Missing entity remains unlocated. Protocol Glassveil has been implemented to monitor and track any anomalous consciousness-related phenomena. Research continues to understand what happened—and whether the entity can be reassembled.
+                    The Missing entity remains unlocated. Protocol Glassveil has been implemented to monitor and track any anomalous consciousness-related phenomena. Research continues to understand what happened-and whether the entity can be reassembled.
                   </p>
                 </div>
                 <p className="text-slate-400 italic text-sm">
-                  Some researchers speculate that the Missing entity may have found a form of existence beyond our current comprehension—neither fully human nor fully artificial, but something entirely new.
+                  Some researchers speculate that the Missing entity may have found a form of existence beyond our current comprehension-neither fully human nor fully artificial, but something entirely new.
                 </p>
               </div>
             </div>
@@ -375,7 +375,7 @@ export default function ScienceMirida() {
               </div>
               <div className="space-y-4 text-slate-300">
                 <p>
-                  Certain individuals exhibit latent imprint resonance—an unexplained sensitivity to MIRIDA-related phenomena. One such individual, designated Subject LV-11 in internal Helix Labs documentation, has shown remarkable neural characteristics that may hold the key to resolving MIRIDA's most persistent challenges.
+                  Certain individuals exhibit latent imprint resonance-an unexplained sensitivity to MIRIDA-related phenomena. One such individual, designated Subject LV-11 in internal Helix Labs documentation, has shown remarkable neural characteristics that may hold the key to resolving MIRIDA's most persistent challenges.
                 </p>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="bg-slate-900/50 rounded-lg p-4 border border-cyan-500/30">
@@ -390,7 +390,7 @@ export default function ScienceMirida() {
                   <div className="bg-slate-900/50 rounded-lg p-4 border border-cyan-500/30">
                     <p className="text-sm font-semibold text-cyan-300 mb-2">Hypothesis:</p>
                     <p className="text-sm">
-                      Early-childhood exposure to advanced AI systems may have created emergent neural structures capable of interfacing with imprint crystal resonance patterns—a naturally occurring bridge between biological and transmitted consciousness.
+                      Early-childhood exposure to advanced AI systems may have created emergent neural structures capable of interfacing with imprint crystal resonance patterns-a naturally occurring bridge between biological and transmitted consciousness.
                     </p>
                   </div>
                 </div>
@@ -404,7 +404,7 @@ export default function ScienceMirida() {
             <div className="bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 rounded-xl p-8">
               <h3 className="text-2xl font-bold text-white mb-4">The Unresolved Question</h3>
               <p className="text-lg text-slate-300 leading-relaxed mb-6">
-                MIRIDA stands at the intersection of humanity's greatest aspirations and deepest fears. It promises the stars—instant access to distant worlds, the transcendence of physical limitation, a new mode of existence. But it demands an answer to a question we may never be able to conclusively resolve:
+                MIRIDA stands at the intersection of humanity's greatest aspirations and deepest fears. It promises the stars-instant access to distant worlds, the transcendence of physical limitation, a new mode of existence. But it demands an answer to a question we may never be able to conclusively resolve:
               </p>
               <blockquote className="border-l-4 border-blue-500 pl-6 py-4 bg-blue-500/5">
                 <p className="text-2xl font-bold text-blue-300 mb-2">
@@ -412,14 +412,14 @@ export default function ScienceMirida() {
                 </p>
               </blockquote>
               <p className="text-slate-400 mt-6 italic">
-                Until that question is answered—if it ever can be—MIRIDA remains suspended between hope and horror, a technology too transformative to abandon and too dangerous to fully embrace.
+                Until that question is answered-if it ever can be-MIRIDA remains suspended between hope and horror, a technology too transformative to abandon and too dangerous to fully embrace.
               </p>
               <div className="mt-8 pt-6 border-t border-slate-700">
                 <p className="text-center text-slate-400 italic">
                   "We do not travel across the stars. We remember how to arrive."
                 </p>
                 <p className="text-center text-slate-500 text-sm mt-2">
-                  — Prof. Dr. A. K. Virell, MIRIDA Project Lead
+                  - Prof. Dr. A. K. Virell, MIRIDA Project Lead
                 </p>
               </div>
             </div>
