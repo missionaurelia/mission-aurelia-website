@@ -51,38 +51,17 @@ const ComingSoonPopup = () => {
             />
           </div>
 
-          {/* Bottom bar - slim menu band */}
+          {/* Bottom bar - close button only, centered */}
           <div
-            className="flex items-center justify-between px-5 py-3"
+            className="flex items-center justify-center px-5 py-2"
             style={{
               background: 'linear-gradient(90deg, #0a0a0a 0%, #1a0a00 50%, #0a0a0a 100%)',
               borderTop: '1px solid rgba(255,107,53,0.25)',
             }}
           >
-            {/* Luna thumbnail + label */}
-            <div className="flex items-center gap-3">
-              <img
-                src="/images/characters/luna-thumbnail.jpg"
-                alt="Luna Veyra"
-                className="rounded-full object-cover flex-shrink-0"
-                style={{
-                  width: '40px',
-                  height: '40px',
-                  border: '2px solid #ff6b35',
-                }}
-              />
-              <div>
-                <p className="text-xs text-gray-400 leading-none mb-0.5">Next Spotlight</p>
-                <p className="text-sm font-bold leading-none" style={{ color: '#ff6b35' }}>
-                  Luna Veyra &mdash; May 29th
-                </p>
-              </div>
-            </div>
-
-            {/* Close button */}
             <button
               onClick={handleClose}
-              className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 flex-shrink-0"
+              className="flex items-center gap-2 px-4 py-1.5 rounded-lg text-sm font-semibold transition-all duration-200"
               style={{
                 background: 'rgba(255,107,53,0.15)',
                 border: '1px solid rgba(255,107,53,0.4)',
