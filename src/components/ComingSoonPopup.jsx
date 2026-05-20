@@ -41,26 +41,6 @@ const ComingSoonPopup = () => {
           }}
           onClick={(e) => e.stopPropagation()}
         >
-          {/* Close button - top right corner */}
-          <button
-            onClick={handleClose}
-            className="absolute top-3 right-3 z-10 flex items-center justify-center w-8 h-8 rounded-full transition-all duration-200"
-            style={{
-              background: 'rgba(0,0,0,0.6)',
-              border: '1px solid rgba(255,107,53,0.5)',
-              color: '#ff6b35',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = 'rgba(255,107,53,0.3)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = 'rgba(0,0,0,0.6)';
-            }}
-            aria-label="Close popup"
-          >
-            <X className="w-4 h-4" />
-          </button>
-
           {/* Main Image - fills the popup */}
           <div className="relative w-full">
             <img
@@ -69,6 +49,56 @@ const ComingSoonPopup = () => {
               className="w-full h-auto block"
               style={{ display: 'block' }}
             />
+          </div>
+
+          {/* Bottom bar - slim menu band */}
+          <div
+            className="flex items-center justify-between px-5 py-3"
+            style={{
+              background: 'linear-gradient(90deg, #0a0a0a 0%, #1a0a00 50%, #0a0a0a 100%)',
+              borderTop: '1px solid rgba(255,107,53,0.25)',
+            }}
+          >
+            {/* Luna thumbnail + label */}
+            <div className="flex items-center gap-3">
+              <img
+                src="/images/characters/luna-thumbnail.jpg"
+                alt="Luna Veyra"
+                className="rounded-full object-cover flex-shrink-0"
+                style={{
+                  width: '40px',
+                  height: '40px',
+                  border: '2px solid #ff6b35',
+                }}
+              />
+              <div>
+                <p className="text-xs text-gray-400 leading-none mb-0.5">Next Spotlight</p>
+                <p className="text-sm font-bold leading-none" style={{ color: '#ff6b35' }}>
+                  Luna Veyra &mdash; May 29th
+                </p>
+              </div>
+            </div>
+
+            {/* Close button */}
+            <button
+              onClick={handleClose}
+              className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 flex-shrink-0"
+              style={{
+                background: 'rgba(255,107,53,0.15)',
+                border: '1px solid rgba(255,107,53,0.4)',
+                color: '#ff6b35',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = 'rgba(255,107,53,0.3)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = 'rgba(255,107,53,0.15)';
+              }}
+              aria-label="Close popup"
+            >
+              <X className="w-4 h-4" />
+              Close
+            </button>
           </div>
         </div>
       </div>
