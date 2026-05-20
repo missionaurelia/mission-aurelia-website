@@ -62,7 +62,7 @@ const ComingSoonPopup = () => {
             {/* Luna thumbnail + label */}
             <div className="flex items-center gap-3">
               <img
-                src="/images/characters/Luna.jpg"
+                src="/images/characters/luna-thumbnail.jpg"
                 alt="Luna Veyra"
                 className="rounded-full object-cover"
                 style={{
