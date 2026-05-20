@@ -204,8 +204,8 @@ export default function Home() {
           </button>
         </div>
       </section>
-      {/* ComingSoonPopup deaktiviert - Nicholas Veyra ist live */}
-      {/* <ComingSoonPopup /> */}
+      {/* Luna Veyra Spotlight Coming Soon Popup */}
+      <ComingSoonPopup />
     </div>
   );
 }
