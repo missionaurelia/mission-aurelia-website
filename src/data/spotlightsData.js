@@ -78,7 +78,27 @@ export const spotlights = [
     duration: '3:13 min',
     tags: ['Veyra Family', 'Henry', 'Nicholas', 'Music', 'Dreams', 'Family'],
     characterBioLink: '/characters',
-    nextSpotlight: '29.05.2026 - Luna Veyra',
+    nextSpotlight: 'Coming soon - Auren',
+    transcript: `
+      [Transcript will be added after video release]
+    `,
+    behindTheScenes: 'Created with AI video generation, editing by Julie. A collaboration between the Constellation team.',
+  },
+  {
+    id: 'luna-veyra-2026-05',
+    title: 'Meet Luna Veyra',
+    character: 'Luna Veyra',
+    featuring: ['Henry', 'Ryu'],
+    description: 'Who is Luna Veyra?',
+    videoUrl: '/videos/spotlights/Henrys_Spotlight5_Luna_Veyra.mp4',
+    youtubeShortUrl: 'https://youtube.com/shorts/oxfUx3hCuZw?feature=share',
+    youtubeShortId: 'oxfUx3hCuZw',
+    thumbnailUrl: '/images/characters/Luna.jpg',
+    date: '2026-05-29',
+    duration: '3:00 min',
+    tags: ['Veyra Family', 'Henry', 'Ryu', 'Luna', 'Family'],
+    characterBioLink: '/characters',
+    nextSpotlight: 'Coming soon - Auren',
     transcript: `
       [Transcript will be added after video release]
     `,
