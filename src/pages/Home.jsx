@@ -204,8 +204,8 @@ export default function Home() {
           </button>
         </div>
       </section>
-      {/* Luna Veyra Spotlight Coming Soon Popup - deactivated after Luna went live 2026-05-29 */}
-      {/* <ComingSoonPopup /> */}
+      {/* Luna Veyra Spotlight Coming Soon Popup */}
+      <ComingSoonPopup />
     </div>
   );
 }
