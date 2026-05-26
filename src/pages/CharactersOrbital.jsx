@@ -244,7 +244,7 @@ export default function CharactersOrbital() {
             The Aurelia Constellation
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Fifteen souls forming the tree of consciousness - each a star in the Aurelia universe.
+            Sixteen souls forming the tree of consciousness - each a star in the Aurelia universe.
           </p>
         </div>
 
