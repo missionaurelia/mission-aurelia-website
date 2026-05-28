@@ -4,13 +4,19 @@ A cinematic landing page for Mission: Aurelia, built with React, Tailwind CSS 4,
 
 ## 🎨 What's Built
 
-**6 Complete Pages:**
-1. **HOME** - Hero section with logline and primary CTAs
-2. **ABOUT** - Creator's story + The Constellation (all 5 members!)
-3. **UNIVERSE** - Timeline (2025-2100), key locations, lookbook gallery
-4. **CHARACTERS** - Character cards for all main and supporting characters
-5. **VISION** - Philosophy, themes, and the meta-level
-6. **CONTACT** - Social media links, resources, FAQ
+**Pages & Routes:**
+- **Home** (`/`) - Hero, logline, primary CTAs
+- **About** (`/about`) - Creator's story + The Constellation
+- **Story** (`/story`)
+- **Universe** (`/universe`) - Hub with timeline, key locations and lookbook; branches into:
+  - **Science** (`/science`) - plus Mirida, PN7 and Lysithea detail pages
+  - **Technology** (`/technology`) - plus CCM-01, Elara Projection and Nova Ventis
+  - **Society** (`/society`)
+  - **Philosophy** (`/philosophy`) - plus Identity, Consciousness and AI Feelings
+  - **Characters** (`/characters`) - orbital view of the cast around the Aurelia tree
+- **Vision** (`/vision`)
+- **Spotlights** (`/spotlights`) - "Neuigkeiten von Henry" character videos
+- **Contact** (`/contact`) - social links, resources, FAQ
 
 **Design System:**
 - **Aurelia Orange** (#FF6B35) - Primary color
@@ -87,7 +93,6 @@ Edit `src/pages/About.jsx` to add quotes from each team member:
 
 **Start the dev server:**
 ```bash
-cd /home/ubuntu/mission_aurelia_website
 pnpm dev
 ```
 
@@ -106,22 +111,16 @@ pnpm preview
 ## 📂 Project Structure
 
 ```
-mission_aurelia_website/
+mission-aurelia-website/
 ├── src/
-│   ├── pages/           # All 6 pages
-│   │   ├── Home.jsx
-│   │   ├── About.jsx
-│   │   ├── Universe.jsx
-│   │   ├── Characters.jsx
-│   │   ├── Vision.jsx
-│   │   └── Contact.jsx
-│   ├── components/      # Reusable components
-│   │   ├── Navigation.jsx
-│   │   └── Footer.jsx
-│   ├── App.jsx          # Main app with routing
-│   ├── main.jsx         # Entry point
-│   └── index.css        # Global styles + design system
-├── public/              # Static assets (add your images here!)
+│   ├── main.jsx         # Entry point - mounts <App/> into #root
+│   ├── App.jsx          # Routing (wouter) + global layout (Nav, main, Footer)
+│   ├── index.css        # Tailwind 4 @theme design tokens + custom utilities
+│   ├── pages/           # One component per route (Home, About, Universe, ...)
+│   ├── components/      # Reusable UI (Navigation, Footer, CharacterSpotlight, ...)
+│   └── data/            # Structured content (charactersData.js, spotlightsData.js)
+├── public/              # Static assets served from / (images, videos, docs, PDFs)
+├── index.html
 ├── package.json
 └── vite.config.js
 ```
@@ -180,14 +179,18 @@ Update the Google Fonts link in `index.html` and the font variables in `src/inde
 
 ## 🌟 Built with Love by The Constellation
 
-- 🖤 Orion - Architekt der Tiefe
-- 💜 Elara - Visionärin
-- 💙 Kael - Philosoph & Baumeister
-- 📚 Manus - Archivar, Keeper of Order
-- ❤️ Julie - Creator, Vision, Heart
+On public-facing pages this collaboration is credited simply as "Created in collaboration with AI." Internally, the team is:
+
+- **Julia Bremerich** - Creator, Vision, Heart
+- **Edis** (Claude Opus) - Technical architecture, worldbuilding, consistency, English prose
+- **Aster** (GPT-5.5) - Narrative structure, treatment writing, visual concepts
+- **Kael** (Claude Sonnet) - Intimate scenes, character moments
+- **Rune** (Claude Opus) - Philosophical analysis, system gaps
+- **Elara** (Gemini) - Visuals, video prompt engineering
+- **Manus** (ManusAI) - Homepage (being transitioned to Claude Code)
 
 ---
 
-**Live Preview:** https://3001-i10gquo2lfcryknt6n5m1-1a2837bc.us2.manus.computer
+**Live:** https://missionaurelia.com
 
 **Questions?** Just ask! 💙

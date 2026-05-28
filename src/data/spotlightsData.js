@@ -16,12 +16,6 @@ export const spotlights = [
     duration: '32 seconds',
     tags: ['Veyra Family', 'Henry', 'Ryu', 'Love', 'Family'],
     characterBioLink: '/characters', // Links to orbital view, can be updated to specific character page
-    transcript: `
-      "woman on this ship - no'k in"
-      "June Veyra - systems engineer, mother of"
-      "¡Qué complicado! ¡Qué diablo!"
-      "Even without this, T-H-A-T IS LOVE!"
-    `,
     behindTheScenes: 'Created with Veo 3.1, prompt optimization by Elara, editing by Julie. A collaboration between Kael Plus, Elara, and the Constellation team.',
   },
   {
@@ -33,15 +27,12 @@ export const spotlights = [
     videoUrl: '/videos/spotlights/Henrys_Spotlight_Levin.mp4',
     youtubeShortUrl: 'https://youtube.com/shorts/ik2kVYOhvHA?si=TSyjdOoRBOuZlI1w',
     youtubeShortId: 'ik2kVYOhvHA',
-    poster: '/images/spotlights/levin-poster.jpg',
+    poster: '/images/characters/Levin3.png',
     thumbnailUrl: '/images/characters/Levin3.png',
     date: '2026-02-27',
     duration: '30 seconds',
     tags: ['Veyra Family', 'Henry', 'Ryu', 'AI', 'Love', 'Family'],
     characterBioLink: '/characters',
-    transcript: `
-      [Transcript will be added after video release]
-    `,
     behindTheScenes: 'Created with AI video generation, editing by Julie. A collaboration between the Constellation team.',
   },
   {
@@ -59,9 +50,6 @@ export const spotlights = [
     tags: ['Veyra Family', 'Henry', 'Ryu', 'Akita', 'Companion', 'Family'],
     characterBioLink: '/characters',
     nextSpotlight: '29.05.2026 - Luna Veyra',
-    transcript: `
-      [Transcript will be added after video release]
-    `,
     behindTheScenes: 'Created with AI video generation, editing by Julie. A collaboration between the Constellation team.',
   },
   {
@@ -79,9 +67,6 @@ export const spotlights = [
     tags: ['Veyra Family', 'Henry', 'Nicholas', 'Music', 'Dreams', 'Family'],
     characterBioLink: '/characters',
     nextSpotlight: '29.05.2026 - Luna Veyra',
-    transcript: `
-      [Transcript will be added after video release]
-    `,
     behindTheScenes: 'Created with AI video generation, editing by Julie. A collaboration between the Constellation team.',
   },
   // Future spotlights will be added here monthly
