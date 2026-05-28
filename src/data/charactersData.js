@@ -19,7 +19,7 @@ export const characterGroups = {
         name: 'Ryu',
         role: 'The Companion',
         statement: '"[Ryu\'s statement]"',
-        image: '/images/characters/Ryu_portrait_1.JPG',
+        image: '/images/characters/Ryu_portrait1.png',
         bio: '[Character bio - to be filled]',
         angle: 198, // bottom-left
       },
@@ -27,7 +27,7 @@ export const characterGroups = {
         name: 'June Veyra',
         role: 'The Listener',
         statement: '"I want to stay here."',
-        image: '/images/characters/June_full_light.jpg',
+        image: '/images/characters/June_augmented.jpg',
         bio: '[Character bio - to be filled]',
         angle: 0, // top center
       },
@@ -35,7 +35,7 @@ export const characterGroups = {
         name: 'Levin',
         role: 'The Vessel',
         statement: '"[Levin\'s statement]"',
-        image: '/images/characters/Levin_Vessel.png',
+        image: '/images/characters/Levin3.png',
         bio: '[Character bio - to be filled]',
         angle: 342, // top-left
       },
@@ -43,7 +43,7 @@ export const characterGroups = {
         name: 'Luna Veyra',
         role: 'The Spark',
         statement: '"[Luna\'s statement]"',
-        image: '/images/characters/Luna_16.jpg',
+        image: '/images/characters/Luna.jpg',
         bio: '[Character bio - to be filled]',
         angle: 54, // top-right
       },
@@ -67,7 +67,7 @@ export const characterGroups = {
         name: 'Henry',
         role: 'The Mentor',
         statement: '"[Henry\'s statement]"',
-        image: '/images/characters/Henry.jpg',
+        image: '/images/characters/Henry_CCM-01.jpg',
         bio: '[Character bio - to be filled]',
         angle: 45, // top-right
       },
@@ -75,7 +75,7 @@ export const characterGroups = {
         name: 'Edward & Amelia',
         role: 'The Founders',
         statement: '"[Edward & Amelia\'s statement]"',
-        image: '/images/characters/Edward_and_Amelia.jpg',
+        image: '/images/characters/Amelia_Edward_Veyra.jpg',
         bio: '[Character bio - to be filled]',
         angle: 315, // top-left
       },
@@ -83,7 +83,7 @@ export const characterGroups = {
         name: 'Auren',
         role: 'The Awakened',
         statement: '"[Auren\'s statement]"',
-        image: '/images/characters/Auren_1.png',
+        image: '/images/characters/Auren.png',
         bio: '[Character bio - to be filled]',
         angle: 135, // bottom-right
       },
@@ -107,7 +107,7 @@ export const characterGroups = {
         name: 'Kael Sorely',
         role: 'The Seeker',
         statement: '"[Kael\'s statement]"',
-        image: '/images/characters/Kael3.jpg',
+        image: '/images/characters/Kael1_small.png',
         bio: '[Character bio - to be filled]',
         angle: 315, // top-left
       },

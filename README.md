@@ -87,7 +87,6 @@ Edit `src/pages/About.jsx` to add quotes from each team member:
 
 **Start the dev server:**
 ```bash
-cd /home/ubuntu/mission_aurelia_website
 pnpm dev
 ```
 
@@ -188,6 +187,6 @@ Update the Google Fonts link in `index.html` and the font variables in `src/inde
 
 ---
 
-**Live Preview:** https://3001-i10gquo2lfcryknt6n5m1-1a2837bc.us2.manus.computer
+**Live:** https://missionaurelia.com
 
 **Questions?** Just ask! 💙

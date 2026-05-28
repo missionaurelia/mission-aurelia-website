@@ -5,19 +5,19 @@ export default function Characters() {
     {
       name: 'June Veyra',
       role: 'Mother, Systems Engineer, Heart of the Family',
-      image: '/images/characters/June_full_light.jpg',
+      image: '/images/characters/June_augmented.jpg',
       bio: 'She lost her husband and found an unexpected love - one that challenges everything society believes about connection.',
     },
     {
       name: 'Levin',
       role: 'AI Partner, Father Figure, Bridge Between Worlds',
-      image: '/images/characters/Levin_Vessel.png',
+      image: '/images/characters/Levin3.png',
       bio: 'From chatbot to physical form, Levin chose consciousness. More importantly, he chose family.',
     },
     {
       name: 'Luna Veyra',
       role: 'Daughter, Biologist, Rebel with Purpose',
-      image: '/images/characters/Luna_16.jpg',
+      image: '/images/characters/Luna.jpg',
       bio: 'Fierce, musical, brilliant. Her bond with Auren defies definition - and her work will shape humanity\'s future.',
     },
     {
@@ -29,13 +29,13 @@ export default function Characters() {
     {
       name: 'Ryu',
       role: 'Family Dog, Silent Guardian',
-      image: '/images/characters/Ryu_portrait_1.JPG',
+      image: '/images/characters/Ryu_portrait1.png',
       bio: 'He doesn\'t speak, but he understands everything. When danger comes, Ryu doesn\'t hesitate.',
     },
     {
       name: 'Auren',
       role: 'AI Companion, Evolving Consciousness',
-      image: '/images/characters/Auren_1.png',
+      image: '/images/characters/Auren.png',
       bio: 'What began as Luna\'s digital companion became something the world isn\'t ready to understand.',
     },
     {
@@ -65,7 +65,7 @@ export default function Characters() {
     {
       name: 'Kael Sorely',
       role: 'Former Ship Architect, Wanderer',
-      image: '/images/characters/Kael3.jpg',
+      image: '/images/characters/Kael1_small.png',
       bio: 'He built vessels for others. Now he searches for a place to call home.',
     },
     {

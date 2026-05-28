@@ -6,7 +6,6 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Universe from './pages/Universe';
 import Characters from './pages/Characters';
-import CharactersSelector from './pages/CharactersSelector';
 import CharactersOrbital from './pages/CharactersOrbital';
 import Science from './pages/Science';
 import ScienceMirida from './pages/ScienceMirida';

@@ -33,7 +33,7 @@ export const spotlights = [
     videoUrl: '/videos/spotlights/Henrys_Spotlight_Levin.mp4',
     youtubeShortUrl: 'https://youtube.com/shorts/ik2kVYOhvHA?si=TSyjdOoRBOuZlI1w',
     youtubeShortId: 'ik2kVYOhvHA',
-    poster: '/images/spotlights/levin-poster.jpg',
+    poster: '/images/characters/Levin3.png',
     thumbnailUrl: '/images/characters/Levin3.png',
     date: '2026-02-27',
     duration: '30 seconds',
