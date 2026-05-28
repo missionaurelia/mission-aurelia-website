@@ -24,6 +24,7 @@ import Contact from './pages/Contact';
 import ComingSoon from './pages/ComingSoon';
 import Spotlights from './pages/Spotlights';
 import Story from './pages/Story';
+import SanctumSpa from './pages/SanctumSpa';
 
 // Set to true to show Coming Soon page, false to show full site
 const COMING_SOON_MODE = false;
@@ -73,6 +74,7 @@ function App() {
           <Route path="/technology/elara-projection" component={TechnologyElaraProjection} />
           <Route path="/technology/nova-ventis" component={TechnologyNovaVentis} />
           <Route path="/society" component={Society} />
+          <Route path="/sanctum-spa" component={SanctumSpa} />
           <Route path="/philosophy" component={Philosophy} />
           <Route path="/philosophy/identity" component={PhilosophyIdentity} />
           <Route path="/philosophy/consciousness" component={PhilosophyConsciousness} />

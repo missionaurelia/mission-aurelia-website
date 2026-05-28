@@ -21,6 +21,7 @@ export default function Navigation() {
     { path: '/society', label: 'Society' },
     { path: '/philosophy', label: 'Philosophy' },
     { path: '/characters', label: 'Characters' },
+    { path: '/sanctum-spa', label: 'Sanctum Spa' },
   ];
 
   // Check if we're on a Universe-related page
