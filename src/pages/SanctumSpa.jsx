@@ -64,31 +64,43 @@ function Butterfly() {
 function Portal({ onEnter }) {
   return (
     <motion.section
-      className="fixed inset-0 z-30 flex items-center justify-center overflow-hidden"
+      className="fixed inset-0 z-30 flex items-center justify-center overflow-hidden bg-[#080a0f]"
       initial={{ opacity: 1 }}
       exit={{ opacity: 0, scale: 1.08, filter: 'blur(6px)' }}
       transition={{ duration: 1.1, ease: 'easeInOut' }}
     >
-      {/* Slowly breathing portal image */}
+      {/* Desktop: full-bleed cinematic portal image */}
       <motion.img
         src={`${IMG}/portal-hero.webp`}
         alt="An organic stone archway opening onto the wide Lysithea landscape at amber sunset"
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 hidden h-full w-full object-cover md:block"
         initial={{ scale: 1.04 }}
         animate={{ scale: 1.12 }}
         transition={{ duration: 24, repeat: Infinity, repeatType: 'reverse', ease: 'easeInOut' }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-[#080a0f]/40 via-transparent to-[#080a0f]/80" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_30%,_#080a0f_95%)]" />
+      <div className="absolute inset-0 hidden bg-gradient-to-b from-[#080a0f]/40 via-transparent to-[#080a0f]/80 md:block" />
+      <div className="absolute inset-0 hidden bg-[radial-gradient(ellipse_at_center,_transparent_30%,_#080a0f_95%)] md:block" />
       <Motes />
       <Butterfly />
 
       <motion.div
-        className="relative z-10 px-6 text-center"
+        className="relative z-10 flex w-full max-w-md flex-col items-center px-6 text-center md:max-w-none"
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.4, delay: 0.3 }}
       >
+        {/* Mobile: full-vista portal image, framed as a gateway (no side cropping) */}
+        <div className="mb-8 w-full overflow-hidden rounded-2xl border border-amber-200/20 shadow-2xl md:hidden">
+          <motion.img
+            src={`${IMG}/portal-hero.webp`}
+            alt="An organic stone archway opening onto the wide Lysithea landscape at amber sunset"
+            className="w-full"
+            initial={{ scale: 1.02 }}
+            animate={{ scale: 1.08 }}
+            transition={{ duration: 24, repeat: Infinity, repeatType: 'reverse', ease: 'easeInOut' }}
+          />
+        </div>
+
         <p className="mb-5 text-sm uppercase tracking-[0.4em] text-amber-200/70">
           Mission: Aurelia
         </p>
@@ -221,7 +233,7 @@ function ParallelChoices() {
         </motion.div>
 
         <div className="mx-auto mt-12 max-w-4xl">
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="grid grid-cols-2 gap-3 md:flex md:flex-wrap md:justify-center">
             {PATHS.map((p) => (
               <button
                 key={p.id}
