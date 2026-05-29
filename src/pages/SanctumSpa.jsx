@@ -71,7 +71,7 @@ function Portal({ onEnter }) {
     >
       {/* Slowly breathing portal image */}
       <motion.img
-        src={`${IMG}/portal-hero.png`}
+        src={`${IMG}/portal-hero.webp`}
         alt="An organic stone archway opening onto the wide Lysithea landscape at amber sunset"
         className="absolute inset-0 h-full w-full object-cover"
         initial={{ scale: 1.04 }}
@@ -298,7 +298,7 @@ export default function SanctumSpa() {
         <SectionImage
           eyebrow="01 - The Place"
           title="What is Sanctum Spa?"
-          image={`${IMG}/main-interior.png`}
+          image={`${IMG}/main-interior.webp`}
           alt="Flowing interior architecture with water, plants, wood and soft curved lines"
         >
           <Body>
@@ -314,7 +314,7 @@ export default function SanctumSpa() {
         <SectionImage
           eyebrow="02 - The Bridge"
           title="From Helix Labs to Everyday Life"
-          image={`${IMG}/science-bridge.png`}
+          image={`${IMG}/science-bridge.webp`}
           alt="A laboratory and technology space meeting a warm, organic natural space"
           reverse
           quote="What begins as research becomes, over time, something you can feel."
@@ -332,7 +332,7 @@ export default function SanctumSpa() {
         <SectionImage
           eyebrow="03 - The Body"
           title="Guided recovery"
-          image={`${IMG}/recovery.png`}
+          image={`${IMG}/recovery.webp`}
           alt="A reclining chair with soft blankets in warm light, a plant nearby - calm and intimate"
         >
           <Body>
@@ -350,7 +350,7 @@ export default function SanctumSpa() {
         <SectionImage
           eyebrow="04 - Time"
           title="Why does Sanctum Spa matter?"
-          image={`${IMG}/lysithea-sunset.png`}
+          image={`${IMG}/lysithea-sunset.webp`}
           alt="A wide sunset over the Lysithea sea with Jupiter low on the horizon"
           reverse
         >
@@ -368,7 +368,7 @@ export default function SanctumSpa() {
         <SectionImage
           eyebrow="06 - Grounding"
           title="A lightly scientific grounding"
-          image={`${IMG}/regenerative-detail.png`}
+          image={`${IMG}/regenerative-detail.webp`}
           alt="A golden droplet resting on a green leaf against a deep blue background"
           reverse
         >
