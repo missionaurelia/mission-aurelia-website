@@ -5,29 +5,9 @@ import { ArrowDown } from 'lucide-react';
 
 const IMG = '/images/sanctum-spa';
 
-// Marks where Julia's final copy will go. Intentionally muted so the layout
-// reads realistically while making it obvious the prose is not final yet.
-function Placeholder({ note, terms }) {
-  return (
-    <div className="mt-6 space-y-4">
-      <p className="text-xs uppercase tracking-[0.25em] text-amber-200/40">
-        Placeholder — final copy to follow
-      </p>
-      {note && <p className="italic text-[var(--color-text)]/55">{note}</p>}
-      {terms && (
-        <div className="flex flex-wrap gap-2 pt-1">
-          {terms.map((t) => (
-            <span
-              key={t}
-              className="rounded-full border border-amber-200/20 bg-amber-100/5 px-3 py-1 text-xs text-amber-100/70"
-            >
-              {t}
-            </span>
-          ))}
-        </div>
-      )}
-    </div>
-  );
+// Shared body copy wrapper — keeps reading rhythm consistent across sections.
+function Body({ children }) {
+  return <div className="mt-6 space-y-4 text-[var(--color-text)]/75">{children}</div>;
 }
 
 // Soft drifting light motes — quiet, not spectacle.
@@ -136,7 +116,7 @@ function Portal({ onEnter }) {
 }
 
 // Reusable parallax image + text section.
-function SectionImage({ index, eyebrow, title, image, alt, reverse, quote, children }) {
+function SectionImage({ eyebrow, title, image, alt, reverse, quote, children }) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] });
   const y = useTransform(scrollYProgress, [0, 1], ['-7%', '7%']);
@@ -194,14 +174,31 @@ function SectionImage({ index, eyebrow, title, image, alt, reverse, quote, child
 }
 
 const PATHS = [
-  { id: 'early', label: 'Begin early' },
-  { id: 'later', label: 'Begin later' },
-  { id: 'never', label: 'Not at all' },
-  { id: 'gradual', label: 'Open gradually' },
+  {
+    id: 'early',
+    label: 'Begin early',
+    text: 'Some chose early - not out of fear, but because they saw no reason to wait. Time felt like something worth holding.',
+  },
+  {
+    id: 'later',
+    label: 'Begin later',
+    text: 'Some waited. Not out of doubt, but because the right moment had not yet arrived. When it did, they recognized it.',
+  },
+  {
+    id: 'never',
+    label: 'Not at all',
+    text: 'Some chose not to participate at all. Not as rejection, but as a quiet, deliberate decision to age on their own terms.',
+  },
+  {
+    id: 'gradual',
+    label: 'Open gradually',
+    text: 'Some opened themselves slowly - one step, then another. No urgency. No pressure. Just a widening of what felt possible.',
+  },
 ];
 
 function ParallelChoices() {
   const [active, setActive] = useState('gradual');
+  const current = PATHS.find((p) => p.id === active);
   return (
     <section className="relative overflow-hidden py-24 md:py-32">
       <div className="absolute inset-0 bg-gradient-to-b from-[#0b1020] via-[#0a0d16] to-[#080a0f]" />
@@ -213,7 +210,7 @@ function ParallelChoices() {
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.9 }}
         >
-          <p className="mb-3 text-xs uppercase tracking-[0.3em] text-amber-200/50">05 — Choice</p>
+          <p className="mb-3 text-xs uppercase tracking-[0.3em] text-amber-200/50">05 - Choice</p>
           <h2 className="font-[family-name:var(--font-family-display)] text-3xl font-bold text-amber-50 md:text-4xl">
             Parallel choices, not one future
           </h2>
@@ -240,7 +237,7 @@ function ParallelChoices() {
             ))}
           </div>
 
-          <div className="mt-8 min-h-[140px] rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
+          <div className="mt-8 flex min-h-[140px] items-center rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
             <AnimatePresence mode="wait">
               <motion.div
                 key={active}
@@ -249,13 +246,10 @@ function ParallelChoices() {
                 exit={{ opacity: 0, y: -12 }}
                 transition={{ duration: 0.4 }}
               >
-                <p className="text-xs uppercase tracking-[0.25em] text-amber-200/40">
-                  {PATHS.find((p) => p.id === active)?.label} — placeholder reflection
+                <p className="text-xs uppercase tracking-[0.25em] text-amber-200/50">
+                  {current?.label}
                 </p>
-                <p className="mt-4 text-lg italic text-[var(--color-text)]/60">
-                  A short, calm reflection on this path — what it means, what it costs, what it
-                  opens. Final copy to follow.
-                </p>
+                <p className="mt-4 text-lg italic text-amber-50/85 md:text-xl">{current?.text}</p>
               </motion.div>
             </AnimatePresence>
           </div>
@@ -302,55 +296,59 @@ export default function SanctumSpa() {
         </section>
 
         <SectionImage
-          index={1}
-          eyebrow="01 — The Place"
+          eyebrow="01 - The Place"
           title="What is Sanctum Spa?"
           image={`${IMG}/main-interior.png`}
           alt="Flowing interior architecture with water, plants, wood and soft curved lines"
         >
-          <Placeholder
-            note="Introduce Sanctum Spa plainly — a future place where progress becomes quiet, personal and embodied. Not a hospital in the old sense. Not a luxury spa in the shallow sense."
-            terms={[
-              'regenerative care',
-              'recovery',
-              'longevity procedures',
-              'body stabilization',
-              'personal guidance',
-            ]}
-          />
+          <Body>
+            <p>
+              Sanctum Spa is not a clinic in the traditional sense. It is not a luxury retreat. It
+              is a place where regenerative care, recovery, and the personal experience of an
+              extended life come together - quietly, responsibly, and on your own terms.
+            </p>
+            <p className="text-amber-50/90">Progress here is not performed. It is lived.</p>
+          </Body>
         </SectionImage>
 
         <SectionImage
-          index={2}
-          eyebrow="02 — The Bridge"
+          eyebrow="02 - The Bridge"
           title="From Helix Labs to Everyday Life"
           image={`${IMG}/science-bridge.png`}
           alt="A laboratory and technology space meeting a warm, organic natural space"
           reverse
-          quote="Technological progress may be chronological. Human participation remains personal."
+          quote="What begins as research becomes, over time, something you can feel."
         >
-          <Placeholder
-            note="Explain the path: Helix Labs develops what is possible; Sanctum Spa turns it into lived, responsible, personal experience. From research to application to cultural integration."
-            terms={['research', 'application', 'cultural integration', 'procedure to experience']}
-          />
+          <Body>
+            <p>
+              Helix Labs develops what is possible. Sanctum Spa makes it experienceable. The path
+              from laboratory to life is not dramatic - it is careful, personal, and unhurried. A
+              morning appointment. A follow-up conversation. A body that feels different without
+              looking different.
+            </p>
+          </Body>
         </SectionImage>
 
         <SectionImage
-          index={3}
-          eyebrow="03 — The Body"
+          eyebrow="03 - The Body"
           title="Guided recovery"
           image={`${IMG}/recovery.png`}
-          alt="A reclining chair with soft blankets in warm light, a plant nearby — calm and intimate"
+          alt="A reclining chair with soft blankets in warm light, a plant nearby - calm and intimate"
         >
-          <Placeholder
-            note="The intimate, physical layer — care, recovery, stabilization, and the relationship between body and time. This keeps the page human, not abstract."
-            terms={['guided recovery', 'stabilization', 'healthspan', 'the body, given time']}
-          />
+          <Body>
+            <p>
+              Recovery at Sanctum Spa is not about returning to a previous state. It is about
+              learning what the body can sustain when given time, care, and the right conditions.
+            </p>
+            <p className="text-amber-50/90">
+              Stabilization. Resilience. A slower, more deliberate relationship between body and
+              time.
+            </p>
+          </Body>
         </SectionImage>
 
         <SectionImage
-          index={4}
-          eyebrow="04 — Time"
+          eyebrow="04 - Time"
           title="Why does Sanctum Spa matter?"
           image={`${IMG}/lysithea-sunset.png`}
           alt="A wide sunset over the Lysithea sea with Jupiter low on the horizon"
@@ -363,30 +361,28 @@ export default function SanctumSpa() {
             <p>What becomes of ageing when bodily decline is no longer the only clock?</p>
             <p>What becomes of responsibility when time grows more elastic?</p>
           </div>
-          <Placeholder note="Open these questions without selling finished answers. Hold the space open." />
         </SectionImage>
 
         <ParallelChoices />
 
         <SectionImage
-          index={6}
-          eyebrow="06 — Grounding"
+          eyebrow="06 - Grounding"
           title="A lightly scientific grounding"
           image={`${IMG}/regenerative-detail.png`}
           alt="A golden droplet resting on a green leaf against a deep blue background"
           reverse
         >
-          <Placeholder
-            note="A credible, lightly scientific underpinning — enough substance to feel real, never sterile, never pseudo-science. (Rune's domain.)"
-            terms={[
-              'regenerative medicine',
-              'tissue renewal',
-              'healthspan vs lifespan',
-              'body stabilization',
-              'resilience & recovery',
-              'guided participation',
-            ]}
-          />
+          <Body>
+            <p>
+              Sanctum Spa is fiction. But it is grounded in real trajectories of medical research -
+              regenerative medicine, tissue renewal, cellular stabilization, and the distinction
+              between healthspan and lifespan.
+            </p>
+            <p className="text-amber-50/90">
+              The vision is not merely additional years. It is sustained vitality - biological
+              flexibility, resilience, and recovery capacity - guided, not forced.
+            </p>
+          </Body>
         </SectionImage>
 
         {/* Connection to Season 1 + closing */}
@@ -399,11 +395,21 @@ export default function SanctumSpa() {
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.9 }}
           >
-            <p className="mb-3 text-xs uppercase tracking-[0.3em] text-amber-200/50">07 — The Story</p>
+            <p className="mb-3 text-xs uppercase tracking-[0.3em] text-amber-200/50">07 - The Story</p>
             <h2 className="font-[family-name:var(--font-family-display)] text-3xl font-bold text-amber-50 md:text-4xl">
               Connection to Season 1
             </h2>
-            <Placeholder note="A quiet bridge to Mission: Aurelia, Season 1 — not spoilery, just orienting. The first hints appear softly: personal choices, medical transitions, changed relationships with time." />
+            <Body>
+              <p>
+                In Season 1 of Mission: Aurelia, the first traces of this future appear quietly. Not
+                as grand exposition, but through personal choices, medical transitions, and a
+                changed relationship with time.
+              </p>
+              <p className="text-amber-50/90">
+                Sanctum Spa helps make sense of that world - not by explaining it, but by giving it
+                a place.
+              </p>
+            </Body>
 
             <div className="mt-16 border-t border-white/10 pt-10 text-center">
               <p className="mx-auto max-w-2xl text-xl font-light italic text-amber-50/90 md:text-2xl">
