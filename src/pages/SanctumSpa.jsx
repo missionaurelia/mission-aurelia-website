@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'wouter';
-import { ArrowDown } from 'lucide-react';
 
 const IMG = '/images/sanctum-spa';
 
@@ -117,10 +116,9 @@ function Portal({ onEnter }) {
         <button
           onClick={onEnter}
           aria-label="Enter Sanctum Spa"
-          className="group mt-10 inline-flex items-center gap-3 rounded-full border border-amber-200/40 bg-amber-100/5 px-8 py-4 text-base font-semibold text-amber-50 backdrop-blur-sm transition-all duration-500 hover:border-amber-200/80 hover:bg-amber-100/15"
+          className="mt-10 inline-flex items-center justify-center rounded-full border border-amber-200/40 bg-amber-100/5 px-8 py-4 text-base font-semibold text-amber-50 backdrop-blur-sm transition-all duration-500 hover:border-amber-200/80 hover:bg-amber-100/15"
         >
           Enter Sanctum Spa
-          <ArrowDown size={18} className="transition-transform duration-500 group-hover:translate-y-1" />
         </button>
       </motion.div>
     </motion.section>
