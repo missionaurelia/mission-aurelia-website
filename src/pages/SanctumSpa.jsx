@@ -279,6 +279,17 @@ export default function SanctumSpa() {
     };
   }, [entered]);
 
+  // Re-show the portal whenever the user picks "Sanctum Spa" from the nav,
+  // even if they're already on this page (wouter won't remount the route).
+  useEffect(() => {
+    const handler = () => {
+      setEntered(false);
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    };
+    window.addEventListener('sanctum:reset-portal', handler);
+    return () => window.removeEventListener('sanctum:reset-portal', handler);
+  }, []);
+
   return (
     <div className="relative bg-[#080a0f] text-[var(--color-text)]">
       <AnimatePresence>

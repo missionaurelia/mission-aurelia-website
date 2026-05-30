@@ -91,7 +91,12 @@ export default function Navigation() {
                       className={`nav-link text-base ${
                         location === item.path ? 'text-[var(--color-primary)]' : 'text-[var(--color-text)]/70'
                       }`}
-                      onClick={() => setIsOpen(false)}
+                      onClick={() => {
+                        setIsOpen(false);
+                        if (item.path === '/sanctum-spa') {
+                          window.dispatchEvent(new CustomEvent('sanctum:reset-portal'));
+                        }
+                      }}
                     >
                       {item.label}
                     </a>
@@ -112,10 +117,15 @@ export default function Navigation() {
                 <Link key={item.path} href={item.path}>
                   <a
                     className={`nav-link text-sm ${
-                      location === item.path 
-                        ? 'text-[var(--color-primary)]' 
+                      location === item.path
+                        ? 'text-[var(--color-primary)]'
                         : 'text-[var(--color-text)]/80 hover:text-[var(--color-text)]'
                     }`}
+                    onClick={() => {
+                      if (item.path === '/sanctum-spa') {
+                        window.dispatchEvent(new CustomEvent('sanctum:reset-portal'));
+                      }
+                    }}
                   >
                     {item.label}
                   </a>
