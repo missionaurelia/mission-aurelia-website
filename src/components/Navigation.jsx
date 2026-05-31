@@ -18,6 +18,7 @@ export default function Navigation() {
   const universeSubNav = [
     { path: '/science', label: 'Science' },
     { path: '/technology', label: 'Technology' },
+    { path: '/helix-labs', label: 'Helix Labs' },
     { path: '/society', label: 'Society' },
     { path: '/philosophy', label: 'Philosophy' },
     { path: '/characters', label: 'Characters' },

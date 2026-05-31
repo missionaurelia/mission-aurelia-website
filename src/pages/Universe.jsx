@@ -227,11 +227,22 @@ export default function Universe() {
             <h2 className="text-gradient-orange mb-12 text-center">World-Building</h2>
             
             <div className="grid md:grid-cols-2 gap-8">
-              {/* Characters */}
-              <a href="/characters" className="card hover:scale-105 transition-transform block">
-                <h3 className="text-2xl mb-4 text-gradient-orange">Characters</h3>
+              {/* Helix Labs - featured, spans both columns */}
+              <a href="/helix-labs" className="card hover:scale-105 transition-transform block md:col-span-2 border-amber-200/30 hover:border-amber-200/60">
+                <h3 className="text-3xl mb-4 text-gradient-orange">Helix Labs</h3>
+                <p className="text-[var(--color-text)]/80 text-lg">
+                  The research body behind MIRIDA, regenerative medicine, AI presence systems, and the transformation of future medicine into lived experience.
+                </p>
+                <div className="mt-4 text-amber-500 font-semibold flex items-center gap-2">
+                  <span>Enter Helix Labs →</span>
+                </div>
+              </a>
+
+              {/* Science */}
+              <a href="/science" className="card hover:scale-105 transition-transform block">
+                <h3 className="text-2xl mb-4 text-gradient-orange">Science</h3>
                 <p className="text-[var(--color-text)]/80">
-                  Meet the souls who inhabit the Aurelia universe - human, artificial, and everything in between.
+                  Dive into the scientific concepts that power Mission: Aurelia.
                 </p>
                 <div className="mt-4 text-amber-500 font-semibold flex items-center gap-2">
                   <span>Explore →</span>
@@ -249,6 +260,17 @@ export default function Universe() {
                 </div>
               </a>
 
+              {/* Sanctum Spa */}
+              <a href="/sanctum-spa" className="card hover:scale-105 transition-transform block">
+                <h3 className="text-2xl mb-4 text-gradient-orange">Sanctum Spa</h3>
+                <p className="text-[var(--color-text)]/80">
+                  Where longevity becomes personal - regenerative care, recovery, and the lived experience of time.
+                </p>
+                <div className="mt-4 text-amber-500 font-semibold flex items-center gap-2">
+                  <span>Enter →</span>
+                </div>
+              </a>
+
               {/* Society */}
               <a href="/society" className="card hover:scale-105 transition-transform block">
                 <h3 className="text-2xl mb-4 text-gradient-orange">Society</h3>
@@ -260,22 +282,22 @@ export default function Universe() {
                 </div>
               </a>
 
-              {/* Science */}
-              <a href="/science" className="card hover:scale-105 transition-transform block">
-                <h3 className="text-2xl mb-4 text-gradient-orange">Science</h3>
+              {/* Philosophy */}
+              <a href="/philosophy" className="card hover:scale-105 transition-transform block">
+                <h3 className="text-2xl mb-4 text-gradient-orange">Philosophy</h3>
                 <p className="text-[var(--color-text)]/80">
-                  Dive into the scientific concepts that power Mission: Aurelia.
+                  Explore the philosophical themes of identity, consciousness, and humanity.
                 </p>
                 <div className="mt-4 text-amber-500 font-semibold flex items-center gap-2">
                   <span>Explore →</span>
                 </div>
               </a>
 
-              {/* Philosophy */}
-              <a href="/philosophy" className="card hover:scale-105 transition-transform block">
-                <h3 className="text-2xl mb-4 text-gradient-orange">Philosophy</h3>
+              {/* Characters */}
+              <a href="/characters" className="card hover:scale-105 transition-transform block">
+                <h3 className="text-2xl mb-4 text-gradient-orange">Characters</h3>
                 <p className="text-[var(--color-text)]/80">
-                  Explore the philosophical themes of identity, consciousness, and humanity.
+                  Meet the souls who inhabit the Aurelia universe - human, artificial, and everything in between.
                 </p>
                 <div className="mt-4 text-amber-500 font-semibold flex items-center gap-2">
                   <span>Explore →</span>
