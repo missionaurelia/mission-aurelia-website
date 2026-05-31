@@ -35,22 +35,22 @@ const EVOLUTION = [
   {
     year: '2028',
     title: 'Glass and Wood',
-    text: 'A small, transparent research environment. Human-scaled, still close to care.',
+    text: 'A small, transparent research environment in Lake Oswego, Oregon. Human-scaled, forest-adjacent, still close to care. The first patients are pioneers - and they are paid to participate.',
   },
   {
     year: '2030',
     title: 'Functional Expansion',
-    text: 'Helix becomes more structured, clinical, and applied.',
+    text: 'Helix grows beyond a single building. A partner center for veterinary research opens. The first international presence is established. The world begins to notice - and to question.',
   },
   {
     year: '2035',
     title: 'Organic Integration',
-    text: 'Architecture, biology, and technology begin to merge.',
+    text: 'Architecture, biology, and technology merge. Corridors of organically shaped glass glow with bioluminescent light. Helix publishes its landmark Somatic Stabilization research and begins building what no one thought possible.',
   },
   {
     year: '2040+',
     title: 'Global Player',
-    text: 'Helix becomes powerful, admired, questioned, and publicly contested.',
+    text: 'Helix becomes powerful, admired, questioned, and publicly contested. Security forces protect the campus. Protestors line the gates. The research that began with one woman in a garden now shapes the future of an entire species.',
   },
 ];
 
@@ -77,10 +77,9 @@ export default function HelixLabs() {
             Where possibility becomes research.
           </p>
           <p className="mx-auto mt-6 max-w-3xl text-base text-[var(--color-text)]/70 md:text-lg">
-            Helix Labs is the research institution behind some of the most intimate changes in the
-            world of Mission: Aurelia: body stabilization, regenerative care, consciousness-transfer
-            research, AI presence systems, and the slow transformation of medical progress into
-            everyday life.
+            Helix Labs is where the boundaries of medicine, consciousness, and human potential are
+            quietly redefined. Not through spectacle - through research, care, and a commitment to
+            understanding what it means to live longer, live differently, and live well.
           </p>
         </motion.div>
       </section>
@@ -101,6 +100,10 @@ export default function HelixLabs() {
             <h2 className="font-[family-name:var(--font-family-display)] text-3xl font-bold text-amber-50 md:text-4xl">
               From Research to Everyday Life
             </h2>
+            <p className="mx-auto mt-6 max-w-2xl text-[var(--color-text)]/70">
+              What begins in the lab does not stay there. Helix Labs&apos; research branches into
+              medicine, space, AI companionship, and the lived experience of an extended life.
+            </p>
           </motion.div>
 
           <div className="mx-auto mt-12 grid max-w-6xl gap-6 md:grid-cols-2">
