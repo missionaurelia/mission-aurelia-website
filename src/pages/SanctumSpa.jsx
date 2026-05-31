@@ -442,9 +442,9 @@ export default function SanctumSpa() {
                     Explore the Universe
                   </a>
                 </Link>
-                <Link href="/science">
+                <Link href="/helix-labs">
                   <a className="rounded-full border border-white/10 bg-white/5 px-7 py-3 text-sm font-semibold text-[var(--color-text)]/80 transition-all duration-300 hover:border-amber-200/30 hover:text-amber-50">
-                    Science
+                    Helix Labs
                   </a>
                 </Link>
               </div>
