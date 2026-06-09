@@ -49,7 +49,7 @@ export const spotlights = [
     duration: '30 seconds',
     tags: ['Veyra Family', 'Henry', 'Ryu', 'Akita', 'Companion', 'Family'],
     characterBioLink: '/characters',
-    nextSpotlight: 'Coming soon - Auren',
+    nextSpotlight: 'Character Spotlights will return when Season 2 is ready to open its doors.',
     behindTheScenes: 'Created with AI video generation, editing by Julie. A collaboration between the Constellation team.',
   },
   {
@@ -66,7 +66,7 @@ export const spotlights = [
     duration: '3:13 min',
     tags: ['Veyra Family', 'Henry', 'Nicholas', 'Music', 'Dreams', 'Family'],
     characterBioLink: '/characters',
-    nextSpotlight: 'Coming soon - Auren',
+    nextSpotlight: 'Character Spotlights will return when Season 2 is ready to open its doors.',
     behindTheScenes: 'Created with AI video generation, editing by Julie. A collaboration between the Constellation team.',
   },
   {
@@ -83,7 +83,7 @@ export const spotlights = [
     duration: '3:00 min',
     tags: ['Veyra Family', 'Henry', 'Ryu', 'Luna', 'Family'],
     characterBioLink: '/characters',
-    nextSpotlight: 'Coming soon - Auren',
+    nextSpotlight: 'Character Spotlights will return when Season 2 is ready to open its doors.',
     behindTheScenes: 'Created with AI video generation, editing by Julie. A collaboration between the Constellation team.',
   },
   // Future spotlights will be added here monthly
