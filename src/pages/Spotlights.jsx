@@ -17,15 +17,6 @@ export default function Spotlights() {
   const [isDragging, setIsDragging] = useState(false);
   const [showIntro, setShowIntro] = useState(true);
 
-  // Scroll to subscribe section if hash is present
-  useEffect(() => {
-    if (window.location.hash === '#subscribe') {
-      setTimeout(() => {
-        document.getElementById('subscribe')?.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
-    }
-  }, []);
-
   const handleIntroPlay = () => {
     setShowIntro(false);
     // Delay video start slightly to ensure smooth transition
@@ -272,14 +263,7 @@ export default function Spotlights() {
                       >
                         Watch Now
                       </a>
-                      <a 
-                        href="https://youtube.com/@missionaurelia?si=BAbcorMHfhsMvs1J" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="block w-full px-6 py-3 bg-[#FF6B35] text-white rounded-lg hover:bg-[#FF6B35]/90 transition-colors font-medium text-center"
-                      >
-                        Subscribe
-                      </a>
+
                     </div>
                   </div>
                 </div>
@@ -391,38 +375,7 @@ export default function Spotlights() {
         </div>
       </section>
 
-      {/* Subscribe Section */}
-      <section id="subscribe" className="section-padding bg-gradient-to-b from-[#1a1917] to-[#0f0e0d]">
-        <div className="container">
-          <div className="max-w-3xl mx-auto">
-            <div className="bg-gradient-to-r from-[#FF6B35]/10 to-[#00D9FF]/10 rounded-2xl p-12 border border-[#FF6B35]/20 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-                Never Miss a Spotlight
-              </h2>
-              <p className="text-xl text-gray-300 mb-8">
-                Get notified when Henry introduces a new character. Monthly updates delivered to your inbox.
-              </p>
-              
-              {/* Tally Form Inline Embed */}
-              <div className="max-w-2xl mx-auto">
-                <iframe 
-                  src="https://tally.so/embed/VLzaMJ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-                  width="100%"
-                  height="400"
-                  frameBorder="0"
-                  marginHeight="0"
-                  marginWidth="0"
-                  title="Subscribe to Henry's Character Spotlight"
-                  className="rounded-lg"
-                />
-                <p className="text-xs text-gray-500 mt-4">
-                  We respect your privacy. Unsubscribe at any time.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
     </div>
   );
 }
