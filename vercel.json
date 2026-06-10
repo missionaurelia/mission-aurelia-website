@@ -1,5 +1,6 @@
 {
   "rewrites": [
+    { "source": "/supplementalone", "destination": "/docs/audiobook-s1-supplemental-one.pdf" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
