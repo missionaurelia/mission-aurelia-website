@@ -2,9 +2,9 @@ import { Link } from 'wouter';
 
 // Launch links - Julie delivers the final URLs after the June 11 launch.
 // Replace the TODO_ values; everything below renders live automatically.
-const SPOTIFY_EMBED_URL = 'TODO_SPOTIFY_EMBED_URL';
-const APPLE_PODCASTS_URL = 'TODO_APPLE_PODCASTS_URL';
-const YOUTUBE_PLAYLIST_URL = 'TODO_YOUTUBE_PLAYLIST_URL';
+const SPOTIFY_EMBED_URL = 'https://open.spotify.com/embed/show/033u5WDTXXaDmMpqlypBNI/video?utm_source=generator&theme=0';
+const APPLE_PODCASTS_URL = 'https://podcasts.apple.com/us/podcast/mission-aurelia-audiobook-en/id1896892641';
+const YOUTUBE_PLAYLIST_URL = 'https://youtube.com/playlist?list=PLyxR_8Rj11Y76eJQCGnyL57CL9qCjPc9B&si=92_Y1CMm98uc-mRR';
 
 const isPending = (url) => url.startsWith('TODO_');
 
@@ -77,7 +77,7 @@ export default function Story() {
                   : 'hover:bg-[#FF6B35]/90'
               }`}
             >
-              Listen on Apple Podcasts
+              Apple Podcasts
             </a>
             <a
               href={isPending(YOUTUBE_PLAYLIST_URL) ? undefined : YOUTUBE_PLAYLIST_URL}
@@ -91,7 +91,7 @@ export default function Story() {
                   : 'hover:bg-[#1A1A1A]/80'
               }`}
             >
-              Watch on YouTube
+              YouTube Podcasts
             </a>
           </div>
         </div>
