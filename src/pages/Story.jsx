@@ -105,33 +105,9 @@ export default function Story() {
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Season 1 Summary */}
-            <div className="bg-[#1A1A1A] rounded-2xl border border-white/10 overflow-hidden flex flex-col">
-              <div className="h-72 bg-[#0d0d0d] p-4 flex items-center justify-center">
-                <img
-                  src="/images/story/summary-cover.webp"
-                  alt="Season 1 Summary - first page"
-                  loading="lazy"
-                  className="h-full w-auto object-contain rounded shadow-lg"
-                />
-              </div>
-              <div className="p-6 flex flex-col flex-1 text-center">
-                <h3 className="text-xl font-bold text-white mb-2">Season 1 Summary</h3>
-                <p className="text-[#F5F5F5]/70 mb-6 flex-1">
-                  The complete Season 1 story at a glance.
-                </p>
-                <a
-                  href="/MissionAurelia_Summary_S1.pdf"
-                  download
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#FF6B35] text-white rounded-lg hover:bg-[#FF6B35]/90 transition-colors font-medium"
-                >
-                  Download PDF
-                </a>
-              </div>
-            </div>
-
-            {/* Audiobook Supplemental */}
-            <div className="bg-[#1A1A1A] rounded-2xl border border-white/10 overflow-hidden flex flex-col">
+            {/* Audiobook Supplemental - first in DOM so it leads on mobile;
+                md:order-2 keeps it on the right on desktop */}
+            <div className="bg-[#1A1A1A] rounded-2xl border border-white/10 overflow-hidden flex flex-col md:order-2">
               <div className="h-72 bg-[#0d0d0d] p-4 flex items-center justify-center">
                 <img
                   src="/images/story/supplemental-cover.webp"
@@ -149,6 +125,31 @@ export default function Story() {
                   href="/supplementalone"
                   target="_blank"
                   rel="noopener"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#FF6B35] text-white rounded-lg hover:bg-[#FF6B35]/90 transition-colors font-medium"
+                >
+                  Download PDF
+                </a>
+              </div>
+            </div>
+
+            {/* Season 1 Summary */}
+            <div className="bg-[#1A1A1A] rounded-2xl border border-white/10 overflow-hidden flex flex-col md:order-1">
+              <div className="h-72 bg-[#0d0d0d] p-4 flex items-center justify-center">
+                <img
+                  src="/images/story/summary-cover.webp"
+                  alt="Season 1 Summary - first page"
+                  loading="lazy"
+                  className="h-full w-auto object-contain rounded shadow-lg"
+                />
+              </div>
+              <div className="p-6 flex flex-col flex-1 text-center">
+                <h3 className="text-xl font-bold text-white mb-2">Season 1 Summary</h3>
+                <p className="text-[#F5F5F5]/70 mb-6 flex-1">
+                  The complete Season 1 story at a glance.
+                </p>
+                <a
+                  href="/MissionAurelia_Summary_S1.pdf"
+                  download
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#FF6B35] text-white rounded-lg hover:bg-[#FF6B35]/90 transition-colors font-medium"
                 >
                   Download PDF
