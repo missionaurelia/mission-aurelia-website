@@ -91,7 +91,7 @@ export default function Story() {
                   : 'hover:bg-[#1A1A1A]/80'
               }`}
             >
-              YouTube Podcasts
+              YouTube
             </a>
           </div>
         </div>
