@@ -1,5 +1,12 @@
 import { useState, useRef, useEffect, useMemo } from 'react';
-import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
+import {
+  motion,
+  AnimatePresence,
+  MotionConfig,
+  useScroll,
+  useTransform,
+  useReducedMotion,
+} from 'framer-motion';
 import { Link } from 'wouter';
 
 const IMG = '/images/sanctum-spa';
@@ -10,7 +17,9 @@ function Body({ children }) {
 }
 
 // Soft drifting light motes — quiet, not spectacle.
+// Skipped entirely when the user prefers reduced motion: they are pure decoration.
 function Motes() {
+  const reduceMotion = useReducedMotion();
   const motes = useMemo(
     () =>
       Array.from({ length: 14 }, (_, i) => ({
@@ -23,6 +32,7 @@ function Motes() {
       })),
     []
   );
+  if (reduceMotion) return null;
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden">
       {motes.map((m) => (
@@ -39,7 +49,10 @@ function Motes() {
 }
 
 // A subtle butterfly drifting near the arch.
+// Skipped entirely when the user prefers reduced motion.
 function Butterfly() {
+  const reduceMotion = useReducedMotion();
+  if (reduceMotion) return null;
   return (
     <motion.div
       className="pointer-events-none absolute left-[18%] top-[38%] text-amber-100/40"
@@ -61,21 +74,26 @@ function Butterfly() {
 }
 
 function Portal({ onEnter }) {
+  const reduceMotion = useReducedMotion();
   return (
     <motion.section
       className="fixed inset-0 z-30 flex items-center justify-center overflow-hidden bg-[#080a0f]"
       initial={{ opacity: 1 }}
-      exit={{ opacity: 0, scale: 1.08, filter: 'blur(6px)' }}
-      transition={{ duration: 1.1, ease: 'easeInOut' }}
+      exit={reduceMotion ? { opacity: 0 } : { opacity: 0, scale: 1.08, filter: 'blur(6px)' }}
+      transition={{ duration: reduceMotion ? 0.4 : 1.1, ease: 'easeInOut' }}
     >
       {/* Desktop: full-bleed cinematic portal image */}
       <motion.img
         src={`${IMG}/portal-hero.webp`}
         alt="An organic stone archway opening onto the wide Lysithea landscape at amber sunset"
         className="absolute inset-0 hidden h-full w-full object-cover md:block"
-        initial={{ scale: 1.04 }}
-        animate={{ scale: 1.12 }}
-        transition={{ duration: 24, repeat: Infinity, repeatType: 'reverse', ease: 'easeInOut' }}
+        initial={reduceMotion ? false : { scale: 1.04 }}
+        animate={reduceMotion ? undefined : { scale: 1.12 }}
+        transition={
+          reduceMotion
+            ? undefined
+            : { duration: 24, repeat: Infinity, repeatType: 'reverse', ease: 'easeInOut' }
+        }
       />
       <div className="absolute inset-0 hidden bg-gradient-to-b from-[#080a0f]/40 via-transparent to-[#080a0f]/80 md:block" />
       <div className="absolute inset-0 hidden bg-[radial-gradient(ellipse_at_center,_transparent_30%,_#080a0f_95%)] md:block" />
@@ -94,9 +112,13 @@ function Portal({ onEnter }) {
             src={`${IMG}/portal-hero.webp`}
             alt="An organic stone archway opening onto the wide Lysithea landscape at amber sunset"
             className="w-full"
-            initial={{ scale: 1.02 }}
-            animate={{ scale: 1.08 }}
-            transition={{ duration: 24, repeat: Infinity, repeatType: 'reverse', ease: 'easeInOut' }}
+            initial={reduceMotion ? false : { scale: 1.02 }}
+            animate={reduceMotion ? undefined : { scale: 1.08 }}
+            transition={
+              reduceMotion
+                ? undefined
+                : { duration: 24, repeat: Infinity, repeatType: 'reverse', ease: 'easeInOut' }
+            }
           />
         </div>
 
@@ -126,10 +148,14 @@ function Portal({ onEnter }) {
 }
 
 // Reusable parallax image + text section.
+// Parallax is dropped when the user prefers reduced motion (the depth-on-scroll
+// is decorative); the image still renders normally, just without the y shift.
 function SectionImage({ eyebrow, title, image, alt, reverse, quote, children }) {
   const ref = useRef(null);
+  const reduceMotion = useReducedMotion();
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] });
-  const y = useTransform(scrollYProgress, [0, 1], ['-7%', '7%']);
+  const parallaxY = useTransform(scrollYProgress, [0, 1], ['-7%', '7%']);
+  const y = reduceMotion ? 0 : parallaxY;
 
   return (
     <section ref={ref} className="relative overflow-hidden py-20 md:py-28">
@@ -291,6 +317,12 @@ export default function SanctumSpa() {
   }, []);
 
   return (
+    // reducedMotion="user" makes Framer Motion respect the OS-level
+    // prefers-reduced-motion setting across every motion child on this page:
+    // transform-based animations (translate/scale/rotate) are dropped while
+    // opacity transitions remain, which keeps the page accessible without
+    // gutting visual clarity for everyone else.
+    <MotionConfig reducedMotion="user">
     <div className="relative bg-[#080a0f] text-[var(--color-text)]">
       <AnimatePresence>
         {!entered && <Portal key="portal" onEnter={() => setEntered(true)} />}
@@ -453,5 +485,6 @@ export default function SanctumSpa() {
         </section>
       </div>
     </div>
+    </MotionConfig>
   );
 }
