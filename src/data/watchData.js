@@ -11,7 +11,7 @@ import { spotlights } from './spotlightsData';
 // Demotion is this one word - no rebuild needed.
 export const homeHero = {
   mode: 'top',
-  videoId: 'TODO_STILL_HERE',
+  videoId: 'wtmyWZg0jp4',
   title: 'Still Here - the action teaser for Mission: Aurelia',
   line: 'Three catastrophes. One seat kept free.',
 };
@@ -22,7 +22,7 @@ export const trailers = [
     id: 'still-here',
     year: 2026,
     title: 'Still Here',
-    videoId: 'TODO_STILL_HERE',
+    videoId: 'wtmyWZg0jp4',
     copy: 'Three catastrophes. One seat kept free. The action teaser for Mission: Aurelia.',
   },
   {
