@@ -10,6 +10,11 @@ const fadeUp = {
 };
 
 export default function Watch() {
+  // Entries flagged hidden are unreleased material - they stay out of the
+  // DOM entirely and the layouts below center whatever remains.
+  const visibleTrailers = trailers.filter((t) => !t.hidden);
+  const visibleBuffet = starlightBuffet.filter((ep) => !ep.hidden);
+
   return (
     <div>
       {/* Page header */}
@@ -29,11 +34,17 @@ export default function Watch() {
           <motion.h2 {...fadeUp} className="text-gradient-blue mb-12 text-center">
             Trailers &amp; Teasers
           </motion.h2>
-          <div className="grid gap-10 md:grid-cols-2">
-            {trailers.map((t) => (
+          <div
+            className={
+              visibleTrailers.length === 1
+                ? 'mx-auto max-w-2xl'
+                : 'grid gap-10 md:grid-cols-2'
+            }
+          >
+            {visibleTrailers.map((t) => (
               <motion.div key={t.id} {...fadeUp}>
                 <LiteYouTube videoId={t.videoId} title={`${t.title} (${t.year})`} />
-                <div className="mt-4">
+                <div className="mt-4 text-center md:text-left">
                   <h3 className="text-xl md:text-2xl font-bold">
                     {t.title}{' '}
                     <span className="text-[var(--color-text)]/50 font-normal">({t.year})</span>
@@ -58,16 +69,29 @@ export default function Watch() {
             </p>
           </motion.div>
 
-          {/* 9:16 tiles - horizontal scroll on mobile, grid on desktop */}
+          {/* 9:16 tiles. A single act sits centered; once more acts release,
+              the row scrolls horizontally on mobile and wraps centered on
+              desktop. */}
           <motion.div
             {...fadeUp}
-            className="mt-10 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 md:grid md:grid-cols-4 md:gap-6 md:overflow-visible md:pb-0 lg:grid-cols-4"
+            className={
+              visibleBuffet.length === 1
+                ? 'mt-10 flex justify-center'
+                : 'mt-10 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 md:flex-wrap md:justify-center md:gap-6 md:overflow-visible md:pb-0'
+            }
           >
-            {starlightBuffet.map((ep, i) => (
-              <div key={ep.id} className="w-44 flex-shrink-0 snap-start sm:w-52 md:w-auto">
+            {visibleBuffet.map((ep) => (
+              <div
+                key={ep.id}
+                className={
+                  visibleBuffet.length === 1
+                    ? 'w-56 sm:w-64'
+                    : 'w-44 flex-shrink-0 snap-start sm:w-52 md:w-56'
+                }
+              >
                 <LiteYouTube
                   videoId={ep.videoId}
-                  title={`${ep.title} - episode ${i + 1}`}
+                  title={ep.title}
                   aspect="9:16"
                   className="border border-[var(--color-primary)]/20"
                 />
@@ -87,11 +111,13 @@ export default function Watch() {
             </p>
           </motion.div>
 
-          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {/* flex-wrap + justify-center keeps incomplete last rows centered
+              (with five tiles, the bottom row sits in the middle). */}
+          <div className="mt-12 flex flex-wrap justify-center gap-8">
             {spotlightArchive.map((s) => (
-              <motion.div key={s.id} {...fadeUp}>
+              <motion.div key={s.id} {...fadeUp} className="w-full max-w-sm">
                 <LiteYouTube videoId={s.videoId} title={s.title} thumbnail={s.thumbnail} />
-                <h3 className="mt-3 text-lg font-bold">{s.title}</h3>
+                <h3 className="mt-3 text-center text-lg font-bold">{s.title}</h3>
               </motion.div>
             ))}
           </div>

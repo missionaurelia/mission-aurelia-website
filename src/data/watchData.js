@@ -1,6 +1,8 @@
 // Watch page + homepage hero video data.
-// YouTube IDs marked TODO_ render as styled placeholder tiles until Julie
-// supplies the real links - swap the ID, the tile goes live automatically.
+// - YouTube IDs marked TODO_ render as styled placeholder tiles.
+// - Entries with hidden: true are not rendered at all - material that is
+//   planned but not yet released. Flip the flag (and drop in the real ID)
+//   when it launches; the layout re-flows automatically.
 import { spotlights } from './spotlightsData';
 
 // Homepage "Still Here" block.
@@ -29,35 +31,26 @@ export const trailers = [
     title: 'Mission: Aurelia - A Future Worth Living In',
     videoId: 'TODO_XPRIZE_TRAILER',
     copy: 'Home, transformation, arrival - the three-act vision trailer created for the Future Vision XPRIZE.',
+    hidden: true, // unhide when the trailer is released
   },
 ];
 
 // Section B - Starlight Buffet (9:16 vertical tiles).
 // Curated order: Julie decides the sequence - just reorder this array.
-// The series is ongoing; append new episodes as objects with a real videoId.
+// The series is ongoing; unhide/append acts as they release.
 export const starlightBuffet = [
-  { id: 'sb-1', title: 'Starlight Buffet', videoId: 'TODO_STARLIGHT_1' },
-  { id: 'sb-2', title: 'Starlight Buffet', videoId: 'TODO_STARLIGHT_2' },
-  { id: 'sb-3', title: 'Starlight Buffet', videoId: 'TODO_STARLIGHT_3' },
-  { id: 'sb-4', title: 'Starlight Buffet', videoId: 'TODO_STARLIGHT_4' },
+  { id: 'sb-act-1', title: 'Starlight Buffet - Act 1', videoId: 'ZFoWDLeRn5s' },
+  { id: 'sb-act-2', title: 'Starlight Buffet - Act 2', videoId: 'TODO_STARLIGHT_ACT_2', hidden: true },
+  { id: 'sb-act-3', title: 'Starlight Buffet - Act 3', videoId: 'TODO_STARLIGHT_ACT_3', hidden: true },
 ];
 
 // Section C - Character Spotlights archive (16:9 tiles).
-// The first four come straight from spotlightsData (single source of truth);
-// Luna's entry is appended here until her data lands in spotlightsData.
-export const spotlightArchive = [
-  ...spotlights.map((s) => ({
-    id: s.id,
-    title: s.title,
-    character: s.character,
-    videoId: s.youtubeShortId,
-    thumbnail: s.thumbnailUrl,
-  })),
-  {
-    id: 'luna-veyra-2026-05',
-    title: 'Meet Luna Veyra',
-    character: 'Luna Veyra',
-    videoId: 'TODO_LUNA_SPOTLIGHT',
-    thumbnail: '/images/characters/Luna.jpg',
-  },
-];
+// Straight from spotlightsData - single source of truth. New spotlights
+// added there appear here automatically.
+export const spotlightArchive = spotlights.map((s) => ({
+  id: s.id,
+  title: s.title,
+  character: s.character,
+  videoId: s.youtubeShortId,
+  thumbnail: s.thumbnailUrl,
+}));
