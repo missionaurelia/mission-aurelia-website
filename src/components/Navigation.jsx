@@ -10,6 +10,7 @@ export default function Navigation() {
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
     { path: '/story', label: 'Story' },
+    { path: '/watch', label: 'Watch' },
     { path: '/universe', label: 'Universe' },
     { path: '/vision', label: 'Vision' },
     { path: '/contact', label: 'Contact' },

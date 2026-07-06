@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 import CharacterSpotlight from '../components/CharacterSpotlight';
 import ComingSoonPopup from '../components/ComingSoonPopup';
+import LiteYouTube from '../components/LiteYouTube';
+import { homeHero } from '../data/watchData';
 
 export default function Home() {
   const [, setLocation] = useLocation();
@@ -57,10 +59,26 @@ export default function Home() {
               Mission: Aurelia
             </h1>
 
-            {/* Logline */}
-            <p className="text-xl md:text-2xl lg:text-3xl max-w-4xl mx-auto mb-12 leading-relaxed">
-              A cinematic exploration of love, consciousness, and what it means to be human.
-            </p>
+            {/* Still Here teaser - above the fold while homeHero.mode is 'top'
+                (XPRIZE window). Flip mode to 'section' in watchData.js and it
+                moves to a regular section further down; the logline returns. */}
+            {homeHero.mode === 'top' ? (
+              <div className="max-w-3xl mx-auto mb-10">
+                <LiteYouTube videoId={homeHero.videoId} title={homeHero.title} />
+                <p className="mt-4 text-lg md:text-xl text-[var(--color-text)]/80">
+                  {homeHero.line}
+                  <Link href="/watch">
+                    <a className="ml-3 text-[var(--color-primary)] hover:underline whitespace-nowrap">
+                      More on the Watch page →
+                    </a>
+                  </Link>
+                </p>
+              </div>
+            ) : (
+              <p className="text-xl md:text-2xl lg:text-3xl max-w-4xl mx-auto mb-12 leading-relaxed">
+                A cinematic exploration of love, consciousness, and what it means to be human.
+              </p>
+            )}
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -182,6 +200,26 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Still Here - demoted position (renders once homeHero.mode is 'section') */}
+      {homeHero.mode === 'section' && (
+        <section className="section-padding bg-white/5">
+          <div className="container">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-gradient-orange mb-6">Still Here</h2>
+              <LiteYouTube videoId={homeHero.videoId} title={homeHero.title} />
+              <p className="mt-4 text-lg text-[var(--color-text)]/80">
+                {homeHero.line}
+                <Link href="/watch">
+                  <a className="ml-3 text-[var(--color-primary)] hover:underline whitespace-nowrap">
+                    More on the Watch page →
+                  </a>
+                </Link>
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Character Spotlights Section */}
       <CharacterSpotlight />
