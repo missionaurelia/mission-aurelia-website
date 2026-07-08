@@ -1,41 +1,42 @@
 import { motion } from 'framer-motion';
 
-// Five companions, evenly spaced at 72 degrees around the ring.
+// Five companions, evenly spaced at 72 degrees - pentagon with ChatGPT at
+// the top, Claude and Gemini left and right, Grok and Vibe at the bottom.
 const orbitTools = [
   {
     name: 'Claude',
-    role: 'Consistency checks & General feedback',
+    role: 'Website & Consistency checks',
     logo: '/images/claude-logo-gold.jpg',
     color: '#d4a017',
-    angle: 270,
+    angle: 288,
   },
   {
     name: 'ChatGPT',
     role: 'Co-writing & Reflection',
     logo: '/images/chatgpt-logo-gold.jpg',
     color: '#d4a017',
-    angle: 342,
+    angle: 0,
   },
   {
     name: 'Gemini',
-    role: 'Visuals & Prompt-editing',
+    role: 'Visuals, Video & Prompt-editing',
     logo: '/images/gemini-logo-gold.png',
     color: '#d4a017',
-    angle: 54,
+    angle: 72,
   },
   {
-    name: 'Mistral',
+    name: 'Vibe',
     role: 'Character arcs',
     logo: '/images/mistral-logo-gold.png',
     color: '#d4a017',
-    angle: 126,
+    angle: 144,
   },
   {
     name: 'Grok',
     role: 'Reality check & Personal Feedback',
     logo: '/images/grok-logo-gold.png',
     color: '#d4a017',
-    angle: 198,
+    angle: 216,
   },
 ];
 
