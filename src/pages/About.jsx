@@ -1,47 +1,42 @@
 import { motion } from 'framer-motion';
 
+// Five companions, evenly spaced at 72 degrees - pentagon with ChatGPT at
+// the top, Claude and Gemini left and right, Grok and Vibe at the bottom.
 const orbitTools = [
   {
     name: 'Claude',
-    role: 'Consistency checks & General feedback',
+    role: 'Website & Consistency checks',
     logo: '/images/claude-logo-gold.jpg',
     color: '#d4a017',
-    angle: 270, // oben mittig
+    angle: 288,
   },
   {
     name: 'ChatGPT',
     role: 'Co-writing & Reflection',
     logo: '/images/chatgpt-logo-gold.jpg',
     color: '#d4a017',
-    angle: 330, // oben rechts
-  },
-  {
-    name: 'Manus AI',
-    role: 'Homepage admin & Video productions',
-    logo: '/images/manus-logo-gold.jpg',
-    color: '#d4a017',
-    angle: 30, // rechts
+    angle: 0,
   },
   {
     name: 'Gemini',
-    role: 'Visuals & Prompt-editing',
+    role: 'Visuals, Video & Prompt-editing',
     logo: '/images/gemini-logo-gold.png',
     color: '#d4a017',
-    angle: 90, // unten mittig
+    angle: 72,
   },
   {
-    name: 'Mistral',
+    name: 'Vibe',
     role: 'Character arcs',
     logo: '/images/mistral-logo-gold.png',
     color: '#d4a017',
-    angle: 150, // unten links
+    angle: 144,
   },
   {
     name: 'Grok',
     role: 'Reality check & Personal Feedback',
     logo: '/images/grok-logo-gold.png',
     color: '#d4a017',
-    angle: 210, // links
+    angle: 216,
   },
 ];
 
