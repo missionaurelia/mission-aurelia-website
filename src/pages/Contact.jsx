@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Mail, FileText, ExternalLink, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
+import SubstackIcon from '../components/SubstackIcon';
 import { useEffect } from 'react';
 
 export default function Contact() {
@@ -23,6 +24,7 @@ export default function Contact() {
     { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/mission-aurelia-50a34a3a2', handle: 'Mission Aurelia', icon: Linkedin },
     { platform: 'X', url: 'https://x.com/Mission_Aurelia', handle: 'Mission_Aurelia', icon: Twitter },
     { platform: 'YouTube', url: 'https://youtube.com/@missionaurelia?si=BAbcorMHfhsMvs1J', handle: '@missionaurelia', icon: Youtube },
+    { platform: 'Substack', url: 'https://substack.com/@missionaurelia', handle: '@missionaurelia', icon: SubstackIcon },
   ];
 
   useEffect(() => {
