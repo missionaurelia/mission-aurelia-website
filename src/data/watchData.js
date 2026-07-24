@@ -40,7 +40,7 @@ export const trailers = [
 // The series is ongoing; unhide/append acts as they release.
 export const starlightBuffet = [
   { id: 'sb-act-1', title: 'Starlight Buffet - Act 1', videoId: 'ZFoWDLeRn5s' },
-  { id: 'sb-act-2', title: 'Starlight Buffet - Act 2', videoId: 'TODO_STARLIGHT_ACT_2', hidden: true },
+  { id: 'sb-act-2', title: 'Starlight Buffet - Act 2', videoId: 'AjQoG56Dass' },
   { id: 'sb-act-3', title: 'Starlight Buffet - Act 3', videoId: 'TODO_STARLIGHT_ACT_3', hidden: true },
 ];
 
