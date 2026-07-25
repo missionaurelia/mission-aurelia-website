@@ -1,0 +1,22 @@
+{
+  "name": "emberlight",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Emberlight - a compact top-down action adventure in the spirit of classic Zelda",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "validate": "node scripts/validate-maps.mjs"
+  },
+  "dependencies": {
+    "phaser": "^3.90.0"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  }
+}
