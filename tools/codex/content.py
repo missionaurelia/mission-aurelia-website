@@ -199,7 +199,7 @@ PAGES = [
         'route': '/technology', 'title': 'Technology', 'group': 'Universe',
         'purpose': 'Hub for three technology deep-dives, each with documentation, a visual archive and technical specs.',
         'copy': [
-            ('CCM-01 Collar', 'Canine Communication Module - "giving Henry the voice he deserves." Non-invasive EEG collar by Kael Sorley. 12 micro-electrodes, 72-hour battery.'),
+            ('CCM-01 Collar', 'Canine Communication Module - "giving Henry the voice he deserves." Non-invasive EEG collar by Kael Sorely. 12 micro-electrodes, 72-hour battery.'),
             ('Elara Lysi Projection', 'The Luminous Presence Network - "not projected, but present." ~10,000 photon emitters per square metre make Elara appear anywhere in Sanctum Spa.'),
             ('Nova Ventis', '"New Winds" - the Veyra family spacecraft. 4-6 humans plus 2 dogs, 3-4 months autonomy, ~3 weeks travel time. Four decks, fully illustrated.'),
         ],
