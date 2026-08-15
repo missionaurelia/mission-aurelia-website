@@ -93,7 +93,7 @@ export default function TechnologyCCM01() {
                 <div className="border-b border-emerald-500/30 pb-6">
                   <h2 className="text-3xl font-bold text-white mb-2">CCM-01 Specification</h2>
                   <p className="text-emerald-400 font-mono text-sm">Canine Communication Module -- Henry's Voice</p>
-                  <p className="text-slate-400 mt-2">Developed by Kael Sorley, Neural Systems Architect</p>
+                  <p className="text-slate-400 mt-2">Developed by Kael Sorely, Neural Systems Architect</p>
                 </div>
 
                 {/* Overview */}
@@ -111,7 +111,7 @@ export default function TechnologyCCM01() {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-4">
                     <div className="text-xs text-emerald-400 mb-1">Developer</div>
-                    <div className="text-sm font-semibold text-white">Kael Sorley</div>
+                    <div className="text-sm font-semibold text-white">Kael Sorely</div>
                   </div>
                   <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-4">
                     <div className="text-xs text-emerald-400 mb-1">Primary User</div>
@@ -308,7 +308,7 @@ export default function TechnologyCCM01() {
                     <strong className="text-white">Document Classification:</strong> Public Technical Specification
                   </p>
                   <p className="text-sm text-slate-400 mt-2">
-                    <strong className="text-white">Developer:</strong> Kael Sorley, Neural Systems Architect • Nova Ventis Mission
+                    <strong className="text-white">Developer:</strong> Kael Sorely, Neural Systems Architect • Nova Ventis Mission
                   </p>
                   <p className="text-sm text-slate-400 mt-2">
                     <strong className="text-white">Last Updated:</strong> 2039 • Document Reference: CCM-01-SPEC-v1.0
