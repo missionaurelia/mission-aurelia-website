@@ -22,12 +22,13 @@ ROOT = os.path.dirname(os.path.dirname(HERE))
 PUBLIC = os.path.join(ROOT, 'public')
 DEST = os.path.join(ROOT, 'aurelia-website-codex.html')
 DEST_MD = os.path.join(ROOT, 'aurelia-website-codex.md')
+DEST_PDF = os.path.join(ROOT, 'aurelia-website-codex.pdf')
 
 sys.path.insert(0, HERE)
 from content import (CANON, CHANNELS, CHARACTERS, COUNTS, DOWNLOADS, NAV_PRIMARY,
-                     NAV_UNIVERSE, PAGES, PALETTE, PALETTE_LEGACY, SNAPSHOT_DATE,
-                     SPA_TERMS_AVOID, SPA_TERMS_USE, STACK, STYLE_RULES, TYPE_ROLES,
-                     UTILITIES, VIDEO)
+                     NAV_UNIVERSE, PAGES, PALETTE, PALETTE_LEGACY, SHOT_SLUGS, SUBPAGES,
+                     SNAPSHOT_DATE, SPA_TERMS_AVOID, SPA_TERMS_USE, STACK,
+                     STYLE_RULES, TYPE_ROLES, UTILITIES, VIDEO)
 
 from PIL import Image
 
@@ -77,8 +78,44 @@ def build_thumbs():
     return out
 
 
+SHOT_DIR = os.path.join(HERE, 'pageshots')
+SHOT_W_DESKTOP = 620
+SHOT_W_MOBILE = 200
+SHOT_MAX_H = 1500   # full-page desktop captures get cropped, not squashed
+
+
+def build_pageshots():
+    """Embed the page captures. Desktop shots are long - crop rather than
+    shrink them to nothing, so the top of each page stays readable."""
+    out = {}
+    if not os.path.isdir(SHOT_DIR):
+        return out
+    for slug in sorted(set(SHOT_SLUGS.values())):
+        pair = {}
+        for tag, width in (('desktop', SHOT_W_DESKTOP), ('mobile', SHOT_W_MOBILE)):
+            src = os.path.join(SHOT_DIR, f'{slug}-{tag}.jpg')
+            if not os.path.isfile(src):
+                continue
+            im = Image.open(src).convert('RGB')
+            w, h = im.size
+            im = im.resize((width, max(1, round(h * width / w))), Image.LANCZOS)
+            cropped = False
+            if im.size[1] > SHOT_MAX_H:
+                im = im.crop((0, 0, width, SHOT_MAX_H))
+                cropped = True
+            buf = io.BytesIO()
+            im.save(buf, 'JPEG', quality=72, optimize=True, progressive=True)
+            pair[tag] = {'data': 'data:image/jpeg;base64,' + base64.b64encode(buf.getvalue()).decode(),
+                         'dims': f'{w}x{h}', 'cropped': cropped}
+        if pair:
+            out[slug] = pair
+    return out
+
+
 print('Building thumbnails...')
 THUMBS = build_thumbs()
+print('Embedding page captures...')
+SHOTS = build_pageshots()
 SPA_IMAGES = sorted(k for k in THUMBS if k.startswith('/images/sanctum-spa/'))
 
 
@@ -110,6 +147,22 @@ def page_block(p):
 
     if p.get('note'):
         parts.append(f'<p class="note">{p["note"]}</p>')
+
+    shot = SHOTS.get(SHOT_SLUGS.get(p['route'], ''))
+    if shot:
+        parts.append('<div class="views">')
+        if shot.get('desktop'):
+            d = shot['desktop']
+            tail = ' - top of page' if d['cropped'] else ''
+            parts.append(f'<figure class="view view--desktop"><img src="{d["data"]}" '
+                         f'alt="{p["title"]} on desktop" loading="lazy" decoding="async">'
+                         f'<figcaption>Desktop 1440px{tail}</figcaption></figure>')
+        if shot.get('mobile'):
+            m = shot['mobile']
+            parts.append(f'<figure class="view view--mobile"><img src="{m["data"]}" '
+                         f'alt="{p["title"]} on mobile" loading="lazy" decoding="async">'
+                         f'<figcaption>Mobile 390px</figcaption></figure>')
+        parts.append('</div>')
 
     if p.get('orbit'):
         parts.append('<div class="orbit">')
@@ -284,6 +337,20 @@ td code{color:var(--holo)}
   border-left:2px solid var(--gold);padding:.5rem 0 .5rem .9rem;margin:0 0 1.3rem;
 }
 
+/* ---------- page views (desktop + mobile side by side) ---------- */
+.views{
+  display:grid;grid-template-columns:1fr;gap:1rem;margin:1.4rem 0;
+  align-items:start;
+}
+@media (min-width:640px){.views{grid-template-columns:minmax(0,1fr) auto}}
+.view{margin:0;background:var(--surface);border:1px solid var(--line);overflow:hidden}
+.view img{display:block;width:100%;height:auto}
+.view--mobile{max-width:200px}
+.view figcaption{
+  font-family:var(--mono);font-size:.64rem;color:var(--ink-faint);
+  padding:.4rem .55rem;border-top:1px solid var(--line);letter-spacing:.04em;
+}
+
 /* ---------- image grids ---------- */
 .shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.85rem;margin:1.3rem 0 .6rem}
 @media (min-width:700px){.shots{grid-template-columns:repeat(auto-fill,minmax(178px,1fr))}}
@@ -339,6 +406,54 @@ td code{color:var(--holo)}
 /* ---------- footer ---------- */
 .foot{border-top:1px solid var(--line);margin-top:4.5rem;padding:2.2rem 0 3.5rem;color:var(--ink-faint);font-size:.82rem}
 .foot p{margin:0 0 .5rem;max-width:var(--measure)}
+
+/* ---------- print / PDF ---------- */
+/* Chromium prints at a wider viewport than the printable area, so everything
+   is pinned to 100% width - without this the right edge is silently cropped. */
+@page{size:A4;margin:12mm 10mm}
+@media print{
+  html,body{
+    background:var(--ground) !important;width:100%;max-width:100%;margin:0;
+    -webkit-print-color-adjust:exact;print-color-adjust:exact;
+  }
+  .toc{display:none}
+  .shell{display:block;padding:.5rem 0 0;max-width:100%}
+  .wrap{max-width:100%;padding:0}
+  main,section,article,div,table,figure{max-width:100%}
+  .masthead{padding:0 0 1.2rem;break-after:page}
+  .lede,.page__purpose,.copy,.note,.sec__head p{max-width:100%}
+
+  /* new page per major section, but entries may flow across pages -
+     forcing whole entries to stay together left pages half empty */
+  section{break-before:page}
+  section:first-of-type{break-before:auto}
+  .page{break-inside:auto;padding-top:1rem}
+  .sec__head{break-after:avoid}
+  h2,h3{break-after:avoid}
+  .page__head{break-after:avoid}
+  .views,.sw,.orbit__item,.terms__box,.type__row,.defs__row,figure,tr,.counts>div{break-inside:avoid}
+
+  .tablewrap{overflow:visible}
+  table{min-width:0;font-size:.8rem}
+  th,td{padding:.5rem .6rem}
+  a{color:var(--ink)}
+
+  /* fixed column counts - auto-fill overflows the narrower print width */
+  .shots{grid-template-columns:repeat(4,1fr);gap:.5rem}
+  .shots--people{grid-template-columns:repeat(5,1fr)}
+  .palette{grid-template-columns:repeat(2,1fr)}
+  .palette--small{grid-template-columns:repeat(4,1fr)}
+  .counts{grid-template-columns:repeat(6,1fr)}
+  .navmap,.terms{grid-template-columns:repeat(2,1fr)}
+  .orbit{grid-template-columns:repeat(3,1fr)}
+  .sw__use{font-size:.72rem}
+  .shot figcaption{font-size:.56rem;padding:.3rem .35rem}
+  .view--mobile{max-width:150px}
+  /* a full-page capture is taller than A4; crop it here so the desktop and
+     mobile views stay side by side on one sheet. The HTML keeps the full run. */
+  .view--desktop img{max-height:165mm;object-fit:cover;object-position:top center}
+  .views{gap:.6rem}
+}
 """
 
 
@@ -449,6 +564,32 @@ def build():
              '<p>Each entry gives the address, what the page is for, the copy that carries it, '
              'and every image it uses. Quoted lines are the live wording.</p></div>')
     h.extend(page_block(p) for p in PAGES)
+
+    h.append('<h3 style="font-size:1.15rem;margin:2.6rem 0 .4rem;padding-top:1.8rem;'
+             'border-top:1px solid var(--line)">Deep-dive pages</h3>'
+             '<p style="color:var(--ink-dim);font-size:.92rem;max-width:var(--measure);margin:0 0 1.4rem">'
+             'Reached from the Science, Technology and Philosophy hubs rather than the menu. '
+             'Their content is summarised on the hub entries above.</p>')
+    for route, title, line in SUBPAGES:
+        h.append('<article class="page page--sub">')
+        h.append(f'<header class="page__head"><code class="route">{route}</code>'
+                 f'<h3>{title}</h3></header>')
+        h.append(f'<p class="page__purpose">{line}</p>')
+        shot = SHOTS.get(SHOT_SLUGS.get(route, ''))
+        if shot:
+            h.append('<div class="views">')
+            if shot.get('desktop'):
+                d = shot['desktop']
+                tail = ' - top of page' if d['cropped'] else ''
+                h.append(f'<figure class="view view--desktop"><img src="{d["data"]}" alt="{title} on desktop" '
+                         f'loading="lazy" decoding="async">'
+                         f'<figcaption>Desktop 1440px{tail}</figcaption></figure>')
+            if shot.get('mobile'):
+                h.append(f'<figure class="view view--mobile"><img src="{shot["mobile"]["data"]}" '
+                         f'alt="{title} on mobile" loading="lazy" decoding="async">'
+                         f'<figcaption>Mobile 390px</figcaption></figure>')
+            h.append('</div>')
+        h.append('</article>')
     h.append('</section>')
 
     # ------------------------------------------------------------ people --
@@ -600,6 +741,10 @@ def build_markdown():
         if images:
             m.append(f'\nImages ({len(images)}): ' + ', '.join(f'`{i}`' for i in images))
 
+    m.append('\n### Deep-dive pages\n')
+    m.append('Reached from the Science, Technology and Philosophy hubs rather than the menu.\n')
+    m.extend(f'- **{t}** `{r}` - {strip(l)}' for r, t, l in SUBPAGES)
+
     m.append('\n## Characters\n')
     m.append('| Name | Role | Portrait |\n| --- | --- | --- |')
     m.extend(f'| {strip(n)} | {strip(r)} | `{p}` |' for n, r, p in CHARACTERS)
@@ -632,6 +777,33 @@ def build_markdown():
     return '\n'.join(m)
 
 
+def write_pdf():
+    """Print the HTML to PDF via headless Chromium, if one is available.
+
+    The PDF is the edition for AI collaborators: unlike embedded base64 in
+    HTML, a model reading a PDF sees the pictures as pictures.
+    """
+    import shutil
+    import subprocess
+
+    candidates = [
+        os.environ.get('CHROMIUM_BIN'),
+        '/opt/pw-browsers/chromium-1194/chrome-linux/chrome',
+        shutil.which('chromium'),
+        shutil.which('google-chrome'),
+    ]
+    chrome = next((c for c in candidates if c and os.path.isfile(c)), None)
+    if not chrome:
+        print('no chromium found - skipping PDF')
+        return
+    cmd = [chrome, '--headless', '--disable-gpu', '--no-sandbox',
+           '--no-pdf-header-footer', f'--print-to-pdf={DEST_PDF}',
+           f'file://{DEST}']
+    subprocess.run(cmd, capture_output=True, timeout=300)
+    if os.path.isfile(DEST_PDF):
+        print(f'{os.path.relpath(DEST_PDF, ROOT)}: {os.path.getsize(DEST_PDF)/1024/1024:.2f} MB')
+
+
 if __name__ == '__main__':
     html = build()
     with open(DEST, 'w') as f:
@@ -643,3 +815,5 @@ if __name__ == '__main__':
     with open(DEST_MD, 'w') as f:
         f.write(md)
     print(f'{os.path.relpath(DEST_MD, ROOT)}: {len(md)/1024:.0f} KB')
+
+    write_pdf()

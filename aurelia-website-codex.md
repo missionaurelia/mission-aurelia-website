@@ -226,6 +226,20 @@ Henry's Character Spotlight series, framed as an unauthorised broadcast from the
 - **Framing:** [UNAUTHORIZED BROADCAST] "This footage was not approved by the Nova Ventis crew. While engineering was busy with important calibrations, two crew members borrowed the prototype CCM-01 Collar from the workshop."
 - **Cadence:** New spotlight every month.
 
+### Deep-dive pages
+
+Reached from the Science, Technology and Philosophy hubs rather than the menu.
+
+- **MIRIDA Protocol** `/science/mirida` - Classification Level 7. The consciousness-transfer protocol in full - scientific foundations, known experimental outcomes, and the four vessel types.
+- **PN7 - Asteroid Impact** `/science/pn7` - The real asteroid and the fictional one, side by side. Ends on "What happens next? Watch and find out."
+- **Lysithea Institute** `/science/lysithea` - Founded 2041 on Jupiter's moon. Divisions, expansion, and the point where "everything changes."
+- **CCM-01 Collar** `/technology/ccm01` - Henry's voice. Documentation, visual archive and technical specs across three tabs.
+- **Nova Ventis** `/technology/nova-ventis` - The family spacecraft, deck by deck - the most heavily illustrated page on the site.
+- **Elara Lysi Projection** `/technology/elara-projection` - The Luminous Presence Network that lets Elara exist anywhere in Sanctum Spa.
+- **Identity & Aging** `/philosophy/identity` - What remains of identity when age no longer defines the arc of life?
+- **Consciousness Emergent** `/philosophy/consciousness` - Auren against Levin - designed awareness against emergent awareness.
+- **AI & Feelings - Love** `/philosophy/ai-feelings` - Turns the question around: can a human accept being loved by something not human?
+
 ## Characters
 
 | Name | Role | Portrait |

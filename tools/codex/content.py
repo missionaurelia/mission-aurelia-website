@@ -8,6 +8,23 @@ JSX sources, not paraphrased.
 
 SNAPSHOT_DATE = '15 August 2026'
 
+# Screenshot slug per route. Captured by tools/codex/capture.js against a
+# local preview build; stored in tools/codex/pageshots/.
+SHOT_SLUGS = {
+    '/': 'home', '/about': 'about', '/story': 'story', '/watch': 'watch',
+    '/universe': 'universe', '/vision': 'vision', '/contact': 'contact',
+    '/characters': 'characters', '/science': 'science', '/technology': 'technology',
+    '/helix-labs': 'helix-labs', '/sanctum-spa': 'sanctum-spa', '/society': 'society',
+    '/philosophy': 'philosophy', '/spotlights': 'spotlights',
+    '/science/mirida': 'science-mirida', '/science/pn7': 'science-pn7',
+    '/science/lysithea': 'science-lysithea', '/technology/ccm01': 'technology-ccm01',
+    '/technology/nova-ventis': 'technology-nova-ventis',
+    '/technology/elara-projection': 'technology-elara-projection',
+    '/philosophy/identity': 'philosophy-identity',
+    '/philosophy/consciousness': 'philosophy-consciousness',
+    '/philosophy/ai-feelings': 'philosophy-ai-feelings',
+}
+
 STACK = [
     ('Framework', 'React 19', 'Single-page application'),
     ('Build tool', 'Vite 7', 'Dev server and production build'),
@@ -252,6 +269,31 @@ PAGES = [
         ],
         'images': [],
     },
+]
+
+# The nine deep-dive pages reached from the three hubs. Their substance is
+# summarised on the hub entries above; here they get their address, a line,
+# and their page views so every route in the site is pictured.
+SUBPAGES = [
+    ('/science/mirida', 'MIRIDA Protocol',
+     'Classification Level 7. The consciousness-transfer protocol in full - scientific foundations, '
+     'known experimental outcomes, and the four vessel types.'),
+    ('/science/pn7', 'PN7 - Asteroid Impact',
+     'The real asteroid and the fictional one, side by side. Ends on "What happens next? Watch and find out."'),
+    ('/science/lysithea', 'Lysithea Institute',
+     'Founded 2041 on Jupiter\'s moon. Divisions, expansion, and the point where "everything changes."'),
+    ('/technology/ccm01', 'CCM-01 Collar',
+     'Henry\'s voice. Documentation, visual archive and technical specs across three tabs.'),
+    ('/technology/nova-ventis', 'Nova Ventis',
+     'The family spacecraft, deck by deck - the most heavily illustrated page on the site.'),
+    ('/technology/elara-projection', 'Elara Lysi Projection',
+     'The Luminous Presence Network that lets Elara exist anywhere in Sanctum Spa.'),
+    ('/philosophy/identity', 'Identity & Aging',
+     'What remains of identity when age no longer defines the arc of life?'),
+    ('/philosophy/consciousness', 'Consciousness Emergent',
+     'Auren against Levin - designed awareness against emergent awareness.'),
+    ('/philosophy/ai-feelings', 'AI & Feelings - Love',
+     'Turns the question around: can a human accept being loved by something not human?'),
 ]
 
 CHARACTERS = [
