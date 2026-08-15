@@ -16,3 +16,7 @@ dist/
 
 # Vercel
 .vercel
+
+# Python bytecode (tools/codex)
+__pycache__/
+*.pyc
