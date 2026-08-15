@@ -21,6 +21,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 PUBLIC = os.path.join(ROOT, 'public')
 DEST = os.path.join(ROOT, 'aurelia-website-codex.html')
+DEST_MD = os.path.join(ROOT, 'aurelia-website-codex.md')
 
 sys.path.insert(0, HERE)
 from content import (CANON, CHANNELS, CHARACTERS, COUNTS, DOWNLOADS, NAV_PRIMARY,
@@ -536,9 +537,109 @@ def build():
     return '\n'.join(h)
 
 
+
+
+# ---------------------------------------------------------------------------
+# Markdown edition
+# ---------------------------------------------------------------------------
+# The HTML above is for people: it carries the pictures. This plain-text
+# edition is for AI collaborators working in a chat window, where embedded
+# images would arrive as megabytes of unreadable base64. Same facts, image
+# paths named rather than shown, small enough to paste into a conversation.
+
+def strip(s):
+    """HTML entities back to plain characters."""
+    return (s.replace('&amp;', '&').replace('&middot;', '-')
+             .replace('&rarr;', '->').replace('&nbsp;', ' '))
+
+
+def build_markdown():
+    m = []
+    m.append('# Mission: Aurelia - Website Reference')
+    m.append(f'\nSnapshot of missionaurelia.com, {SNAPSHOT_DATE}. '
+             'Structure, copy, design system and canon, for collaborators without '
+             'repository access. Image paths are named, not embedded - the '
+             'illustrated edition is the HTML codex.\n')
+
+    m.append('\n## At a glance\n')
+    m.append(' | '.join(f'{n} {label}' for n, label in COUNTS))
+    m.append('\n| Layer | Choice | Notes |\n| --- | --- | --- |')
+    m.extend(f'| {a} | {b} | {c} |' for a, b, c in STACK)
+
+    m.append('\n## Design system\n')
+    m.append('Defined in `src/index.css` as Tailwind 4 theme tokens; there is no tailwind.config.js.\n')
+    m.append('| Colour | Hex | Token | Used for |\n| --- | --- | --- | --- |')
+    m.extend(f'| {name} | `{hexv}` | `{token}` | {strip(use)} |' for hexv, name, token, use in PALETTE)
+    m.append('\nDefined but unused on public pages: '
+             + ', '.join(f'{n} `{h}`' for h, n, _t in PALETTE_LEGACY) + '\n')
+    m.append('| Typeface | Role | Used for | Scale |\n| --- | --- | --- | --- |')
+    m.extend(f'| {n} | {r} | {strip(u)} | {strip(s)} |' for n, r, u, s in TYPE_ROLES)
+    m.append('\n| Utility | Effect | Applied to |\n| --- | --- | --- |')
+    m.extend(f'| `{u}` | {strip(w)} | {strip(uf)} |' for u, w, uf in UTILITIES)
+
+    m.append('\n## Navigation\n')
+    m.append(f'**Header:** {" - ".join(NAV_PRIMARY)}')
+    m.append(f'\n**Universe dropdown:** {" - ".join(NAV_UNIVERSE)}')
+    m.append('\n**Not in navigation:** /spotlights, the three /science/ deep-dives, '
+             'the three /technology/ deep-dives, the three /philosophy/ essays\n')
+
+    m.append('\n## Pages\n')
+    for p in PAGES:
+        m.append(f'\n### {p["title"]} - `{p["route"]}`\n')
+        m.append(strip(p['purpose']) + '\n')
+        for label, text in p.get('copy', []):
+            m.append(f'- **{strip(label)}:** {strip(text)}')
+        if p.get('note'):
+            m.append(f'\n> {strip(p["note"])}')
+        if p.get('orbit'):
+            m.append('\nCreative Orbit 2026 - Julie at the centre, five companions around her:')
+            m.extend(f'- **{n}** - {strip(r)}' for n, r in ORBIT)
+        images = list(p.get('images', []))
+        if p.get('spa'):
+            images += SPA_IMAGES
+        if images:
+            m.append(f'\nImages ({len(images)}): ' + ', '.join(f'`{i}`' for i in images))
+
+    m.append('\n## Characters\n')
+    m.append('| Name | Role | Portrait |\n| --- | --- | --- |')
+    m.extend(f'| {strip(n)} | {strip(r)} | `{p}` |' for n, r, p in CHARACTERS)
+
+    m.append('\n## Moving image\n')
+    m.append('All embeds are click-to-load facades - no YouTube iframe loads until play is pressed.\n')
+    m.append('| Trailer | Year | YouTube ID | Status |\n| --- | --- | --- | --- |')
+    m.extend(f'| {t} | {y} | `{v}` | {s} |' for t, y, v, s in VIDEO['trailers'])
+    m.append('\n| Starlight Buffet | YouTube ID | Status |\n| --- | --- | --- |')
+    m.extend(f'| {t} | `{v}` | {s} |' for t, v, s in VIDEO['buffet'])
+    m.append('\nCharacter Spotlights: ' + ', '.join(n for n, _p in VIDEO['spotlights']))
+
+    m.append('\n## Channels & files\n')
+    m.append('| Channel | Handle | Address |\n| --- | --- | --- |')
+    m.extend(f'| {c} | {h} | {u} |' for c, h, u in CHANNELS)
+    m.append('\n| Download | File | Size |\n| --- | --- | --- |')
+    m.extend(f'| {t} | `{f}` | {s} |' for t, f, s in DOWNLOADS)
+
+    m.append('\n## Canon - non-negotiable\n')
+    m.extend(f'{i}. {strip(c)}' for i, c in enumerate(CANON, 1))
+
+    m.append('\n## Writing rules\n')
+    m.extend(f'- **{strip(r)}** - {strip(d)}' for r, d in STYLE_RULES)
+
+    m.append('\n## Sanctum Spa vocabulary\n')
+    m.append('**Use:** ' + ', '.join(SPA_TERMS_USE))
+    m.append('\n**Avoid:** ' + ', '.join(SPA_TERMS_AVOID))
+
+    m.append('\n---\n\nMission: Aurelia - created in collaboration with AI.')
+    return '\n'.join(m)
+
+
 if __name__ == '__main__':
     html = build()
     with open(DEST, 'w') as f:
         f.write(html)
     print(f'{len(THUMBS)} images embedded')
     print(f'{os.path.relpath(DEST, ROOT)}: {len(html)/1024/1024:.2f} MB')
+
+    md = build_markdown()
+    with open(DEST_MD, 'w') as f:
+        f.write(md)
+    print(f'{os.path.relpath(DEST_MD, ROOT)}: {len(md)/1024:.0f} KB')
