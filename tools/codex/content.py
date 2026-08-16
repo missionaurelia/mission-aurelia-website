@@ -118,11 +118,11 @@ PAGES = [
         'purpose': 'Season 1 as audiobook plus the two PDF companions.',
         'copy': [
             ('Intro', 'Dive into Season 1 of Mission: Aurelia - a journey of connection, transformation, and what it means to be human in a world where technology and consciousness intertwine.'),
-            ('Audiobook', 'Season 1 is available as an audiobook - six episodes and a two-part finale, told by Fergus MacTavish. Also on Apple Podcasts and YouTube.'),
+            ('Audiobook', 'Season 1 is available as an audiobook - six episodes and a two-part finale, told by Fergus MacTavish. An embedded Spotify player plays the show directly on the page; Apple Podcasts and YouTube buttons link out. All three are live.'),
             ('Downloads', 'Audiobook Supplemental &middot; Season 1 Summary'),
         ],
         'images': ['/images/story/summary-cover.webp', '/images/story/supplemental-cover.webp'],
-        'note': 'The Spotify player is still a placeholder slot awaiting its embed URL.',
+        'note': 'In the page capture the Spotify player appears as an empty grey frame - external embeds cannot load in the capture sandbox. On the live site the player renders and plays. The "player slot" wording that appears in the source is a dead fallback branch that only renders while a URL is still marked TODO_; all three URLs are real.',
     },
     {
         'route': '/watch', 'title': 'Watch', 'group': 'Primary navigation',
