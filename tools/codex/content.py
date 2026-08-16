@@ -350,7 +350,7 @@ DOWNLOADS = [
 CANON = [
     'AIM = AI-Manifestum (never "Autonomous Intelligence Module").',
     'Lysithea orbits Jupiter, never Saturn.',
-    'The Four Pillars are a growth gradient - Practical, Directional, Emotional, Symbiotic - never a fear gradient.',
+    'The Four Pillars are a growth gradient - Serving, Guiding, Belonging, Becoming - never a fear gradient (verified against AIM System Alignment v3).',
     'Lake Oswego, Oregon is the primary Earth setting.',
     'Currency is dollars.',
     'Henry is a Jack Russell Terrier belonging to the grandparents, Edward and Amelia Veyra.',

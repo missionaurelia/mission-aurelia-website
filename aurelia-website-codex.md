@@ -297,7 +297,7 @@ Character Spotlights: June Veyra, Levin, Ryu, Nicholas, Luna Veyra
 
 1. AIM = AI-Manifestum (never "Autonomous Intelligence Module").
 2. Lysithea orbits Jupiter, never Saturn.
-3. The Four Pillars are a growth gradient - Practical, Directional, Emotional, Symbiotic - never a fear gradient.
+3. The Four Pillars are a growth gradient - Serving, Guiding, Belonging, Becoming - never a fear gradient (verified against AIM System Alignment v3).
 4. Lake Oswego, Oregon is the primary Earth setting.
 5. Currency is dollars.
 6. Henry is a Jack Russell Terrier belonging to the grandparents, Edward and Amelia Veyra.

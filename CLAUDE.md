@@ -73,7 +73,7 @@ These are established facts that must never be contradicted on the website:
 
 1. **AIM = AI-Manifestum** (NOT Autonomous Intelligence Module)
 2. **Lysithea orbits Jupiter** (NOT Saturn)
-3. The Four Pillars are a **growth gradient** (Practical - Directional - Emotional - Symbiotic), NEVER a fear gradient
+3. The Four Pillars are a **growth gradient** (Serving - Guiding - Belonging - Becoming), NEVER a fear gradient (verified against AIM System Alignment v3)
 4. **Lake Oswego, Oregon** is the primary Earth setting
 5. Currency is **dollars** (not euros)
 6. **Henry** is a Jack Russell Terrier belonging to the grandparents (Edward and Amelia Veyra)
