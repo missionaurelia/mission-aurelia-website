@@ -669,6 +669,9 @@ def build():
     h.append(f'<p>Snapshot of missionaurelia.com as it stood on {SNAPSHOT_DATE}. '
              'Written from the source, not from memory - every quoted line and image path was read '
              'out of the repository at that date.</p>')
+    h.append('<p>Page captures were taken in a sandboxed browser without access to external '
+         'services - third-party frames (the Spotify player on Story, the Tally feedback '
+         'form in the footer) appear blank in captures but render on the live site.</p>')
     h.append('<p>Thumbnails are compressed and embedded directly in this file. '
              'The originals are larger and sharper; these exist so the document stays whole '
              'wherever it travels.</p>')
