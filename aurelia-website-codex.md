@@ -69,7 +69,7 @@ The entry point. Establishes the tagline, the human-AI premise, and routes visit
 - **Hero:** A cinematic exploration of love, consciousness, and what it means to be human.
 - **Section:** A Human-AI Collaboration - "At the core of Aurelia lies something rare: a true co-creation between human intuition and artificial intelligence. Together, we dream, write, and build what neither could alone."
 - **Featured:** Key Locations - Characters - Our Vision
-- **Video block:** Still Here - "Three catastrophes. One seat kept free." Sits above the fold during the XPRIZE window; demoting it to a regular section is a one-word change in watchData.js.
+- **Video block:** A Future Worth Living In - the XPRIZE vision trailer, above the fold with the line "What if the future began at a kitchen table?" (the E1 opener, matched to the Google Ads headline). A "#FutureVisionXPRIZE Submission" subline sits under the title. Both the block position (mode) and the subline are one-line data flips in watchData.js when the window closes.
 - **Closing:** Dive Deeper - "Access exclusive resources, character profiles, and world-building materials."
 
 > hero-background.jpg doubles as the social-media preview image for the whole site.
@@ -111,7 +111,7 @@ Images (2): `/images/story/summary-cover.webp`, `/images/story/supplemental-cove
 The video hub. Three sections, each with its own visual identity. All embeds are click-to-load facades - no YouTube iframe loads until the viewer presses play.
 
 - **Header:** Trailers, transmissions, and small windows into a future worth living in.
-- **Trailers:** Still Here (2026) - "Three catastrophes. One seat kept free." A second trailer sits ready but hidden until release.
+- **Trailers:** Two trailers, newest first: A Future Worth Living In (the XPRIZE vision trailer) leads, Still Here (the action teaser) follows.
 - **Starlight Buffet:** "The galaxy's most serious series has a least serious side." Acts 1 and 2 live; Act 3 hidden until ready. Vertical 9:16 tiles, swipeable on mobile.
 - **Spotlights:** Five faces of the mission - more to come as Season 2 unfolds. Carries the casting-vision disclaimer.
 
@@ -266,8 +266,8 @@ All embeds are click-to-load facades - no YouTube iframe loads until play is pre
 
 | Trailer | Year | YouTube ID | Status |
 | --- | --- | --- | --- |
-| Still Here | 2026 | `wtmyWZg0jp4` | Live - homepage hero and Watch page |
-| A Future Worth Living In | 2026 | `not yet released` | Hidden until release |
+| A Future Worth Living In | 2026 | `tsRIo5-9Jgw` | Live - homepage hero and Watch page (first) |
+| Still Here | 2026 | `wtmyWZg0jp4` | Live - Watch page (second) |
 
 | Starlight Buffet | YouTube ID | Status |
 | --- | --- | --- |
