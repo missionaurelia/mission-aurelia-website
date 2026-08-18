@@ -59,7 +59,7 @@ export default function Home() {
               Mission: Aurelia
             </h1>
 
-            {/* Still Here teaser - above the fold while homeHero.mode is 'top'
+            {/* Hero trailer - above the fold while homeHero.mode is 'top'
                 (XPRIZE window). Flip mode to 'section' in watchData.js and it
                 moves to a regular section further down; the logline returns. */}
             {homeHero.mode === 'top' ? (
@@ -201,7 +201,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Still Here - demoted position (renders once homeHero.mode is 'section') */}
+      {/* Hero trailer - demoted position (renders once homeHero.mode is 'section') */}
       {homeHero.mode === 'section' && (
         <section className="section-padding bg-white/5">
           <div className="container">
