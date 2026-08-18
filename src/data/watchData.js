@@ -14,6 +14,10 @@ export const homeHero = {
   videoId: 'tsRIo5-9Jgw',
   title: 'A Future Worth Living In - the vision trailer for Mission: Aurelia',
   line: 'What if the future began at a kitchen table?',
+  // Subline under the hero title, tied to the XPRIZE submission window.
+  // Set to null to lift it out in one move when the window closes - the
+  // title spacing closes up on its own, nothing else to touch.
+  submissionLabel: '#FutureVisionXPRIZE Submission',
 };
 
 // Section A - Trailers & Teasers (16:9, newest first)
