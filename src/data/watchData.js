@@ -5,33 +5,36 @@
 //   when it launches; the layout re-flows automatically.
 import { spotlights } from './spotlightsData';
 
-// Homepage "Still Here" block.
+// Homepage hero video block.
 // mode: 'top'     -> above the fold inside the homepage hero (XPRIZE window)
 // mode: 'section' -> demoted to a regular section further down the homepage
 // Demotion is this one word - no rebuild needed.
 export const homeHero = {
   mode: 'top',
-  videoId: 'wtmyWZg0jp4',
-  title: 'Still Here - the action teaser for Mission: Aurelia',
-  line: 'Three catastrophes. One seat kept free.',
+  videoId: 'tsRIo5-9Jgw',
+  title: 'A Future Worth Living In - the vision trailer for Mission: Aurelia',
+  line: 'What if the future began at a kitchen table?',
+  // Subline under the hero title, tied to the XPRIZE submission window.
+  // Set to null to lift it out in one move when the window closes - the
+  // title spacing closes up on its own, nothing else to touch.
+  submissionLabel: '#FutureVisionXPRIZE Submission',
 };
 
 // Section A - Trailers & Teasers (16:9, newest first)
 export const trailers = [
+  {
+    id: 'xprize-trailer',
+    year: 2026,
+    title: 'Mission: Aurelia - A Future Worth Living In',
+    videoId: 'tsRIo5-9Jgw',
+    copy: 'Home, transformation, arrival - the three-act vision trailer created for the Future Vision XPRIZE.',
+  },
   {
     id: 'still-here',
     year: 2026,
     title: 'Still Here',
     videoId: 'wtmyWZg0jp4',
     copy: 'Three catastrophes. One seat kept free. The action teaser for Mission: Aurelia.',
-  },
-  {
-    id: 'xprize-trailer',
-    year: 2026,
-    title: 'Mission: Aurelia - A Future Worth Living In',
-    videoId: 'TODO_XPRIZE_TRAILER',
-    copy: 'Home, transformation, arrival - the three-act vision trailer created for the Future Vision XPRIZE.',
-    hidden: true, // unhide when the trailer is released
   },
 ];
 

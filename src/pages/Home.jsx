@@ -54,12 +54,21 @@ export default function Home() {
               Consciousness. Family. Stars.
             </p>
 
-            {/* Main Title */}
-            <h1 className="text-gradient-orange mb-8">
+            {/* Main Title - hero-only size override (one step down from the
+                global h1 scale); do not touch the h1 rule in index.css. */}
+            <h1 className={`text-gradient-orange text-[clamp(2.25rem,6vw,3.5rem)] ${homeHero.submissionLabel ? 'mb-3' : 'mb-8'}`}>
               Mission: Aurelia
             </h1>
 
-            {/* Still Here teaser - above the fold while homeHero.mode is 'top'
+            {/* XPRIZE submission subline - reads as a subline of the title.
+                Data-driven: gone the moment homeHero.submissionLabel is null. */}
+            {homeHero.submissionLabel && (
+              <p className="text-[var(--color-secondary)] text-lg md:text-xl font-medium tracking-[0.06em] mb-8">
+                {homeHero.submissionLabel}
+              </p>
+            )}
+
+            {/* Hero trailer - above the fold while homeHero.mode is 'top'
                 (XPRIZE window). Flip mode to 'section' in watchData.js and it
                 moves to a regular section further down; the logline returns. */}
             {homeHero.mode === 'top' ? (
@@ -201,7 +210,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Still Here - demoted position (renders once homeHero.mode is 'section') */}
+      {/* Hero trailer - demoted position (renders once homeHero.mode is 'section') */}
       {homeHero.mode === 'section' && (
         <section className="section-padding bg-white/5">
           <div className="container">
