@@ -144,7 +144,7 @@ Email, social channels, downloadable resources, and an FAQ that doubles as the p
 - **Email:** hello@missionaurelia.com
 - **Channels:** Instagram - LinkedIn - X - YouTube - Substack - all at @missionaurelia
 - **Resources:** Concept Presentation - Visual Lookbook
-- **FAQ:** Covers the premise, what sets it apart, development stage (early development; series bible, pilot script, lookbook and concept presentation complete), and IP status (original).
+- **FAQ:** Covers the premise, what sets it apart, production status (independent original production; series bible, pilot script, lookbook and concept presentation complete; Season 1 exists as an audio series; seeking partners, funding and collaborators), and IP status (original).
 
 ### Characters - `/characters`
 

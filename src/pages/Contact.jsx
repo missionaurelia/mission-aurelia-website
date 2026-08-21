@@ -179,7 +179,7 @@ export default function Contact() {
               <div className="card">
                 <h3 className="text-xl mb-3">What stage of development is the project in?</h3>
                 <p className="text-[var(--color-text)]/80">
-                  Mission: Aurelia is currently in early development. We have completed the series bible, pilot script, visual lookbook, and concept presentation. We are actively seeking production partners, development funding, and creative collaborators who share our vision for thoughtful, emotionally-grounded science fiction.
+                  Mission: Aurelia is an independent original production. The series bible, pilot script, visual lookbook and concept presentation are complete, and Season 1 exists as an audio series. We are actively seeking production partners, development funding, and creative collaborators who share our vision for thoughtful, emotionally-grounded science fiction.
                 </p>
               </div>
 
