@@ -595,7 +595,7 @@ def build():
     # ------------------------------------------------------------ people --
     h.append('<section id="people"><div class="sec__head"><h2>Characters</h2>'
              '<p>Sixteen in the constellation. Portraits are AI-generated casting concepts - '
-             'the site carries a disclaimer wherever they appear.</p></div>'
+             'the site carries no casting disclaimer.</p></div>'
              '<div class="tablewrap"><table><thead><tr><th>Name</th><th>Role</th></tr></thead><tbody>')
     for name, role, _p in CHARACTERS:
         h.append(f'<tr><td><b>{name}</b></td><td class="td-dim">{role}</td></tr>')

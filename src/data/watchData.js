@@ -17,7 +17,7 @@ export const homeHero = {
   // Subline under the hero title, tied to the XPRIZE submission window.
   // Set to null to lift it out in one move when the window closes - the
   // title spacing closes up on its own, nothing else to touch.
-  submissionLabel: '#FutureVisionXPRIZE Submission',
+  submissionLabel: null, // was '#FutureVisionXPRIZE Submission' during the window
 };
 
 // Section A - Trailers & Teasers (16:9, newest first)

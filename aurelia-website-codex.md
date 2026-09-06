@@ -69,7 +69,7 @@ The entry point. Establishes the tagline, the human-AI premise, and routes visit
 - **Hero:** A cinematic exploration of love, consciousness, and what it means to be human.
 - **Section:** A Human-AI Collaboration - "At the core of Aurelia lies something rare: a true co-creation between human intuition and artificial intelligence. Together, we dream, write, and build what neither could alone."
 - **Featured:** Key Locations - Characters - Our Vision
-- **Video block:** A Future Worth Living In - the XPRIZE vision trailer, above the fold with the line "What if the future began at a kitchen table?" (the E1 opener, matched to the Google Ads headline). A "#FutureVisionXPRIZE Submission" subline sits under the title. Both the block position (mode) and the subline are one-line data flips in watchData.js when the window closes.
+- **Video block:** A Future Worth Living In - the XPRIZE vision trailer, above the fold with the line "What if the future began at a kitchen table?" (the E1 opener, matched to the Google Ads headline). The "#FutureVisionXPRIZE Submission" subline was retired after the submission window closed (homeHero.submissionLabel = null); the block position (mode) is a one-line data flip in watchData.js.
 - **Closing:** Dive Deeper - "Access exclusive resources, character profiles, and world-building materials."
 
 > hero-background.jpg doubles as the social-media preview image for the whole site.
@@ -301,7 +301,7 @@ Character Spotlights: June Veyra, Levin, Ryu, Nicholas, Luna Veyra
 5. Currency is dollars.
 6. Henry is a Jack Russell Terrier belonging to the grandparents, Edward and Amelia Veyra.
 7. Ryu is a Japanese Akita belonging to June Veyra.
-8. Levin starts as a voice and chat AI, becoming humanoid in Season 2.
+8. Levin starts as a voice and chat AI, has a physical body by 2035 (Season 1, E5), and gains a human skin in Season 2.
 9. The series spans 2025 to 2100 and beyond.
 10. The story is written with a live-action vision in mind - AI-generated material is promotional, not the final production format.
 
@@ -310,7 +310,7 @@ Character Spotlights: June Veyra, Levin, Ryu, Nicholas, Luna Veyra
 - **Hyphens, not em-dashes** - The site uses - throughout, never the longer dash.
 - **Mission: Aurelia** - Always with the colon and the space.
 - **English** - The site is English-language throughout.
-- **No Face Strategy** - Characters are shown through hands, silhouettes, light and atmosphere - never direct face shots.
+- **Character visuals** - Portraits are original AI-generated character visuals - no real-person likenesses, no casting references.
 - **Grounded poetry** - Poetic language is welcome, but never two poetic sentences in a row without something concrete between them.
 - **No Season 1 spoilers** - Especially the PN7 finale cliffhanger.
 - **AI credit** - Public-facing pages say "Created in collaboration with AI" - no individual model names.
