@@ -10,8 +10,9 @@ import { spotlights } from './spotlightsData';
 // mode: 'section' -> demoted to a regular section further down the homepage
 // Demotion is this one word - no rebuild needed.
 export const homeHero = {
-  mode: 'top',
+  mode: 'section',
   videoId: 'tsRIo5-9Jgw',
+  heading: 'A Future Worth Living In', // section title in the demoted position
   title: 'A Future Worth Living In - the vision trailer for Mission: Aurelia',
   line: 'What if the future began at a kitchen table?',
   // Subline under the hero title, tied to the XPRIZE submission window.

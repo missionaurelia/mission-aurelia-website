@@ -95,7 +95,7 @@ PAGES = [
             ('Hero', 'A cinematic exploration of love, consciousness, and what it means to be human.'),
             ('Section', 'A Human-AI Collaboration - "At the core of Aurelia lies something rare: a true co-creation between human intuition and artificial intelligence. Together, we dream, write, and build what neither could alone."'),
             ('Featured', 'Key Locations &middot; Characters &middot; Our Vision'),
-            ('Video block', 'A Future Worth Living In - the XPRIZE vision trailer, above the fold with the line "What if the future began at a kitchen table?" (the E1 opener, matched to the Google Ads headline). The "#FutureVisionXPRIZE Submission" subline was retired after the submission window closed (homeHero.submissionLabel = null); the block position (mode) is a one-line data flip in watchData.js.'),
+            ('Video section', 'A Future Worth Living In - the XPRIZE vision trailer as a regular section below the hero, with the line "What if the future began at a kitchen table?" (the E1 opener, matched to the Google Ads headline). It sat above the fold during the XPRIZE window; position (mode), section heading and the retired "#FutureVisionXPRIZE Submission" subline are all data fields in watchData.js.'),
             ('Closing', 'Dive Deeper - "Access exclusive resources, character profiles, and world-building materials."'),
         ],
         'images': ['/hero-background.jpg', '/images/home-key-locations.png', '/images/home-characters.png', '/images/home-vision.png'],

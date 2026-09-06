@@ -215,7 +215,7 @@ export default function Home() {
         <section className="section-padding bg-white/5">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-gradient-orange mb-6">Still Here</h2>
+              <h2 className="text-gradient-orange mb-6">{homeHero.heading}</h2>
               <LiteYouTube videoId={homeHero.videoId} title={homeHero.title} />
               <p className="mt-4 text-lg text-[var(--color-text)]/80">
                 {homeHero.line}
