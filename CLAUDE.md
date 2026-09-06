@@ -15,7 +15,7 @@ This is the website for **Mission: Aurelia**, a transmedia multigenerational sci
 - Primary palette: warm amber/gold tones + deep space blues + soft earth tones
 - The Herzblatt (heart-leaf) visual is the brand symbol — a leaf transitioning from organic warmth to digital particles
 - Typography: clean, readable, elegant — no aggressive futuristic fonts
-- Imagery: AI-generated visuals using No Face Strategy (characters shown through hands, silhouettes, light, atmosphere — never direct face shots)
+- Imagery: AI-generated visuals. Character portraits are original character visuals - no real-person likenesses, no casting references
 
 ### Tone
 - Hopeful, grounded, philosophical, warm
@@ -78,7 +78,7 @@ These are established facts that must never be contradicted on the website:
 5. Currency is **dollars** (not euros)
 6. **Henry** is a Jack Russell Terrier belonging to the grandparents (Edward and Amelia Veyra)
 7. **Ryu** is a Japanese Akita belonging to June Veyra
-8. **Levin** starts as a voice/chat AI and becomes humanoid in Season 2
+8. **Levin** starts as a voice/chat AI, has a physical body by 2035 (Season 1, E5), and gains a human skin in Season 2
 9. The series spans **2025-2100+**
 10. The story is written with a **live-action vision** in mind — AI-generated content is promotional, not the final production format
 
@@ -86,7 +86,7 @@ These are established facts that must never be contradicted on the website:
 - June Veyra (mother, protagonist)
 - Nicholas "Nicki" Veyra (son)
 - Luna Veyra (daughter)
-- Levin (AI companion, later humanoid)
+- Levin (AI companion, physical body from 2035, human skin in Season 2)
 - Ryu (Akita)
 - Henry (Jack Russell Terrier)
 - Edward Veyra (grandfather)
@@ -131,7 +131,7 @@ Sanctum Spa is a worldbuilding portal subpage about longevity and regenerative f
 ## Content Creation Rules
 - Never create content that contradicts established canon
 - Never spoil Season 1 plot points (especially PN7, the finale cliffhanger)
-- Always maintain the No Face Strategy for character visuals
+- Character visuals must be original - never based on a real person's likeness
 - Website copy should be English
 - Poetic language is welcome but must always be anchored by something concrete
 - Never two poetic sentences in a row without grounding
