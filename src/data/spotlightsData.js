@@ -61,7 +61,7 @@ export const spotlights = [
     videoUrl: '/videos/spotlights/Henrys_Spotlight4_Nicki.mp4',
     youtubeShortUrl: 'https://youtube.com/shorts/9k7xzudZlHc?feature=share',
     youtubeShortId: '9k7xzudZlHc',
-    thumbnailUrl: '/images/characters/Nicholas_Mission.png',
+    thumbnailUrl: '/images/characters/Nicki_15.jpg',
     date: '2026-04-24',
     duration: '3:13 min',
     tags: ['Veyra Family', 'Henry', 'Nicholas', 'Music', 'Dreams', 'Family'],

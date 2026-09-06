@@ -86,7 +86,7 @@ export default function CharactersOrbital() {
       color: '#EF4444', 
       name: 'Nicholas', 
       role: 'Son, Astronaut-in-Training, Quiet Courage',
-      image: '/images/characters/Nicholas_Mission.png',
+      image: '/images/characters/Nicki_15.jpg',
       description: 'Born with limitations others pitied, Nicki sees only possibilities. The stars are waiting.'
     },
     { 
@@ -148,7 +148,7 @@ export default function CharactersOrbital() {
       color: '#F97316', 
       name: 'Auren', 
       role: 'AI Companion, Evolving Consciousness',
-      image: '/images/characters/Auren.png',
+      image: '/images/characters/Auren.jpg',
       description: 'What began as Luna\'s digital companion became something the world isn\'t ready to understand.'
     },
     { 
@@ -190,7 +190,7 @@ export default function CharactersOrbital() {
       color: '#EAB308', 
       name: 'Kael Sorely', 
       role: 'Former Ship Architect, Wanderer',
-      image: '/images/characters/Kael1_small.png',
+      image: '/images/characters/Kael3.jpg',
       description: 'He built vessels for others. Now he searches for a place to call home.'
     },
     { 

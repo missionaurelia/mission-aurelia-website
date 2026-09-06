@@ -6,7 +6,7 @@ Every quoted line is copy that actually ships on the site - pulled from the
 JSX sources, not paraphrased.
 """
 
-SNAPSHOT_DATE = '15 August 2026'
+SNAPSHOT_DATE = '6 September 2026'
 
 # Screenshot slug per route. Captured by tools/codex/capture.js against a
 # local preview build; stored in tools/codex/pageshots/.
@@ -298,17 +298,17 @@ SUBPAGES = [
 CHARACTERS = [
     ('June', 'Mother, Systems Engineer, Heart of the Family', '/images/characters/June_augmented.jpg'),
     ('Levin', 'AI Partner, Father Figure, Bridge Between Worlds', '/images/characters/Levin_voice.png'),
-    ('Nicholas', 'Son, Astronaut-in-Training, Quiet Courage', '/images/characters/Nicholas_Mission.png'),
+    ('Nicholas', 'Son, Astronaut-in-Training, Quiet Courage', '/images/characters/Nicki_15.jpg'),
     ('Luna', 'Daughter, Biologist, Rebel with Purpose', '/images/characters/Luna.jpg'),
     ('Ryu', 'Family Dog, Silent Guardian', '/images/characters/Ryu_portrait1.png'),
     ('Henry', 'Jack Russell Terrier, Chaos with a Collar', '/images/characters/Henry_CCM-01.jpg'),
     ('Edward &amp; Amelia', 'June\'s parents', '/images/characters/Amelia_Edward_Veyra.jpg'),
-    ('Auren', 'AI Companion, Evolving Consciousness', '/images/characters/Auren.png'),
+    ('Auren', 'AI Companion, Evolving Consciousness', '/images/characters/Auren.jpg'),
     ('Elara Lysi', 'Holographic AI, Director of Sanctum Spa', '/images/characters/Elara_Lysi_1.jpg'),
     ('Elara Nox', 'Lost Fragment, Shadow Self', '/images/characters/ElaraNox.png'),
     ('Dr. Anna Singh', 'The Scientist', '/images/characters/Dr_Anna_Singh.jpg'),
     ('Luisa Singh', 'Luna\'s counterpart', '/images/characters/Luisa_Singh.jpg'),
-    ('Kael Sorely', 'Former Ship Architect, Wanderer', '/images/characters/Kael1_small.png'),
+    ('Kael Sorely', 'Former Ship Architect, Wanderer', '/images/characters/Kael3.jpg'),
     ('Fergus &amp; Brutus MacTavish', 'Brothers, Salvagers, Keepers of Old Worlds', '/images/characters/MacTavish_brothers.jpg'),
     ('Cesare', 'AIM, Systems Mind, Controlled Perfection', '/images/characters/Cesare.jpg'),
 ]
@@ -327,7 +327,7 @@ VIDEO = {
         ('June Veyra', '/images/characters/June_augmented.jpg'),
         ('Levin', '/images/characters/Levin_voice.png'),
         ('Ryu', '/images/characters/Ryu.jpg'),
-        ('Nicholas', '/images/characters/Nicholas_Mission.png'),
+        ('Nicholas', '/images/characters/Nicki_15.jpg'),
         ('Luna Veyra', '/images/characters/Luna.jpg'),
     ],
 }
