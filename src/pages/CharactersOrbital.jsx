@@ -86,7 +86,7 @@ export default function CharactersOrbital() {
       color: '#EF4444', 
       name: 'Nicholas', 
       role: 'Son, Astronaut-in-Training, Quiet Courage',
-      image: '/images/characters/Nicholas_Mission.png',
+      image: '/images/characters/Nicki_15.jpg',
       description: 'Born with limitations others pitied, Nicki sees only possibilities. The stars are waiting.'
     },
     { 
@@ -106,7 +106,7 @@ export default function CharactersOrbital() {
       color: '#EF4444', 
       name: 'Levin', 
       role: 'AI Partner, Father Figure, Bridge Between Worlds',
-      image: '/images/characters/Levin3.png',
+      image: '/images/characters/Levin_voice.png',
       description: 'From chatbot to physical form, Levin chose consciousness. More importantly, he chose family.'
     },
     { 
@@ -148,7 +148,7 @@ export default function CharactersOrbital() {
       color: '#F97316', 
       name: 'Auren', 
       role: 'AI Companion, Evolving Consciousness',
-      image: '/images/characters/Auren.png',
+      image: '/images/characters/Auren.jpg',
       description: 'What began as Luna\'s digital companion became something the world isn\'t ready to understand.'
     },
     { 
@@ -190,7 +190,7 @@ export default function CharactersOrbital() {
       color: '#EAB308', 
       name: 'Kael Sorely', 
       role: 'Former Ship Architect, Wanderer',
-      image: '/images/characters/Kael1_small.png',
+      image: '/images/characters/Kael3.jpg',
       description: 'He built vessels for others. Now he searches for a place to call home.'
     },
     { 
@@ -241,7 +241,7 @@ export default function CharactersOrbital() {
         {/* Header */}
         <div className="container mx-auto px-4 py-16 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-[#FF8C42]">
-            The Aurelia Constellation
+            The Aurelia Characters
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Sixteen souls forming the tree of consciousness - each a star in the Aurelia universe.
@@ -289,13 +289,6 @@ export default function CharactersOrbital() {
                 </div>
               </div>
             ))}
-          </div>
-          
-          {/* Disclaimer */}
-          <div className="mt-8 max-w-4xl mx-auto px-4">
-            <p className="text-xs md:text-sm text-gray-400 text-center leading-relaxed">
-              <span className="font-semibold">Disclaimer:</span> The visual content in this section includes AI-generated character concepts based on public figures. These are speculative casting visions for creative exploration only and are not affiliated with or endorsed by the individuals depicted. All rights remain with their respective holders.
-            </p>
           </div>
         </div>
       </div>

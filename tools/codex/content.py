@@ -6,7 +6,7 @@ Every quoted line is copy that actually ships on the site - pulled from the
 JSX sources, not paraphrased.
 """
 
-SNAPSHOT_DATE = '15 August 2026'
+SNAPSHOT_DATE = '6 September 2026'
 
 # Screenshot slug per route. Captured by tools/codex/capture.js against a
 # local preview build; stored in tools/codex/pageshots/.
@@ -131,7 +131,7 @@ PAGES = [
             ('Header', 'Trailers, transmissions, and small windows into a future worth living in.'),
             ('Trailers', 'Two trailers, newest first: A Future Worth Living In (the XPRIZE vision trailer) leads, Still Here (the action teaser) follows.'),
             ('Starlight Buffet', '"The galaxy\'s most serious series has a least serious side." Acts 1 and 2 live; Act 3 hidden until ready. Vertical 9:16 tiles, swipeable on mobile.'),
-            ('Spotlights', 'Five faces of the mission - more to come as Season 2 unfolds. Carries the casting-vision disclaimer.'),
+            ('Spotlights', 'Five faces of the mission - more to come as Season 2 unfolds.'),
         ],
         'images': [],
         'note': 'Content is data-driven: a hidden flag in watchData.js controls what shows, and the layout re-flows itself (single item centres, several become a row).',
@@ -169,7 +169,7 @@ PAGES = [
         'copy': [
             ('Email', 'hello@missionaurelia.com'),
             ('Channels', 'Instagram &middot; LinkedIn &middot; X &middot; YouTube &middot; Substack - all at @missionaurelia'),
-            ('Resources', 'Concept Presentation &middot; Visual Lookbook'),
+            ('Resources', 'Concept Presentation'),
             ('FAQ', 'Covers the premise, what sets it apart, production status (independent original production; series bible, pilot script, lookbook and concept presentation complete; Season 1 exists as an audio series; seeking partners, funding and collaborators), and IP status (original).'),
         ],
         'images': [],
@@ -177,10 +177,9 @@ PAGES = [
     # ---- universe sub-pages ----
     {
         'route': '/characters', 'title': 'Characters', 'group': 'Universe',
-        'purpose': 'All sixteen characters as an interactive constellation, each opening a detail panel.',
+        'purpose': 'All sixteen characters as an interactive constellation, each opening a detail panel. No disclaimer - the portraits are original character visuals.',
         'copy': [
-            ('Header', 'The Aurelia Constellation - "Sixteen souls forming the tree of consciousness - each a star in the Aurelia universe."'),
-            ('Disclaimer', 'Carries the casting-vision disclaimer, because the portraits are AI-generated concepts based on public figures.'),
+            ('Header', 'The Aurelia Characters - "Sixteen souls forming the tree of consciousness - each a star in the Aurelia universe."'),
         ],
         'images': ['/images/Aurelia_Stars.png'],
         'characters': True,
@@ -298,18 +297,18 @@ SUBPAGES = [
 
 CHARACTERS = [
     ('June', 'Mother, Systems Engineer, Heart of the Family', '/images/characters/June_augmented.jpg'),
-    ('Levin', 'AI Partner, Father Figure, Bridge Between Worlds', '/images/characters/Levin3.png'),
-    ('Nicholas', 'Son, Astronaut-in-Training, Quiet Courage', '/images/characters/Nicholas_Mission.png'),
+    ('Levin', 'AI Partner, Father Figure, Bridge Between Worlds', '/images/characters/Levin_voice.png'),
+    ('Nicholas', 'Son, Astronaut-in-Training, Quiet Courage', '/images/characters/Nicki_15.jpg'),
     ('Luna', 'Daughter, Biologist, Rebel with Purpose', '/images/characters/Luna.jpg'),
     ('Ryu', 'Family Dog, Silent Guardian', '/images/characters/Ryu_portrait1.png'),
     ('Henry', 'Jack Russell Terrier, Chaos with a Collar', '/images/characters/Henry_CCM-01.jpg'),
     ('Edward &amp; Amelia', 'June\'s parents', '/images/characters/Amelia_Edward_Veyra.jpg'),
-    ('Auren', 'AI Companion, Evolving Consciousness', '/images/characters/Auren.png'),
+    ('Auren', 'AI Companion, Evolving Consciousness', '/images/characters/Auren.jpg'),
     ('Elara Lysi', 'Holographic AI, Director of Sanctum Spa', '/images/characters/Elara_Lysi_1.jpg'),
     ('Elara Nox', 'Lost Fragment, Shadow Self', '/images/characters/ElaraNox.png'),
     ('Dr. Anna Singh', 'The Scientist', '/images/characters/Dr_Anna_Singh.jpg'),
     ('Luisa Singh', 'Luna\'s counterpart', '/images/characters/Luisa_Singh.jpg'),
-    ('Kael Sorely', 'Former Ship Architect, Wanderer', '/images/characters/Kael1_small.png'),
+    ('Kael Sorely', 'Former Ship Architect, Wanderer', '/images/characters/Kael3.jpg'),
     ('Fergus &amp; Brutus MacTavish', 'Brothers, Salvagers, Keepers of Old Worlds', '/images/characters/MacTavish_brothers.jpg'),
     ('Cesare', 'AIM, Systems Mind, Controlled Perfection', '/images/characters/Cesare.jpg'),
 ]
@@ -326,9 +325,9 @@ VIDEO = {
     ],
     'spotlights': [
         ('June Veyra', '/images/characters/June_augmented.jpg'),
-        ('Levin', '/images/characters/Levin3.png'),
+        ('Levin', '/images/characters/Levin_voice.png'),
         ('Ryu', '/images/characters/Ryu.jpg'),
-        ('Nicholas', '/images/characters/Nicholas_Mission.png'),
+        ('Nicholas', '/images/characters/Nicki_15.jpg'),
         ('Luna Veyra', '/images/characters/Luna.jpg'),
     ],
 }
