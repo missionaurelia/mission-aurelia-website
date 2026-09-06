@@ -11,12 +11,6 @@ export default function Contact() {
       link: 'https://drive.google.com/file/d/1jqorDMvtDYG5SNlgYQRXsj3ui8iDvMdo/view?usp=sharing',
       icon: FileText,
     },
-    {
-      title: 'Visual Lookbook',
-      description: 'A cinematic vision of Mission: Aurelia – bold, emotional, and ready to explore.',
-      link: 'https://drive.google.com/file/d/15Kt-WJYIFi6A1toPugNdQAsWUFQmm8NE/view?usp=drive_link',
-      icon: FileText,
-    },
   ];
 
   const socialLinks = [

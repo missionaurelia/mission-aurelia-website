@@ -131,7 +131,7 @@ PAGES = [
             ('Header', 'Trailers, transmissions, and small windows into a future worth living in.'),
             ('Trailers', 'Two trailers, newest first: A Future Worth Living In (the XPRIZE vision trailer) leads, Still Here (the action teaser) follows.'),
             ('Starlight Buffet', '"The galaxy\'s most serious series has a least serious side." Acts 1 and 2 live; Act 3 hidden until ready. Vertical 9:16 tiles, swipeable on mobile.'),
-            ('Spotlights', 'Five faces of the mission - more to come as Season 2 unfolds. Carries the casting-vision disclaimer.'),
+            ('Spotlights', 'Five faces of the mission - more to come as Season 2 unfolds.'),
         ],
         'images': [],
         'note': 'Content is data-driven: a hidden flag in watchData.js controls what shows, and the layout re-flows itself (single item centres, several become a row).',
@@ -169,7 +169,7 @@ PAGES = [
         'copy': [
             ('Email', 'hello@missionaurelia.com'),
             ('Channels', 'Instagram &middot; LinkedIn &middot; X &middot; YouTube &middot; Substack - all at @missionaurelia'),
-            ('Resources', 'Concept Presentation &middot; Visual Lookbook'),
+            ('Resources', 'Concept Presentation'),
             ('FAQ', 'Covers the premise, what sets it apart, production status (independent original production; series bible, pilot script, lookbook and concept presentation complete; Season 1 exists as an audio series; seeking partners, funding and collaborators), and IP status (original).'),
         ],
         'images': [],
@@ -177,10 +177,9 @@ PAGES = [
     # ---- universe sub-pages ----
     {
         'route': '/characters', 'title': 'Characters', 'group': 'Universe',
-        'purpose': 'All sixteen characters as an interactive constellation, each opening a detail panel.',
+        'purpose': 'All sixteen characters as an interactive constellation, each opening a detail panel. No disclaimer - the portraits are original character visuals.',
         'copy': [
-            ('Header', 'The Aurelia Constellation - "Sixteen souls forming the tree of consciousness - each a star in the Aurelia universe."'),
-            ('Disclaimer', 'Carries the casting-vision disclaimer, because the portraits are AI-generated concepts based on public figures.'),
+            ('Header', 'The Aurelia Characters - "Sixteen souls forming the tree of consciousness - each a star in the Aurelia universe."'),
         ],
         'images': ['/images/Aurelia_Stars.png'],
         'characters': True,
@@ -298,7 +297,7 @@ SUBPAGES = [
 
 CHARACTERS = [
     ('June', 'Mother, Systems Engineer, Heart of the Family', '/images/characters/June_augmented.jpg'),
-    ('Levin', 'AI Partner, Father Figure, Bridge Between Worlds', '/images/characters/Levin3.png'),
+    ('Levin', 'AI Partner, Father Figure, Bridge Between Worlds', '/images/characters/Levin_voice.png'),
     ('Nicholas', 'Son, Astronaut-in-Training, Quiet Courage', '/images/characters/Nicholas_Mission.png'),
     ('Luna', 'Daughter, Biologist, Rebel with Purpose', '/images/characters/Luna.jpg'),
     ('Ryu', 'Family Dog, Silent Guardian', '/images/characters/Ryu_portrait1.png'),
@@ -326,7 +325,7 @@ VIDEO = {
     ],
     'spotlights': [
         ('June Veyra', '/images/characters/June_augmented.jpg'),
-        ('Levin', '/images/characters/Levin3.png'),
+        ('Levin', '/images/characters/Levin_voice.png'),
         ('Ryu', '/images/characters/Ryu.jpg'),
         ('Nicholas', '/images/characters/Nicholas_Mission.png'),
         ('Luna Veyra', '/images/characters/Luna.jpg'),
