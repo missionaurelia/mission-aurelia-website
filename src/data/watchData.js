@@ -39,13 +39,20 @@ export const trailers = [
   },
 ];
 
-// Section B - Starlight Buffet (9:16 vertical tiles).
+// Section B - Ryu & Henry: everything the two dogs front, in series rows.
+// Row 1 - Starlight Buffet (9:16 vertical tiles).
 // Curated order: Julie decides the sequence - just reorder this array.
 // The series is ongoing; unhide/append acts as they release.
 export const starlightBuffet = [
   { id: 'sb-act-1', title: 'Starlight Buffet - Act 1', videoId: 'ZFoWDLeRn5s' },
   { id: 'sb-act-2', title: 'Starlight Buffet - Act 2', videoId: 'AjQoG56Dass' },
   { id: 'sb-act-3', title: 'Starlight Buffet - Act 3', videoId: 'TODO_STARLIGHT_ACT_3', hidden: true },
+];
+
+// Row 2 - Specials (16:9): one-off pieces such as seasonal shorts, newest
+// first. Renders below the Starlight Buffet row; hidden while empty.
+export const ryuHenrySpecials = [
+  { id: 'halloween-2026', year: 2026, title: 'Happy Inky Halloween', videoId: 'v-6b5ATT6ng' },
 ];
 
 // Section C - Character Spotlights archive (16:9 tiles).
