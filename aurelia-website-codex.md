@@ -1,11 +1,11 @@
 # Mission: Aurelia - Website Reference
 
-Snapshot of missionaurelia.com, 6 September 2026. Structure, copy, design system and canon, for collaborators without repository access. Image paths are named, not embedded - the illustrated edition is the HTML codex.
+Snapshot of missionaurelia.com, 18 October 2026. Structure, copy, design system and canon, for collaborators without repository access. Image paths are named, not embedded - the illustrated edition is the HTML codex.
 
 
 ## At a glance
 
-24 pages | 7 top-level nav items | 16 characters | 86 images in use | 15 YouTube videos | 3 PDF downloads
+24 pages | 7 top-level nav items | 16 characters | 86 images in use | 10 YouTube videos | 3 PDF downloads
 
 | Layer | Choice | Notes |
 | --- | --- | --- |
@@ -112,7 +112,7 @@ The video hub. Three sections, each with its own visual identity. All embeds are
 
 - **Header:** Trailers, transmissions, and small windows into a future worth living in.
 - **Trailers:** Two trailers, newest first: A Future Worth Living In (the XPRIZE vision trailer) leads, Still Here (the action teaser) follows.
-- **Starlight Buffet:** "The galaxy's most serious series has a least serious side." Acts 1 and 2 live; Act 3 hidden until ready. Vertical 9:16 tiles, swipeable on mobile.
+- **Ryu & Henry:** Everything the two dogs front, in series rows inside one warm zone. Row 1 is Starlight Buffet - "The galaxy's most serious series has a least serious side." Acts 1 and 2 live, Act 3 hidden until ready; vertical 9:16 tiles, swipeable on mobile. Row 2 is Specials - one-off 16:9 pieces, newest first, starting with the Halloween Special.
 - **Spotlights:** Five faces of the mission - more to come as Season 2 unfolds.
 
 > Content is data-driven: a hidden flag in watchData.js controls what shows, and the layout re-flows itself (single item centres, several become a row).
@@ -273,6 +273,10 @@ All embeds are click-to-load facades - no YouTube iframe loads until play is pre
 | Act 1 | `ZFoWDLeRn5s` | Live |
 | Act 2 | `AjQoG56Dass` | Live |
 | Act 3 | `not yet produced` | Hidden |
+
+| Ryu & Henry Specials | Year | YouTube ID | Status |
+| --- | --- | --- | --- |
+| Halloween Special | 2026 | `v-6b5ATT6ng` | Live - Watch page, Ryu & Henry |
 
 Character Spotlights: June Veyra, Levin, Ryu, Nicholas, Luna Veyra
 

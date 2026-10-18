@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import LiteYouTube from '../components/LiteYouTube';
-import { trailers, starlightBuffet, spotlightArchive } from '../data/watchData';
+import { trailers, starlightBuffet, ryuHenrySpecials, spotlightArchive } from '../data/watchData';
 
 const fadeUp = {
   initial: { opacity: 0, y: 24 },
@@ -14,6 +14,7 @@ export default function Watch() {
   // DOM entirely and the layouts below center whatever remains.
   const visibleTrailers = trailers.filter((t) => !t.hidden);
   const visibleBuffet = starlightBuffet.filter((ep) => !ep.hidden);
+  const visibleSpecials = ryuHenrySpecials.filter((sp) => !sp.hidden);
 
   return (
     <div>
@@ -57,12 +58,19 @@ export default function Watch() {
         </div>
       </section>
 
-      {/* Section B - Starlight Buffet (its own warmer, playful identity) */}
+      {/* Section B - Ryu & Henry: everything the two dogs front, grouped in
+          series rows inside one warm zone. Row 1 is the Starlight Buffet
+          series (9:16), row 2 the one-off Specials (16:9). */}
       <section className="relative overflow-hidden py-16 md:py-24">
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-primary)]/15 via-[var(--color-primary)]/5 to-transparent" />
         <div className="container relative">
+          <motion.h2 {...fadeUp} className="text-gradient-orange mb-12 text-center">
+            Ryu &amp; Henry
+          </motion.h2>
+
+          {/* Row 1 - Starlight Buffet */}
           <motion.div {...fadeUp} className="mx-auto max-w-3xl text-center">
-            <h2 className="text-gradient-orange mb-4">Starlight Buffet</h2>
+            <h3 className="mb-3">Starlight Buffet</h3>
             <p className="text-lg md:text-xl text-[var(--color-text)]/80">
               The galaxy&apos;s most serious series has a least serious side. Welcome to the
               Starlight Buffet.
@@ -98,6 +106,37 @@ export default function Watch() {
               </div>
             ))}
           </motion.div>
+
+          {/* Row 2 - Specials: one-off 16:9 pieces, newest first. A single
+              special sits centered; several form a two-column grid. */}
+          {visibleSpecials.length > 0 && (
+            <div className="mt-16 md:mt-20">
+              <motion.h3 {...fadeUp} className="mb-8 text-center">
+                Specials
+              </motion.h3>
+              <div
+                className={
+                  visibleSpecials.length === 1
+                    ? 'mx-auto max-w-2xl'
+                    : 'mx-auto grid max-w-5xl gap-10 md:grid-cols-2'
+                }
+              >
+                {visibleSpecials.map((sp) => (
+                  <motion.div key={sp.id} {...fadeUp}>
+                    <LiteYouTube
+                      videoId={sp.videoId}
+                      title={`${sp.title} (${sp.year})`}
+                      className="border border-[var(--color-primary)]/20"
+                    />
+                    <p className="mt-4 text-center text-lg font-semibold">
+                      {sp.title}{' '}
+                      <span className="font-normal text-[var(--color-text)]/50">({sp.year})</span>
+                    </p>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </section>
 

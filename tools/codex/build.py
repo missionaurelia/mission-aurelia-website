@@ -617,6 +617,12 @@ def build():
         h.append(f'<tr><td><b>{title}</b></td><td><code>{vid}</code></td>'
                  f'<td class="td-dim">{status}</td></tr>')
     h.append('</tbody></table></div>')
+    h.append('<div class="tablewrap" style="margin-top:1.2rem"><table><thead><tr>'
+             '<th>Ryu &amp; Henry Specials</th><th>Year</th><th>YouTube ID</th><th>Status</th></tr></thead><tbody>')
+    for title, year, vid, status in VIDEO.get('specials', []):
+        h.append(f'<tr><td><b>{title}</b></td><td class="td-dim">{year}</td>'
+                 f'<td><code>{vid}</code></td><td class="td-dim">{status}</td></tr>')
+    h.append('</tbody></table></div>')
     h.append('<h3 style="font-size:1.05rem;margin:1.8rem 0 .3rem">Character Spotlights</h3>'
              '<p style="color:var(--ink-dim);font-size:.9rem;margin:0 0 .6rem">'
              'Five published, hosted on YouTube and also present as local video files. '
@@ -758,6 +764,8 @@ def build_markdown():
     m.extend(f'| {t} | {y} | `{v}` | {s} |' for t, y, v, s in VIDEO['trailers'])
     m.append('\n| Starlight Buffet | YouTube ID | Status |\n| --- | --- | --- |')
     m.extend(f'| {t} | `{v}` | {s} |' for t, v, s in VIDEO['buffet'])
+    m.append('\n| Ryu & Henry Specials | Year | YouTube ID | Status |\n| --- | --- | --- | --- |')
+    m.extend(f'| {t} | {y} | `{v}` | {s} |' for t, y, v, s in VIDEO.get('specials', []))
     m.append('\nCharacter Spotlights: ' + ', '.join(n for n, _p in VIDEO['spotlights']))
 
     m.append('\n## Channels & files\n')
