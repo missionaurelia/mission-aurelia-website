@@ -112,7 +112,7 @@ The video hub. Three sections, each with its own visual identity. All embeds are
 
 - **Header:** Trailers, transmissions, and small windows into a future worth living in.
 - **Trailers:** Two trailers, newest first: A Future Worth Living In (the XPRIZE vision trailer) leads, Still Here (the action teaser) follows.
-- **Ryu & Henry:** Everything the two dogs front, in series rows inside one warm zone. Row 1 is Starlight Buffet - "The galaxy's most serious series has a least serious side." Acts 1 and 2 live, Act 3 hidden until ready; vertical 9:16 tiles, swipeable on mobile. Row 2 is Specials - one-off 16:9 pieces, newest first, starting with the Halloween Special.
+- **Ryu & Henry:** Everything the two dogs front, in series rows inside one warm zone. Row 1 is Starlight Buffet - "The galaxy's most serious series has a least serious side." Acts 1 and 2 live, Act 3 hidden until ready; vertical 9:16 tiles, swipeable on mobile. Row 2 is Specials - one-off 16:9 pieces, newest first, starting with Happy Inky Halloween.
 - **Spotlights:** Five faces of the mission - more to come as Season 2 unfolds.
 
 > Content is data-driven: a hidden flag in watchData.js controls what shows, and the layout re-flows itself (single item centres, several become a row).
@@ -276,7 +276,7 @@ All embeds are click-to-load facades - no YouTube iframe loads until play is pre
 
 | Ryu & Henry Specials | Year | YouTube ID | Status |
 | --- | --- | --- | --- |
-| Halloween Special | 2026 | `v-6b5ATT6ng` | Live - Watch page, Ryu & Henry |
+| Happy Inky Halloween | 2026 | `v-6b5ATT6ng` | Live - Watch page, Ryu & Henry |
 
 Character Spotlights: June Veyra, Levin, Ryu, Nicholas, Luna Veyra
 

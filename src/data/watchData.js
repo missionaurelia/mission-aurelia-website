@@ -52,7 +52,7 @@ export const starlightBuffet = [
 // Row 2 - Specials (16:9): one-off pieces such as seasonal shorts, newest
 // first. Renders below the Starlight Buffet row; hidden while empty.
 export const ryuHenrySpecials = [
-  { id: 'halloween-2026', year: 2026, title: 'Halloween Special', videoId: 'v-6b5ATT6ng' },
+  { id: 'halloween-2026', year: 2026, title: 'Happy Inky Halloween', videoId: 'v-6b5ATT6ng' },
 ];
 
 // Section C - Character Spotlights archive (16:9 tiles).
