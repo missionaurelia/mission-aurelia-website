@@ -274,11 +274,6 @@ export default function CharacterSpotlight() {
                     View All Spotlights
                   </a>
                 </Link>
-                <Link href="/characters">
-                  <a className="px-8 py-3 bg-white/5 text-white rounded-lg hover:bg-white/10 transition-colors font-medium border border-white/10 w-full sm:w-auto text-center">
-                    Characters
-                  </a>
-                </Link>
               </div>
             </div>
           </div>
