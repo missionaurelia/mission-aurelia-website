@@ -22,7 +22,6 @@ export default function Navigation() {
     { path: '/helix-labs', label: 'Helix Labs' },
     { path: '/society', label: 'Society' },
     { path: '/philosophy', label: 'Philosophy' },
-    { path: '/characters', label: 'Characters' },
     { path: '/sanctum-spa', label: 'Sanctum Spa' },
   ];
 

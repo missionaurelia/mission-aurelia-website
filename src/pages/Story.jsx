@@ -170,11 +170,6 @@ export default function Story() {
             Discover the characters, locations, and philosophy behind Mission: Aurelia
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link href="/characters">
-              <a className="px-8 py-3 bg-[#FF6B35] text-white rounded-lg hover:bg-[#FF6B35]/90 transition-colors font-medium">
-                Meet the Characters
-              </a>
-            </Link>
             <Link href="/universe">
               <a className="px-8 py-3 bg-[#1A1A1A] text-white rounded-lg hover:bg-[#1A1A1A]/80 transition-colors font-medium border border-[#FF6B35]/30">
                 Explore the Universe

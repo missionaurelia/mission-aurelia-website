@@ -311,12 +311,6 @@ export default function Spotlights() {
                   />
                 </div>
 
-                {/* Action Button */}
-                <Link href="/characters">
-                  <a className="inline-block px-8 py-3 bg-[#FF6B35] text-white rounded-lg hover:bg-[#FF6B35]/90 transition-colors font-medium">
-                    Characters
-                  </a>
-                </Link>
               </div>
               {/* Comments Section - Temporarily hidden until backend is implemented */}
               {/* <Comments spotlightId={selectedSpotlight.id} /> */}

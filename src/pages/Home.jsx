@@ -152,7 +152,7 @@ export default function Home() {
             Featured Sections
           </h2>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {/* Card 1 - Key Locations */}
             <div className="card">
               <div className="aspect-video bg-white/10 rounded-lg mb-6 overflow-hidden">
@@ -168,24 +168,6 @@ export default function Home() {
               </p>
               <Link href="/universe#key-locations">
                 <a className="btn-tertiary">Learn More →</a>
-              </Link>
-            </div>
-
-            {/* Card 2 - Characters */}
-            <div className="card">
-              <div className="aspect-video bg-white/10 rounded-lg mb-6 overflow-hidden">
-                <img 
-                  src="/images/home-characters.png" 
-                  alt="Characters - The Family" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="text-2xl mb-4">Characters</h3>
-              <p className="text-[var(--color-text)]/80 mb-4">
-                Meet the Veyra family - and those who change them.
-              </p>
-              <Link href="/characters">
-                <a className="btn-tertiary">Meet them →</a>
               </Link>
             </div>
 

@@ -1,11 +1,13 @@
-import { Route, Switch, useLocation } from 'wouter';
+import { Route, Switch, useLocation, Redirect } from 'wouter';
 import { useEffect } from 'react';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Universe from './pages/Universe';
-import CharactersOrbital from './pages/CharactersOrbital';
+// CharactersOrbital page is temporarily hidden pending the Sunwash-style rebuild.
+// The component and its assets remain in the repo; the /characters route redirects to /spotlights for now.
+// import CharactersOrbital from './pages/CharactersOrbital';
 import Science from './pages/Science';
 import ScienceMirida from './pages/ScienceMirida';
 import SciencePN7 from './pages/SciencePN7';
@@ -66,7 +68,8 @@ function App() {
           <Route path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/universe" component={Universe} />
-          <Route path="/characters" component={CharactersOrbital} />
+          {/* Characters page hidden during Sunwash rebuild - redirect old links to Spotlights */}
+          <Route path="/characters"><Redirect to="/spotlights" /></Route>
           <Route path="/science" component={Science} />
           <Route path="/science/mirida" component={ScienceMirida} />
           <Route path="/science/pn7" component={SciencePN7} />

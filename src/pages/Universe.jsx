@@ -292,17 +292,6 @@ export default function Universe() {
                   <span>Explore →</span>
                 </div>
               </a>
-
-              {/* Characters */}
-              <a href="/characters" className="card hover:scale-105 transition-transform block">
-                <h3 className="text-2xl mb-4 text-gradient-orange">Characters</h3>
-                <p className="text-[var(--color-text)]/80">
-                  Meet the souls who inhabit the Aurelia universe - human, artificial, and everything in between.
-                </p>
-                <div className="mt-4 text-amber-500 font-semibold flex items-center gap-2">
-                  <span>Explore →</span>
-                </div>
-              </a>
             </div>
           </div>
         </div>
