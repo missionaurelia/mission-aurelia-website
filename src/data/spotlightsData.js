@@ -11,7 +11,7 @@ export const spotlights = [
     videoUrl: '/videos/spotlights/Henrys_Spotlight_June_Veyra.mp4',
     youtubeShortUrl: 'https://youtube.com/shorts/B9hK5naR7vw?si=AEEvISQfMrP3eqxe',
     youtubeShortId: 'B9hK5naR7vw',
-    thumbnailUrl: '/images/characters/June_augmented.jpg', // June Veyra character image from Characters page
+    thumbnailUrl: '/images/characters/JUNE_A2L_3Q_LEFT_4x5.png', // June Veyra - 2.0 character visual
     date: '2026-01-30',
     duration: '32 seconds',
     tags: ['Veyra Family', 'Henry', 'Ryu', 'Love', 'Family'],
@@ -61,7 +61,7 @@ export const spotlights = [
     videoUrl: '/videos/spotlights/Henrys_Spotlight4_Nicki.mp4',
     youtubeShortUrl: 'https://youtube.com/shorts/9k7xzudZlHc?feature=share',
     youtubeShortId: '9k7xzudZlHc',
-    thumbnailUrl: '/images/characters/Nicki_15.jpg',
+    thumbnailUrl: '/images/characters/NICKI_16_A1_FRONT_4x5.png', // Nicholas Veyra - 2.0 character visual
     date: '2026-04-24',
     duration: '3:13 min',
     tags: ['Veyra Family', 'Henry', 'Nicholas', 'Music', 'Dreams', 'Family'],
